@@ -9,8 +9,8 @@
 
 
   <meta name="description" content="Eask can be run in any test environment, as long the platform allows you to install Node onto their platform.
-GitHub Actions     Here is an example using the GitHub Actions service.
-jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions/checkout@v2# Install Emacs on Linux/macOS- uses:purcell/setup-emacs@masterif:matrix.os == &#39;ubuntu-latest&#39; || matrix.os == &#39;macos-latest&#39;with:version:${{ matrix.emacs-version }}# Install Emacs on Windows- uses:jcs090218/setup-emacs-windows@masterif:matrix.os == &#39;windows-latest&#39;with:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions/setup-node@v2with:node-version:&#39;14&#39;# Install eask- uses:emacs-eask/setup-eask@masterwith:version:&#39;snapshot&#39;- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;" />
+   GitHub Actions     Here is an example using the GitHub Actions service.
+jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions/checkout@v2# Install Emacs- uses:jcs090218/setup-emacs@masterwith:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions/setup-node@v2with:node-version:&#39;14&#39;# Install eask- uses:emacs-eask/setup-eask@masterwith:version:&#39;snapshot&#39;- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;" />
 
     <title>CI / CD | Emacs Eask</title>
 
@@ -37,23 +37,23 @@ jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-lates
   />
   <meta property="og:site_name" content="Emacs Eask" />
   <meta property="og:description" content="Eask can be run in any test environment, as long the platform allows you to install Node onto their platform.
-GitHub Actions     Here is an example using the GitHub Actions service.
-jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions/checkout@v2# Install Emacs on Linux/macOS- uses:purcell/setup-emacs@masterif:matrix.os == &#39;ubuntu-latest&#39; || matrix.os == &#39;macos-latest&#39;with:version:${{ matrix.emacs-version }}# Install Emacs on Windows- uses:jcs090218/setup-emacs-windows@masterif:matrix.os == &#39;windows-latest&#39;with:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions/setup-node@v2with:node-version:&#39;14&#39;# Install eask- uses:emacs-eask/setup-eask@masterwith:version:&#39;snapshot&#39;- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;" />
+   GitHub Actions     Here is an example using the GitHub Actions service.
+jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions/checkout@v2# Install Emacs- uses:jcs090218/setup-emacs@masterwith:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions/setup-node@v2with:node-version:&#39;14&#39;# Install eask- uses:emacs-eask/setup-eask@masterwith:version:&#39;snapshot&#39;- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://emacs-eask.github.io/CICD/" />
 
 <meta property="article:section" content="Cicd" />
     <meta
       property="article:modified_time"
-      content="2022-04-21T20:23:19+08:00"
+      content="2022-04-21T20:38:42+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="CI / CD" />
   <meta name="twitter:description" content="Eask can be run in any test environment, as long the platform allows you to install Node onto their platform.
-GitHub Actions     Here is an example using the GitHub Actions service.
-jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions/checkout@v2# Install Emacs on Linux/macOS- uses:purcell/setup-emacs@masterif:matrix.os == &#39;ubuntu-latest&#39; || matrix.os == &#39;macos-latest&#39;with:version:${{ matrix.emacs-version }}# Install Emacs on Windows- uses:jcs090218/setup-emacs-windows@masterif:matrix.os == &#39;windows-latest&#39;with:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions/setup-node@v2with:node-version:&#39;14&#39;# Install eask- uses:emacs-eask/setup-eask@masterwith:version:&#39;snapshot&#39;- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;" />
+   GitHub Actions     Here is an example using the GitHub Actions service.
+jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions/checkout@v2# Install Emacs- uses:jcs090218/setup-emacs@masterwith:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions/setup-node@v2with:node-version:&#39;14&#39;# Install eask- uses:emacs-eask/setup-eask@masterwith:version:&#39;snapshot&#39;- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;" />
 
 
   <script type="application/ld+json">
@@ -64,8 +64,8 @@ jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-lates
       "name": "CI / CD",
       "url" : "https://emacs-eask.github.io/CICD/",
       "headline": "CI / CD",
-      "description": "Eask can be run in any test environment, as long the platform allows you to install Node onto their platform.\nGitHub Actions     Here is an example using the GitHub Actions service.\njobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions\/checkout@v2# Install Emacs on Linux\/macOS- uses:purcell\/setup-emacs@masterif:matrix.os == \u0027ubuntu-latest\u0027 || matrix.os == \u0027macos-latest\u0027with:version:${{ matrix.emacs-version }}# Install Emacs on Windows- uses:jcs090218\/setup-emacs-windows@masterif:matrix.os == \u0027windows-latest\u0027with:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions\/setup-node@v2with:node-version:\u002714\u0027# Install eask- uses:emacs-eask\/setup-eask@masterwith:version:\u0027snapshot\u0027- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;",
-      "wordCount" : "162",
+      "description": "Eask can be run in any test environment, as long the platform allows you to install Node onto their platform.\n   GitHub Actions     Here is an example using the GitHub Actions service.\njobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions\/checkout@v2# Install Emacs- uses:jcs090218\/setup-emacs@masterwith:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions\/setup-node@v2with:node-version:\u002714\u0027# Install eask- uses:emacs-eask\/setup-eask@masterwith:version:\u0027snapshot\u0027- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;",
+      "wordCount" : "145",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -76,7 +76,7 @@ jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-lates
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2022-04-21T20:23:19.00Z",
+      "dateModified": "2022-04-21T20:38:42.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Emacs Eask",
@@ -862,6 +862,22 @@ jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-lates
     <h1>CI / CD</h1>
     <p>Eask can be run in any test environment, as long the platform allows
 you to install Node onto their platform.</p>
+
+
+
+  <div class="gdoc-toc gdoc-toc__level--3">
+    
+  <ul>
+    
+  </ul>
+
+  </div>
+
+
+
+
+
+
 <div class="gdoc-page__anchorwrap">
     <h2 id="github-actions">
         GitHub Actions
@@ -882,15 +898,8 @@ you to install Node onto their platform.</p>
 </span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
 </span><span class="w">
-</span><span class="w">    </span><span class="c"># Install Emacs on Linux/macOS</span><span class="w">
-</span><span class="w">    </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">purcell/setup-emacs@master</span><span class="w">
-</span><span class="w">      </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l">matrix.os == &#39;ubuntu-latest&#39; || matrix.os == &#39;macos-latest&#39;</span><span class="w">
-</span><span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l">${{ matrix.emacs-version }}</span><span class="w">
-</span><span class="w">
-</span><span class="w">    </span><span class="c"># Install Emacs on Windows</span><span class="w">
-</span><span class="w">    </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">jcs090218/setup-emacs-windows@master</span><span class="w">
-</span><span class="w">      </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l">matrix.os == &#39;windows-latest&#39;</span><span class="w">
+</span><span class="w">    </span><span class="c"># Install Emacs</span><span class="w">
+</span><span class="w">    </span>- <span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">jcs090218/setup-emacs@master</span><span class="w">
 </span><span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w">
 </span><span class="w">        </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l">${{ matrix.emacs-version }}</span><span class="w">
 </span><span class="w">
