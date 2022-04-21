@@ -9,7 +9,7 @@
 
 
 
-    <title>Emacs Eask</title>
+    <title>Categories | Emacs Eask</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -28,26 +28,21 @@
     
 
     
+  <meta
+    property="og:title"
+    content="Categories"
+  />
   <meta property="og:site_name" content="Emacs Eask" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://emacs-eask.github.io/" />
+<meta property="og:url" content="https://emacs-eask.github.io/categories/" />
 
 
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Introduction" />
+<meta name="twitter:title" content="Categories" />
 
 
-  <script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "Emacs Eask",
-      "url": "https://emacs-eask.github.io/",
-      "inLanguage": "en"
-  }
-  </script>
 
 
     <script src="/js/main-88a42144.bundle.min.js"></script>
@@ -110,7 +105,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://emacs-eask.github.io/" rel="canonical" type="text/html" />
+  <link href="https://emacs-eask.github.io/categories/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -767,140 +762,6 @@
         <div class="gdoc-page">
           
   
-
-
-  
-
-
-
-
-
-
-<div
-  class="gdoc-page__header flex flex-wrap
-  
-    justify-between
-  
-  hidden-mobile
-  "
-  itemprop="breadcrumb"
->
-  
-    <div>
-      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
-      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-        
-        
-        
-        
-  
-  
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Introduction</span><meta itemprop='position' content='1' /></li>
-  
-
-      </ol>
-    </div>
-  
-  
-</div>
-
-
-
-  <article
-    class="gdoc-markdown gdoc-markdown__align--left"
-  >
-    <h1>Introduction</h1>
-    <p>Eask is a command-line tool that helps you build, lint, and test Emacs Lisp
-packages. It creates a clean environment to sandbox your elisp code without
-influencing your personal configuration. Eask aims to be:</p>
-<ul>
-<li><strong>Consistent</strong> enough to sandbox across all systems</li>
-<li><strong>General</strong> enough to have Emacsers often use commands (byte-compile, checkdoc, etc)</li>
-<li><strong>Robust</strong> enough to provide useful results even in the presense of user&rsquo;s errors</li>
-<li><strong>Dependency-free</strong> so that the tool can be run on any platform</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-why-eask">
-        ❓ Why Eask?
-        <a data-clipboard-text="https://emacs-eask.github.io/#-why-eask" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Why Eask?" aria-label="Anchor to: ❓ Why Eask?" href="#-why-eask">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>Eask is heavily inspired by Cask, so they are somewhat related! This tool focuses
-on consistency! <a
-  class="gdoc-markdown__link"
-  href=""
-  
->Cask</a> and <a
-  class="gdoc-markdown__link"
-  href=""
-  
->makem.sh</a> both rely on bash which Windows doesn&rsquo;t
-run on by default. If you use WSL or other environment system file Cygwin/MSYS
-; then this may not be the tool you are looking for! 👀</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-news">
-        📰 News
-        <a data-clipboard-text="https://emacs-eask.github.io/#-news" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📰 News" aria-label="Anchor to: 📰 News" href="#-news">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<ul>
-<li><code>0.5.0</code> - Handle error for failed archive</li>
-<li><code>0.4.0</code> - Add color logger</li>
-<li><code>0.3.0</code> - Add verbosity level and timestamps</li>
-<li><code>0.2.0</code> - Done basic error handling with exit code at the end of executions</li>
-<li><code>0.1.39</code> - Use <code>spawn</code> instead <code>exec</code>; now messages will be printed immediately</li>
-<li><code>0.1.0</code> - Project barebones are pretty much complete!</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-todo-list">
-        📝 Todo list
-        <a data-clipboard-text="https://emacs-eask.github.io/#-todo-list" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📝 Todo list" aria-label="Anchor to: 📝 Todo list" href="#-todo-list">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<ul>
-<li><input disabled="" type="checkbox"> Handle condition, package doesn&rsquo;t in archives</li>
-<li><input disabled="" type="checkbox"> Add <code>elisp-lint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elsa</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-declare</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-indent</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-regexps</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>add-source</code> command</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-underlying-projects">
-        📂 Underlying Projects
-        <a data-clipboard-text="https://emacs-eask.github.io/#-underlying-projects" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📂 Underlying Projects" aria-label="Anchor to: 📂 Underlying Projects" href="#-underlying-projects">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>The design of Eask was greatly influenced by the following projects:</p>
-<ul>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/cask/cask"
-  
->cask</a> - Project management tool for Emacs</li>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/alphapapa/makem.sh"
-  
->makem.sh</a> - Makefile-like script for building and testing Emacs Lisp packages</li>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/xuchunyang/epm"
-  
->epm</a> - Emacs Package Manager</li>
-</ul>
-
-  </article>
 
 
 

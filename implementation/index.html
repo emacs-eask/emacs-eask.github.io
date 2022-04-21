@@ -8,8 +8,11 @@
 <meta name="generator" content="Hugo 0.91.2" />
 
 
+  <meta name="description" content="Eask consists of two components: a command-line tool (the Eask CLI), and a Elisp scripts.
+The CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src/util.js.
+The E scripts, is used to do the actual execution for each command that passes through the CLI." />
 
-    <title>Emacs Eask</title>
+    <title>Implementation | Emacs Eask</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -28,24 +31,63 @@
     
 
     
+  <meta
+    property="og:title"
+    content="Implementation"
+  />
   <meta property="og:site_name" content="Emacs Eask" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://emacs-eask.github.io/" />
+  <meta property="og:description" content="Eask consists of two components: a command-line tool (the Eask CLI), and a Elisp scripts.
+The CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src/util.js.
+The E scripts, is used to do the actual execution for each command that passes through the CLI." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://emacs-eask.github.io/implementation/" />
 
-
+<meta property="article:section" content="Implementation" />
+    <meta
+      property="article:modified_time"
+      content="2022-04-21T17:12:24+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Introduction" />
+<meta name="twitter:title" content="Implementation" />
+  <meta name="twitter:description" content="Eask consists of two components: a command-line tool (the Eask CLI), and a Elisp scripts.
+The CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src/util.js.
+The E scripts, is used to do the actual execution for each command that passes through the CLI." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "Emacs Eask",
-      "url": "https://emacs-eask.github.io/",
-      "inLanguage": "en"
+      "@type": "TechArticle",
+      "articleSection": "Implementation",
+      "name": "Implementation",
+      "url" : "https://emacs-eask.github.io/implementation/",
+      "headline": "Implementation",
+      "description": "Eask consists of two components: a command-line tool (the Eask CLI), and a Elisp scripts.\nThe CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src\/util.js.\nThe E scripts, is used to do the actual execution for each command that passes through the CLI.",
+      "wordCount" : "493",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://emacs-eask.github.io/implementation/"
+      },
+      "copyrightHolder" : "Emacs Eask",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2022-04-21T17:12:24.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Emacs Eask",
+          "url": "https://emacs-eask.github.io/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://emacs-eask.github.io/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
   }
   </script>
 
@@ -110,7 +152,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://emacs-eask.github.io/" rel="canonical" type="text/html" />
+  <link href="https://emacs-eask.github.io/implementation/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -638,7 +680,7 @@
                 <span class="flex">
                   <a
                     href="/implementation/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Implementation
                   </a>
@@ -795,7 +837,15 @@
         
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Introduction</span><meta itemprop='position' content='1' /></li>
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Introduction</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Implementation</span><meta itemprop='position' content='2' /></li>
+  
+
   
 
       </ol>
@@ -809,95 +859,126 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Introduction</h1>
-    <p>Eask is a command-line tool that helps you build, lint, and test Emacs Lisp
-packages. It creates a clean environment to sandbox your elisp code without
-influencing your personal configuration. Eask aims to be:</p>
+    <h1>Implementation</h1>
+    <p>Eask consists of two components: a command-line tool (the Eask CLI),
+and a Elisp scripts.</p>
+<p>The CLI, is used to find the corresponding lisp file and feed it into the
+Emacs executable. It would parse all options and convert them to Emacs
+understandable options on the lisp scripts end. It is written in plain
+JavaScript, the main file is located in <strong>src/util.js</strong>.</p>
+<p>The E scripts, is used to do the actual execution for each command that passes
+through the CLI. All commands are split into its file and are organized in the
+<strong>lisp</strong> folder. It is written in plain Emacs Lisp, the main file is located in
+<strong>lisp/_prepare.el</strong>.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="the-cli-yargs-commands-and-options">
+        The CLI, yargs commands and options
+        <a data-clipboard-text="https://emacs-eask.github.io/implementation/#the-cli-yargs-commands-and-options" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: The CLI, yargs commands and options" aria-label="Anchor to: The CLI, yargs commands and options" href="#the-cli-yargs-commands-and-options">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>The yargs command file is written in JavaScript, and located under the <strong>cmds</strong>
+folder. Each file under, will be named with convention <code>[command_name].js</code>.
+This file should define basic command-line parsing rules, and prepared
+correct data so it can get feeds to the Emacs session.</p>
+<p>Let&rsquo;s look at the file <code>cmds/core/archives.js</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">exports</span><span class="p">.</span><span class="nx">command</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;archives&#39;</span><span class="p">,</span> <span class="s1">&#39;sources&#39;</span><span class="p">];</span>  <span class="c1">// alias to sources
+</span><span class="c1"></span><span class="nx">exports</span><span class="p">.</span><span class="nx">desc</span> <span class="o">=</span> <span class="s1">&#39;list out all package archives&#39;</span><span class="p">;</span>
+
+<span class="nx">exports</span><span class="p">.</span><span class="nx">handler</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">(</span><span class="nx">argv</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="kr">await</span> <span class="nx">UTIL</span><span class="p">.</span><span class="nx">e_call</span><span class="p">(</span><span class="nx">argv</span><span class="p">,</span> <span class="s1">&#39;core/archives&#39;</span><span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div><p>This is a standard yargs command file, which contains all the information we
+need to pass it to the Emacs session.</p>
 <ul>
-<li><strong>Consistent</strong> enough to sandbox across all systems</li>
-<li><strong>General</strong> enough to have Emacsers often use commands (byte-compile, checkdoc, etc)</li>
-<li><strong>Robust</strong> enough to provide useful results even in the presense of user&rsquo;s errors</li>
-<li><strong>Dependency-free</strong> so that the tool can be run on any platform</li>
+<li><strong>exports.command</strong> is the argument pattern but it also accepts alias (array)</li>
+<li><strong>exports.desc</strong> is the command description</li>
+<li><strong>exports.handler</strong> is an asynchronous function that handles command exection</li>
+<li><strong>UTIL</strong> is a global variable that points to the <code>src/util.js</code> module.</li>
+<li><strong><code>'core/archives'</code></strong> is the elisp file under <strong>lisp</strong> folder (without <code>.el</code> extension).</li>
 </ul>
+<p><code>eask</code> is a JavaScript file that holds all our global options.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">yargs</span>
+  <span class="p">.</span><span class="nx">usage</span><span class="p">(</span><span class="s1">&#39;Usage: eask &lt;command&gt; [options..]&#39;</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">help</span><span class="p">(</span>
+    <span class="s1">&#39;help&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Show usage instructions.&#39;</span>
+  <span class="p">)</span>
+  <span class="p">.</span><span class="nx">option</span><span class="p">(</span><span class="s1">&#39;global&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">description</span><span class="o">:</span> <span class="s1">&#39;change default workspace to ~/.emacs.d/&#39;</span><span class="p">,</span>
+    <span class="nx">alias</span><span class="o">:</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span>
+    <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;boolean&#39;</span><span class="p">,</span>
+  <span class="p">})</span>
+<span class="p">..</span>
+</code></pre></div><p>For <strong>local</strong> options, please use <code>exports.builder</code> and specify under its'
+command file.</p>
+<p>See <a
+  class="gdoc-markdown__link"
+  href="https://github.com/yargs/yargs/blob/main/docs/advanced.md"
+  
+>yargs/docs/advanced.md</a>
+, the official documentation for more information and getting a better explanation
+would help!</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="-why-eask">
-        ❓ Why Eask?
-        <a data-clipboard-text="https://emacs-eask.github.io/#-why-eask" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Why Eask?" aria-label="Anchor to: ❓ Why Eask?" href="#-why-eask">
+    <h2 id="elisp-scripts">
+        Elisp scripts
+        <a data-clipboard-text="https://emacs-eask.github.io/implementation/#elisp-scripts" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Elisp scripts" aria-label="Anchor to: Elisp scripts" href="#elisp-scripts">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>Eask is heavily inspired by Cask, so they are somewhat related! This tool focuses
-on consistency! <a
+<p>Elisp scripts are located under <strong>lisp</strong> folder and will wait to get called
+by the CLI. All Elisp scripts are written in Emacs Lisp and should have a
+similar structure below:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nf">load</span> <span class="p">(</span><span class="nf">expand-file-name</span>
+       <span class="s">&#34;../_prepare.el&#34;</span>
+       <span class="p">(</span><span class="nf">file-name-directory</span> <span class="p">(</span><span class="nf">nth</span> <span class="mi">1</span> <span class="p">(</span><span class="nf">member</span> <span class="s">&#34;-scriptload&#34;</span> <span class="nv">command-line-args</span><span class="p">))))</span>
+      <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
+      
+<span class="p">(</span><span class="nv">eask-start</span>
+  <span class="p">(</span><span class="nf">message</span> <span class="s">&#34;PWD is %s&#34;</span> <span class="nv">default-directory</span><span class="p">))</span>
+</code></pre></div><p>See <a
   class="gdoc-markdown__link"
-  href=""
+  href="https://emacs-eask.github.io/eask/api"
   
->Cask</a> and <a
-  class="gdoc-markdown__link"
-  href=""
-  
->makem.sh</a> both rely on bash which Windows doesn&rsquo;t
-run on by default. If you use WSL or other environment system file Cygwin/MSYS
-; then this may not be the tool you are looking for! 👀</p>
+>Development API</a> section for
+more information!</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="-news">
-        📰 News
-        <a data-clipboard-text="https://emacs-eask.github.io/#-news" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📰 News" aria-label="Anchor to: 📰 News" href="#-news">
+    <h2 id="project-structure">
+        Project Structure
+        <a data-clipboard-text="https://emacs-eask.github.io/implementation/#project-structure" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Project Structure" aria-label="Anchor to: Project Structure" href="#project-structure">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
+<p>There are <strong>three</strong> places you need to look into it:</p>
+<ol>
+<li><code>eask</code> file at the root of the project</li>
+<li><code>cmds</code> folder with all available commands</li>
+<li><code>lisp</code> folder with all elisp code</li>
+</ol>
 <ul>
-<li><code>0.5.0</code> - Handle error for failed archive</li>
-<li><code>0.4.0</code> - Add color logger</li>
-<li><code>0.3.0</code> - Add verbosity level and timestamps</li>
-<li><code>0.2.0</code> - Done basic error handling with exit code at the end of executions</li>
-<li><code>0.1.39</code> - Use <code>spawn</code> instead <code>exec</code>; now messages will be printed immediately</li>
-<li><code>0.1.0</code> - Project barebones are pretty much complete!</li>
+<li><code>lisp/extern</code> is the external modules/packages we used</li>
 </ul>
+<p><code>eask</code> is the node entry, and the main yargs definition! <code>cmds</code> and <code>lisp</code>
+folders are command files that correspond to each other.</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="-todo-list">
-        📝 Todo list
-        <a data-clipboard-text="https://emacs-eask.github.io/#-todo-list" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📝 Todo list" aria-label="Anchor to: 📝 Todo list" href="#-todo-list">
+    <h2 id="execution-order-for-eask">
+        Execution Order for Eask
+        <a data-clipboard-text="https://emacs-eask.github.io/implementation/#execution-order-for-eask" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Execution Order for Eask" aria-label="Anchor to: Execution Order for Eask" href="#execution-order-for-eask">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
+<p>Eask is executed this way:</p>
+<p>![](./assets/flowchart/execution order.png)</p>
 <ul>
-<li><input disabled="" type="checkbox"> Handle condition, package doesn&rsquo;t in archives</li>
-<li><input disabled="" type="checkbox"> Add <code>elisp-lint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elsa</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-declare</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-indent</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-regexps</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>add-source</code> command</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-underlying-projects">
-        📂 Underlying Projects
-        <a data-clipboard-text="https://emacs-eask.github.io/#-underlying-projects" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📂 Underlying Projects" aria-label="Anchor to: 📂 Underlying Projects" href="#-underlying-projects">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>The design of Eask was greatly influenced by the following projects:</p>
-<ul>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/cask/cask"
-  
->cask</a> - Project management tool for Emacs</li>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/alphapapa/makem.sh"
-  
->makem.sh</a> - Makefile-like script for building and testing Emacs Lisp packages</li>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/xuchunyang/epm"
-  
->epm</a> - Emacs Package Manager</li>
+<li><strong>Eask environment</strong> builds sandbox and reads Eask file information</li>
+<li><strong>Emacs configuration</strong> is only being executed when <code>-g</code> option is enabled</li>
+<li><strong>before hooks</strong> are hooks run before command task</li>
+<li><strong>command execution</strong> is the primary command task</li>
+<li><strong>after hooks</strong> are hooks run after command task</li>
 </ul>
 
   </article>

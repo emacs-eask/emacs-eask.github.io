@@ -8,8 +8,11 @@
 <meta name="generator" content="Hugo 0.91.2" />
 
 
+  <meta name="description" content="This document helps you troubleshoot Eask.
+🚩 Possible Error Variables     Some potential variables can cause faulty Eask,
+ Emacs installed, and set up with PATH Installed Eask correctly Node version should be 14.x or above  ⛔️ Error when running a Eask command     If you run an Eask command and get an error, there are a few things you can try yourself:" />
 
-    <title>Emacs Eask</title>
+    <title>Troubleshooting | Emacs Eask</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -28,24 +31,63 @@
     
 
     
+  <meta
+    property="og:title"
+    content="Troubleshooting"
+  />
   <meta property="og:site_name" content="Emacs Eask" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://emacs-eask.github.io/" />
+  <meta property="og:description" content="This document helps you troubleshoot Eask.
+🚩 Possible Error Variables     Some potential variables can cause faulty Eask,
+ Emacs installed, and set up with PATH Installed Eask correctly Node version should be 14.x or above  ⛔️ Error when running a Eask command     If you run an Eask command and get an error, there are a few things you can try yourself:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://emacs-eask.github.io/troubleshooting/" />
 
-
+<meta property="article:section" content="Troubleshooting" />
+    <meta
+      property="article:modified_time"
+      content="2022-04-21T17:12:24+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Introduction" />
+<meta name="twitter:title" content="Troubleshooting" />
+  <meta name="twitter:description" content="This document helps you troubleshoot Eask.
+🚩 Possible Error Variables     Some potential variables can cause faulty Eask,
+ Emacs installed, and set up with PATH Installed Eask correctly Node version should be 14.x or above  ⛔️ Error when running a Eask command     If you run an Eask command and get an error, there are a few things you can try yourself:" />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "Emacs Eask",
-      "url": "https://emacs-eask.github.io/",
-      "inLanguage": "en"
+      "@type": "TechArticle",
+      "articleSection": "Troubleshooting",
+      "name": "Troubleshooting",
+      "url" : "https://emacs-eask.github.io/troubleshooting/",
+      "headline": "Troubleshooting",
+      "description": "This document helps you troubleshoot Eask.\n🚩 Possible Error Variables     Some potential variables can cause faulty Eask,\n Emacs installed, and set up with PATH Installed Eask correctly Node version should be 14.x or above  ⛔️ Error when running a Eask command     If you run an Eask command and get an error, there are a few things you can try yourself:",
+      "wordCount" : "167",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://emacs-eask.github.io/troubleshooting/"
+      },
+      "copyrightHolder" : "Emacs Eask",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2022-04-21T17:12:24.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Emacs Eask",
+          "url": "https://emacs-eask.github.io/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://emacs-eask.github.io/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
   }
   </script>
 
@@ -110,7 +152,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://emacs-eask.github.io/" rel="canonical" type="text/html" />
+  <link href="https://emacs-eask.github.io/troubleshooting/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -503,7 +545,7 @@
                 <span class="flex">
                   <a
                     href="/troubleshooting/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Troubleshooting
                   </a>
@@ -795,7 +837,15 @@
         
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Introduction</span><meta itemprop='position' content='1' /></li>
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Introduction</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Troubleshooting</span><meta itemprop='position' content='2' /></li>
+  
+
   
 
       </ol>
@@ -809,96 +859,54 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Introduction</h1>
-    <p>Eask is a command-line tool that helps you build, lint, and test Emacs Lisp
-packages. It creates a clean environment to sandbox your elisp code without
-influencing your personal configuration. Eask aims to be:</p>
-<ul>
-<li><strong>Consistent</strong> enough to sandbox across all systems</li>
-<li><strong>General</strong> enough to have Emacsers often use commands (byte-compile, checkdoc, etc)</li>
-<li><strong>Robust</strong> enough to provide useful results even in the presense of user&rsquo;s errors</li>
-<li><strong>Dependency-free</strong> so that the tool can be run on any platform</li>
-</ul>
+    <h1>Troubleshooting</h1>
+    <p>This document helps you troubleshoot Eask.</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="-why-eask">
-        ❓ Why Eask?
-        <a data-clipboard-text="https://emacs-eask.github.io/#-why-eask" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Why Eask?" aria-label="Anchor to: ❓ Why Eask?" href="#-why-eask">
+    <h2 id="-possible-error-variables">
+        🚩 Possible Error Variables
+        <a data-clipboard-text="https://emacs-eask.github.io/troubleshooting/#-possible-error-variables" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Possible Error Variables" aria-label="Anchor to: 🚩 Possible Error Variables" href="#-possible-error-variables">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>Eask is heavily inspired by Cask, so they are somewhat related! This tool focuses
-on consistency! <a
-  class="gdoc-markdown__link"
-  href=""
-  
->Cask</a> and <a
-  class="gdoc-markdown__link"
-  href=""
-  
->makem.sh</a> both rely on bash which Windows doesn&rsquo;t
-run on by default. If you use WSL or other environment system file Cygwin/MSYS
-; then this may not be the tool you are looking for! 👀</p>
+<p>Some potential variables can cause faulty Eask,</p>
+<ul>
+<li>Emacs installed, and set up with <code>PATH</code></li>
+<li>Installed Eask correctly</li>
+<li>Node version should be <code>14.x</code> or above</li>
+</ul>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="-news">
-        📰 News
-        <a data-clipboard-text="https://emacs-eask.github.io/#-news" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📰 News" aria-label="Anchor to: 📰 News" href="#-news">
+    <h2 id="-error-when-running-a-eask-command">
+        ⛔️ Error when running a Eask command
+        <a data-clipboard-text="https://emacs-eask.github.io/troubleshooting/#-error-when-running-a-eask-command" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ⛔️ Error when running a Eask command" aria-label="Anchor to: ⛔️ Error when running a Eask command" href="#-error-when-running-a-eask-command">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
+<p>If you run an Eask command and get an error, there are a few things you can try
+yourself:</p>
 <ul>
-<li><code>0.5.0</code> - Handle error for failed archive</li>
-<li><code>0.4.0</code> - Add color logger</li>
-<li><code>0.3.0</code> - Add verbosity level and timestamps</li>
-<li><code>0.2.0</code> - Done basic error handling with exit code at the end of executions</li>
-<li><code>0.1.39</code> - Use <code>spawn</code> instead <code>exec</code>; now messages will be printed immediately</li>
-<li><code>0.1.0</code> - Project barebones are pretty much complete!</li>
+<li>Make sure that you have the latest Eask version. You can determine the current
+Eask version with <code>eask --version</code>.</li>
+<li>Upgrade Eask with <code>eask upgrade-eask</code>. Or <code>npm install -g @emacs-eask/eask@latest</code>
+if you chose to install from <code>npm</code>.</li>
 </ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-todo-list">
-        📝 Todo list
-        <a data-clipboard-text="https://emacs-eask.github.io/#-todo-list" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📝 Todo list" aria-label="Anchor to: 📝 Todo list" href="#-todo-list">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
+<hr>
+<p>⚠ Warning</p>
+<p>If you installed Eask with <code>npm</code>, then you should probably upgrade it through
+<code>npm</code>. Otherwise you would just have to ensure the <code>git</code> is installed.</p>
+<hr>
 <ul>
-<li><input disabled="" type="checkbox"> Handle condition, package doesn&rsquo;t in archives</li>
-<li><input disabled="" type="checkbox"> Add <code>elisp-lint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elsa</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-declare</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-indent</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-regexps</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>add-source</code> command</li>
+<li>If the error persists, try to reinstall Eask from scratch.</li>
 </ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-underlying-projects">
-        📂 Underlying Projects
-        <a data-clipboard-text="https://emacs-eask.github.io/#-underlying-projects" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📂 Underlying Projects" aria-label="Anchor to: 📂 Underlying Projects" href="#-underlying-projects">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>The design of Eask was greatly influenced by the following projects:</p>
-<ul>
-<li><a
+<p>If Eask still does not work, please <a
   class="gdoc-markdown__link"
-  href="https://github.com/cask/cask"
+  href="https://github.com/emacs-eask/eask/issues/new"
   
->cask</a> - Project management tool for Emacs</li>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/alphapapa/makem.sh"
-  
->makem.sh</a> - Makefile-like script for building and testing Emacs Lisp packages</li>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/xuchunyang/epm"
-  
->epm</a> - Emacs Package Manager</li>
-</ul>
+>report an issue</a>
+to the issue tracker.
+Please include Eask output with the [&ndash;verbose 4] and [&ndash;debug] options enabled,
+to give us as much information as possible.</p>
 
   </article>
 

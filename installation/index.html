@@ -8,8 +8,11 @@
 <meta name="generator" content="Hugo 0.91.2" />
 
 
+  <meta name="description" content="This document guides you through the installation of Eask.
+🚩 Prerequisites     Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25 and below, or with other flavours of Emacs, e.g. XEmacs.
+ Node.js and npm for being the CLI layer yargs to parse commands and options. Emacs of course; make sure this is inside your environment PATH!  💾 Install through NPM     The easiest way to install is through tool npm," />
 
-    <title>Emacs Eask</title>
+    <title>Installation | Emacs Eask</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -28,24 +31,63 @@
     
 
     
+  <meta
+    property="og:title"
+    content="Installation"
+  />
   <meta property="og:site_name" content="Emacs Eask" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://emacs-eask.github.io/" />
+  <meta property="og:description" content="This document guides you through the installation of Eask.
+🚩 Prerequisites     Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25 and below, or with other flavours of Emacs, e.g. XEmacs.
+ Node.js and npm for being the CLI layer yargs to parse commands and options. Emacs of course; make sure this is inside your environment PATH!  💾 Install through NPM     The easiest way to install is through tool npm," />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://emacs-eask.github.io/installation/" />
 
-
+<meta property="article:section" content="Installation" />
+    <meta
+      property="article:modified_time"
+      content="2022-04-21T17:12:24+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Introduction" />
+<meta name="twitter:title" content="Installation" />
+  <meta name="twitter:description" content="This document guides you through the installation of Eask.
+🚩 Prerequisites     Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25 and below, or with other flavours of Emacs, e.g. XEmacs.
+ Node.js and npm for being the CLI layer yargs to parse commands and options. Emacs of course; make sure this is inside your environment PATH!  💾 Install through NPM     The easiest way to install is through tool npm," />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "Emacs Eask",
-      "url": "https://emacs-eask.github.io/",
-      "inLanguage": "en"
+      "@type": "TechArticle",
+      "articleSection": "Installation",
+      "name": "Installation",
+      "url" : "https://emacs-eask.github.io/installation/",
+      "headline": "Installation",
+      "description": "This document guides you through the installation of Eask.\n🚩 Prerequisites     Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25 and below, or with other flavours of Emacs, e.g. XEmacs.\n Node.js and npm for being the CLI layer yargs to parse commands and options. Emacs of course; make sure this is inside your environment PATH!  💾 Install through NPM     The easiest way to install is through tool npm,",
+      "wordCount" : "162",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://emacs-eask.github.io/installation/"
+      },
+      "copyrightHolder" : "Emacs Eask",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2022-04-21T17:12:24.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Emacs Eask",
+          "url": "https://emacs-eask.github.io/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://emacs-eask.github.io/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
   }
   </script>
 
@@ -110,7 +152,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://emacs-eask.github.io/" rel="canonical" type="text/html" />
+  <link href="https://emacs-eask.github.io/installation/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -278,7 +320,7 @@
                 <span class="flex">
                   <a
                     href="/installation/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Installation
                   </a>
@@ -795,7 +837,15 @@
         
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Introduction</span><meta itemprop='position' content='1' /></li>
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Introduction</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Installation</span><meta itemprop='position' content='2' /></li>
+  
+
   
 
       </ol>
@@ -809,96 +859,85 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Introduction</h1>
-    <p>Eask is a command-line tool that helps you build, lint, and test Emacs Lisp
-packages. It creates a clean environment to sandbox your elisp code without
-influencing your personal configuration. Eask aims to be:</p>
-<ul>
-<li><strong>Consistent</strong> enough to sandbox across all systems</li>
-<li><strong>General</strong> enough to have Emacsers often use commands (byte-compile, checkdoc, etc)</li>
-<li><strong>Robust</strong> enough to provide useful results even in the presense of user&rsquo;s errors</li>
-<li><strong>Dependency-free</strong> so that the tool can be run on any platform</li>
-</ul>
+    <h1>Installation</h1>
+    <p>This document guides you through the installation of Eask.</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="-why-eask">
-        ❓ Why Eask?
-        <a data-clipboard-text="https://emacs-eask.github.io/#-why-eask" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Why Eask?" aria-label="Anchor to: ❓ Why Eask?" href="#-why-eask">
+    <h2 id="-prerequisites">
+        🚩 Prerequisites
+        <a data-clipboard-text="https://emacs-eask.github.io/installation/#-prerequisites" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Prerequisites" aria-label="Anchor to: 🚩 Prerequisites" href="#-prerequisites">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>Eask is heavily inspired by Cask, so they are somewhat related! This tool focuses
-on consistency! <a
-  class="gdoc-markdown__link"
-  href=""
-  
->Cask</a> and <a
-  class="gdoc-markdown__link"
-  href=""
-  
->makem.sh</a> both rely on bash which Windows doesn&rsquo;t
-run on by default. If you use WSL or other environment system file Cygwin/MSYS
-; then this may not be the tool you are looking for! 👀</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-news">
-        📰 News
-        <a data-clipboard-text="https://emacs-eask.github.io/#-news" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📰 News" aria-label="Anchor to: 📰 News" href="#-news">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<ul>
-<li><code>0.5.0</code> - Handle error for failed archive</li>
-<li><code>0.4.0</code> - Add color logger</li>
-<li><code>0.3.0</code> - Add verbosity level and timestamps</li>
-<li><code>0.2.0</code> - Done basic error handling with exit code at the end of executions</li>
-<li><code>0.1.39</code> - Use <code>spawn</code> instead <code>exec</code>; now messages will be printed immediately</li>
-<li><code>0.1.0</code> - Project barebones are pretty much complete!</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-todo-list">
-        📝 Todo list
-        <a data-clipboard-text="https://emacs-eask.github.io/#-todo-list" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📝 Todo list" aria-label="Anchor to: 📝 Todo list" href="#-todo-list">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<ul>
-<li><input disabled="" type="checkbox"> Handle condition, package doesn&rsquo;t in archives</li>
-<li><input disabled="" type="checkbox"> Add <code>elisp-lint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elsa</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-declare</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-indent</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-regexps</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>add-source</code> command</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-underlying-projects">
-        📂 Underlying Projects
-        <a data-clipboard-text="https://emacs-eask.github.io/#-underlying-projects" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📂 Underlying Projects" aria-label="Anchor to: 📂 Underlying Projects" href="#-underlying-projects">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>The design of Eask was greatly influenced by the following projects:</p>
-<ul>
+<p>Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25
+and below, or with other flavours of Emacs, e.g. XEmacs.</p>
+<ol>
 <li><a
   class="gdoc-markdown__link"
-  href="https://github.com/cask/cask"
+  href="https://nodejs.org/en/"
   
->cask</a> - Project management tool for Emacs</li>
+>Node.js</a> and <a
+  class="gdoc-markdown__link"
+  href="https://www.npmjs.com/"
+  
+>npm</a> for being the CLI layer</li>
 <li><a
   class="gdoc-markdown__link"
-  href="https://github.com/alphapapa/makem.sh"
+  href="https://github.com/yargs/yargs"
   
->makem.sh</a> - Makefile-like script for building and testing Emacs Lisp packages</li>
+>yargs</a> to parse commands and options.</li>
 <li><a
   class="gdoc-markdown__link"
-  href="https://github.com/xuchunyang/epm"
+  href="https://www.gnu.org/software/emacs/"
   
->epm</a> - Emacs Package Manager</li>
-</ul>
+>Emacs</a> of course; make sure this is inside your environment PATH!</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="-install-through-npm">
+        💾 Install through NPM
+        <a data-clipboard-text="https://emacs-eask.github.io/installation/#-install-through-npm" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 💾 Install through NPM" aria-label="Anchor to: 💾 Install through NPM" href="#-install-through-npm">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>The easiest way to install is through tool <a
+  class="gdoc-markdown__link"
+  href="https://www.npmjs.com/"
+  
+>npm</a>,</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">$ npm install -g @emacs-eask/eask
+</code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="-manual-installation">
+        💾 Manual installation
+        <a data-clipboard-text="https://emacs-eask.github.io/installation/#-manual-installation" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 💾 Manual installation" aria-label="Anchor to: 💾 Manual installation" href="#-manual-installation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Alternatively, you can clone it directly from this repo</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># clone the repo</span>
+$ git clone https://github.com/emacs-eask/eask
+
+<span class="c1"># change the working directory to eask</span>
+$ <span class="nb">cd</span> eask
+
+<span class="c1"># install the requirements</span>
+$ npm install
+</code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="-setup">
+        🏡 Setup
+        <a data-clipboard-text="https://emacs-eask.github.io/installation/#-setup" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🏡 Setup" aria-label="Anchor to: 🏡 Setup" href="#-setup">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Make sure you set up the environment path variable according to your system,</p>
+<p>On Linux/macOS,</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/eask/bin:</span><span class="nv">$PATH</span><span class="s2">&#34;</span>
+</code></pre></div><p>On Windows,</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="k">set</span> <span class="nv">PATH</span><span class="p">=</span><span class="nv">%PATH%</span>;c:/path/to/eask/bin
+</code></pre></div><p>Once you have set it up correctly, try <code>eask --version</code> then you should see
+the current eask&rsquo;s version number! 🎉 🎊</p>
 
   </article>
 

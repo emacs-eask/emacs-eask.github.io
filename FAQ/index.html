@@ -8,8 +8,10 @@
 <meta name="generator" content="Hugo 0.91.2" />
 
 
+  <meta name="description" content="❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)! Like colorful interface, entire npm community, etc; so you can build cross-platform software with fewer hassles! Especially after Microsoft had bought the NPM inc, and would likely support their own system well.
+Cask does not seem to support Windows (no WSL) after version 0.8.6. In the early versions, they have used Python, but due to the Python supports on Windows are just not as good as Node." />
 
-    <title>Emacs Eask</title>
+    <title>FAQ | Emacs Eask</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -28,24 +30,61 @@
     
 
     
+  <meta
+    property="og:title"
+    content="FAQ"
+  />
   <meta property="og:site_name" content="Emacs Eask" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://emacs-eask.github.io/" />
+  <meta property="og:description" content="❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)! Like colorful interface, entire npm community, etc; so you can build cross-platform software with fewer hassles! Especially after Microsoft had bought the NPM inc, and would likely support their own system well.
+Cask does not seem to support Windows (no WSL) after version 0.8.6. In the early versions, they have used Python, but due to the Python supports on Windows are just not as good as Node." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://emacs-eask.github.io/FAQ/" />
 
-
+<meta property="article:section" content="Faq" />
+    <meta
+      property="article:modified_time"
+      content="2022-04-21T17:12:24+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Introduction" />
+<meta name="twitter:title" content="FAQ" />
+  <meta name="twitter:description" content="❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)! Like colorful interface, entire npm community, etc; so you can build cross-platform software with fewer hassles! Especially after Microsoft had bought the NPM inc, and would likely support their own system well.
+Cask does not seem to support Windows (no WSL) after version 0.8.6. In the early versions, they have used Python, but due to the Python supports on Windows are just not as good as Node." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "Emacs Eask",
-      "url": "https://emacs-eask.github.io/",
-      "inLanguage": "en"
+      "@type": "TechArticle",
+      "articleSection": "Faq",
+      "name": "FAQ",
+      "url" : "https://emacs-eask.github.io/FAQ/",
+      "headline": "FAQ",
+      "description": "❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)! Like colorful interface, entire npm community, etc; so you can build cross-platform software with fewer hassles! Especially after Microsoft had bought the NPM inc, and would likely support their own system well.\nCask does not seem to support Windows (no WSL) after version 0.8.6. In the early versions, they have used Python, but due to the Python supports on Windows are just not as good as Node.",
+      "wordCount" : "119",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://emacs-eask.github.io/FAQ/"
+      },
+      "copyrightHolder" : "Emacs Eask",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2022-04-21T17:12:24.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Emacs Eask",
+          "url": "https://emacs-eask.github.io/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://emacs-eask.github.io/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
   }
   </script>
 
@@ -110,7 +149,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="https://emacs-eask.github.io/" rel="canonical" type="text/html" />
+  <link href="https://emacs-eask.github.io/FAQ/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -548,7 +587,7 @@
                 <span class="flex">
                   <a
                     href="/FAQ/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     FAQ
                   </a>
@@ -795,7 +834,15 @@
         
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Introduction</span><meta itemprop='position' content='1' /></li>
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Introduction</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>FAQ</span><meta itemprop='position' content='2' /></li>
+  
+
   
 
       </ol>
@@ -809,96 +856,41 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Introduction</h1>
-    <p>Eask is a command-line tool that helps you build, lint, and test Emacs Lisp
-packages. It creates a clean environment to sandbox your elisp code without
-influencing your personal configuration. Eask aims to be:</p>
-<ul>
-<li><strong>Consistent</strong> enough to sandbox across all systems</li>
-<li><strong>General</strong> enough to have Emacsers often use commands (byte-compile, checkdoc, etc)</li>
-<li><strong>Robust</strong> enough to provide useful results even in the presense of user&rsquo;s errors</li>
-<li><strong>Dependency-free</strong> so that the tool can be run on any platform</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-why-eask">
-        ❓ Why Eask?
-        <a data-clipboard-text="https://emacs-eask.github.io/#-why-eask" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Why Eask?" aria-label="Anchor to: ❓ Why Eask?" href="#-why-eask">
+    <h1>FAQ</h1>
+    <div class="gdoc-page__anchorwrap">
+    <h2 id="-why-nodejs">
+        ❓ Why Node.JS?
+        <a data-clipboard-text="https://emacs-eask.github.io/FAQ/#-why-nodejs" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Why Node.JS?" aria-label="Anchor to: ❓ Why Node.JS?" href="#-why-nodejs">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>Eask is heavily inspired by Cask, so they are somewhat related! This tool focuses
-on consistency! <a
-  class="gdoc-markdown__link"
-  href=""
-  
->Cask</a> and <a
-  class="gdoc-markdown__link"
-  href=""
-  
->makem.sh</a> both rely on bash which Windows doesn&rsquo;t
-run on by default. If you use WSL or other environment system file Cygwin/MSYS
-; then this may not be the tool you are looking for! 👀</p>
+<p>Node has better support on all kinds of terminal applications (compare to just
+the shell script)! Like colorful interface, entire npm community, etc; so you
+can build cross-platform software with fewer hassles! Especially after Microsoft
+had bought the NPM inc, and would likely support their own system well.</p>
+<p>Cask does not seem to support Windows (no WSL) after version <code>0.8.6</code>. In the
+early versions, they have used Python, but due to the Python supports on Windows
+are just not as good as Node.JS.</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="-news">
-        📰 News
-        <a data-clipboard-text="https://emacs-eask.github.io/#-news" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📰 News" aria-label="Anchor to: 📰 News" href="#-news">
+    <h2 id="-who-should-use-this-tool">
+        ❓ Who should use this tool?
+        <a data-clipboard-text="https://emacs-eask.github.io/FAQ/#-who-should-use-this-tool" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Who should use this tool?" aria-label="Anchor to: ❓ Who should use this tool?" href="#-who-should-use-this-tool">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<ul>
-<li><code>0.5.0</code> - Handle error for failed archive</li>
-<li><code>0.4.0</code> - Add color logger</li>
-<li><code>0.3.0</code> - Add verbosity level and timestamps</li>
-<li><code>0.2.0</code> - Done basic error handling with exit code at the end of executions</li>
-<li><code>0.1.39</code> - Use <code>spawn</code> instead <code>exec</code>; now messages will be printed immediately</li>
-<li><code>0.1.0</code> - Project barebones are pretty much complete!</li>
-</ul>
+<p>People who like to use Emacs on Windows (no WSL), and would like to keep their
+Emacs configuration/packages consistent on every operating system!</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="-todo-list">
-        📝 Todo list
-        <a data-clipboard-text="https://emacs-eask.github.io/#-todo-list" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📝 Todo list" aria-label="Anchor to: 📝 Todo list" href="#-todo-list">
+    <h2 id="-why-yargs">
+        ❓ Why yargs?
+        <a data-clipboard-text="https://emacs-eask.github.io/FAQ/#-why-yargs" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Why yargs?" aria-label="Anchor to: ❓ Why yargs?" href="#-why-yargs">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<ul>
-<li><input disabled="" type="checkbox"> Handle condition, package doesn&rsquo;t in archives</li>
-<li><input disabled="" type="checkbox"> Add <code>elisp-lint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elint</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>elsa</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-declare</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-indent</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>lint-regexps</code> command</li>
-<li><input disabled="" type="checkbox"> Add <code>add-source</code> command</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="-underlying-projects">
-        📂 Underlying Projects
-        <a data-clipboard-text="https://emacs-eask.github.io/#-underlying-projects" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📂 Underlying Projects" aria-label="Anchor to: 📂 Underlying Projects" href="#-underlying-projects">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>The design of Eask was greatly influenced by the following projects:</p>
-<ul>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/cask/cask"
-  
->cask</a> - Project management tool for Emacs</li>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/alphapapa/makem.sh"
-  
->makem.sh</a> - Makefile-like script for building and testing Emacs Lisp packages</li>
-<li><a
-  class="gdoc-markdown__link"
-  href="https://github.com/xuchunyang/epm"
-  
->epm</a> - Emacs Package Manager</li>
-</ul>
+<p>WIP</p>
 
   </article>
 
