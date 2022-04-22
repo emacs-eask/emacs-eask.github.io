@@ -20,13 +20,13 @@ Emacs Configuration     Eask is the magic file that eask will read it as the ini
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/examples/">
 <meta property="article:section" content="Examples">
-<meta property="article:modified_time" content="2022-04-22T15:40:34+08:00">
+<meta property="article:modified_time" content="2022-04-22T15:46:35+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Examples">
 <meta name=twitter:description content="Here are a few examples of how a Eask-file might look like.
 Emacs Configuration     Eask is the magic file that eask will read it as the init file in Emacs. The syntaxes are similar to the Cask file, but different.
 (package &#34;Emacs configuration's name&#34; &#34;0.1.0&#34; &#34;Your Emacs configuration's description&#34;) ; optional (package-file &#34;init.el&#34;) ; optional (files &#34;early-init.el&#34; &#34;init.el&#34; &#34;lisp/*.el&#34; &#34;site-lisp/*.el&#34;) (source &#34;gnu&#34;) (source &#34;melpa&#34;) (depends-on &#34;emacs&#34; &#34;26.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Examples","name":"Examples","url":"https://emacs-eask.github.io/examples/","headline":"Examples","description":"Here are a few examples of how a Eask-file might look like.\nEmacs Configuration     Eask is the magic file that eask will read it as the init file in Emacs. The syntaxes are similar to the Cask file, but different.\n(package \u0022Emacs configuration\u0027s name\u0022 \u00220.1.0\u0022 \u0022Your Emacs configuration\u0027s description\u0022) ; optional (package-file \u0022init.el\u0022) ; optional (files \u0022early-init.el\u0022 \u0022init.el\u0022 \u0022lisp\/*.el\u0022 \u0022site-lisp\/*.el\u0022) (source \u0022gnu\u0022) (source \u0022melpa\u0022) (depends-on \u0022emacs\u0022 \u002226.","wordCount":"247","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/examples/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-22T15:40:34.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Examples","name":"Examples","url":"https://emacs-eask.github.io/examples/","headline":"Examples","description":"Here are a few examples of how a Eask-file might look like.\nEmacs Configuration     Eask is the magic file that eask will read it as the init file in Emacs. The syntaxes are similar to the Cask file, but different.\n(package \u0022Emacs configuration\u0027s name\u0022 \u00220.1.0\u0022 \u0022Your Emacs configuration\u0027s description\u0022) ; optional (package-file \u0022init.el\u0022) ; optional (files \u0022early-init.el\u0022 \u0022init.el\u0022 \u0022lisp\/*.el\u0022 \u0022site-lisp\/*.el\u0022) (source \u0022gnu\u0022) (source \u0022melpa\u0022) (depends-on \u0022emacs\u0022 \u002226.","wordCount":"247","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/examples/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-22T15:46:35.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -60,7 +60,7 @@ Emacs Configuration     Eask is the magic file that eask will read it as the ini
 <div class=gdoc-menu-header>
 <span class=gdoc-menu-header__items>
 <span>
-<a href=https://github.com/thegeeklab/hugo-geekdoc class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
+<a href=https://github.com/emacs-eask/eask class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
 </a>
 </span>
 <span id=gdoc-dark-mode><svg class="gdoc-icon gdoc_brightness_dark"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="gdoc-icon gdoc_brightness_light"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_light"/></svg><svg class="gdoc-icon gdoc_brightness_auto"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_auto"/></svg>
@@ -208,7 +208,7 @@ GNU General Public License
 <li>
 <input type=checkbox class=hidden>
 <label>
-<span class=flex><svg class="gdoc-icon notification"><use xlink:href="#notification"/></svg>
+<span class=flex><svg class="gdoc-icon gdoc_notification"><use xlink:href="#gdoc_notification"/></svg>
 <a href=https://emacs-eask.github.io/#-news class=gdoc-nav__entry>
 News
 </a>
@@ -218,7 +218,7 @@ News
 <li>
 <input type=checkbox class=hidden>
 <label>
-<span class=flex><svg class="gdoc-icon download"><use xlink:href="#download"/></svg>
+<span class=flex><svg class="gdoc-icon gdoc_download"><use xlink:href="#gdoc_download"/></svg>
 <a href=https://github.com/emacs-eask/eask/releases class=gdoc-nav__entry>
 Releases
 </a>
@@ -228,7 +228,7 @@ Releases
 <li>
 <input type=checkbox class=hidden>
 <label>
-<span class=flex><svg class="gdoc-icon github"><use xlink:href="#github"/></svg>
+<span class=flex><svg class="gdoc-icon gdoc_github"><use xlink:href="#gdoc_github"/></svg>
 <a href=https://github.com/emacs-eask/eask class=gdoc-nav__entry>
 View Source
 </a>
@@ -245,7 +245,7 @@ justify-between
 hidden-mobile" itemprop=breadcrumb>
 <div><svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=/><span itemprop=name>Introduction</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Examples</span><meta itemprop=position content="2"></li>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=/><span itemprop=name>Eask</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Examples</span><meta itemprop=position content="2"></li>
 </ol>
 </div>
 </div>
