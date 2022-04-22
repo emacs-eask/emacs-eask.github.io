@@ -26,7 +26,7 @@ Package metadata      🔎 package (name version description)
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/DSL/">
 <meta property="article:section" content="DSL">
-<meta property="article:modified_time" content="2022-04-22T15:54:35+08:00">
+<meta property="article:modified_time" content="2022-04-22T16:42:59+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Domain Specific Language (DSL)">
 <meta name=twitter:description content="This document provides a reference on the DSL.
@@ -35,7 +35,7 @@ Package metadata      🔎 package (name version description)
 (package &#34;ert-runner&#34; &#34;0.7.0&#34; &#34;Opinionated Ert testing workflow&#34;) All arguments are strings. The version must be a version understood by Emacs' built-in version-to-list.
  🔎 package-file (file version description)
  Define this package and its runtime dependencies from the package headers of a file (used only for package development).">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"DSL","name":"Domain Specific Language (DSL)","url":"https://emacs-eask.github.io/DSL/","headline":"Domain Specific Language (DSL)","description":"This document provides a reference on the DSL.\nPackage metadata      🔎 package (name version description)\n Declare a package with the given name, version, and description:\n(package \u0022ert-runner\u0022 \u00220.7.0\u0022 \u0022Opinionated Ert testing workflow\u0022) All arguments are strings. The version must be a version understood by Emacs\u0027 built-in version-to-list.\n 🔎 package-file (file version description)\n Define this package and its runtime dependencies from the package headers of a file (used only for package development).","wordCount":"271","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/DSL/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-22T15:54:35.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"DSL","name":"Domain Specific Language (DSL)","url":"https://emacs-eask.github.io/DSL/","headline":"Domain Specific Language (DSL)","description":"This document provides a reference on the DSL.\nPackage metadata      🔎 package (name version description)\n Declare a package with the given name, version, and description:\n(package \u0022ert-runner\u0022 \u00220.7.0\u0022 \u0022Opinionated Ert testing workflow\u0022) All arguments are strings. The version must be a version understood by Emacs\u0027 built-in version-to-list.\n 🔎 package-file (file version description)\n Define this package and its runtime dependencies from the package headers of a file (used only for package development).","wordCount":"271","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/DSL/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-22T16:42:59.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -178,6 +178,58 @@ Contributing
 </a>
 </span>
 </label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/contributing/Code-of-Conduct/ class=gdoc-nav__entry>
+⚜️ Code of Conduct
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/contributing/State-of-the-Project/ class=gdoc-nav__entry>
+📂 State of the project
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/contributing/Developing-Eask/ class=gdoc-nav__entry>
+🔨 Developing Eask
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/contributing/Documentation/ class=gdoc-nav__entry>
+✒️ Documentation
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/contributing/PR/ class=gdoc-nav__entry>
+📭 Pull Request
+</a>
+</span>
+</label>
+</li>
+</ul>
 </li>
 <li>
 <input type=checkbox class=hidden>
@@ -328,7 +380,7 @@ Dependencies
             <span class=nb>:fetcher</span> <span class=ss>&#39;github</span>
             <span class=nb>:files</span> <span class=o>&#39;</span><span class=p>(</span><span class=nb>:defaults</span> <span class=s>&#34;lsp-ui-doc.html&#34;</span> <span class=s>&#34;resources&#34;</span><span class=p>))</span>
 </code></pre></div><blockquote class="gdoc-hint ok">
-<em>💡 You can install dependencies with command <strong>eask install-deps</strong>!</em>
+💡 <em>You can install dependencies with command <strong>eask install-deps</strong>!</em>
 </blockquote>
 <blockquote>
 <p>🔎 <strong>development</strong> (<code>&rest body</code>)</p>
@@ -338,7 +390,7 @@ Dependencies
  <span class=p>(</span><span class=nv>depends-on</span> <span class=s>&#34;ert-runner&#34;</span><span class=p>)</span>
  <span class=p>(</span><span class=nv>depends-on</span> <span class=s>&#34;elsa&#34;</span><span class=p>))</span>
 </code></pre></div><blockquote class="gdoc-hint ok">
-<em>💡 You would need to specify the <strong>&ndash;dev</strong> option for development dependencies!</em>
+💡 <em>You would need to specify the <strong>&ndash;dev</strong> option for development dependencies!</em>
 </blockquote>
 <blockquote>
 <p>🔎 <strong>source</strong> (<code>alias</code>)</p>
@@ -362,7 +414,7 @@ Dependencies
 <li><code>shmelpa</code> (<a class=gdoc-markdown__link href=https://shmelpa.commandlinesystems.com/packages/>https://shmelpa.commandlinesystems.com/packages/</a>)</li>
 </ul>
 <blockquote class="gdoc-hint ok">
-<em>💡 You can use <strong>&ndash;insecure</strong> to make <strong>https</strong> to <strong>http</strong>, but not recommended</em>
+💡 <em>You can use <strong>&ndash;insecure</strong> to make <strong>https</strong> to <strong>http</strong>, but not recommended</em>
 </blockquote>
 <blockquote>
 <p>🔎 <strong>source-priority</strong> (<code>name</code> <code>priority</code>)</p>
