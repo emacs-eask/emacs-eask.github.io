@@ -20,13 +20,13 @@ jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-lates
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/CICD/">
 <meta property="article:section" content="Cicd">
-<meta property="article:modified_time" content="2022-04-22T15:24:33+08:00">
+<meta property="article:modified_time" content="2022-04-22T15:40:34+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="CI / CD">
 <meta name=twitter:description content="Eask can be run in any test environment, as long the platform allows you to install Node onto their platform.
 GitHub Actions     Here is an example using the GitHub Actions service.
 jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions/checkout@v2# Install Emacs- uses:jcs090218/setup-emacs@masterwith:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions/setup-node@v2with:node-version:'14'# Install eask- uses:emacs-eask/setup-eask@masterwith:version:'snapshot'- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Cicd","name":"CI / CD","url":"https://emacs-eask.github.io/CICD/","headline":"CI / CD","description":"Eask can be run in any test environment, as long the platform allows you to install Node onto their platform.\nGitHub Actions     Here is an example using the GitHub Actions service.\njobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions\/checkout@v2# Install Emacs- uses:jcs090218\/setup-emacs@masterwith:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions\/setup-node@v2with:node-version:\u002714\u0027# Install eask- uses:emacs-eask\/setup-eask@masterwith:version:\u0027snapshot\u0027- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;","wordCount":"145","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/CICD/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-22T15:24:33.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Cicd","name":"CI / CD","url":"https://emacs-eask.github.io/CICD/","headline":"CI / CD","description":"Eask can be run in any test environment, as long the platform allows you to install Node onto their platform.\nGitHub Actions     Here is an example using the GitHub Actions service.\njobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-latest, windows-latest]emacs-version:[27.2,snapshot]steps:- uses:actions\/checkout@v2# Install Emacs- uses:jcs090218\/setup-emacs@masterwith:version:${{ matrix.emacs-version }}# You need node for eask- uses:actions\/setup-node@v2with:node-version:\u002714\u0027# Install eask- uses:emacs-eask\/setup-eask@masterwith:version:\u0027snapshot\u0027- name:Run testsrun:|eask install eask compile eask lintThis example is testing your Emacs Lisp package in the below environment;","wordCount":"145","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/CICD/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-22T15:40:34.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -59,6 +59,10 @@ jobs:test:runs-on:${{ matrix.os }}strategy:matrix:os:[ubuntu-latest, macos-lates
 </div>
 <div class=gdoc-menu-header>
 <span class=gdoc-menu-header__items>
+<span>
+<a href=https://github.com/thegeeklab/hugo-geekdoc class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
+</a>
+</span>
 <span id=gdoc-dark-mode><svg class="gdoc-icon gdoc_brightness_dark"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="gdoc-icon gdoc_brightness_light"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_light"/></svg><svg class="gdoc-icon gdoc_brightness_auto"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_auto"/></svg>
 </span>
 <span class=gdoc-menu-header__home>
