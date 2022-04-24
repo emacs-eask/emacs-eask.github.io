@@ -20,13 +20,13 @@ Execution Order for Eask     Eask is executed this way:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Implementation/Project-Structure/">
 <meta property="article:section" content="Implementation">
-<meta property="article:modified_time" content="2022-04-24T23:14:24+08:00">
+<meta property="article:modified_time" content="2022-04-24T23:37:43+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="📂 Project Structure">
 <meta name=twitter:description content="There are three places you need to look into it:
  eask file at the root of the project cmds folder with all available commands lisp folder with all elisp code   lisp/extern is the external modules/packages we used  eask is the node entry, and the main yargs definition! cmds and lisp folders are command files that correspond to each other.
 Execution Order for Eask     Eask is executed this way:">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Implementation","name":"📂 Project Structure","url":"https://emacs-eask.github.io/Implementation/Project-Structure/","headline":"📂 Project Structure","description":"There are three places you need to look into it:\n eask file at the root of the project cmds folder with all available commands lisp folder with all elisp code   lisp\/extern is the external modules\/packages we used  eask is the node entry, and the main yargs definition! cmds and lisp folders are command files that correspond to each other.\nExecution Order for Eask     Eask is executed this way:","wordCount":"111","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Implementation/Project-Structure/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-24T23:14:24.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Implementation","name":"📂 Project Structure","url":"https://emacs-eask.github.io/Implementation/Project-Structure/","headline":"📂 Project Structure","description":"There are three places you need to look into it:\n eask file at the root of the project cmds folder with all available commands lisp folder with all elisp code   lisp\/extern is the external modules\/packages we used  eask is the node entry, and the main yargs definition! cmds and lisp folders are command files that correspond to each other.\nExecution Order for Eask     Eask is executed this way:","wordCount":"111","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Implementation/Project-Structure/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-24T23:37:43.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -130,6 +130,16 @@ Getting Started
 </span>
 </label>
 </li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/Getting-Started/Advanced-Usage/ class=gdoc-nav__entry>
+🔧 Advanced Usage
+</a>
+</span>
+</label>
+</li>
 </ul>
 </li>
 <li>
@@ -137,7 +147,7 @@ Getting Started
 <label>
 <span class=flex>
 <a href=/DSL/ class=gdoc-nav__entry>
-Domain Specific Language (DSL)
+Domain Specific Language
 </a>
 </span>
 </label>
@@ -168,16 +178,6 @@ Examples
 <span class=flex>
 <a href=/Examples/Package-Development/ class=gdoc-nav__entry>
 📦 Package Development
-</a>
-</span>
-</label>
-</li>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=/Examples/Advanced-Usage/ class=gdoc-nav__entry>
-Advanced Usage
 </a>
 </span>
 </label>
@@ -225,26 +225,6 @@ CI / CD
 </label>
 </li>
 </ul>
-</li>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=/Troubleshooting/ class=gdoc-nav__entry>
-Troubleshooting
-</a>
-</span>
-</label>
-</li>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=/FAQ/ class=gdoc-nav__entry>
-FAQ
-</a>
-</span>
-</label>
 </li>
 <li>
 <input type=checkbox class=hidden>
@@ -344,6 +324,26 @@ Development API
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=/Troubleshooting/ class=gdoc-nav__entry>
+Troubleshooting
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/FAQ/ class=gdoc-nav__entry>
+FAQ
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=/License/ class=gdoc-nav__entry>
 GNU General Public License
 </a>
@@ -399,7 +399,7 @@ justify-between" itemprop=breadcrumb>
 </div>
 <div>
 <span class=editpage><svg class="gdoc-icon gdoc_code"><use xlink:href="#gdoc_code"/></svg>
-<a href=https://github.com/emacs-eask/eask//edit/master/docs/content/en/Implementation/Project%20Structure.md>
+<a href=https://github.com/emacs-eask/eask//edit/master/docs/content/en/Implementation/Project%20Structure/_index.md>
 Edit page
 </a>
 </span>
