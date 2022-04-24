@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /tags/*
-
-Sitemap: https://emacs-eask.github.io/sitemap.xml
