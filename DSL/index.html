@@ -6,11 +6,7 @@
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
 <meta name=description content="This document provides a reference on the DSL.
-Package metadata      🔎 package (name version description)
- Declare a package with the given name, version, and description:
-(package &#34;ert-runner&#34; &#34;0.7.0&#34; &#34;Opinionated Ert testing workflow&#34;) All arguments are strings. The version must be a version understood by Emacs' built-in version-to-list.
- 🔎 package-file (file version description)
- Define this package and its runtime dependencies from the package headers of a file (used only for package development).">
+ 🚩 Package metadata  🔍 package (name version description) 🔍 package-file (file version description)   🚩 Package contents  🔍 files (&rest patterns)   🚩 Dependencies  🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
 <title>Domain Specific Language (DSL) | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
@@ -18,24 +14,16 @@ Package metadata      🔎 package (name version description)
 <meta property="og:title" content="Domain Specific Language (DSL)">
 <meta property="og:site_name" content="Emacs Eask">
 <meta property="og:description" content="This document provides a reference on the DSL.
-Package metadata      🔎 package (name version description)
- Declare a package with the given name, version, and description:
-(package &#34;ert-runner&#34; &#34;0.7.0&#34; &#34;Opinionated Ert testing workflow&#34;) All arguments are strings. The version must be a version understood by Emacs' built-in version-to-list.
- 🔎 package-file (file version description)
- Define this package and its runtime dependencies from the package headers of a file (used only for package development).">
+ 🚩 Package metadata  🔍 package (name version description) 🔍 package-file (file version description)   🚩 Package contents  🔍 files (&rest patterns)   🚩 Dependencies  🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/DSL/">
 <meta property="article:section" content="DSL">
-<meta property="article:modified_time" content="2022-04-22T16:42:59+08:00">
+<meta property="article:modified_time" content="2022-04-24T22:57:06+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Domain Specific Language (DSL)">
 <meta name=twitter:description content="This document provides a reference on the DSL.
-Package metadata      🔎 package (name version description)
- Declare a package with the given name, version, and description:
-(package &#34;ert-runner&#34; &#34;0.7.0&#34; &#34;Opinionated Ert testing workflow&#34;) All arguments are strings. The version must be a version understood by Emacs' built-in version-to-list.
- 🔎 package-file (file version description)
- Define this package and its runtime dependencies from the package headers of a file (used only for package development).">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"DSL","name":"Domain Specific Language (DSL)","url":"https://emacs-eask.github.io/DSL/","headline":"Domain Specific Language (DSL)","description":"This document provides a reference on the DSL.\nPackage metadata      🔎 package (name version description)\n Declare a package with the given name, version, and description:\n(package \u0022ert-runner\u0022 \u00220.7.0\u0022 \u0022Opinionated Ert testing workflow\u0022) All arguments are strings. The version must be a version understood by Emacs\u0027 built-in version-to-list.\n 🔎 package-file (file version description)\n Define this package and its runtime dependencies from the package headers of a file (used only for package development).","wordCount":"271","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/DSL/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-22T16:42:59.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+ 🚩 Package metadata  🔍 package (name version description) 🔍 package-file (file version description)   🚩 Package contents  🔍 files (&rest patterns)   🚩 Dependencies  🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"DSL","name":"Domain Specific Language (DSL)","url":"https://emacs-eask.github.io/DSL/","headline":"Domain Specific Language (DSL)","description":"This document provides a reference on the DSL.\n 🚩 Package metadata  🔍 package (name version description) 🔍 package-file (file version description)   🚩 Package contents  🔍 files (\u0026rest patterns)   🚩 Dependencies  🔍 depends-on (package-name \u0026optional minimum-version) 🔍 depends-on (package-name \u0026rest recipe) 🔍 development (\u0026rest body) 🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 load-paths (\u0026rest paths) 🔍 exec-paths (\u0026rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:","wordCount":"329","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/DSL/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-24T22:57:06.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -103,8 +91,18 @@ Package metadata      🔎 package (name version description)
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/installation/ class=gdoc-nav__entry>
-Installation
+<a href=/Getting-Started/ class=gdoc-nav__entry>
+Getting Started
+</a>
+</span>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/Getting-Started/Quick-Start/ class=gdoc-nav__entry>
+🔰 Quick Start
 </a>
 </span>
 </label>
@@ -113,11 +111,23 @@ Installation
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/usage/ class=gdoc-nav__entry>
-Usage
+<a href=/Getting-Started/Install-Eask/ class=gdoc-nav__entry>
+💾 Install Eask
 </a>
 </span>
 </label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/Getting-Started/Commands-and-options/ class=gdoc-nav__entry>
+🚩 Commands and options
+</a>
+</span>
+</label>
+</li>
+</ul>
 </li>
 <li>
 <input type=checkbox class=hidden>
@@ -138,6 +148,48 @@ Examples
 </a>
 </span>
 </label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/examples/Emacs-Configuration/ class=gdoc-nav__entry>
+Emacs Configuration
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/examples/Package-Development/ class=gdoc-nav__entry>
+Package Development
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/examples/Advanced-Usage/ class=gdoc-nav__entry>
+Advanced Usage
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/examples/Real-project-examples/ class=gdoc-nav__entry>
+Real project examples
+</a>
+</span>
+</label>
+</li>
+</ul>
 </li>
 <li>
 <input type=checkbox class=hidden>
@@ -148,6 +200,28 @@ CI / CD
 </a>
 </span>
 </label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/CICD/GitHub-Actions/ class=gdoc-nav__entry>
+💿 GitHub Actions
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/CICD/Travis-CI/ class=gdoc-nav__entry>
+📀 Travis CI
+</a>
+</span>
+</label>
+</li>
+</ul>
 </li>
 <li>
 <input type=checkbox class=hidden>
@@ -245,7 +319,7 @@ Implementation
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/api/ class=gdoc-nav__entry>
+<a href=/Development-API/ class=gdoc-nav__entry>
 Development API
 </a>
 </span>
@@ -319,52 +393,99 @@ Edit page
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>Domain Specific Language (DSL)</h1>
 <p>This document provides a reference on the <a class=gdoc-markdown__link href=https://en.wikipedia.org/wiki/Domain-specific_language>DSL</a>.</p>
+<div class="gdoc-toc gdoc-toc__level--3">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#-package-metadata>🚩 Package metadata</a>
+<ul>
+<li><a href=#-package-name-version-description>🔍 <strong>package</strong> (<code>name</code> <code>version</code> <code>description</code>)</a></li>
+<li><a href=#-package-file-file-version-description>🔍 <strong>package-file</strong> (<code>file</code> <code>version</code> <code>description</code>)</a></li>
+</ul>
+</li>
+<li><a href=#-package-contents>🚩 Package contents</a>
+<ul>
+<li><a href=#-files-rest-patterns>🔍 <strong>files</strong> (<code>&rest patterns</code>)</a></li>
+</ul>
+</li>
+<li><a href=#-dependencies>🚩 Dependencies</a>
+<ul>
+<li><a href=#-depends-on-package-name-optional-minimum-version>🔍 <strong>depends-on</strong> (<code>package-name</code> <code>&optional minimum-version</code>)</a></li>
+<li><a href=#-depends-on-package-name-rest-recipe>🔍 <strong>depends-on</strong> (<code>package-name</code> <code>&rest recipe</code>)</a></li>
+<li><a href=#-development-rest-body>🔍 <strong>development</strong> (<code>&rest body</code>)</a></li>
+<li><a href=#-source-alias>🔍 <strong>source</strong> (<code>alias</code>)</a></li>
+<li><a href=#-source-name-url>🔍 <strong>source</strong> (<code>name</code> <code>url</code>)</a></li>
+<li><a href=#-source-priority-name-priority>🔍 <strong>source-priority</strong> (<code>name</code> <code>priority</code>)</a></li>
+<li><a href=#-load-paths-rest-paths>🔍 <strong>load-paths</strong> (<code>&rest paths</code>)</a></li>
+<li><a href=#-exec-paths-rest-paths>🔍 <strong>exec-paths</strong> (<code>&rest paths</code>)</a></li>
+</ul></nav>
+<hr>
+</div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=package-metadata>
-Package metadata
-<a data-clipboard-text=https://emacs-eask.github.io/DSL/#package-metadata class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Package metadata" aria-label="Anchor to: Package metadata" href=#package-metadata><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=-package-metadata>
+🚩 Package metadata
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-package-metadata class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Package metadata" aria-label="Anchor to: 🚩 Package metadata" href=#-package-metadata><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-package-name-version-description>
+🔍 <strong>package</strong> (<code>name</code> <code>version</code> <code>description</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-package-name-version-description class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 package (name version description)" aria-label="Anchor to: 🔍 package (name version description)" href=#-package-name-version-description><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
-<blockquote>
-<p>🔎 <strong>package</strong> (<code>name</code> <code>version</code> <code>description</code>)</p>
-</blockquote>
 <p>Declare a package with the given name, version, and description:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>package</span> <span class=s>&#34;ert-runner&#34;</span> <span class=s>&#34;0.7.0&#34;</span> <span class=s>&#34;Opinionated Ert testing workflow&#34;</span><span class=p>)</span>
 </code></pre></div><p>All arguments are strings. The version must be a version understood by Emacs'
 built-in <code>version-to-list</code>.</p>
-<blockquote>
-<p>🔎 <strong>package-file</strong> (<code>file</code> <code>version</code> <code>description</code>)</p>
-</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-package-file-file-version-description>
+🔍 <strong>package-file</strong> (<code>file</code> <code>version</code> <code>description</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-package-file-file-version-description class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 package-file (file version description)" aria-label="Anchor to: 🔍 package-file (file version description)" href=#-package-file-file-version-description><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
 <p>Define this package and its runtime dependencies from the package headers
 of a file (used only for package development).</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>package-file</span> <span class=s>&#34;foo.el&#34;</span><span class=p>)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=package-contents>
-Package contents
-<a data-clipboard-text=https://emacs-eask.github.io/DSL/#package-contents class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Package contents" aria-label="Anchor to: Package contents" href=#package-contents><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=-package-contents>
+🚩 Package contents
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-package-contents class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Package contents" aria-label="Anchor to: 🚩 Package contents" href=#-package-contents><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-files-rest-patterns>
+🔍 <strong>files</strong> (<code>&rest patterns</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-files-rest-patterns class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 files (&rest patterns)" aria-label="Anchor to: 🔍 files (&rest patterns)" href=#-files-rest-patterns><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
-<blockquote>
-<p>🔎 <strong>files</strong> (<code>&rest patterns</code>)</p>
-</blockquote>
 <p>Specify list of files that are included in this project.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>files</span> <span class=s>&#34;foo.el&#34;</span><span class=p>)</span>
 <span class=p>(</span><span class=nv>files</span> <span class=s>&#34;*.el&#34;</span> <span class=s>&#34;core/*.el&#34;</span><span class=p>)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=dependencies>
-Dependencies
-<a data-clipboard-text=https://emacs-eask.github.io/DSL/#dependencies class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Dependencies" aria-label="Anchor to: Dependencies" href=#dependencies><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=-dependencies>
+🚩 Dependencies
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-dependencies class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Dependencies" aria-label="Anchor to: 🚩 Dependencies" href=#-dependencies><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-depends-on-package-name-optional-minimum-version>
+🔍 <strong>depends-on</strong> (<code>package-name</code> <code>&optional minimum-version</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-depends-on-package-name-optional-minimum-version class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 depends-on (package-name &optional minimum-version)" aria-label="Anchor to: 🔍 depends-on (package-name &optional minimum-version)" href=#-depends-on-package-name-optional-minimum-version><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
-<blockquote>
-<p>🔎 <strong>depends-on</strong> (<code>package-name</code> <code>&optional minimum-version</code>)</p>
-</blockquote>
-<blockquote>
-<p>🔎 <strong>depends-on</strong> (<code>package-name</code> <code>&rest recipe</code>)</p>
-</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-depends-on-package-name-rest-recipe>
+🔍 <strong>depends-on</strong> (<code>package-name</code> <code>&rest recipe</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-depends-on-package-name-rest-recipe class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 depends-on (package-name &rest recipe)" aria-label="Anchor to: 🔍 depends-on (package-name &rest recipe)" href=#-depends-on-package-name-rest-recipe><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
 <p>Specify a dependency of this package.</p>
 <p>Specify dependencies that are listed in <strong>archives</strong>:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>depends-on</span> <span class=s>&#34;emacs&#34;</span> <span class=s>&#34;26.1&#34;</span><span class=p>)</span>
@@ -382,9 +503,13 @@ Dependencies
 </code></pre></div><blockquote class="gdoc-hint ok">
 💡 <em>You can install dependencies with command <strong>eask install-deps</strong>!</em>
 </blockquote>
-<blockquote>
-<p>🔎 <strong>development</strong> (<code>&rest body</code>)</p>
-</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-development-rest-body>
+🔍 <strong>development</strong> (<code>&rest body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-development-rest-body class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 development (&rest body)" aria-label="Anchor to: 🔍 development (&rest body)" href=#-development-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
 <p>Scope all <code>depends-on</code> expressions in body to development.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>development</span>
  <span class=p>(</span><span class=nv>depends-on</span> <span class=s>&#34;ert-runner&#34;</span><span class=p>)</span>
@@ -392,12 +517,20 @@ Dependencies
 </code></pre></div><blockquote class="gdoc-hint ok">
 💡 <em>You would need to specify the <strong>&ndash;dev</strong> option for development dependencies!</em>
 </blockquote>
-<blockquote>
-<p>🔎 <strong>source</strong> (<code>alias</code>)</p>
-</blockquote>
-<blockquote>
-<p>🔎 <strong>source</strong> (<code>name</code> <code>url</code>)</p>
-</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-source-alias>
+🔍 <strong>source</strong> (<code>alias</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-source-alias class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 source (alias)" aria-label="Anchor to: 🔍 source (alias)" href=#-source-alias><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-source-name-url>
+🔍 <strong>source</strong> (<code>name</code> <code>url</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-source-name-url class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 source (name url)" aria-label="Anchor to: 🔍 source (name url)" href=#-source-name-url><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
 <p>Add a package archive to install dependencies from.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>source</span> <span class=s>&#34;gnu&#34;</span><span class=p>)</span>
 <span class=p>(</span><span class=nv>source</span> <span class=s>&#34;gnu&#34;</span> <span class=s>&#34;https://elpa.gnu.org/packages/&#34;</span><span class=p>)</span>
@@ -416,19 +549,31 @@ Dependencies
 <blockquote class="gdoc-hint ok">
 💡 <em>You can use <strong>&ndash;insecure</strong> to make <strong>https</strong> to <strong>http</strong>, but not recommended</em>
 </blockquote>
-<blockquote>
-<p>🔎 <strong>source-priority</strong> (<code>name</code> <code>priority</code>)</p>
-</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-source-priority-name-priority>
+🔍 <strong>source-priority</strong> (<code>name</code> <code>priority</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-source-priority-name-priority class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 source-priority (name priority)" aria-label="Anchor to: 🔍 source-priority (name priority)" href=#-source-priority-name-priority><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
 <p>Set archive priority.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>source-priority</span> <span class=s>&#34;gnu&#34;</span> <span class=mi>5</span><span class=p>)</span>
-</code></pre></div><blockquote>
-<p>🔎 <strong>load-paths</strong> (<code>&rest paths</code>)</p>
-</blockquote>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-load-paths-rest-paths>
+🔍 <strong>load-paths</strong> (<code>&rest paths</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-load-paths-rest-paths class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 load-paths (&rest paths)" aria-label="Anchor to: 🔍 load-paths (&rest paths)" href=#-load-paths-rest-paths><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
 <p>Specify paths to add to <code>load-path</code></p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>load-paths</span> <span class=s>&#34;/lisp/&#34;</span><span class=p>)</span>
-</code></pre></div><blockquote>
-<p>🔎 <strong>exec-paths</strong> (<code>&rest paths</code>)</p>
-</blockquote>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-exec-paths-rest-paths>
+🔍 <strong>exec-paths</strong> (<code>&rest paths</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-exec-paths-rest-paths class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 exec-paths (&rest paths)" aria-label="Anchor to: 🔍 exec-paths (&rest paths)" href=#-exec-paths-rest-paths><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
 <p>Specify paths to add to <code>exec-path</code></p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>load-paths</span> <span class=s>&#34;/bin/&#34;</span><span class=p>)</span>
 </code></pre></div>

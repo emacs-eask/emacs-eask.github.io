@@ -20,13 +20,13 @@ The E scripts, is used to do the actual execution for each command that passes t
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/implementation/">
 <meta property="article:section" content="Implementation">
-<meta property="article:modified_time" content="2022-04-22T16:42:59+08:00">
+<meta property="article:modified_time" content="2022-04-24T22:57:06+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Implementation">
 <meta name=twitter:description content="Eask consists of two components: a command-line tool (the Eask CLI), and a Elisp scripts.
 The CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src/util.js.
 The E scripts, is used to do the actual execution for each command that passes through the CLI.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Implementation","name":"Implementation","url":"https://emacs-eask.github.io/implementation/","headline":"Implementation","description":"Eask consists of two components: a command-line tool (the Eask CLI), and a Elisp scripts.\nThe CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src\/util.js.\nThe E scripts, is used to do the actual execution for each command that passes through the CLI.","wordCount":"491","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/implementation/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-22T16:42:59.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Implementation","name":"Implementation","url":"https://emacs-eask.github.io/implementation/","headline":"Implementation","description":"Eask consists of two components: a command-line tool (the Eask CLI), and a Elisp scripts.\nThe CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src\/util.js.\nThe E scripts, is used to do the actual execution for each command that passes through the CLI.","wordCount":"491","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/implementation/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-24T22:57:06.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -94,8 +94,18 @@ The E scripts, is used to do the actual execution for each command that passes t
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/installation/ class=gdoc-nav__entry>
-Installation
+<a href=/Getting-Started/ class=gdoc-nav__entry>
+Getting Started
+</a>
+</span>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/Getting-Started/Quick-Start/ class=gdoc-nav__entry>
+🔰 Quick Start
 </a>
 </span>
 </label>
@@ -104,11 +114,23 @@ Installation
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/usage/ class=gdoc-nav__entry>
-Usage
+<a href=/Getting-Started/Install-Eask/ class=gdoc-nav__entry>
+💾 Install Eask
 </a>
 </span>
 </label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/Getting-Started/Commands-and-options/ class=gdoc-nav__entry>
+🚩 Commands and options
+</a>
+</span>
+</label>
+</li>
+</ul>
 </li>
 <li>
 <input type=checkbox class=hidden>
@@ -129,6 +151,48 @@ Examples
 </a>
 </span>
 </label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/examples/Emacs-Configuration/ class=gdoc-nav__entry>
+Emacs Configuration
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/examples/Package-Development/ class=gdoc-nav__entry>
+Package Development
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/examples/Advanced-Usage/ class=gdoc-nav__entry>
+Advanced Usage
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/examples/Real-project-examples/ class=gdoc-nav__entry>
+Real project examples
+</a>
+</span>
+</label>
+</li>
+</ul>
 </li>
 <li>
 <input type=checkbox class=hidden>
@@ -139,6 +203,28 @@ CI / CD
 </a>
 </span>
 </label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/CICD/GitHub-Actions/ class=gdoc-nav__entry>
+💿 GitHub Actions
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/CICD/Travis-CI/ class=gdoc-nav__entry>
+📀 Travis CI
+</a>
+</span>
+</label>
+</li>
+</ul>
 </li>
 <li>
 <input type=checkbox class=hidden>
@@ -236,7 +322,7 @@ Implementation
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/api/ class=gdoc-nav__entry>
+<a href=/Development-API/ class=gdoc-nav__entry>
 Development API
 </a>
 </span>
