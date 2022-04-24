@@ -5,28 +5,31 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
-<meta name=description content="🔭 Finding Emacs      Start by creating a file named Eask in the project root. Use *eask init command to create a Eask-file. You will be asked to enter few questions to create the file.
-$ eask init To install all dependencies, run:
-$ eask install-deps 💡 Use -g options for your Emacs configuration. Otherwise, it will create a directory named .eask and install all dependencies into it.">
+<meta name=description content="Step 1: Install Eask Step 2: Navigate or Create an elisp project Step 3: Create Eask-file 🔭 Finding Emacs      Using Eask as your Emacs package management tool.
+The installation are cross-platform, using npm. For instruction about how to install Eask with other methods, see install.
+It is required to have Git installed to run this tutorial.
+ Step 1: Install Eask     WIP">
 <title>🔰 Quick Start | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta property="og:title" content="🔰 Quick Start">
 <meta property="og:site_name" content="Emacs Eask">
-<meta property="og:description" content="🔭 Finding Emacs      Start by creating a file named Eask in the project root. Use *eask init command to create a Eask-file. You will be asked to enter few questions to create the file.
-$ eask init To install all dependencies, run:
-$ eask install-deps 💡 Use -g options for your Emacs configuration. Otherwise, it will create a directory named .eask and install all dependencies into it.">
+<meta property="og:description" content="Step 1: Install Eask Step 2: Navigate or Create an elisp project Step 3: Create Eask-file 🔭 Finding Emacs      Using Eask as your Emacs package management tool.
+The installation are cross-platform, using npm. For instruction about how to install Eask with other methods, see install.
+It is required to have Git installed to run this tutorial.
+ Step 1: Install Eask     WIP">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Getting-Started/Quick-Start/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2022-04-24T23:42:00+08:00">
+<meta property="article:modified_time" content="2022-04-25T01:18:38+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🔰 Quick Start">
-<meta name=twitter:description content="🔭 Finding Emacs      Start by creating a file named Eask in the project root. Use *eask init command to create a Eask-file. You will be asked to enter few questions to create the file.
-$ eask init To install all dependencies, run:
-$ eask install-deps 💡 Use -g options for your Emacs configuration. Otherwise, it will create a directory named .eask and install all dependencies into it.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔰 Quick Start","url":"https://emacs-eask.github.io/Getting-Started/Quick-Start/","headline":"🔰 Quick Start","description":"🔭 Finding Emacs      Start by creating a file named Eask in the project root. Use *eask init command to create a Eask-file. You will be asked to enter few questions to create the file.\n$ eask init To install all dependencies, run:\n$ eask install-deps 💡 Use -g options for your Emacs configuration. Otherwise, it will create a directory named .eask and install all dependencies into it.","wordCount":"104","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Quick-Start/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-24T23:42:00.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<meta name=twitter:description content="Step 1: Install Eask Step 2: Navigate or Create an elisp project Step 3: Create Eask-file 🔭 Finding Emacs      Using Eask as your Emacs package management tool.
+The installation are cross-platform, using npm. For instruction about how to install Eask with other methods, see install.
+It is required to have Git installed to run this tutorial.
+ Step 1: Install Eask     WIP">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔰 Quick Start","url":"https://emacs-eask.github.io/Getting-Started/Quick-Start/","headline":"🔰 Quick Start","description":"Step 1: Install Eask Step 2: Navigate or Create an elisp project Step 3: Create Eask-file 🔭 Finding Emacs      Using Eask as your Emacs package management tool.\nThe installation are cross-platform, using npm. For instruction about how to install Eask with other methods, see install.\nIt is required to have Git installed to run this tutorial.\n Step 1: Install Eask     WIP","wordCount":"180","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Quick-Start/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-25T01:18:38.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -409,11 +412,46 @@ Edit page
 <h1>🔰 Quick Start</h1>
 <div class="gdoc-toc gdoc-toc__level--3">
 <nav id=TableOfContents><ul>
+<li><a href=#step-1-install-eask>Step 1: Install Eask</a></li>
+<li><a href=#step-2-navigate-or-create-an-elisp-project>Step 2: Navigate or Create an elisp project</a></li>
+<li><a href=#step-3-create-eask-file>Step 3: Create <code>Eask</code>-file</a></li>
 <li><a href=#-finding-emacs>🔭 Finding Emacs</a></li>
 </ul></nav>
 <hr>
 </div>
-<p>Start by creating a file named <code>Eask</code> in the project root. Use *<em>eask init</em>
+<p>Using Eask as your Emacs package management tool.</p>
+<blockquote class="gdoc-hint info">
+<p>The installation are cross-platform, using <a class=gdoc-markdown__link href=https://www.npmjs.com/>npm</a>.
+For instruction about how to install Eask with other methods, see <a class=gdoc-markdown__link href=https://emacs-eask.github.io/Getting-Started/Install-Eask/>install</a>.</p>
+<p>It is required to have <a class=gdoc-markdown__link href=https://git-scm.com/downloads>Git installed</a>
+to run this tutorial.</p>
+</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=step-1-install-eask>
+Step 1: Install Eask
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Quick-Start/#step-1-install-eask class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Step 1: Install Eask" aria-label="Anchor to: Step 1: Install Eask" href=#step-1-install-eask><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>WIP</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=step-2-navigate-or-create-an-elisp-project>
+Step 2: Navigate or Create an elisp project
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Quick-Start/#step-2-navigate-or-create-an-elisp-project class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Step 2: Navigate or Create an elisp project" aria-label="Anchor to: Step 2: Navigate or Create an elisp project" href=#step-2-navigate-or-create-an-elisp-project><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=step-3-create-eask-file>
+Step 3: Create <code>Eask</code>-file
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Quick-Start/#step-3-create-eask-file class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Step 3: Create Eask-file" aria-label="Anchor to: Step 3: Create Eask-file" href=#step-3-create-eask-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>WIP</p>
+<hr>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ npm install -g @emacs-eask/eask
+</code></pre></div><p>Start by creating a file named <code>Eask</code> in the project root. Use <strong>eask init</strong>
 command to create a Eask-file. You will be asked to enter few questions
 to create the file.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask init
