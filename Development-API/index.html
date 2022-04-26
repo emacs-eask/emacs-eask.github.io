@@ -6,7 +6,7 @@
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
 <meta name=description content="This document provides a reference to the public Eask API, which you may use in your projects and extensions to Eask.
- 🚩 Entry Point  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (&rest body)   🚩 Core  🔍   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-no-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-no-log-level-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Function: eask-package (name version description) 🔍 Function: eask-package-file (file) 🔍 Function: eask-files (pkg &rest args) 🔍 Function: eask-depends-on (pkg &rest args) 🔍 Function: eask-development (&rest dependencies) 🔍 Function: eask-load-paths (&rest dirs) 🔍 Function: eask-exec-paths (&rest dirs) 🔍 Function: eask-source 🔍 Function: eask-source-priority   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol &rest body) 🔍 Function: eask-debug (msg &rest args) 🔍 Function: eask-log (msg &rest args) 🔍 Function: eask-info (msg &rest args) 🔍 Function: eask-warn (msg &rest args) 🔍 Function: eask-error (msg &rest args) 🔍 Function: eask-msg (msg &rest args) 🔍 Function: eask-write (msg &rest args)      🚩 Entry Point     🔍 Snippet: _prepare.">
+ 🚩 Entry Point  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (&rest body)   🚩 Core  🔍 Variable: eask-lisp-root 🔍 Function: eask-command () 🔍 Function: eask-checker-p () 🔍 Function: eask-script (script) 🔍 Function: eask-load (script) 🔍 Function: eask-call (script) 🔍 Macro: eask-defvc< (version &rest body) 🔍 Macro: eask&ndash;silent (&rest body) 🔍 Macro: eask&ndash;unsilent (&rest body) 🔍 Function: eask-dependencies () 🔍 Function: eask-pkg-init (&optional force) 🔍 Macro: eask-with-archives (archives &rest body) 🔍 Function: eask-package-desc (name &optional current) 🔍 Function: eask-argv (index) 🔍 Function: eask-args () 🔍 Variable: eask-file 🔍 Variable: eask-file-root 🔍 Function: eask-network-insecure-p ()   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-no-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-no-log-level-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Variable: eask-package 🔍 Variable: eask-package-file 🔍 Variable: eask-package-desc 🔍 Variable: eask-files 🔍 Variable: eask-depends-on-emacs 🔍 Variable: eask-depends-on 🔍 Variable: eask-depends-on-dev 🔍 Function: eask-package (name version description) 🔍 Function: eask-package-file (file) 🔍 Function: eask-files (pkg &rest args) 🔍 Function: eask-depends-on (pkg &rest args) 🔍 Function: eask-development (&rest dependencies) 🔍 Function: eask-load-paths (&rest dirs) 🔍 Function: eask-exec-paths (&rest dirs) 🔍 Function: eask-source 🔍 Function: eask-source-priority   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol &rest body) 🔍 Function: eask-debug (msg &rest args) 🔍 Function: eask-log (msg &rest args) 🔍 Function: eask-info (msg &rest args) 🔍 Function: eask-warn (msg &rest args) 🔍 Function: eask-error (msg &rest args) 🔍 Function: eask-msg (msg &rest args) 🔍 Function: eask-write (msg &rest args)      🚩 Entry Point     🔍 Snippet: _prepare.">
 <title>Development API | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
@@ -14,16 +14,16 @@
 <meta property="og:title" content="Development API">
 <meta property="og:site_name" content="Emacs Eask">
 <meta property="og:description" content="This document provides a reference to the public Eask API, which you may use in your projects and extensions to Eask.
- 🚩 Entry Point  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (&rest body)   🚩 Core  🔍   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-no-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-no-log-level-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Function: eask-package (name version description) 🔍 Function: eask-package-file (file) 🔍 Function: eask-files (pkg &rest args) 🔍 Function: eask-depends-on (pkg &rest args) 🔍 Function: eask-development (&rest dependencies) 🔍 Function: eask-load-paths (&rest dirs) 🔍 Function: eask-exec-paths (&rest dirs) 🔍 Function: eask-source 🔍 Function: eask-source-priority   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol &rest body) 🔍 Function: eask-debug (msg &rest args) 🔍 Function: eask-log (msg &rest args) 🔍 Function: eask-info (msg &rest args) 🔍 Function: eask-warn (msg &rest args) 🔍 Function: eask-error (msg &rest args) 🔍 Function: eask-msg (msg &rest args) 🔍 Function: eask-write (msg &rest args)      🚩 Entry Point     🔍 Snippet: _prepare.">
+ 🚩 Entry Point  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (&rest body)   🚩 Core  🔍 Variable: eask-lisp-root 🔍 Function: eask-command () 🔍 Function: eask-checker-p () 🔍 Function: eask-script (script) 🔍 Function: eask-load (script) 🔍 Function: eask-call (script) 🔍 Macro: eask-defvc< (version &rest body) 🔍 Macro: eask–silent (&rest body) 🔍 Macro: eask–unsilent (&rest body) 🔍 Function: eask-dependencies () 🔍 Function: eask-pkg-init (&optional force) 🔍 Macro: eask-with-archives (archives &rest body) 🔍 Function: eask-package-desc (name &optional current) 🔍 Function: eask-argv (index) 🔍 Function: eask-args () 🔍 Variable: eask-file 🔍 Variable: eask-file-root 🔍 Function: eask-network-insecure-p ()   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-no-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-no-log-level-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Variable: eask-package 🔍 Variable: eask-package-file 🔍 Variable: eask-package-desc 🔍 Variable: eask-files 🔍 Variable: eask-depends-on-emacs 🔍 Variable: eask-depends-on 🔍 Variable: eask-depends-on-dev 🔍 Function: eask-package (name version description) 🔍 Function: eask-package-file (file) 🔍 Function: eask-files (pkg &rest args) 🔍 Function: eask-depends-on (pkg &rest args) 🔍 Function: eask-development (&rest dependencies) 🔍 Function: eask-load-paths (&rest dirs) 🔍 Function: eask-exec-paths (&rest dirs) 🔍 Function: eask-source 🔍 Function: eask-source-priority   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol &rest body) 🔍 Function: eask-debug (msg &rest args) 🔍 Function: eask-log (msg &rest args) 🔍 Function: eask-info (msg &rest args) 🔍 Function: eask-warn (msg &rest args) 🔍 Function: eask-error (msg &rest args) 🔍 Function: eask-msg (msg &rest args) 🔍 Function: eask-write (msg &rest args)      🚩 Entry Point     🔍 Snippet: _prepare.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Development-API/">
 <meta property="article:section" content="Development API">
-<meta property="article:modified_time" content="2022-04-26T22:35:53+08:00">
+<meta property="article:modified_time" content="2022-04-27T02:14:17+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Development API">
 <meta name=twitter:description content="This document provides a reference to the public Eask API, which you may use in your projects and extensions to Eask.
- 🚩 Entry Point  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (&rest body)   🚩 Core  🔍   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-no-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-no-log-level-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Function: eask-package (name version description) 🔍 Function: eask-package-file (file) 🔍 Function: eask-files (pkg &rest args) 🔍 Function: eask-depends-on (pkg &rest args) 🔍 Function: eask-development (&rest dependencies) 🔍 Function: eask-load-paths (&rest dirs) 🔍 Function: eask-exec-paths (&rest dirs) 🔍 Function: eask-source 🔍 Function: eask-source-priority   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol &rest body) 🔍 Function: eask-debug (msg &rest args) 🔍 Function: eask-log (msg &rest args) 🔍 Function: eask-info (msg &rest args) 🔍 Function: eask-warn (msg &rest args) 🔍 Function: eask-error (msg &rest args) 🔍 Function: eask-msg (msg &rest args) 🔍 Function: eask-write (msg &rest args)      🚩 Entry Point     🔍 Snippet: _prepare.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Development API","name":"Development API","url":"https://emacs-eask.github.io/Development-API/","headline":"Development API","description":"This document provides a reference to the public Eask API, which you may use in your projects and extensions to Eask.\n 🚩 Entry Point  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (\u0026rest body)   🚩 Core  🔍   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-no-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-no-log-level-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Function: eask-package (name version description) 🔍 Function: eask-package-file (file) 🔍 Function: eask-files (pkg \u0026rest args) 🔍 Function: eask-depends-on (pkg \u0026rest args) 🔍 Function: eask-development (\u0026rest dependencies) 🔍 Function: eask-load-paths (\u0026rest dirs) 🔍 Function: eask-exec-paths (\u0026rest dirs) 🔍 Function: eask-source 🔍 Function: eask-source-priority   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol \u0026rest body) 🔍 Function: eask-debug (msg \u0026rest args) 🔍 Function: eask-log (msg \u0026rest args) 🔍 Function: eask-info (msg \u0026rest args) 🔍 Function: eask-warn (msg \u0026rest args) 🔍 Function: eask-error (msg \u0026rest args) 🔍 Function: eask-msg (msg \u0026rest args) 🔍 Function: eask-write (msg \u0026rest args)      🚩 Entry Point     🔍 Snippet: _prepare.","wordCount":"968","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Development-API/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-26T22:35:53.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+ 🚩 Entry Point  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (&rest body)   🚩 Core  🔍 Variable: eask-lisp-root 🔍 Function: eask-command () 🔍 Function: eask-checker-p () 🔍 Function: eask-script (script) 🔍 Function: eask-load (script) 🔍 Function: eask-call (script) 🔍 Macro: eask-defvc< (version &rest body) 🔍 Macro: eask–silent (&rest body) 🔍 Macro: eask–unsilent (&rest body) 🔍 Function: eask-dependencies () 🔍 Function: eask-pkg-init (&optional force) 🔍 Macro: eask-with-archives (archives &rest body) 🔍 Function: eask-package-desc (name &optional current) 🔍 Function: eask-argv (index) 🔍 Function: eask-args () 🔍 Variable: eask-file 🔍 Variable: eask-file-root 🔍 Function: eask-network-insecure-p ()   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-no-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-no-log-level-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Variable: eask-package 🔍 Variable: eask-package-file 🔍 Variable: eask-package-desc 🔍 Variable: eask-files 🔍 Variable: eask-depends-on-emacs 🔍 Variable: eask-depends-on 🔍 Variable: eask-depends-on-dev 🔍 Function: eask-package (name version description) 🔍 Function: eask-package-file (file) 🔍 Function: eask-files (pkg &rest args) 🔍 Function: eask-depends-on (pkg &rest args) 🔍 Function: eask-development (&rest dependencies) 🔍 Function: eask-load-paths (&rest dirs) 🔍 Function: eask-exec-paths (&rest dirs) 🔍 Function: eask-source 🔍 Function: eask-source-priority   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol &rest body) 🔍 Function: eask-debug (msg &rest args) 🔍 Function: eask-log (msg &rest args) 🔍 Function: eask-info (msg &rest args) 🔍 Function: eask-warn (msg &rest args) 🔍 Function: eask-error (msg &rest args) 🔍 Function: eask-msg (msg &rest args) 🔍 Function: eask-write (msg &rest args)      🚩 Entry Point     🔍 Snippet: _prepare.">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Development API","name":"Development API","url":"https://emacs-eask.github.io/Development-API/","headline":"Development API","description":"This document provides a reference to the public Eask API, which you may use in your projects and extensions to Eask.\n 🚩 Entry Point  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (\u0026rest body)   🚩 Core  🔍 Variable: eask-lisp-root 🔍 Function: eask-command () 🔍 Function: eask-checker-p () 🔍 Function: eask-script (script) 🔍 Function: eask-load (script) 🔍 Function: eask-call (script) 🔍 Macro: eask-defvc\u003c (version \u0026rest body) 🔍 Macro: eask–silent (\u0026rest body) 🔍 Macro: eask–unsilent (\u0026rest body) 🔍 Function: eask-dependencies () 🔍 Function: eask-pkg-init (\u0026optional force) 🔍 Macro: eask-with-archives (archives \u0026rest body) 🔍 Function: eask-package-desc (name \u0026optional current) 🔍 Function: eask-argv (index) 🔍 Function: eask-args () 🔍 Variable: eask-file 🔍 Variable: eask-file-root 🔍 Function: eask-network-insecure-p ()   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-no-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-no-log-level-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Variable: eask-package 🔍 Variable: eask-package-file 🔍 Variable: eask-package-desc 🔍 Variable: eask-files 🔍 Variable: eask-depends-on-emacs 🔍 Variable: eask-depends-on 🔍 Variable: eask-depends-on-dev 🔍 Function: eask-package (name version description) 🔍 Function: eask-package-file (file) 🔍 Function: eask-files (pkg \u0026rest args) 🔍 Function: eask-depends-on (pkg \u0026rest args) 🔍 Function: eask-development (\u0026rest dependencies) 🔍 Function: eask-load-paths (\u0026rest dirs) 🔍 Function: eask-exec-paths (\u0026rest dirs) 🔍 Function: eask-source 🔍 Function: eask-source-priority   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol \u0026rest body) 🔍 Function: eask-debug (msg \u0026rest args) 🔍 Function: eask-log (msg \u0026rest args) 🔍 Function: eask-info (msg \u0026rest args) 🔍 Function: eask-warn (msg \u0026rest args) 🔍 Function: eask-error (msg \u0026rest args) 🔍 Function: eask-msg (msg \u0026rest args) 🔍 Function: eask-write (msg \u0026rest args)      🚩 Entry Point     🔍 Snippet: _prepare.","wordCount":"1611","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Development-API/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-04-27T02:14:17.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -412,12 +412,29 @@ your projects and extensions to Eask.</p>
 <li><a href=#-entry-point>🚩 Entry Point</a>
 <ul>
 <li><a href=#-snippet-_prepareel>🔍 Snippet: _prepare.el</a></li>
-<li><a href=#-macro-eask-start-rest-body>🔍 Macro: eask-start (<code>&rest body</code>)</a></li>
+<li><a href=#-macro-eask-start-rest-body>🔍 Macro: eask-start (&rest <code>body</code>)</a></li>
 </ul>
 </li>
 <li><a href=#-core>🚩 Core</a>
 <ul>
-<li><a href=#heading>🔍</a></li>
+<li><a href=#-variable-eask-lisp-root>🔍 Variable: eask-lisp-root</a></li>
+<li><a href=#-function-eask-command->🔍 Function: eask-command ()</a></li>
+<li><a href=#-function-eask-checker-p->🔍 Function: eask-checker-p ()</a></li>
+<li><a href=#-function-eask-script-script>🔍 Function: eask-script (<code>script</code>)</a></li>
+<li><a href=#-function-eask-load-script>🔍 Function: eask-load (<code>script</code>)</a></li>
+<li><a href=#-function-eask-call-script>🔍 Function: eask-call (<code>script</code>)</a></li>
+<li><a href=#-macro-eask-defvc-version-rest-body>🔍 Macro: eask-defvc&lt; (<code>version</code> &rest <code>body</code>)</a></li>
+<li><a href=#-macro-eask--silent-rest-body>🔍 Macro: eask&ndash;silent (&rest <code>body</code>)</a></li>
+<li><a href=#-macro-eask--unsilent-rest-body>🔍 Macro: eask&ndash;unsilent (&rest <code>body</code>)</a></li>
+<li><a href=#-function-eask-dependencies->🔍 Function: eask-dependencies ()</a></li>
+<li><a href=#-function-eask-pkg-init-optional-force>🔍 Function: eask-pkg-init (&optional <code>force</code>)</a></li>
+<li><a href=#-macro-eask-with-archives-archives-rest-body>🔍 Macro: eask-with-archives (<code>archives</code> &rest <code>body</code>)</a></li>
+<li><a href=#-function-eask-package-desc-name-optional-current>🔍 Function: eask-package-desc (<code>name</code> &optional <code>current</code>)</a></li>
+<li><a href=#-function-eask-argv-index>🔍 Function: eask-argv (<code>index</code>)</a></li>
+<li><a href=#-function-eask-args->🔍 Function: eask-args ()</a></li>
+<li><a href=#-variable-eask-file>🔍 Variable: eask-file</a></li>
+<li><a href=#-variable-eask-file-root>🔍 Variable: eask-file-root</a></li>
+<li><a href=#-function-eask-network-insecure-p->🔍 Function: eask-network-insecure-p ()</a></li>
 </ul>
 </li>
 <li><a href=#-flags>🚩 Flags</a>
@@ -445,13 +462,20 @@ your projects and extensions to Eask.</p>
 </li>
 <li><a href=#-eask-file>🚩 <code>Eask</code>-file</a>
 <ul>
+<li><a href=#-variable-eask-package>🔍 Variable: eask-package</a></li>
+<li><a href=#-variable-eask-package-file>🔍 Variable: eask-package-file</a></li>
+<li><a href=#-variable-eask-package-desc>🔍 Variable: eask-package-desc</a></li>
+<li><a href=#-variable-eask-files>🔍 Variable: eask-files</a></li>
+<li><a href=#-variable-eask-depends-on-emacs>🔍 Variable: eask-depends-on-emacs</a></li>
+<li><a href=#-variable-eask-depends-on>🔍 Variable: eask-depends-on</a></li>
+<li><a href=#-variable-eask-depends-on-dev>🔍 Variable: eask-depends-on-dev</a></li>
 <li><a href=#-function-eask-package-name-version-description>🔍 Function: eask-package (<code>name</code> <code>version</code> <code>description</code>)</a></li>
 <li><a href=#-function-eask-package-file-file>🔍 Function: eask-package-file (<code>file</code>)</a></li>
-<li><a href=#-function-eask-files-pkg-rest-args>🔍 Function: eask-files (<code>pkg</code> <code>&rest args</code>)</a></li>
-<li><a href=#-function-eask-depends-on-pkg-rest-args>🔍 Function: eask-depends-on (<code>pkg</code> <code>&rest args</code>)</a></li>
-<li><a href=#-function-eask-development-rest-dependencies>🔍 Function: eask-development (<code>&rest dependencies</code>)</a></li>
-<li><a href=#-function-eask-load-paths-rest-dirs>🔍 Function: eask-load-paths (<code>&rest dirs</code>)</a></li>
-<li><a href=#-function-eask-exec-paths-rest-dirs>🔍 Function: eask-exec-paths (<code>&rest dirs</code>)</a></li>
+<li><a href=#-function-eask-files-pkg-rest-args>🔍 Function: eask-files (<code>pkg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-function-eask-depends-on-pkg-rest-args>🔍 Function: eask-depends-on (<code>pkg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-function-eask-development-rest-dependencies>🔍 Function: eask-development (&rest <code>dependencies</code>)</a></li>
+<li><a href=#-function-eask-load-paths-rest-dirs>🔍 Function: eask-load-paths (&rest <code>dirs</code>)</a></li>
+<li><a href=#-function-eask-exec-paths-rest-dirs>🔍 Function: eask-exec-paths (&rest <code>dirs</code>)</a></li>
 <li><a href=#-function-eask-source>🔍 Function: eask-source</a></li>
 <li><a href=#-function-eask-source-priority>🔍 Function: eask-source-priority</a></li>
 </ul>
@@ -462,14 +486,14 @@ your projects and extensions to Eask.</p>
 <li><a href=#-variable-eask-timestamps>🔍 Variable: eask-timestamps</a></li>
 <li><a href=#-variable-eask-log-level>🔍 Variable: eask-log-level</a></li>
 <li><a href=#-variable-eask-level-color>🔍 Variable: eask-level-color</a></li>
-<li><a href=#-macro-eask-with-verbosity-symbol-rest-body>🔍 Macro: eask-with-verbosity (<code>symbol</code> <code>&rest body</code>)</a></li>
-<li><a href=#-function-eask-debug-msg-rest-args>🔍 Function: eask-debug (<code>msg</code> <code>&rest args</code>)</a></li>
-<li><a href=#-function-eask-log-msg-rest-args>🔍 Function: eask-log (<code>msg</code> <code>&rest args</code>)</a></li>
-<li><a href=#-function-eask-info-msg-rest-args>🔍 Function: eask-info (<code>msg</code> <code>&rest args</code>)</a></li>
-<li><a href=#-function-eask-warn-msg-rest-args>🔍 Function: eask-warn (<code>msg</code> <code>&rest args</code>)</a></li>
-<li><a href=#-function-eask-error-msg-rest-args>🔍 Function: eask-error (<code>msg</code> <code>&rest args</code>)</a></li>
-<li><a href=#-function-eask-msg-msg-rest-args>🔍 Function: eask-msg (<code>msg</code> <code>&rest args</code>)</a></li>
-<li><a href=#-function-eask-write-msg-rest-args>🔍 Function: eask-write (<code>msg</code> <code>&rest args</code>)</a></li>
+<li><a href=#-macro-eask-with-verbosity-symbol-rest-body>🔍 Macro: eask-with-verbosity (<code>symbol</code> &rest <code>body</code>)</a></li>
+<li><a href=#-function-eask-debug-msg-rest-args>🔍 Function: eask-debug (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-function-eask-log-msg-rest-args>🔍 Function: eask-log (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-function-eask-info-msg-rest-args>🔍 Function: eask-info (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-function-eask-warn-msg-rest-args>🔍 Function: eask-warn (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-function-eask-error-msg-rest-args>🔍 Function: eask-error (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-function-eask-msg-msg-rest-args>🔍 Function: eask-msg (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-function-eask-write-msg-rest-args>🔍 Function: eask-write (<code>msg</code> &rest <code>args</code>)</a></li>
 </ul></nav>
 <hr>
 </div>
@@ -495,7 +519,7 @@ your projects and extensions to Eask.</p>
 </code></pre></div><p>Each Elisp scripts should have this snippet at the very top of the file.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-macro-eask-start-rest-body>
-🔍 Macro: eask-start (<code>&rest body</code>)
+🔍 Macro: eask-start (&rest <code>body</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-macro-eask-start-rest-body class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Macro: eask-start (&rest body)" aria-label="Anchor to: 🔍 Macro: eask-start (&rest body)" href=#-macro-eask-start-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -512,12 +536,183 @@ your projects and extensions to Eask.</p>
 </h1>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=heading>
-🔍
-<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#heading class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍" aria-label="Anchor to: 🔍" href=#heading><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-variable-eask-lisp-root>
+🔍 Variable: eask-lisp-root
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-lisp-root class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-lisp-root" aria-label="Anchor to: 🔍 Variable: eask-lisp-root" href=#-variable-eask-lisp-root><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
+<p>Points to <code>lisp</code> directory from the project root.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-command->
+🔍 Function: eask-command ()
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-command- class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-command ()" aria-label="Anchor to: 🔍 Function: eask-command ()" href=#-function-eask-command-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Return the current command in string.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-checker-p->
+🔍 Function: eask-checker-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-checker-p- class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-checker-p ()" aria-label="Anchor to: 🔍 Function: eask-checker-p ()" href=#-function-eask-checker-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Return t if running Eask as the checker.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-script-script>
+🔍 Function: eask-script (<code>script</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-script-script class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-script (script)" aria-label="Anchor to: 🔍 Function: eask-script (script)" href=#-function-eask-script-script><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Return full script filename.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-script</span> <span class=s>&#34;extern/pacakge&#34;</span><span class=p>)</span>  <span class=c1>; {project-root}/lisp/extern/package.el</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-load-script>
+🔍 Function: eask-load (<code>script</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-load-script class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-load (script)" aria-label="Anchor to: 🔍 Function: eask-load (script)" href=#-function-eask-load-script><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Load another eask script.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-load</span> <span class=s>&#34;extern/ansi&#34;</span><span class=p>)</span>  <span class=c1>; load {project-root}/lisp/extern/ansi.el file</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-call-script>
+🔍 Function: eask-call (<code>script</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-call-script class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-call (script)" aria-label="Anchor to: 🔍 Function: eask-call (script)" href=#-function-eask-call-script><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Call another eask script.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-call</span> <span class=s>&#34;core/clean-elc&#34;</span><span class=p>)</span>  <span class=c1>; call command `eask clean-elc`</span>
+</code></pre></div><blockquote class="gdoc-hint info">
+💡 This is rarely used!
+</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-macro-eask-defvc-version-rest-body>
+🔍 Macro: eask-defvc&lt; (<code>version</code> &rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-macro-eask-defvc-version-rest-body class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Macro: eask-defvc< (version &rest body)" aria-label="Anchor to: 🔍 Macro: eask-defvc< (version &rest body)" href=#-macro-eask-defvc-version-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Define scope if Emacs version is below specific version.</p>
+<p><code>VERSION</code> is an integer and will be compared with <code>emacs-major-version</code>.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-defvc&lt;</span> <span class=mi>28</span>
+  <span class=c1>;; This is missing before Emacs 28; define it</span>
+  <span class=p>(</span><span class=nb>defvar</span> <span class=nv>package-native-compile</span> <span class=no>nil</span><span class=p>)</span>
+  <span class=p>)</span>
+</code></pre></div><blockquote class="gdoc-hint info">
+💡 This is used for Emacs compatibility!
+</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-macro-eask--silent-rest-body>
+🔍 Macro: eask&ndash;silent (&rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-macro-eask--silent-rest-body class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Macro: eask&ndash;silent (&rest body)" aria-label="Anchor to: 🔍 Macro: eask&ndash;silent (&rest body)" href=#-macro-eask--silent-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Mute all messages from standard output inside the scope.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask--unsilent</span> <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;You can&#39;t hear me! :(&#34;</span><span class=p>))</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-macro-eask--unsilent-rest-body>
+🔍 Macro: eask&ndash;unsilent (&rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-macro-eask--unsilent-rest-body class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Macro: eask&ndash;unsilent (&rest body)" aria-label="Anchor to: 🔍 Macro: eask&ndash;unsilent (&rest body)" href=#-macro-eask--unsilent-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Unmute all messages from standard output inside the scope.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask--unsilent</span> <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;You can hear me! :)&#34;</span><span class=p>))</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-dependencies->
+🔍 Function: eask-dependencies ()
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-dependencies- class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-dependencies ()" aria-label="Anchor to: 🔍 Function: eask-dependencies ()" href=#-function-eask-dependencies-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Return a list of dependencies.</p>
+<p>Elements should either be <code>(NAME . VERSION)</code> or <code>(NAME . RECIPE-FORMAT)</code>.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-pkg-init-optional-force>
+🔍 Function: eask-pkg-init (&optional <code>force</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-pkg-init-optional-force class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-pkg-init (&optional force)" aria-label="Anchor to: 🔍 Function: eask-pkg-init (&optional force)" href=#-function-eask-pkg-init-optional-force><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Initialize packages for use.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-start</span>
+  <span class=p>(</span><span class=nv>eask-pkg-init</span><span class=p>)</span>
+  <span class=c1>;; Now you can use packages installed in `package-user-dir&#39;</span>
+  <span class=p>)</span>
+</code></pre></div><blockquote class="gdoc-hint info">
+💡 This is usually called after <strong>eask-start</strong>!
+</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-macro-eask-with-archives-archives-rest-body>
+🔍 Macro: eask-with-archives (<code>archives</code> &rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-macro-eask-with-archives-archives-rest-body class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Macro: eask-with-archives (archives &rest body)" aria-label="Anchor to: 🔍 Macro: eask-with-archives (archives &rest body)" href=#-macro-eask-with-archives-archives-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Scope that temporary makes archives available.</p>
+<p><code>ARCHIVES</code> can either be a string or a list of strings.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-with-archives</span> <span class=s>&#34;melpa&#34;</span>
+  <span class=p>(</span><span class=nv>eask-package-install</span> <span class=ss>&#39;package-build</span><span class=p>))</span>  <span class=c1>; install packages that are only defined in MELPA</span>
+</code></pre></div><blockquote class="gdoc-hint info">
+💡 This is handy when you need certain packages from certain archives.
+</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-package-desc-name-optional-current>
+🔍 Function: eask-package-desc (<code>name</code> &optional <code>current</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-package-desc-name-optional-current class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-package-desc (name &optional current)" aria-label="Anchor to: 🔍 Function: eask-package-desc (name &optional current)" href=#-function-eask-package-desc-name-optional-current><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Build package descriptor for a package.</p>
+<p><code>CURRENT</code> means installed packages; otherwise it will return any available
+packages from selected package archives.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-argv-index>
+🔍 Function: eask-argv (<code>index</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-argv-index class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-argv (index)" aria-label="Anchor to: 🔍 Function: eask-argv (index)" href=#-function-eask-argv-index><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Return a command-line argument by index.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-args->
+🔍 Function: eask-args ()
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-args- class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-args ()" aria-label="Anchor to: 🔍 Function: eask-args ()" href=#-function-eask-args-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Return a list that is extracted from command-line arguments.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask info --verbose <span class=m>4</span> foo bar
+</code></pre></div><p>It will ignore <code>--verbose</code> and <code>4</code>, and only returns <code>foo</code>, and <code>bar</code>.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-variable-eask-file>
+🔍 Variable: eask-file
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-file class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-file" aria-label="Anchor to: 🔍 Variable: eask-file" href=#-variable-eask-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Path to currently loaded Eask-file.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-variable-eask-file-root>
+🔍 Variable: eask-file-root
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-file-root class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-file-root" aria-label="Anchor to: 🔍 Variable: eask-file-root" href=#-variable-eask-file-root><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Directory to currently loaded Eask-file.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-function-eask-network-insecure-p->
+🔍 Function: eask-network-insecure-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-network-insecure-p- class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-network-insecure-p ()" aria-label="Anchor to: 🔍 Function: eask-network-insecure-p ()" href=#-function-eask-network-insecure-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Return <code>t</code> if the current Emacs session allows insecure network connections.</p>
 <div class=gdoc-page__anchorwrap>
 <h1 id=-flags>
 🚩 Flags
@@ -713,6 +908,73 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 have the word <code>eask-</code> as the function prefix.</p>
 <p>See <a class=gdoc-markdown__link href=https://emacs-eask.github.io/eask/dsl>DSL</a> section for more information.</p>
 <div class=gdoc-page__anchorwrap>
+<h2 id=-variable-eask-package>
+🔍 Variable: eask-package
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-package class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-package" aria-label="Anchor to: 🔍 Variable: eask-package" href=#-variable-eask-package><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>It holds package&rsquo;s <code>NAME</code>, <code>VERSION</code>, and <code>DESCRIPTION</code> in a plist.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nf>plist-get</span> <span class=nv>eask-package</span> <span class=nb>:name</span><span class=p>)</span>  <span class=c1>; return package name</span>
+</code></pre></div><p>Three functions that are extended from this variable:</p>
+<ul>
+<li><code>(eask-package-name)</code></li>
+<li><code>(eask-package-version)</code></li>
+<li><code>(eask-package-description)</code></li>
+</ul>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-variable-eask-package-file>
+🔍 Variable: eask-package-file
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-package-file class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-package-file" aria-label="Anchor to: 🔍 Variable: eask-package-file" href=#-variable-eask-package-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Points to package main file.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-variable-eask-package-desc>
+🔍 Variable: eask-package-desc
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-package-desc class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-package-desc" aria-label="Anchor to: 🔍 Variable: eask-package-desc" href=#-variable-eask-package-desc><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Package descriptor from the package main file.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>package-desc-p</span> <span class=nv>eask-package-desc</span><span class=p>)</span>  <span class=c1>; return t</span>
+</code></pre></div><blockquote class="gdoc-hint warning">
+⚠ This can be <strong>nil</strong> if the package main file cannot be parsed correctly!
+</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-variable-eask-files>
+🔍 Variable: eask-files
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-files class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-files" aria-label="Anchor to: 🔍 Variable: eask-files" href=#-variable-eask-files><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Holds a list of files pattern in wildcard specification.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-variable-eask-depends-on-emacs>
+🔍 Variable: eask-depends-on-emacs
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-depends-on-emacs class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-depends-on-emacs" aria-label="Anchor to: 🔍 Variable: eask-depends-on-emacs" href=#-variable-eask-depends-on-emacs><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Holds information about Emacs minimum version.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-variable-eask-depends-on>
+🔍 Variable: eask-depends-on
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-depends-on class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-depends-on" aria-label="Anchor to: 🔍 Variable: eask-depends-on" href=#-variable-eask-depends-on><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Holds a list of dependencies.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-variable-eask-depends-on-dev>
+🔍 Variable: eask-depends-on-dev
+<a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-variable-eask-depends-on-dev class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Variable: eask-depends-on-dev" aria-label="Anchor to: 🔍 Variable: eask-depends-on-dev" href=#-variable-eask-depends-on-dev><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Holds a list of dependencies that are development used.</p>
+<div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-package-name-version-description>
 🔍 Function: eask-package (<code>name</code> <code>version</code> <code>description</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-package-name-version-description class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-package (name version description)" aria-label="Anchor to: 🔍 Function: eask-package (name version description)" href=#-function-eask-package-name-version-description><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
@@ -730,7 +992,7 @@ have the word <code>eask-</code> as the function prefix.</p>
 <p>Alias of <code>package-file</code>.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-files-pkg-rest-args>
-🔍 Function: eask-files (<code>pkg</code> <code>&rest args</code>)
+🔍 Function: eask-files (<code>pkg</code> &rest <code>args</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-files-pkg-rest-args class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-files (pkg &rest args)" aria-label="Anchor to: 🔍 Function: eask-files (pkg &rest args)" href=#-function-eask-files-pkg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -738,7 +1000,7 @@ have the word <code>eask-</code> as the function prefix.</p>
 <p>Alias of <code>files</code>.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-depends-on-pkg-rest-args>
-🔍 Function: eask-depends-on (<code>pkg</code> <code>&rest args</code>)
+🔍 Function: eask-depends-on (<code>pkg</code> &rest <code>args</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-depends-on-pkg-rest-args class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-depends-on (pkg &rest args)" aria-label="Anchor to: 🔍 Function: eask-depends-on (pkg &rest args)" href=#-function-eask-depends-on-pkg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -746,7 +1008,7 @@ have the word <code>eask-</code> as the function prefix.</p>
 <p>Alias of <code>depends-on</code>.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-development-rest-dependencies>
-🔍 Function: eask-development (<code>&rest dependencies</code>)
+🔍 Function: eask-development (&rest <code>dependencies</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-development-rest-dependencies class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-development (&rest dependencies)" aria-label="Anchor to: 🔍 Function: eask-development (&rest dependencies)" href=#-function-eask-development-rest-dependencies><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -754,7 +1016,7 @@ have the word <code>eask-</code> as the function prefix.</p>
 <p>Alias of <code>development</code>.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-load-paths-rest-dirs>
-🔍 Function: eask-load-paths (<code>&rest dirs</code>)
+🔍 Function: eask-load-paths (&rest <code>dirs</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-load-paths-rest-dirs class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-load-paths (&rest dirs)" aria-label="Anchor to: 🔍 Function: eask-load-paths (&rest dirs)" href=#-function-eask-load-paths-rest-dirs><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -762,7 +1024,7 @@ have the word <code>eask-</code> as the function prefix.</p>
 <p>Alias of <code>load-paths</code>.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-exec-paths-rest-dirs>
-🔍 Function: eask-exec-paths (<code>&rest dirs</code>)
+🔍 Function: eask-exec-paths (&rest <code>dirs</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-exec-paths-rest-dirs class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-exec-paths (&rest dirs)" aria-label="Anchor to: 🔍 Function: eask-exec-paths (&rest dirs)" href=#-function-eask-exec-paths-rest-dirs><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -792,6 +1054,44 @@ have the word <code>eask-</code> as the function prefix.</p>
 </h1>
 </div>
 <p>Logger utility with timestamps and log level.</p>
+<p>The log level value is defined in function <code>eask--verb2lvl</code>.</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th style=text-align:left>Level</th>
+<th style=text-align:left>Description</th>
+<th style=text-align:left>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left><code>debug</code></td>
+<td style=text-align:left>Designates fine-grained informational events that are most useful to debug an application.</td>
+<td style=text-align:left>4</td>
+</tr>
+<tr>
+<td style=text-align:left><code>log</code></td>
+<td style=text-align:left>Designates normal messages.</td>
+<td style=text-align:left>3</td>
+</tr>
+<tr>
+<td style=text-align:left><code>info</code></td>
+<td style=text-align:left>Designates informational messages that highlight the progress of the application at coarse-grained level.</td>
+<td style=text-align:left>2</td>
+</tr>
+<tr>
+<td style=text-align:left><code>warn</code></td>
+<td style=text-align:left>Designates potentially harmful situations.</td>
+<td style=text-align:left>1</td>
+</tr>
+<tr>
+<td style=text-align:left><code>error</code></td>
+<td style=text-align:left>Designates error events that might still allow the application to continue running.</td>
+<td style=text-align:left>0</td>
+</tr>
+</tbody>
+</table> </div>
+<p>The default level is <code>log</code>.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-variable-eask-verbosity>
 🔍 Variable: eask-verbosity
@@ -799,7 +1099,7 @@ have the word <code>eask-</code> as the function prefix.</p>
 </a>
 </h2>
 </div>
-<p>Verbosity level represent as an integer.</p>
+<p>The verbosity level is represented as an integer.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>eask-verbosity</span> <span class=mi>4</span><span class=p>)</span>  <span class=c1>; you could set from 0 to 4</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h2 id=-variable-eask-timestamps>
@@ -839,7 +1139,7 @@ have the word <code>eask-</code> as the function prefix.</p>
         <span class=p>(</span><span class=ne>error</span> <span class=o>.</span> <span class=nv>ansi-red</span><span class=p>)))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h2 id=-macro-eask-with-verbosity-symbol-rest-body>
-🔍 Macro: eask-with-verbosity (<code>symbol</code> <code>&rest body</code>)
+🔍 Macro: eask-with-verbosity (<code>symbol</code> &rest <code>body</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-macro-eask-with-verbosity-symbol-rest-body class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Macro: eask-with-verbosity (symbol &rest body)" aria-label="Anchor to: 🔍 Macro: eask-with-verbosity (symbol &rest body)" href=#-macro-eask-with-verbosity-symbol-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -853,7 +1153,7 @@ reaches. It will only be printed when you have specified <code>--verbose 4</code
 global option.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-debug-msg-rest-args>
-🔍 Function: eask-debug (<code>msg</code> <code>&rest args</code>)
+🔍 Function: eask-debug (<code>msg</code> &rest <code>args</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-debug-msg-rest-args class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-debug (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-debug (msg &rest args)" href=#-function-eask-debug-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -862,7 +1162,7 @@ global option.</p>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [DEBUG] This is DEBUG message
 </code></pre><div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-log-msg-rest-args>
-🔍 Function: eask-log (<code>msg</code> <code>&rest args</code>)
+🔍 Function: eask-log (<code>msg</code> &rest <code>args</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-log-msg-rest-args class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-log (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-log (msg &rest args)" href=#-function-eask-log-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -871,7 +1171,7 @@ global option.</p>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [LOG] This is LOG message
 </code></pre><div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-info-msg-rest-args>
-🔍 Function: eask-info (<code>msg</code> <code>&rest args</code>)
+🔍 Function: eask-info (<code>msg</code> &rest <code>args</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-info-msg-rest-args class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-info (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-info (msg &rest args)" href=#-function-eask-info-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -880,7 +1180,7 @@ global option.</p>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [INFO] This is INFO message
 </code></pre><div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-warn-msg-rest-args>
-🔍 Function: eask-warn (<code>msg</code> <code>&rest args</code>)
+🔍 Function: eask-warn (<code>msg</code> &rest <code>args</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-warn-msg-rest-args class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-warn (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-warn (msg &rest args)" href=#-function-eask-warn-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -889,7 +1189,7 @@ global option.</p>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [WARNING] This is WARNING message
 </code></pre><div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-error-msg-rest-args>
-🔍 Function: eask-error (<code>msg</code> <code>&rest args</code>)
+🔍 Function: eask-error (<code>msg</code> &rest <code>args</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-error-msg-rest-args class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-error (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-error (msg &rest args)" href=#-function-eask-error-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -898,7 +1198,7 @@ global option.</p>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [ERROR] This is ERROR message
 </code></pre><div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-msg-msg-rest-args>
-🔍 Function: eask-msg (<code>msg</code> <code>&rest args</code>)
+🔍 Function: eask-msg (<code>msg</code> &rest <code>args</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-msg-msg-rest-args class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-msg (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-msg (msg &rest args)" href=#-function-eask-msg-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
@@ -907,7 +1207,7 @@ global option.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-msg</span> <span class=s>&#34;This is a message&#34;</span><span class=p>)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h2 id=-function-eask-write-msg-rest-args>
-🔍 Function: eask-write (<code>msg</code> <code>&rest args</code>)
+🔍 Function: eask-write (<code>msg</code> &rest <code>args</code>)
 <a data-clipboard-text=https://emacs-eask.github.io/Development-API/#-function-eask-write-msg-rest-args class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Function: eask-write (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-write (msg &rest args)" href=#-function-eask-write-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
