@@ -18,12 +18,12 @@ Cask does not seem to support Windows (no WSL) after version 0.8.6. In the early
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/FAQ/">
 <meta property="article:section" content="Faq">
-<meta property="article:modified_time" content="2022-05-01T13:16:48+08:00">
+<meta property="article:modified_time" content="2022-05-01T22:53:20+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="FAQ">
 <meta name=twitter:description content="❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)! Like colorful interface, entire npm community, etc; so you can build cross-platform software with fewer hassles! Especially after Microsoft had bought the NPM inc, and would likely support their own system well.
 Cask does not seem to support Windows (no WSL) after version 0.8.6. In the early versions, they have used Python, but due to the Python supports on Windows are just not as good as Node.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Faq","name":"FAQ","url":"https://emacs-eask.github.io/FAQ/","headline":"FAQ","description":"❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)! Like colorful interface, entire npm community, etc; so you can build cross-platform software with fewer hassles! Especially after Microsoft had bought the NPM inc, and would likely support their own system well.\nCask does not seem to support Windows (no WSL) after version 0.8.6. In the early versions, they have used Python, but due to the Python supports on Windows are just not as good as Node.","wordCount":"119","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/FAQ/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-05-01T13:16:48.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Faq","name":"FAQ","url":"https://emacs-eask.github.io/FAQ/","headline":"FAQ","description":"❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)! Like colorful interface, entire npm community, etc; so you can build cross-platform software with fewer hassles! Especially after Microsoft had bought the NPM inc, and would likely support their own system well.\nCask does not seem to support Windows (no WSL) after version 0.8.6. In the early versions, they have used Python, but due to the Python supports on Windows are just not as good as Node.","wordCount":"306","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/FAQ/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-05-01T22:53:20.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -464,7 +464,43 @@ Emacs configuration/packages consistent on every operating system!</p>
 </a>
 </h2>
 </div>
-<p>WIP</p>
+<p><a class=gdoc-markdown__link href=https://www.npmjs.com/package/yargs>yargs</a> has a vary wide community; and it
+has been used in many tools.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-why-am-i-getting-the-error-package-target-tarel-not-found-while-installing>
+❓ Why am I getting the error package target <code>tar</code>/<code>el</code> not found while installing?
+<a data-clipboard-text=https://emacs-eask.github.io/FAQ/#-why-am-i-getting-the-error-package-target-tarel-not-found-while-installing class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Why am I getting the error package target tar/el not found while installing?" aria-label="Anchor to: ❓ Why am I getting the error package target tar/el not found while installing?" href=#-why-am-i-getting-the-error-package-target-tarel-not-found-while-installing><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>The example error message,</p>
+<pre tabindex=0><code>http://melpa.org/packages/lsp-mode-20220429.647.tar: Not found
+</code></pre><p>The issue is caused by the mismatch from the backup archives. Generally, Eask
+will pick up the latest <code>archive-contents</code> from sources unless you have been
+pinging sources too many times. Then the source could block your IP for few
+minutes.</p>
+<p>You can either wait for few minutes so the source has unlock you from their
+black list. Or wait for the back up archives to update to the latest version.
+The backup archives repository is <a class=gdoc-markdown__link href=https://github.com/emacs-eask/archives>here</a>.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-why-am-i-getting-the-error-package-is-not-installable>
+❓ Why am I getting the error package is not installable?
+<a data-clipboard-text=https://emacs-eask.github.io/FAQ/#-why-am-i-getting-the-error-package-is-not-installable class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ❓ Why am I getting the error package is not installable?" aria-label="Anchor to: ❓ Why am I getting the error package is not installable?" href=#-why-am-i-getting-the-error-package-is-not-installable><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>The example error message,</p>
+<pre tabindex=0><code>Package not installable `helm'; make sure package archives are included
+</code></pre><p>You would need to first ask yourself; where does the package came from and what
+specific source holds this package information. From the above example message,
+<code>helm</code> is listed on the <code>melpa</code> source. You would have to edit your <strong>Eask</strong>-file
+like this:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=o>...</span>
+
+<span class=p>(</span><span class=nv>source</span> <span class=s>&#34;melpa&#34;</span><span class=p>)</span>  <span class=c1>; &lt;- add this line</span>
+
+<span class=p>(</span><span class=nv>depends-on</span> <span class=s>&#34;helm&#34;</span><span class=p>)</span>
+</code></pre></div>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
