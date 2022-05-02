@@ -16,11 +16,11 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Getting-Started/Commands-and-options/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2022-05-03T03:17:00+08:00">
+<meta property="article:modified_time" content="2022-05-03T03:57:32+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🚩 Commands and options">
 <meta name=twitter:description content="🚩 Core  🔍 eask create 🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask paths 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask eval 🔍 eask load 🔍 eask activate 🔍 eask concate   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask list-all 🔍 eask outdated 🔍 eask refresh   🚩 Cleanup  🔍 eask clean 🔍 eask clean-elc 🔍 eask clean-all   🚩 Linter  🔍 eask lint [FILES.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🚩 Commands and options","url":"https://emacs-eask.github.io/Getting-Started/Commands-and-options/","headline":"🚩 Commands and options","description":"🚩 Core  🔍 eask create 🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask paths 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask eval 🔍 eask load 🔍 eask activate 🔍 eask concate   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask list-all 🔍 eask outdated 🔍 eask refresh   🚩 Cleanup  🔍 eask clean 🔍 eask clean-elc 🔍 eask clean-all   🚩 Linter  🔍 eask lint [FILES.","wordCount":"1161","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Commands-and-options/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-05-03T03:17:00.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🚩 Commands and options","url":"https://emacs-eask.github.io/Getting-Started/Commands-and-options/","headline":"🚩 Commands and options","description":"🚩 Core  🔍 eask create 🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask paths 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask eval 🔍 eask load 🔍 eask activate 🔍 eask concate   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask list-all 🔍 eask outdated 🔍 eask refresh   🚩 Cleanup  🔍 eask clean 🔍 eask clean-elc 🔍 eask clean-all   🚩 Linter  🔍 eask lint [FILES.","wordCount":"1178","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Commands-and-options/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-05-03T03:57:32.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -499,12 +499,17 @@ Edit page
 <ul>
 <li><a href=#-eask-lint-files>🔍 eask lint [FILES..]</a></li>
 <li><a href=#-eask-checkdoc-files>🔍 eask checkdoc [FILES..]</a></li>
-<li><a href=#-eask-ert-files>🔍 eask ert [FILES..]</a></li>
-<li><a href=#-eask-ert-runner-files>🔍 eask ert-runner [FILES..]</a></li>
-<li><a href=#-eask-buttercup>🔍 eask buttercup</a></li>
+<li><a href=#-eask-elint>🔍 eask elint</a></li>
 <li><a href=#-eask-indent>🔍 eask indent</a></li>
 <li><a href=#-eask-declare>🔍 eask declare</a></li>
 <li><a href=#-eask-regexps>🔍 eask regexps</a></li>
+</ul>
+</li>
+<li><a href=#-testing>🚩 Testing</a>
+<ul>
+<li><a href=#-eask-ert-files>🔍 eask ert [FILES..]</a></li>
+<li><a href=#-eask-ert-runner-files>🔍 eask ert-runner [FILES..]</a></li>
+<li><a href=#-eask-buttercup>🔍 eask buttercup</a></li>
 </ul>
 </li>
 <li><a href=#-utilities>🚩 Utilities</a>
@@ -900,29 +905,14 @@ your environment $PATH; all execution only happens inside Emacs.</p>
 <p>Run checkdoc.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> checkdoc <span class=o>[</span>FILES..<span class=o>]</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-eask-ert-files>
-🔍 eask ert [FILES..]
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-ert-files class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask ert [FILES..]" aria-label="Anchor to: 🔍 eask ert [FILES..]" href=#-eask-ert-files><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-eask-elint>
+🔍 eask elint
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-elint class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask elint" aria-label="Anchor to: 🔍 eask elint" href=#-eask-elint><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> ert <span class=o>[</span>FILES..<span class=o>]</span>
-</code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-eask-ert-runner-files>
-🔍 eask ert-runner [FILES..]
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-ert-runner-files class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask ert-runner [FILES..]" aria-label="Anchor to: 🔍 eask ert-runner [FILES..]" href=#-eask-ert-runner-files><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> ert-runner <span class=o>[</span>FILES..<span class=o>]</span>
-</code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-eask-buttercup>
-🔍 eask buttercup
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-buttercup class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask buttercup" aria-label="Anchor to: 🔍 eask buttercup" href=#-eask-buttercup><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2>
-</div>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> buttercup
+<p>Run elint.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> elint <span class=o>[</span>FILES..<span class=o>]</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h2 id=-eask-indent>
 🔍 eask indent
@@ -950,6 +940,37 @@ your environment $PATH; all execution only happens inside Emacs.</p>
 </div>
 <p>Alias: <code>lint-regexps</code>, <code>relint</code></p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> regexps <span class=o>[</span>FILES..<span class=o>]</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h1 id=-testing>
+🚩 Testing
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-testing class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Testing" aria-label="Anchor to: 🚩 Testing" href=#-testing><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-eask-ert-files>
+🔍 eask ert [FILES..]
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-ert-files class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask ert [FILES..]" aria-label="Anchor to: 🔍 eask ert [FILES..]" href=#-eask-ert-files><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> ert <span class=o>[</span>FILES..<span class=o>]</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-eask-ert-runner-files>
+🔍 eask ert-runner [FILES..]
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-ert-runner-files class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask ert-runner [FILES..]" aria-label="Anchor to: 🔍 eask ert-runner [FILES..]" href=#-eask-ert-runner-files><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> ert-runner <span class=o>[</span>FILES..<span class=o>]</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-eask-buttercup>
+🔍 eask buttercup
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-buttercup class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask buttercup" aria-label="Anchor to: 🔍 eask buttercup" href=#-eask-buttercup><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> buttercup
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h1 id=-utilities>
 🚩 Utilities
