@@ -6,8 +6,7 @@
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
 <meta name=description content="This document guides you through the installation of Eask.
-   🚩 Prerequisites 💾 Install through NPM 💾 Manual installation 🏡 Setup      🚩 Prerequisites     Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25 and below, or with other flavours of Emacs, e.g. XEmacs.
- Node.js and npm for being the CLI layer yargs to parse commands and options.">
+   💾 Quick Install  Binary (Cross-platform) npm Homebrew (macOS or Linux) MacPorts (macOS) Chocolatey (Windows)   💾 Source  🚩 Prerequisite Tools 🏡 Setup        💾 Quick Install     Binary (Cross-platform)     Download the appropriate version for your platform from Eask Releases. Once downloaded, the binary can be run from anywhere.">
 <title>💾 Install Eask | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
@@ -15,18 +14,16 @@
 <meta property="og:title" content="💾 Install Eask">
 <meta property="og:site_name" content="Emacs Eask">
 <meta property="og:description" content="This document guides you through the installation of Eask.
-   🚩 Prerequisites 💾 Install through NPM 💾 Manual installation 🏡 Setup      🚩 Prerequisites     Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25 and below, or with other flavours of Emacs, e.g. XEmacs.
- Node.js and npm for being the CLI layer yargs to parse commands and options.">
+   💾 Quick Install  Binary (Cross-platform) npm Homebrew (macOS or Linux) MacPorts (macOS) Chocolatey (Windows)   💾 Source  🚩 Prerequisite Tools 🏡 Setup        💾 Quick Install     Binary (Cross-platform)     Download the appropriate version for your platform from Eask Releases. Once downloaded, the binary can be run from anywhere.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Getting-Started/Install-Eask/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2022-05-04T16:32:09+08:00">
+<meta property="article:modified_time" content="2022-05-04T16:57:47+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="💾 Install Eask">
 <meta name=twitter:description content="This document guides you through the installation of Eask.
-   🚩 Prerequisites 💾 Install through NPM 💾 Manual installation 🏡 Setup      🚩 Prerequisites     Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25 and below, or with other flavours of Emacs, e.g. XEmacs.
- Node.js and npm for being the CLI layer yargs to parse commands and options.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"💾 Install Eask","url":"https://emacs-eask.github.io/Getting-Started/Install-Eask/","headline":"💾 Install Eask","description":"This document guides you through the installation of Eask.\n   🚩 Prerequisites 💾 Install through NPM 💾 Manual installation 🏡 Setup      🚩 Prerequisites     Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25 and below, or with other flavours of Emacs, e.g. XEmacs.\n Node.js and npm for being the CLI layer yargs to parse commands and options.","wordCount":"173","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Install-Eask/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-05-04T16:32:09.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+   💾 Quick Install  Binary (Cross-platform) npm Homebrew (macOS or Linux) MacPorts (macOS) Chocolatey (Windows)   💾 Source  🚩 Prerequisite Tools 🏡 Setup        💾 Quick Install     Binary (Cross-platform)     Download the appropriate version for your platform from Eask Releases. Once downloaded, the binary can be run from anywhere.">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"💾 Install Eask","url":"https://emacs-eask.github.io/Getting-Started/Install-Eask/","headline":"💾 Install Eask","description":"This document guides you through the installation of Eask.\n   💾 Quick Install  Binary (Cross-platform) npm Homebrew (macOS or Linux) MacPorts (macOS) Chocolatey (Windows)   💾 Source  🚩 Prerequisite Tools 🏡 Setup        💾 Quick Install     Binary (Cross-platform)     Download the appropriate version for your platform from Eask Releases. Once downloaded, the binary can be run from anywhere.","wordCount":"217","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Install-Eask/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-05-04T16:57:47.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -460,43 +457,97 @@ Edit page
 <p>This document guides you through the installation of Eask.</p>
 <div class="gdoc-toc gdoc-toc__level--3">
 <nav id=TableOfContents><ul>
-<li><a href=#-prerequisites>🚩 Prerequisites</a></li>
-<li><a href=#-install-through-npm>💾 Install through NPM</a></li>
-<li><a href=#-manual-installation>💾 Manual installation</a></li>
+<li><a href=#-quick-install>💾 Quick Install</a>
+<ul>
+<li><a href=#binary-cross-platform>Binary (Cross-platform)</a></li>
+<li><a href=#npm>npm</a></li>
+<li><a href=#homebrew-macos-or-linux>Homebrew (macOS or Linux)</a></li>
+<li><a href=#macports-macos>MacPorts (macOS)</a></li>
+<li><a href=#chocolatey-windows>Chocolatey (Windows)</a></li>
+</ul>
+</li>
+<li><a href=#-source>💾 Source</a>
+<ul>
+<li><a href=#-prerequisite-tools>🚩 Prerequisite Tools</a></li>
 <li><a href=#-setup>🏡 Setup</a></li>
+</ul>
+</li>
 </ul></nav>
 <hr>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-prerequisites>
-🚩 Prerequisites
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#-prerequisites class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Prerequisites" aria-label="Anchor to: 🚩 Prerequisites" href=#-prerequisites><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-quick-install>
+💾 Quick Install
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#-quick-install class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 💾 Quick Install" aria-label="Anchor to: 💾 Quick Install" href=#-quick-install><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
-<p>Eask requires GNU Emacs 26 and Node 14 or later! It will not work with Emacs 25
-and below, or with other flavours of Emacs, e.g. XEmacs.</p>
-<ol>
-<li><a class=gdoc-markdown__link href=https://nodejs.org/en/>Node.js</a> and <a class=gdoc-markdown__link href=https://www.npmjs.com/>npm</a> for being the CLI layer</li>
-<li><a class=gdoc-markdown__link href=https://github.com/yargs/yargs>yargs</a> to parse commands and options.</li>
-<li><a class=gdoc-markdown__link href=https://www.gnu.org/software/emacs/>Emacs</a> of course; make sure this is inside your environment PATH!</li>
-</ol>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-install-through-npm>
-💾 Install through NPM
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#-install-through-npm class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 💾 Install through NPM" aria-label="Anchor to: 💾 Install through NPM" href=#-install-through-npm><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=binary-cross-platform>
+Binary (Cross-platform)
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#binary-cross-platform class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Binary (Cross-platform)" aria-label="Anchor to: Binary (Cross-platform)" href=#binary-cross-platform><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2>
+</h3>
 </div>
-<p>The easiest way to install is through tool <a class=gdoc-markdown__link href=https://www.npmjs.com/>npm</a>,</p>
+<p>Download the appropriate version for your platform from <a class=gdoc-markdown__link href=https://github.com/emacs-eask/eask/releases>Eask Releases</a>.
+Once downloaded, the binary can be run from anywhere. You don’t need to install
+it into a global location. This works well for shared hosts and other systems
+where you don’t have a privileged account.</p>
+<p>Ideally, you should install it somewhere in your <code>PATH</code> for easy use. <code>/usr/local/bin</code>
+is the most probable location.</p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=npm>
+npm
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#npm class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: npm" aria-label="Anchor to: npm" href=#npm><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div>
+<p>If you have <a class=gdoc-markdown__link href=https://www.npmjs.com/>npm</a> installed on your machine, you can
+install Eask with the following one-liner:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ npm install -g @emacs-eask/eask
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-manual-installation>
-💾 Manual installation
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#-manual-installation class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 💾 Manual installation" aria-label="Anchor to: 💾 Manual installation" href=#-manual-installation><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=homebrew-macos-or-linux>
+Homebrew (macOS or Linux)
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#homebrew-macos-or-linux class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Homebrew (macOS or Linux)" aria-label="Anchor to: Homebrew (macOS or Linux)" href=#homebrew-macos-or-linux><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div>
+<p>WIP</p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=macports-macos>
+MacPorts (macOS)
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#macports-macos class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: MacPorts (macOS)" aria-label="Anchor to: MacPorts (macOS)" href=#macports-macos><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div>
+<p>WIP</p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=chocolatey-windows>
+Chocolatey (Windows)
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#chocolatey-windows class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Chocolatey (Windows)" aria-label="Anchor to: Chocolatey (Windows)" href=#chocolatey-windows><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div>
+<p>WIP</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-source>
+💾 Source
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#-source class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 💾 Source" aria-label="Anchor to: 💾 Source" href=#-source><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
+<div class=gdoc-page__anchorwrap>
+<h3 id=-prerequisite-tools>
+🚩 Prerequisite Tools
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#-prerequisite-tools class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Prerequisite Tools" aria-label="Anchor to: 🚩 Prerequisite Tools" href=#-prerequisite-tools><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div>
+<ul>
+<li><a class=gdoc-markdown__link href=https://git-scm.com/>Git</a></li>
+<li><a class=gdoc-markdown__link href=https://nodejs.org/en/>Node.js</a></li>
+<li><a class=gdoc-markdown__link href=https://www.npmjs.com/>npm</a></li>
+</ul>
 <p>Alternatively, you can clone it directly from this repo</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=c1># clone the repo</span>
 $ git clone https://github.com/emacs-eask/eask
@@ -507,11 +558,11 @@ $ <span class=nb>cd</span> eask
 <span class=c1># install the requirements</span>
 $ npm install
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-setup>
+<h3 id=-setup>
 🏡 Setup
 <a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Install-Eask/#-setup class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🏡 Setup" aria-label="Anchor to: 🏡 Setup" href=#-setup><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2>
+</h3>
 </div>
 <p>Make sure you set up the environment path variable according to your system,</p>
 <p>On Linux/macOS,</p>
