@@ -5,7 +5,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
-<meta name=description content="Elisp scripts are located under lisp folder and will wait to get called by the CLI. All Elisp scripts are written in Emacs Lisp and should have a similar structure below:
+<meta name=description content="Elisp scripts are located under the lisp folder and will wait to get called by the CLI. All Elisp scripts are written in Emacs Lisp and should have a similar structure below:
 (load (expand-file-name &#34;../_prepare.el&#34; (file-name-directory (nth 1 (member &#34;-scriptload&#34; command-line-args)))) nil t) (eask-start (message &#34;PWD is %s&#34; default-directory)) See Development API section for more information!">
 <title>📜 Elisp Script | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
@@ -13,17 +13,17 @@
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta property="og:title" content="📜 Elisp Script">
 <meta property="og:site_name" content="Emacs Eask">
-<meta property="og:description" content="Elisp scripts are located under lisp folder and will wait to get called by the CLI. All Elisp scripts are written in Emacs Lisp and should have a similar structure below:
+<meta property="og:description" content="Elisp scripts are located under the lisp folder and will wait to get called by the CLI. All Elisp scripts are written in Emacs Lisp and should have a similar structure below:
 (load (expand-file-name &#34;../_prepare.el&#34; (file-name-directory (nth 1 (member &#34;-scriptload&#34; command-line-args)))) nil t) (eask-start (message &#34;PWD is %s&#34; default-directory)) See Development API section for more information!">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Implementation/Elisp-script/">
 <meta property="article:section" content="Implementation">
-<meta property="article:modified_time" content="2022-06-09T18:47:11+08:00">
+<meta property="article:modified_time" content="2022-06-09T16:42:49+02:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="📜 Elisp Script">
-<meta name=twitter:description content="Elisp scripts are located under lisp folder and will wait to get called by the CLI. All Elisp scripts are written in Emacs Lisp and should have a similar structure below:
+<meta name=twitter:description content="Elisp scripts are located under the lisp folder and will wait to get called by the CLI. All Elisp scripts are written in Emacs Lisp and should have a similar structure below:
 (load (expand-file-name &#34;../_prepare.el&#34; (file-name-directory (nth 1 (member &#34;-scriptload&#34; command-line-args)))) nil t) (eask-start (message &#34;PWD is %s&#34; default-directory)) See Development API section for more information!">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Implementation","name":"📜 Elisp Script","url":"https://emacs-eask.github.io/Implementation/Elisp-script/","headline":"📜 Elisp Script","description":"Elisp scripts are located under lisp folder and will wait to get called by the CLI. All Elisp scripts are written in Emacs Lisp and should have a similar structure below:\n(load (expand-file-name \u0022..\/_prepare.el\u0022 (file-name-directory (nth 1 (member \u0022-scriptload\u0022 command-line-args)))) nil t) (eask-start (message \u0022PWD is %s\u0022 default-directory)) See Development API section for more information!","wordCount":"55","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Implementation/Elisp-script/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-06-09T18:47:11.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Implementation","name":"📜 Elisp Script","url":"https://emacs-eask.github.io/Implementation/Elisp-script/","headline":"📜 Elisp Script","description":"Elisp scripts are located under the lisp folder and will wait to get called by the CLI. All Elisp scripts are written in Emacs Lisp and should have a similar structure below:\n(load (expand-file-name \u0022..\/_prepare.el\u0022 (file-name-directory (nth 1 (member \u0022-scriptload\u0022 command-line-args)))) nil t) (eask-start (message \u0022PWD is %s\u0022 default-directory)) See Development API section for more information!","wordCount":"56","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Implementation/Elisp-script/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-06-09T16:42:49.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -454,14 +454,14 @@ Edit page
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>📜 Elisp Script</h1>
-<p>Elisp scripts are located under <strong>lisp</strong> folder and will wait to get called
+<p>Elisp scripts are located under the <strong>lisp</strong> folder and will wait to get called
 by the CLI. All Elisp scripts are written in Emacs Lisp and should have a
 similar structure below:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nf>load</span> <span class=p>(</span><span class=nf>expand-file-name</span>
        <span class=s>&#34;../_prepare.el&#34;</span>
        <span class=p>(</span><span class=nf>file-name-directory</span> <span class=p>(</span><span class=nf>nth</span> <span class=mi>1</span> <span class=p>(</span><span class=nf>member</span> <span class=s>&#34;-scriptload&#34;</span> <span class=nv>command-line-args</span><span class=p>))))</span>
       <span class=no>nil</span> <span class=no>t</span><span class=p>)</span>
-      
+
 <span class=p>(</span><span class=nv>eask-start</span>
   <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;PWD is %s&#34;</span> <span class=nv>default-directory</span><span class=p>))</span>
 </code></pre></div><p>See <a class=gdoc-markdown__link href=https://emacs-eask.github.io/eask/api>Development API</a> section for
