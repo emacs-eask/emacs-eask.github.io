@@ -6,7 +6,7 @@
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
 <meta name=description content="Eask is just a regular Emacs Lisp file and should be read from Emacs itself! You can do:
-; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enables you to execute code before and after each command. The hooks look like so:
+; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enable you to execute code before and after each command. The hooks look like so:
 eask-{`before`/`after`}-{`command_name`}-hook For example, to consider warnings as errors when byte-compiling with the command eask compile:
 (add-hook 'eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) This is also equivalent to option --strict:">
 <title>🔧 Advanced Usage | Emacs Eask</title>
@@ -16,20 +16,20 @@ eask-{`before`/`after`}-{`command_name`}-hook For example, to consider warnings 
 <meta property="og:title" content="🔧 Advanced Usage">
 <meta property="og:site_name" content="Emacs Eask">
 <meta property="og:description" content="Eask is just a regular Emacs Lisp file and should be read from Emacs itself! You can do:
-; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enables you to execute code before and after each command. The hooks look like so:
+; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enable you to execute code before and after each command. The hooks look like so:
 eask-{`before`/`after`}-{`command_name`}-hook For example, to consider warnings as errors when byte-compiling with the command eask compile:
 (add-hook 'eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) This is also equivalent to option --strict:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Getting-Started/Advanced-Usage/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2022-07-02T06:00:32+08:00">
+<meta property="article:modified_time" content="2022-07-03T23:10:21+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🔧 Advanced Usage">
 <meta name=twitter:description content="Eask is just a regular Emacs Lisp file and should be read from Emacs itself! You can do:
-; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enables you to execute code before and after each command. The hooks look like so:
+; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enable you to execute code before and after each command. The hooks look like so:
 eask-{`before`/`after`}-{`command_name`}-hook For example, to consider warnings as errors when byte-compiling with the command eask compile:
 (add-hook 'eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) This is also equivalent to option --strict:">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔧 Advanced Usage","url":"https://emacs-eask.github.io/Getting-Started/Advanced-Usage/","headline":"🔧 Advanced Usage","description":"Eask is just a regular Emacs Lisp file and should be read from Emacs itself! You can do:\n; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enables you to execute code before and after each command. The hooks look like so:\neask-{`before`\/`after`}-{`command_name`}-hook For example, to consider warnings as errors when byte-compiling with the command eask compile:\n(add-hook \u0027eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) This is also equivalent to option --strict:","wordCount":"94","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Advanced-Usage/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-07-02T06:00:32.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔧 Advanced Usage","url":"https://emacs-eask.github.io/Getting-Started/Advanced-Usage/","headline":"🔧 Advanced Usage","description":"Eask is just a regular Emacs Lisp file and should be read from Emacs itself! You can do:\n; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enable you to execute code before and after each command. The hooks look like so:\neask-{`before`\/`after`}-{`command_name`}-hook For example, to consider warnings as errors when byte-compiling with the command eask compile:\n(add-hook \u0027eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) This is also equivalent to option --strict:","wordCount":"94","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Advanced-Usage/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-07-03T23:10:21.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -407,7 +407,7 @@ You can do:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=c1>; Regular Eask file content...</span>
 
 <span class=p>(</span><span class=nb>setq</span> <span class=nv>byte-compile-error-on-warn</span> <span class=no>t</span><span class=p>)</span>  <span class=c1>; Signal error if warning occurred</span>
-</code></pre></div><p><code>eask</code> provides some hooks which enables you to execute code before and after
+</code></pre></div><p><code>eask</code> provides some hooks which enable you to execute code before and after
 each command. The hooks look like so:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=nv>eask-{</span><span class=o>`</span><span class=nv>before</span><span class=o>`</span><span class=nf>/</span><span class=o>`</span><span class=nv>after</span><span class=o>`</span><span class=nv>}-{</span><span class=o>`</span><span class=nv>command_name</span><span class=o>`</span><span class=nv>}-hook</span>
 </code></pre></div><p>For example, to consider warnings as errors when byte-compiling with the command
