@@ -18,12 +18,12 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/FAQ/">
 <meta property="article:section" content="Faq">
-<meta property="article:modified_time" content="2022-09-12T17:56:43+08:00">
+<meta property="article:modified_time" content="2022-09-13T11:04:50+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="FAQ">
 <meta name=twitter:description content="Here is a list of general frequently asked questions.
    ❓ Why Node.JS? ❓ Who should use this tool? ❓ Why yargs? ❓ Why am I getting the error package target tar/el not found while installing? ❓ Why am I getting the error package is not installable? ❓ Why am I getting git errors with status 2?      ❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)!">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Faq","name":"FAQ","url":"https://emacs-eask.github.io/FAQ/","headline":"FAQ","description":"Here is a list of general frequently asked questions.\n   ❓ Why Node.JS? ❓ Who should use this tool? ❓ Why yargs? ❓ Why am I getting the error package target tar\/el not found while installing? ❓ Why am I getting the error package is not installable? ❓ Why am I getting git errors with status 2?      ❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)!","wordCount":"534","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/FAQ/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-09-12T17:56:43.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Faq","name":"FAQ","url":"https://emacs-eask.github.io/FAQ/","headline":"FAQ","description":"Here is a list of general frequently asked questions.\n   ❓ Why Node.JS? ❓ Who should use this tool? ❓ Why yargs? ❓ Why am I getting the error package target tar\/el not found while installing? ❓ Why am I getting the error package is not installable? ❓ Why am I getting git errors with status 2?      ❓ Why Node.JS?     Node has better support on all kinds of terminal applications (compare to just the shell script)!","wordCount":"534","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/FAQ/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-09-13T11:04:50.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -57,7 +57,7 @@
 <div class=gdoc-menu-header>
 <span class=gdoc-menu-header__items>
 <span>
-<a href=https://github.com/emacs-eask/eask class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
+<a href=https://github.com/emacs-eask/cli class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
 </a>
 </span>
 <span id=gdoc-dark-mode><svg class="gdoc-icon gdoc_brightness_dark"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="gdoc-icon gdoc_brightness_light"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_light"/></svg><svg class="gdoc-icon gdoc_brightness_auto"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_auto"/></svg>
@@ -358,7 +358,7 @@ News
 <input type=checkbox class=hidden>
 <label>
 <span class=flex><svg class="gdoc-icon gdoc_download"><use xlink:href="#gdoc_download"/></svg>
-<a href=https://github.com/emacs-eask/eask/releases class=gdoc-nav__entry>
+<a href=https://github.com/emacs-eask/cli/releases class=gdoc-nav__entry>
 Releases
 </a>
 </span>
@@ -368,7 +368,7 @@ Releases
 <input type=checkbox class=hidden>
 <label>
 <span class=flex><svg class="gdoc-icon gdoc_github"><use xlink:href="#gdoc_github"/></svg>
-<a href=https://github.com/emacs-eask/eask class=gdoc-nav__entry>
+<a href=https://github.com/emacs-eask/cli class=gdoc-nav__entry>
 View Source
 </a>
 </span>
@@ -388,7 +388,7 @@ justify-between" itemprop=breadcrumb>
 </div>
 <div>
 <span class=editpage><svg class="gdoc-icon gdoc_code"><use xlink:href="#gdoc_code"/></svg>
-<a href=https://github.com/emacs-eask/eask//edit/master/docs/content/en/FAQ/_index.md>
+<a href=https://github.com/emacs-eask/cli//edit/master/docs/content/en/FAQ/_index.md>
 Edit page
 </a>
 </span>
@@ -496,7 +496,7 @@ like this:</p>
 ...
 </code></pre><p>You may have <code>bug-reference-prog-mode</code> enabled. It is not yet compatible with Eask and
 should be disabled when running any of Eask’s commands.</p>
-<p>See <a class=gdoc-markdown__link href=https://github.com/emacs-eask/eask/issues/39#issuecomment-1150770740>this issue</a> for
+<p>See <a class=gdoc-markdown__link href=https://github.com/emacs-eask/cli/issues/39#issuecomment-1150770740>this issue</a> for
 more information.</p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">

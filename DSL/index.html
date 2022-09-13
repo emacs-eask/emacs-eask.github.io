@@ -18,12 +18,12 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/DSL/">
 <meta property="article:section" content="DSL">
-<meta property="article:modified_time" content="2022-09-12T17:56:43+08:00">
+<meta property="article:modified_time" content="2022-09-13T11:04:50+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Domain Specific Language">
 <meta name=twitter:description content="This document provides a reference on the DSL.
  🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (&rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (&rest patterns)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"DSL","name":"Domain Specific Language","url":"https://emacs-eask.github.io/DSL/","headline":"Domain Specific Language","description":"This document provides a reference on the DSL.\n 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (\u0026rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (\u0026rest patterns)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name \u0026optional minimum-version) 🔍 depends-on (package-name \u0026rest recipe) 🔍 development (\u0026rest body) 🔍 load-paths (\u0026rest paths) 🔍 exec-paths (\u0026rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:","wordCount":"352","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/DSL/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-09-12T17:56:43.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"DSL","name":"Domain Specific Language","url":"https://emacs-eask.github.io/DSL/","headline":"Domain Specific Language","description":"This document provides a reference on the DSL.\n 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (\u0026rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (\u0026rest patterns)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name \u0026optional minimum-version) 🔍 depends-on (package-name \u0026rest recipe) 🔍 development (\u0026rest body) 🔍 load-paths (\u0026rest paths) 🔍 exec-paths (\u0026rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:","wordCount":"352","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/DSL/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-09-13T11:04:50.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -57,7 +57,7 @@
 <div class=gdoc-menu-header>
 <span class=gdoc-menu-header__items>
 <span>
-<a href=https://github.com/emacs-eask/eask class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
+<a href=https://github.com/emacs-eask/cli class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
 </a>
 </span>
 <span id=gdoc-dark-mode><svg class="gdoc-icon gdoc_brightness_dark"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="gdoc-icon gdoc_brightness_light"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_light"/></svg><svg class="gdoc-icon gdoc_brightness_auto"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_auto"/></svg>
@@ -358,7 +358,7 @@ News
 <input type=checkbox class=hidden>
 <label>
 <span class=flex><svg class="gdoc-icon gdoc_download"><use xlink:href="#gdoc_download"/></svg>
-<a href=https://github.com/emacs-eask/eask/releases class=gdoc-nav__entry>
+<a href=https://github.com/emacs-eask/cli/releases class=gdoc-nav__entry>
 Releases
 </a>
 </span>
@@ -368,7 +368,7 @@ Releases
 <input type=checkbox class=hidden>
 <label>
 <span class=flex><svg class="gdoc-icon gdoc_github"><use xlink:href="#gdoc_github"/></svg>
-<a href=https://github.com/emacs-eask/eask class=gdoc-nav__entry>
+<a href=https://github.com/emacs-eask/cli class=gdoc-nav__entry>
 View Source
 </a>
 </span>
@@ -388,7 +388,7 @@ justify-between" itemprop=breadcrumb>
 </div>
 <div>
 <span class=editpage><svg class="gdoc-icon gdoc_code"><use xlink:href="#gdoc_code"/></svg>
-<a href=https://github.com/emacs-eask/eask//edit/master/docs/content/en/DSL/_index.md>
+<a href=https://github.com/emacs-eask/cli//edit/master/docs/content/en/DSL/_index.md>
 Edit page
 </a>
 </span>

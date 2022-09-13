@@ -20,13 +20,13 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Troubleshooting/">
 <meta property="article:section" content="Troubleshooting">
-<meta property="article:modified_time" content="2022-09-12T17:56:43+08:00">
+<meta property="article:modified_time" content="2022-09-13T11:04:50+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Troubleshooting">
 <meta name=twitter:description content="This document helps you troubleshoot Eask.
    🚩 Possible Error Variables ⛔️ Error when running an Eask command      🚩 Possible Error Variables     Some potential variables can cause faulty Eask, please check
  Emacs is installed and set up with PATH Eask is installed correctly Node version should be 14.x or above  ⛔️ Error when running an Eask command     If you run an Eask command and get an error, there are a few things you can try yourself:">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Troubleshooting","name":"Troubleshooting","url":"https://emacs-eask.github.io/Troubleshooting/","headline":"Troubleshooting","description":"This document helps you troubleshoot Eask.\n   🚩 Possible Error Variables ⛔️ Error when running an Eask command      🚩 Possible Error Variables     Some potential variables can cause faulty Eask, please check\n Emacs is installed and set up with PATH Eask is installed correctly Node version should be 14.x or above  ⛔️ Error when running an Eask command     If you run an Eask command and get an error, there are a few things you can try yourself:","wordCount":"182","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Troubleshooting/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-09-12T17:56:43.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Troubleshooting","name":"Troubleshooting","url":"https://emacs-eask.github.io/Troubleshooting/","headline":"Troubleshooting","description":"This document helps you troubleshoot Eask.\n   🚩 Possible Error Variables ⛔️ Error when running an Eask command      🚩 Possible Error Variables     Some potential variables can cause faulty Eask, please check\n Emacs is installed and set up with PATH Eask is installed correctly Node version should be 14.x or above  ⛔️ Error when running an Eask command     If you run an Eask command and get an error, there are a few things you can try yourself:","wordCount":"182","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Troubleshooting/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-09-13T11:04:50.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -60,7 +60,7 @@
 <div class=gdoc-menu-header>
 <span class=gdoc-menu-header__items>
 <span>
-<a href=https://github.com/emacs-eask/eask class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
+<a href=https://github.com/emacs-eask/cli class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
 </a>
 </span>
 <span id=gdoc-dark-mode><svg class="gdoc-icon gdoc_brightness_dark"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="gdoc-icon gdoc_brightness_light"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_light"/></svg><svg class="gdoc-icon gdoc_brightness_auto"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_auto"/></svg>
@@ -361,7 +361,7 @@ News
 <input type=checkbox class=hidden>
 <label>
 <span class=flex><svg class="gdoc-icon gdoc_download"><use xlink:href="#gdoc_download"/></svg>
-<a href=https://github.com/emacs-eask/eask/releases class=gdoc-nav__entry>
+<a href=https://github.com/emacs-eask/cli/releases class=gdoc-nav__entry>
 Releases
 </a>
 </span>
@@ -371,7 +371,7 @@ Releases
 <input type=checkbox class=hidden>
 <label>
 <span class=flex><svg class="gdoc-icon gdoc_github"><use xlink:href="#gdoc_github"/></svg>
-<a href=https://github.com/emacs-eask/eask class=gdoc-nav__entry>
+<a href=https://github.com/emacs-eask/cli class=gdoc-nav__entry>
 View Source
 </a>
 </span>
@@ -391,7 +391,7 @@ justify-between" itemprop=breadcrumb>
 </div>
 <div>
 <span class=editpage><svg class="gdoc-icon gdoc_code"><use xlink:href="#gdoc_code"/></svg>
-<a href=https://github.com/emacs-eask/eask//edit/master/docs/content/en/Troubleshooting/_index.md>
+<a href=https://github.com/emacs-eask/cli//edit/master/docs/content/en/Troubleshooting/_index.md>
 Edit page
 </a>
 </span>
@@ -443,7 +443,7 @@ if you chose to install from <code>npm</code>.</li>
 <ul>
 <li>If the error persists, try to reinstall Eask from scratch.</li>
 </ul>
-<p>If Eask still does not work, please <a class=gdoc-markdown__link href=https://github.com/emacs-eask/eask/issues/new>report an
+<p>If Eask still does not work, please <a class=gdoc-markdown__link href=https://github.com/emacs-eask/cli/issues/new>report an
 issue</a> to the issue tracker.
 Please include Eask output with the [&ndash;verbose 4] and [&ndash;debug] options enabled,
 to give us as much information as possible.</p>

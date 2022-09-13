@@ -22,14 +22,14 @@ eask-{`before`/`after`}-{`command_name`}-hook For example, to consider warnings 
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Getting-Started/Advanced-Usage/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2022-09-12T17:56:43+08:00">
+<meta property="article:modified_time" content="2022-09-13T11:04:50+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🔧 Advanced Usage">
 <meta name=twitter:description content="Eask is just a regular Emacs Lisp file and should be read from Emacs itself! You can do:
 ; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enable you to execute code before and after each command. The hooks look like so:
 eask-{`before`/`after`}-{`command_name`}-hook For example, to consider warnings as errors when byte-compiling with the command eask compile:
 (add-hook 'eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) This is also equivalent to option --strict:">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔧 Advanced Usage","url":"https://emacs-eask.github.io/Getting-Started/Advanced-Usage/","headline":"🔧 Advanced Usage","description":"Eask is just a regular Emacs Lisp file and should be read from Emacs itself! You can do:\n; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enable you to execute code before and after each command. The hooks look like so:\neask-{`before`\/`after`}-{`command_name`}-hook For example, to consider warnings as errors when byte-compiling with the command eask compile:\n(add-hook \u0027eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) This is also equivalent to option --strict:","wordCount":"94","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Advanced-Usage/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-09-12T17:56:43.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔧 Advanced Usage","url":"https://emacs-eask.github.io/Getting-Started/Advanced-Usage/","headline":"🔧 Advanced Usage","description":"Eask is just a regular Emacs Lisp file and should be read from Emacs itself! You can do:\n; Regular Eask file content... (setq byte-compile-error-on-warn t) ; Signal error if warning occurred eask provides some hooks which enable you to execute code before and after each command. The hooks look like so:\neask-{`before`\/`after`}-{`command_name`}-hook For example, to consider warnings as errors when byte-compiling with the command eask compile:\n(add-hook \u0027eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) This is also equivalent to option --strict:","wordCount":"94","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Advanced-Usage/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-09-13T11:04:50.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -63,7 +63,7 @@ eask-{`before`/`after`}-{`command_name`}-hook For example, to consider warnings 
 <div class=gdoc-menu-header>
 <span class=gdoc-menu-header__items>
 <span>
-<a href=https://github.com/emacs-eask/eask class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
+<a href=https://github.com/emacs-eask/cli class=gdoc-header__link><svg class="gdoc-icon gdoc_github"><title>GitHub</title><use xlink:href="#gdoc_github"/></svg>
 </a>
 </span>
 <span id=gdoc-dark-mode><svg class="gdoc-icon gdoc_brightness_dark"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_dark"/></svg><svg class="gdoc-icon gdoc_brightness_light"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_light"/></svg><svg class="gdoc-icon gdoc_brightness_auto"><title>Toggle Dark/Light/Auto mode</title><use xlink:href="#gdoc_brightness_auto"/></svg>
@@ -364,7 +364,7 @@ News
 <input type=checkbox class=hidden>
 <label>
 <span class=flex><svg class="gdoc-icon gdoc_download"><use xlink:href="#gdoc_download"/></svg>
-<a href=https://github.com/emacs-eask/eask/releases class=gdoc-nav__entry>
+<a href=https://github.com/emacs-eask/cli/releases class=gdoc-nav__entry>
 Releases
 </a>
 </span>
@@ -374,7 +374,7 @@ Releases
 <input type=checkbox class=hidden>
 <label>
 <span class=flex><svg class="gdoc-icon gdoc_github"><use xlink:href="#gdoc_github"/></svg>
-<a href=https://github.com/emacs-eask/eask class=gdoc-nav__entry>
+<a href=https://github.com/emacs-eask/cli class=gdoc-nav__entry>
 View Source
 </a>
 </span>
@@ -394,7 +394,7 @@ justify-between" itemprop=breadcrumb>
 </div>
 <div>
 <span class=editpage><svg class="gdoc-icon gdoc_code"><use xlink:href="#gdoc_code"/></svg>
-<a href=https://github.com/emacs-eask/eask//edit/master/docs/content/en/Getting%20Started/Advanced%20Usage.md>
+<a href=https://github.com/emacs-eask/cli//edit/master/docs/content/en/Getting%20Started/Advanced%20Usage.md>
 Edit page
 </a>
 </span>
