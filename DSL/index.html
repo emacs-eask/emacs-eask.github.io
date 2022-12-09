@@ -6,7 +6,7 @@
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
 <meta name=description content="This document provides a reference on the DSL.
- 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (&rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (&rest patterns)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
+ 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (&rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (&rest patterns)   🚩 Tests  🔍 scripts (name command)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
 <title>Domain Specific Language | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
@@ -14,16 +14,16 @@
 <meta property="og:title" content="Domain Specific Language">
 <meta property="og:site_name" content="Emacs Eask">
 <meta property="og:description" content="This document provides a reference on the DSL.
- 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (&rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (&rest patterns)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
+ 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (&rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (&rest patterns)   🚩 Tests  🔍 scripts (name command)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/DSL/">
 <meta property="article:section" content="DSL">
-<meta property="article:modified_time" content="2022-12-09T09:36:50+00:00">
+<meta property="article:modified_time" content="2022-12-09T10:13:33+00:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Domain Specific Language">
 <meta name=twitter:description content="This document provides a reference on the DSL.
- 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (&rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (&rest patterns)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"DSL","name":"Domain Specific Language","url":"https://emacs-eask.github.io/DSL/","headline":"Domain Specific Language","description":"This document provides a reference on the DSL.\n 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (\u0026rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (\u0026rest patterns)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name \u0026optional minimum-version) 🔍 depends-on (package-name \u0026rest recipe) 🔍 development (\u0026rest body) 🔍 load-paths (\u0026rest paths) 🔍 exec-paths (\u0026rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:","wordCount":"352","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/DSL/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-12-09T09:36:50.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+ 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (&rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (&rest patterns)   🚩 Tests  🔍 scripts (name command)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name &optional minimum-version) 🔍 depends-on (package-name &rest recipe) 🔍 development (&rest body) 🔍 load-paths (&rest paths) 🔍 exec-paths (&rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"DSL","name":"Domain Specific Language","url":"https://emacs-eask.github.io/DSL/","headline":"Domain Specific Language","description":"This document provides a reference on the DSL.\n 🚩 Package metadata  🔍 package (name version description) 🔍 website-url (url) 🔍 keywords (\u0026rest keywords)   🚩 Package contents  🔍 package-file (file version description) 🔍 files (\u0026rest patterns)   🚩 Tests  🔍 scripts (name command)   🚩 Dependencies  🔍 source (alias) 🔍 source (name url) 🔍 source-priority (name priority) 🔍 depends-on (package-name \u0026optional minimum-version) 🔍 depends-on (package-name \u0026rest recipe) 🔍 development (\u0026rest body) 🔍 load-paths (\u0026rest paths) 🔍 exec-paths (\u0026rest paths)      🚩 Package metadata     🔍 package (name version description)     Declare a package with the given name, version, and description:","wordCount":"385","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/DSL/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2022-12-09T10:13:33.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -413,6 +413,11 @@ Edit page
 <li><a href=#-files-rest-patterns>🔍 <strong>files</strong> (<code>&rest patterns</code>)</a></li>
 </ul>
 </li>
+<li><a href=#-tests>🚩 Tests</a>
+<ul>
+<li><a href=#-scripts-name-command>🔍 <strong>scripts</strong> (<code>name</code> <code>command</code>)</a></li>
+</ul>
+</li>
 <li><a href=#-dependencies>🚩 Dependencies</a>
 <ul>
 <li><a href=#-source-alias>🔍 <strong>source</strong> (<code>alias</code>)</a></li>
@@ -489,6 +494,23 @@ of a file (used only for package development).</p>
 <p>Specify list of files that are included in this project.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>files</span> <span class=s>&#34;foo.el&#34;</span><span class=p>)</span>
 <span class=p>(</span><span class=nv>files</span> <span class=s>&#34;*.el&#34;</span> <span class=s>&#34;core/*.el&#34;</span><span class=p>)</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h1 id=-tests>
+🚩 Tests
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-tests class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Tests" aria-label="Anchor to: 🚩 Tests" href=#-tests><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-scripts-name-command>
+🔍 <strong>scripts</strong> (<code>name</code> <code>command</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/DSL/#-scripts-name-command class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 scripts (name command)" aria-label="Anchor to: 🔍 scripts (name command)" href=#-scripts-name-command><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Add built-in scripts and their preset life cycle event as well as arbitrary
+scripts.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>scripts</span> <span class=s>&#34;test&#34;</span> <span class=s>&#34;echo This is a test!&#34;</span><span class=p>)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h1 id=-dependencies>
 🚩 Dependencies
