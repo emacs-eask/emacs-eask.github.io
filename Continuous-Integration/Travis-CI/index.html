@@ -5,22 +5,28 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
-<meta name=description content="WIP">
+<meta name=description content="   Example to use Travis CI.
+language:node_jsnode_js:- 16env:- EVM_EMACS=emacs-27.2-travis-linux-xenial- EVM_EMACS=emacs-git-snapshot-travis-linux-xenialmatrix:fast_finish:trueallow_failures:- env:EVM_EMACS=emacs-git-snapshot-travis-linux-xenialinstall:- npm install @emacs-eask/cli -gscript:- eask install- eask compile- eask lint packageThis example is testing your Emacs Lisp package in the below environment;
+ Emacs: 27.2 and snapshot Eask: snapshot (latest)  ">
 <title>📀 Travis CI | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta property="og:title" content="📀 Travis CI">
 <meta property="og:site_name" content="Emacs Eask">
-<meta property="og:description" content="WIP">
+<meta property="og:description" content="   Example to use Travis CI.
+language:node_jsnode_js:- 16env:- EVM_EMACS=emacs-27.2-travis-linux-xenial- EVM_EMACS=emacs-git-snapshot-travis-linux-xenialmatrix:fast_finish:trueallow_failures:- env:EVM_EMACS=emacs-git-snapshot-travis-linux-xenialinstall:- npm install @emacs-eask/cli -gscript:- eask install- eask compile- eask lint packageThis example is testing your Emacs Lisp package in the below environment;
+ Emacs: 27.2 and snapshot Eask: snapshot (latest)  ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Continuous-Integration/Travis-CI/">
 <meta property="article:section" content="Continuous Integration">
-<meta property="article:modified_time" content="2023-01-02T16:20:52+08:00">
+<meta property="article:modified_time" content="2023-01-02T19:09:58+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="📀 Travis CI">
-<meta name=twitter:description content="WIP">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Continuous Integration","name":"📀 Travis CI","url":"https://emacs-eask.github.io/Continuous-Integration/Travis-CI/","headline":"📀 Travis CI","description":"WIP","wordCount":"1","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Continuous-Integration/Travis-CI/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-01-02T16:20:52.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<meta name=twitter:description content="   Example to use Travis CI.
+language:node_jsnode_js:- 16env:- EVM_EMACS=emacs-27.2-travis-linux-xenial- EVM_EMACS=emacs-git-snapshot-travis-linux-xenialmatrix:fast_finish:trueallow_failures:- env:EVM_EMACS=emacs-git-snapshot-travis-linux-xenialinstall:- npm install @emacs-eask/cli -gscript:- eask install- eask compile- eask lint packageThis example is testing your Emacs Lisp package in the below environment;
+ Emacs: 27.2 and snapshot Eask: snapshot (latest)  ">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Continuous Integration","name":"📀 Travis CI","url":"https://emacs-eask.github.io/Continuous-Integration/Travis-CI/","headline":"📀 Travis CI","description":"   Example to use Travis CI.\nlanguage:node_jsnode_js:- 16env:- EVM_EMACS=emacs-27.2-travis-linux-xenial- EVM_EMACS=emacs-git-snapshot-travis-linux-xenialmatrix:fast_finish:trueallow_failures:- env:EVM_EMACS=emacs-git-snapshot-travis-linux-xenialinstall:- npm install @emacs-eask\/cli -gscript:- eask install- eask compile- eask lint packageThis example is testing your Emacs Lisp package in the below environment;\n Emacs: 27.2 and snapshot Eask: snapshot (latest)  ","wordCount":"39","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Continuous-Integration/Travis-CI/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-01-02T19:09:58.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -230,8 +236,28 @@ Domain Specific Language
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=/Continuous-Integration/GitLab-Runner/ class=gdoc-nav__entry>
+🦊 GitLab Runner
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
 <a href=/Continuous-Integration/Travis-CI/ class="gdoc-nav__entry is-active">
 📀 Travis CI
+</a>
+</span>
+</label>
+</li>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/Continuous-Integration/CircleCI/ class=gdoc-nav__entry>
+💠 CircleCI
 </a>
 </span>
 </label>
@@ -397,7 +423,32 @@ Edit page
 <nav id=TableOfContents></nav>
 <hr>
 </div>
-<p>WIP</p>
+<p>Example to use <a class=gdoc-markdown__link href=https://www.travis-ci.com/>Travis CI</a>.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-yml data-lang=yml><span class=nt>language</span><span class=p>:</span><span class=w> </span><span class=l>node_js</span><span class=w>
+</span><span class=w></span><span class=nt>node_js</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span>- <span class=m>16</span><span class=w>
+</span><span class=w>
+</span><span class=w></span><span class=nt>env</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span>- <span class=l>EVM_EMACS=emacs-27.2-travis-linux-xenial</span><span class=w>
+</span><span class=w>  </span>- <span class=l>EVM_EMACS=emacs-git-snapshot-travis-linux-xenial</span><span class=w>
+</span><span class=w>
+</span><span class=w></span><span class=nt>matrix</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span><span class=nt>fast_finish</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
+</span><span class=w>  </span><span class=nt>allow_failures</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span>- <span class=nt>env</span><span class=p>:</span><span class=w> </span><span class=l>EVM_EMACS=emacs-git-snapshot-travis-linux-xenial</span><span class=w>
+</span><span class=w>
+</span><span class=w></span><span class=nt>install</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span>- <span class=l>npm install @emacs-eask/cli -g</span><span class=w>
+</span><span class=w>
+</span><span class=w></span><span class=nt>script</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span>- <span class=l>eask install</span><span class=w>
+</span><span class=w>  </span>- <span class=l>eask compile</span><span class=w>
+</span><span class=w>  </span>- <span class=l>eask lint package</span><span class=w>
+</span></code></pre></div><p>This example is testing your Emacs Lisp package in the below environment;</p>
+<ul>
+<li>Emacs: <code>27.2</code> and <code>snapshot</code></li>
+<li>Eask: <code>snapshot</code> (latest)</li>
+</ul>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
