@@ -5,22 +5,22 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
-<meta name=description content="🚩 Core  🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask path 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask emacs 🔍 eask eval 🔍 eask load 🔍 eask recipe 🔍 eask keywords 🔍 eask concate 🔍 eask run   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask outdated 🔍 eask refresh   🚩 Creating  🔍 eask create package 🔍 eask create elpa   🚩 Cleaning  🔍 eask clean workspace 🔍 eask clean elc 🔍 eask clean dist 🔍 eask clean autoloads 🔍 eask clean pkg-file 🔍 eask clean log-file 🔍 eask clean all   🚩 Linter  🔍 eask lint package 🔍 eask lint checkdoc 🔍 eask lint elint 🔍 eask lint elisp-lint 🔍 eask lint elsa 🔍 eask lint indent 🔍 eask lint keywords 🔍 eask lint declare 🔍 eask lint regexps   🚩 Testing  🔍 eask test activate 🔍 eask test ert 🔍 eask test ert-runner 🔍 eask test buttercup   🚩 Utilities  🔍 eask upgrade-eask 🔍 eask locate   🚩 Checker  🔍 eask check-eask   🚩 Global Options  🔍 &ndash;global, -g 🔍 &ndash;all, -a 🔍 &ndash;quick, -q 🔍 &ndash;force, -f 🔍 &ndash;development, &ndash;dev 🔍 &ndash;debug 🔍 &ndash;strict 🔍 &ndash;allow-error 🔍 &ndash;insecure 🔍 &ndash;timestamps 🔍 &ndash;log-level 🔍 &ndash;log-file, &ndash;lf 🔍 &ndash;no-color 🔍 &ndash;elapsed-time, &ndash;et 🔍 &ndash;verbose, -v <integer> 🔍 &ndash;version 🔍 &ndash;help   🚩 Proxy Options  🔍 &ndash;proxy <proxy> 🔍 &ndash;http-proxy <proxy> 🔍 &ndash;https-proxy <proxy> 🔍 &ndash;no-proxy <pattern>      The general syntax of the eask program is:">
+<meta name=description content="🚩 Creating  🔍 eask create package 🔍 eask create elpa   🚩 Core  🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask path 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask emacs 🔍 eask eval 🔍 eask load 🔍 eask recipe 🔍 eask keywords 🔍 eask concate 🔍 eask run   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask outdated 🔍 eask refresh   🚩 Linking  🔍 eask link add   🔍 eask link delete [name.">
 <title>🚩 Commands and options | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta property="og:title" content="🚩 Commands and options">
 <meta property="og:site_name" content="Emacs Eask">
-<meta property="og:description" content="🚩 Core  🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask path 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask emacs 🔍 eask eval 🔍 eask load 🔍 eask recipe 🔍 eask keywords 🔍 eask concate 🔍 eask run   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask outdated 🔍 eask refresh   🚩 Creating  🔍 eask create package 🔍 eask create elpa   🚩 Cleaning  🔍 eask clean workspace 🔍 eask clean elc 🔍 eask clean dist 🔍 eask clean autoloads 🔍 eask clean pkg-file 🔍 eask clean log-file 🔍 eask clean all   🚩 Linter  🔍 eask lint package 🔍 eask lint checkdoc 🔍 eask lint elint 🔍 eask lint elisp-lint 🔍 eask lint elsa 🔍 eask lint indent 🔍 eask lint keywords 🔍 eask lint declare 🔍 eask lint regexps   🚩 Testing  🔍 eask test activate 🔍 eask test ert 🔍 eask test ert-runner 🔍 eask test buttercup   🚩 Utilities  🔍 eask upgrade-eask 🔍 eask locate   🚩 Checker  🔍 eask check-eask   🚩 Global Options  🔍 –global, -g 🔍 –all, -a 🔍 –quick, -q 🔍 –force, -f 🔍 –development, –dev 🔍 –debug 🔍 –strict 🔍 –allow-error 🔍 –insecure 🔍 –timestamps 🔍 –log-level 🔍 –log-file, –lf 🔍 –no-color 🔍 –elapsed-time, –et 🔍 –verbose, -v <integer> 🔍 –version 🔍 –help   🚩 Proxy Options  🔍 –proxy <proxy> 🔍 –http-proxy <proxy> 🔍 –https-proxy <proxy> 🔍 –no-proxy <pattern>      The general syntax of the eask program is:">
+<meta property="og:description" content="🚩 Creating  🔍 eask create package 🔍 eask create elpa   🚩 Core  🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask path 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask emacs 🔍 eask eval 🔍 eask load 🔍 eask recipe 🔍 eask keywords 🔍 eask concate 🔍 eask run   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask outdated 🔍 eask refresh   🚩 Linking  🔍 eask link add   🔍 eask link delete [name.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Getting-Started/Commands-and-options/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2023-01-16T05:58:55+08:00">
+<meta property="article:modified_time" content="2023-01-23T16:44:07+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🚩 Commands and options">
-<meta name=twitter:description content="🚩 Core  🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask path 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask emacs 🔍 eask eval 🔍 eask load 🔍 eask recipe 🔍 eask keywords 🔍 eask concate 🔍 eask run   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask outdated 🔍 eask refresh   🚩 Creating  🔍 eask create package 🔍 eask create elpa   🚩 Cleaning  🔍 eask clean workspace 🔍 eask clean elc 🔍 eask clean dist 🔍 eask clean autoloads 🔍 eask clean pkg-file 🔍 eask clean log-file 🔍 eask clean all   🚩 Linter  🔍 eask lint package 🔍 eask lint checkdoc 🔍 eask lint elint 🔍 eask lint elisp-lint 🔍 eask lint elsa 🔍 eask lint indent 🔍 eask lint keywords 🔍 eask lint declare 🔍 eask lint regexps   🚩 Testing  🔍 eask test activate 🔍 eask test ert 🔍 eask test ert-runner 🔍 eask test buttercup   🚩 Utilities  🔍 eask upgrade-eask 🔍 eask locate   🚩 Checker  🔍 eask check-eask   🚩 Global Options  🔍 –global, -g 🔍 –all, -a 🔍 –quick, -q 🔍 –force, -f 🔍 –development, –dev 🔍 –debug 🔍 –strict 🔍 –allow-error 🔍 –insecure 🔍 –timestamps 🔍 –log-level 🔍 –log-file, –lf 🔍 –no-color 🔍 –elapsed-time, –et 🔍 –verbose, -v <integer> 🔍 –version 🔍 –help   🚩 Proxy Options  🔍 –proxy <proxy> 🔍 –http-proxy <proxy> 🔍 –https-proxy <proxy> 🔍 –no-proxy <pattern>      The general syntax of the eask program is:">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🚩 Commands and options","url":"https://emacs-eask.github.io/Getting-Started/Commands-and-options/","headline":"🚩 Commands and options","description":"🚩 Core  🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask path 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask emacs 🔍 eask eval 🔍 eask load 🔍 eask recipe 🔍 eask keywords 🔍 eask concate 🔍 eask run   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask outdated 🔍 eask refresh   🚩 Creating  🔍 eask create package 🔍 eask create elpa   🚩 Cleaning  🔍 eask clean workspace 🔍 eask clean elc 🔍 eask clean dist 🔍 eask clean autoloads 🔍 eask clean pkg-file 🔍 eask clean log-file 🔍 eask clean all   🚩 Linter  🔍 eask lint package 🔍 eask lint checkdoc 🔍 eask lint elint 🔍 eask lint elisp-lint 🔍 eask lint elsa 🔍 eask lint indent 🔍 eask lint keywords 🔍 eask lint declare 🔍 eask lint regexps   🚩 Testing  🔍 eask test activate 🔍 eask test ert 🔍 eask test ert-runner 🔍 eask test buttercup   🚩 Utilities  🔍 eask upgrade-eask 🔍 eask locate   🚩 Checker  🔍 eask check-eask   🚩 Global Options  🔍 –global, -g 🔍 –all, -a 🔍 –quick, -q 🔍 –force, -f 🔍 –development, –dev 🔍 –debug 🔍 –strict 🔍 –allow-error 🔍 –insecure 🔍 –timestamps 🔍 –log-level 🔍 –log-file, –lf 🔍 –no-color 🔍 –elapsed-time, –et 🔍 –verbose, -v \u003cinteger\u003e 🔍 –version 🔍 –help   🚩 Proxy Options  🔍 –proxy \u003cproxy\u003e 🔍 –http-proxy \u003cproxy\u003e 🔍 –https-proxy \u003cproxy\u003e 🔍 –no-proxy \u003cpattern\u003e      The general syntax of the eask program is:","wordCount":"1542","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Commands-and-options/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-01-16T05:58:55.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<meta name=twitter:description content="🚩 Creating  🔍 eask create package 🔍 eask create elpa   🚩 Core  🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask path 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask emacs 🔍 eask eval 🔍 eask load 🔍 eask recipe 🔍 eask keywords 🔍 eask concate 🔍 eask run   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask outdated 🔍 eask refresh   🚩 Linking  🔍 eask link add   🔍 eask link delete [name.">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🚩 Commands and options","url":"https://emacs-eask.github.io/Getting-Started/Commands-and-options/","headline":"🚩 Commands and options","description":"🚩 Creating  🔍 eask create package 🔍 eask create elpa   🚩 Core  🔍 eask init 🔍 eask info 🔍 eask install-deps 🔍 eask install 🔍 eask uninstall 🔍 eask package 🔍 eask compile 🔍 eask autoloads 🔍 eask pkg-file 🔍 eask package-directory 🔍 eask path 🔍 eask load-path 🔍 eask files 🔍 eask exec 🔍 eask emacs 🔍 eask eval 🔍 eask load 🔍 eask recipe 🔍 eask keywords 🔍 eask concate 🔍 eask run   🚩 Management  🔍 eask archives 🔍 eask search 🔍 eask upgrade 🔍 eask list 🔍 eask outdated 🔍 eask refresh   🚩 Linking  🔍 eask link add   🔍 eask link delete [name.","wordCount":"1602","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Commands-and-options/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-01-23T16:44:07.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -416,6 +416,12 @@ Edit page
 <div class="gdoc-toc gdoc-toc__level--3">
 <nav id=TableOfContents>
 <ul>
+<li><a href=#-creating>🚩 Creating</a>
+<ul>
+<li><a href=#-eask-create-package>🔍 eask create package</a></li>
+<li><a href=#-eask-create-elpa>🔍 eask create elpa</a></li>
+</ul>
+</li>
 <li><a href=#-core>🚩 Core</a>
 <ul>
 <li><a href=#-eask-init>🔍 eask init</a></li>
@@ -451,10 +457,11 @@ Edit page
 <li><a href=#-eask-refresh>🔍 eask refresh</a></li>
 </ul>
 </li>
-<li><a href=#-creating>🚩 Creating</a>
+<li><a href=#-linking>🚩 Linking</a>
 <ul>
-<li><a href=#-eask-create-package>🔍 eask create package</a></li>
-<li><a href=#-eask-create-elpa>🔍 eask create elpa</a></li>
+<li><a href=#-eask-link-add-name-path>🔍 eask link add <name> <path></a></li>
+<li><a href=#-eask-link-delete-name>🔍 eask link delete [name..]</a></li>
+<li><a href=#-eask-link-list>🔍 eask link list</a></li>
 </ul>
 </li>
 <li><a href=#-cleaning>🚩 Cleaning</a>
@@ -533,6 +540,35 @@ Edit page
 <p>The general syntax of the <strong>eask</strong> program is:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> <span class=o>[</span>COMMAND<span class=o>]</span> <span class=o>[</span>COMMAND-OPTIONS<span class=o>]</span> <span class=o>[</span>COMMAND-ARGUMENTS<span class=o>]</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
+<h1 id=-creating>
+🚩 Creating
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-creating class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Creating" aria-label="Anchor to: 🚩 Creating" href=#-creating><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-eask-create-package>
+🔍 eask create package
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-create-package class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask create package" aria-label="Anchor to: 🔍 eask create package" href=#-eask-create-package><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Create a new elisp project with the default <code>Eask</code>-file and CI/CD support.</p>
+<blockquote class="gdoc-hint info">
+💡 The template project is located in <a class=gdoc-markdown__link href=https://github.com/emacs-eask/template-elisp>https://github.com/emacs-eask/template-elisp</a>
+</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-eask-create-elpa>
+🔍 eask create elpa
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-create-elpa class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask create elpa" aria-label="Anchor to: 🔍 eask create elpa" href=#-eask-create-elpa><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Create a new ELPA using <a class=gdoc-markdown__link href=https://github.com/10sr/github-elpa>github-elpa</a>.</p>
+<blockquote class="gdoc-hint info">
+💡 The template project is located in <a class=gdoc-markdown__link href=https://github.com/emacs-eask/template-elpa>https://github.com/emacs-eask/template-elpa</a>
+</blockquote>
+<div class=gdoc-page__anchorwrap>
 <h1 id=-core>
 🚩 Core
 <a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-core class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Core" aria-label="Anchor to: 🚩 Core" href=#-core><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
@@ -829,35 +865,40 @@ for details.</p>
 <p>Download package archives.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> refresh
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h1 id=-creating>
-🚩 Creating
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-creating class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Creating" aria-label="Anchor to: 🚩 Creating" href=#-creating><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=-linking>
+🚩 Linking
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-linking class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Linking" aria-label="Anchor to: 🚩 Linking" href=#-linking><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-eask-create-package>
-🔍 eask create package
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-create-package class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask create package" aria-label="Anchor to: 🔍 eask create package" href=#-eask-create-package><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-eask-link-add-name-path>
+🔍 eask link add <name> <path>
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-link-add-name-path class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask link add  " aria-label="Anchor to: 🔍 eask link add  " href=#-eask-link-add-name-path><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
-<p>Create a new elisp project with the default <code>Eask</code>-file and CI/CD support.</p>
-<blockquote class="gdoc-hint info">
-💡 The template project is located in <a class=gdoc-markdown__link href=https://github.com/emacs-eask/template-elisp>https://github.com/emacs-eask/template-elisp</a>
-</blockquote>
-<div class=gdoc-page__anchorwrap>
-<h2 id=-eask-create-elpa>
-🔍 eask create elpa
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-create-elpa class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask create elpa" aria-label="Anchor to: 🔍 eask create elpa" href=#-eask-create-elpa><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<p>Link a local package.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> link add &lt;name&gt; &lt;path&gt;
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-eask-link-delete-name>
+🔍 eask link delete [name..]
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-link-delete-name class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask link delete [name..]" aria-label="Anchor to: 🔍 eask link delete [name..]" href=#-eask-link-delete-name><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
-<p>Create a new ELPA using <a class=gdoc-markdown__link href=https://github.com/10sr/github-elpa>github-elpa</a>.</p>
-<blockquote class="gdoc-hint info">
-💡 The template project is located in <a class=gdoc-markdown__link href=https://github.com/emacs-eask/template-elpa>https://github.com/emacs-eask/template-elpa</a>
-</blockquote>
-<div class=gdoc-page__anchorwrap>
+<p>Delete local linked packages.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> link delete <span class=o>[</span>names..<span class=o>]</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-eask-link-list>
+🔍 eask link list
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-link-list class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 eask link list" aria-label="Anchor to: 🔍 eask link list" href=#-eask-link-list><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>List all project links.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=o>[</span>GLOBAL-OPTIONS<span class=o>]</span> link list
+</code></pre></div><div class=gdoc-page__anchorwrap>
 <h1 id=-cleaning>
 🚩 Cleaning
 <a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-cleaning class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🚩 Cleaning" aria-label="Anchor to: 🚩 Cleaning" href=#-cleaning><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
