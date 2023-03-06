@@ -20,13 +20,13 @@ The Elisp scripts, is used to do the actual execution for each command that pass
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Contributing/Codebase-Overview/">
 <meta property="article:section" content="Contributing">
-<meta property="article:modified_time" content="2023-03-05T22:28:41-08:00">
+<meta property="article:modified_time" content="2023-03-06T13:27:14-08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🔱 Codebase Overview">
 <meta name=twitter:description content="Eask consists of two components: a command-line tool (the Eask CLI), and Elisp scripts.
 The CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src/util.js.
 The Elisp scripts, is used to do the actual execution for each command that passes through the CLI.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Contributing","name":"🔱 Codebase Overview","url":"https://emacs-eask.github.io/Contributing/Codebase-Overview/","headline":"🔱 Codebase Overview","description":"Eask consists of two components: a command-line tool (the Eask CLI), and Elisp scripts.\nThe CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src\/util.js.\nThe Elisp scripts, is used to do the actual execution for each command that passes through the CLI.","wordCount":"495","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Contributing/Codebase-Overview/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-03-05T22:28:41.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Contributing","name":"🔱 Codebase Overview","url":"https://emacs-eask.github.io/Contributing/Codebase-Overview/","headline":"🔱 Codebase Overview","description":"Eask consists of two components: a command-line tool (the Eask CLI), and Elisp scripts.\nThe CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src\/util.js.\nThe Elisp scripts, is used to do the actual execution for each command that passes through the CLI.","wordCount":"500","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Contributing/Codebase-Overview/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-03-06T13:27:14.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -497,10 +497,10 @@ would help!</p>
 <p>Elisp scripts are located under the <strong>lisp</strong> folder and will wait to get called
 by the CLI. All Elisp scripts are written in Emacs Lisp and should have a
 similar structure below:</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nf>load</span> <span class=p>(</span><span class=nf>expand-file-name</span>
-       <span class=s>&#34;../_prepare.el&#34;</span>
-       <span class=p>(</span><span class=nf>file-name-directory</span> <span class=p>(</span><span class=nf>nth</span> <span class=mi>1</span> <span class=p>(</span><span class=nf>member</span> <span class=s>&#34;-scriptload&#34;</span> <span class=nv>command-line-args</span><span class=p>))))</span>
-      <span class=no>nil</span> <span class=no>t</span><span class=p>)</span>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>let</span> <span class=p>((</span><span class=nv>dir</span> <span class=p>(</span><span class=nf>file-name-directory</span> <span class=p>(</span><span class=nf>nth</span> <span class=mi>1</span> <span class=p>(</span><span class=nf>member</span> <span class=s>&#34;-scriptload&#34;</span> <span class=nv>command-line-args</span><span class=p>)))))</span>
+  <span class=p>(</span><span class=nf>load</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;_prepare.el&#34;</span>
+                          <span class=p>(</span><span class=nv>locate-dominating-file</span> <span class=nv>dir</span> <span class=s>&#34;_prepare.el&#34;</span><span class=p>))</span>
+        <span class=no>nil</span> <span class=no>t</span><span class=p>))</span>
 
 <span class=p>(</span><span class=nv>eask-start</span>
   <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;PWD is %s&#34;</span> <span class=nv>default-directory</span><span class=p>))</span>
