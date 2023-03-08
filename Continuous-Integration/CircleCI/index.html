@@ -5,28 +5,25 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
-<meta name=description content="   Example to use Circle CI.
-# Default actions to perform on each Emacs versiondefault:&default-stepssteps:- checkout- run:apt-get update && apt-get install -y git- run:|eask package eask install eask compile# Enumerated list of Emacs versionsjobs:test-emacs-26:docker:- image:silex/emacs:26.2entrypoint:bash<<:*default-stepstest-emacs-master:docker:- image:silex/emacs:masterentrypoint:bash<<:*default-steps# Executing in parallelworkflows:version:2ci-test-matrix:jobs:- test-emacs-26- test-emacs-masterThis example is testing your Emacs Lisp package in the below environment;
- Emacs: 26.2 and snapshot Eask: snapshot (latest)  ">
+<meta name=description content="Example to use Circle CI.
+version:2.1orbs:win:circleci/windows@2.2.0# Default actions to perform on each Emacs versioncommands:setup-linux:steps:- checkout- run:name:Install unzipcommand:apt-get update && apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | shsetup-macos:steps:- checkout- run:name:Install Emacs latestcommand:|echo &#34;HOMEBREW_NO_AUTO_UPDATE=1&#34; >> $BASH_ENV brew install homebrew/cask/emacs- run:name:Install unzipcommand:apt-get update && apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | shsetup-windows:steps:- checkout- run:name:Install Easkcommand:url.exe -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.bat | cmd /Qtest:steps:- run:name:Run regression testscommand:eldev -dtT -p testlint:steps:- run:name:Run Elisp-lintcommand:eldev lint- run:name:Byte-compile `.">
 <title>💠 CircleCI | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta property="og:title" content="💠 CircleCI">
 <meta property="og:site_name" content="Emacs Eask">
-<meta property="og:description" content="   Example to use Circle CI.
-# Default actions to perform on each Emacs versiondefault:&default-stepssteps:- checkout- run:apt-get update && apt-get install -y git- run:|eask package eask install eask compile# Enumerated list of Emacs versionsjobs:test-emacs-26:docker:- image:silex/emacs:26.2entrypoint:bash<<:*default-stepstest-emacs-master:docker:- image:silex/emacs:masterentrypoint:bash<<:*default-steps# Executing in parallelworkflows:version:2ci-test-matrix:jobs:- test-emacs-26- test-emacs-masterThis example is testing your Emacs Lisp package in the below environment;
- Emacs: 26.2 and snapshot Eask: snapshot (latest)  ">
+<meta property="og:description" content="Example to use Circle CI.
+version:2.1orbs:win:circleci/windows@2.2.0# Default actions to perform on each Emacs versioncommands:setup-linux:steps:- checkout- run:name:Install unzipcommand:apt-get update && apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | shsetup-macos:steps:- checkout- run:name:Install Emacs latestcommand:|echo &#34;HOMEBREW_NO_AUTO_UPDATE=1&#34; >> $BASH_ENV brew install homebrew/cask/emacs- run:name:Install unzipcommand:apt-get update && apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | shsetup-windows:steps:- checkout- run:name:Install Easkcommand:url.exe -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.bat | cmd /Qtest:steps:- run:name:Run regression testscommand:eldev -dtT -p testlint:steps:- run:name:Run Elisp-lintcommand:eldev lint- run:name:Byte-compile `.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Continuous-Integration/CircleCI/">
 <meta property="article:section" content="Continuous Integration">
-<meta property="article:modified_time" content="2023-03-07T01:45:33-08:00">
+<meta property="article:modified_time" content="2023-03-07T18:22:18-08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="💠 CircleCI">
-<meta name=twitter:description content="   Example to use Circle CI.
-# Default actions to perform on each Emacs versiondefault:&default-stepssteps:- checkout- run:apt-get update && apt-get install -y git- run:|eask package eask install eask compile# Enumerated list of Emacs versionsjobs:test-emacs-26:docker:- image:silex/emacs:26.2entrypoint:bash<<:*default-stepstest-emacs-master:docker:- image:silex/emacs:masterentrypoint:bash<<:*default-steps# Executing in parallelworkflows:version:2ci-test-matrix:jobs:- test-emacs-26- test-emacs-masterThis example is testing your Emacs Lisp package in the below environment;
- Emacs: 26.2 and snapshot Eask: snapshot (latest)  ">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Continuous Integration","name":"💠 CircleCI","url":"https://emacs-eask.github.io/Continuous-Integration/CircleCI/","headline":"💠 CircleCI","description":"   Example to use Circle CI.\n# Default actions to perform on each Emacs versiondefault:\u0026default-stepssteps:- checkout- run:apt-get update \u0026\u0026 apt-get install -y git- run:|eask package eask install eask compile# Enumerated list of Emacs versionsjobs:test-emacs-26:docker:- image:silex\/emacs:26.2entrypoint:bash\u003c\u003c:*default-stepstest-emacs-master:docker:- image:silex\/emacs:masterentrypoint:bash\u003c\u003c:*default-steps# Executing in parallelworkflows:version:2ci-test-matrix:jobs:- test-emacs-26- test-emacs-masterThis example is testing your Emacs Lisp package in the below environment;\n Emacs: 26.2 and snapshot Eask: snapshot (latest)  ","wordCount":"58","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Continuous-Integration/CircleCI/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-03-07T01:45:33.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<meta name=twitter:description content="Example to use Circle CI.
+version:2.1orbs:win:circleci/windows@2.2.0# Default actions to perform on each Emacs versioncommands:setup-linux:steps:- checkout- run:name:Install unzipcommand:apt-get update && apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | shsetup-macos:steps:- checkout- run:name:Install Emacs latestcommand:|echo &#34;HOMEBREW_NO_AUTO_UPDATE=1&#34; >> $BASH_ENV brew install homebrew/cask/emacs- run:name:Install unzipcommand:apt-get update && apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | shsetup-windows:steps:- checkout- run:name:Install Easkcommand:url.exe -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.bat | cmd /Qtest:steps:- run:name:Run regression testscommand:eldev -dtT -p testlint:steps:- run:name:Run Elisp-lintcommand:eldev lint- run:name:Byte-compile `.">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Continuous Integration","name":"💠 CircleCI","url":"https://emacs-eask.github.io/Continuous-Integration/CircleCI/","headline":"💠 CircleCI","description":"Example to use Circle CI.\nversion:2.1orbs:win:circleci\/windows@2.2.0# Default actions to perform on each Emacs versioncommands:setup-linux:steps:- checkout- run:name:Install unzipcommand:apt-get update \u0026\u0026 apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https:\/\/raw.githubusercontent.com\/emacs-eask\/cli\/master\/webinstall\/install.sh | shsetup-macos:steps:- checkout- run:name:Install Emacs latestcommand:|echo \u0022HOMEBREW_NO_AUTO_UPDATE=1\u0022 \u003e\u003e $BASH_ENV brew install homebrew\/cask\/emacs- run:name:Install unzipcommand:apt-get update \u0026\u0026 apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https:\/\/raw.githubusercontent.com\/emacs-eask\/cli\/master\/webinstall\/install.sh | shsetup-windows:steps:- checkout- run:name:Install Easkcommand:url.exe -fsSL https:\/\/raw.githubusercontent.com\/emacs-eask\/cli\/master\/webinstall\/install.bat | cmd \/Qtest:steps:- run:name:Run regression testscommand:eldev -dtT -p testlint:steps:- run:name:Run Elisp-lintcommand:eldev lint- run:name:Byte-compile `.","wordCount":"146","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Continuous-Integration/CircleCI/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-03-07T18:22:18.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -423,43 +420,155 @@ Edit page
 <nav id=TableOfContents></nav>
 <hr>
 </div>
+<p><a class=gdoc-markdown__link--raw href=#><img src="https://img.shields.io/badge/-Windows-lightblue?logo=windows&style=flat&logoColor=blue" alt=Windows></a>
+<a class=gdoc-markdown__link--raw href=#><img src="https://img.shields.io/badge/-macOS-lightgrey?logo=apple&style=flat&logoColor=white" alt=macOS></a>
+<a class=gdoc-markdown__link--raw href=#><img src="https://img.shields.io/badge/-Linux-fcc624?logo=linux&style=flat&logoColor=black" alt=Linux></a></p>
 <p>Example to use <a class=gdoc-markdown__link href=https://circleci.com/>Circle CI</a>.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-yml data-lang=yml><span class=c># Default actions to perform on each Emacs version</span><span class=w>
-</span><span class=w></span><span class=nt>default</span><span class=p>:</span><span class=w> </span><span class=cp>&amp;default-steps</span><span class=w>
-</span><span class=w>  </span><span class=nt>steps</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span>- <span class=l>checkout</span><span class=w>
-</span><span class=w>    </span>- <span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>apt-get update &amp;&amp; apt-get install -y git</span><span class=w>
-</span><span class=w>    </span>- <span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=p>|</span><span class=sd>
-</span><span class=sd>        eask package
-</span><span class=sd>        eask install
-</span><span class=sd>        eask compile</span><span class=w>        
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-yml data-lang=yml><span class=nt>version</span><span class=p>:</span><span class=w> </span><span class=m>2.1</span><span class=w>
 </span><span class=w>
-</span><span class=w></span><span class=c># Enumerated list of Emacs versions</span><span class=w>
+</span><span class=w></span><span class=nt>orbs</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span><span class=nt>win</span><span class=p>:</span><span class=w> </span><span class=l>circleci/windows@2.2.0</span><span class=w>
+</span><span class=w>
+</span><span class=w></span><span class=c># Default actions to perform on each Emacs version</span><span class=w>
+</span><span class=w></span><span class=nt>commands</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span><span class=nt>setup-linux</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=l>checkout</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install unzip</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>apt-get update &amp;&amp; apt-get install unzip</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install Eask</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | sh</span><span class=w>
+</span><span class=w>
+</span><span class=w>  </span><span class=nt>setup-macos</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=l>checkout</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install Emacs latest</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=p>|</span><span class=sd>
+</span><span class=sd>            echo &#34;HOMEBREW_NO_AUTO_UPDATE=1&#34; &gt;&gt; $BASH_ENV
+</span><span class=sd>            brew install homebrew/cask/emacs</span><span class=w>            
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install unzip</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>apt-get update &amp;&amp; apt-get install unzip</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install Eask</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | sh</span><span class=w>
+</span><span class=w>
+</span><span class=w>  </span><span class=nt>setup-windows</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=l>checkout</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install Eask</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>url.exe -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.bat | cmd /Q</span><span class=w>
+</span><span class=w>
+</span><span class=w>  </span><span class=nt>test</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Run regression tests</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>eldev -dtT -p test</span><span class=w>
+</span><span class=w>  </span><span class=nt>lint</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Run Elisp-lint</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>eldev lint</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Byte-compile `.el&#39; files</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>eldev -dtT compile --warnings-as-errors</span><span class=w>
+</span><span class=w>
 </span><span class=w></span><span class=nt>jobs</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span><span class=nt>test-emacs-26</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span><span class=nt>test-ubuntu-emacs-26</span><span class=p>:</span><span class=w>
 </span><span class=w>    </span><span class=nt>docker</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>image</span><span class=p>:</span><span class=w> </span><span class=l>silex/emacs:26.2</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>image</span><span class=p>:</span><span class=w> </span><span class=l>silex/emacs:26-ci</span><span class=w>
 </span><span class=w>        </span><span class=nt>entrypoint</span><span class=p>:</span><span class=w> </span><span class=l>bash</span><span class=w>
-</span><span class=w>    </span><span class=nt>&lt;&lt;</span><span class=p>:</span><span class=w> </span><span class=cp>*default-steps</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=l>setup-linux</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test</span><span class=w>
 </span><span class=w>
-</span><span class=w>  </span><span class=nt>test-emacs-master</span><span class=p>:</span><span class=w>
+</span><span class=w>  </span><span class=nt>test-ubuntu-emacs-27</span><span class=p>:</span><span class=w>
 </span><span class=w>    </span><span class=nt>docker</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>image</span><span class=p>:</span><span class=w> </span><span class=l>silex/emacs:master</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>image</span><span class=p>:</span><span class=w> </span><span class=l>silex/emacs:27-ci</span><span class=w>
 </span><span class=w>        </span><span class=nt>entrypoint</span><span class=p>:</span><span class=w> </span><span class=l>bash</span><span class=w>
-</span><span class=w>    </span><span class=nt>&lt;&lt;</span><span class=p>:</span><span class=w> </span><span class=cp>*default-steps</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=l>setup-linux</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test</span><span class=w>
 </span><span class=w>
-</span><span class=w></span><span class=c># Executing in parallel</span><span class=w>
+</span><span class=w>  </span><span class=nt>test-ubuntu-emacs-28</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=nt>docker</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>image</span><span class=p>:</span><span class=w> </span><span class=l>silex/emacs:28-ci</span><span class=w>
+</span><span class=w>        </span><span class=nt>entrypoint</span><span class=p>:</span><span class=w> </span><span class=l>bash</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=l>setup-linux</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test</span><span class=w>
+</span><span class=w>
+</span><span class=w>  </span><span class=nt>test-ubuntu-emacs-master</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=nt>docker</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>image</span><span class=p>:</span><span class=w> </span><span class=l>silex/emacs:master-ci</span><span class=w>
+</span><span class=w>        </span><span class=nt>entrypoint</span><span class=p>:</span><span class=w> </span><span class=l>bash</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=l>setup-linux</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test</span><span class=w>
+</span><span class=w>
+</span><span class=w>  </span><span class=nt>test-macos-emacs-latest</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=nt>macos</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span><span class=nt>xcode</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;14.0.0&#34;</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=l>setup-macos</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test</span><span class=w>
+</span><span class=w>
+</span><span class=w>  </span><span class=nt>test-windows-emacs-latest</span><span class=p>:</span><span class=w>
+</span><span class=w>    </span><span class=nt>executor</span><span class=p>:</span><span class=w> </span><span class=l>win/default</span><span class=w>
+</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span><span class=w>      </span>- <span class=nt>run</span><span class=p>:</span><span class=w>
+</span><span class=w>          </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install Emacs latest</span><span class=w>
+</span><span class=w>          </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=p>|</span><span class=sd>
+</span><span class=sd>            </span><span class=w>            </span><span class=l>choco install emacs</span><span class=w>
+</span><span class=w>      </span>- <span class=l>setup-windows</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test</span><span class=w>
+</span><span class=w>
 </span><span class=w></span><span class=nt>workflows</span><span class=p>:</span><span class=w>
 </span><span class=w>  </span><span class=nt>version</span><span class=p>:</span><span class=w> </span><span class=m>2</span><span class=w>
 </span><span class=w>  </span><span class=nt>ci-test-matrix</span><span class=p>:</span><span class=w>
 </span><span class=w>    </span><span class=nt>jobs</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- <span class=l>test-emacs-26</span><span class=w>
-</span><span class=w>      </span>- <span class=l>test-emacs-master</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test-ubuntu-emacs-26</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test-ubuntu-emacs-27</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test-ubuntu-emacs-28</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test-ubuntu-emacs-master</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test-macos-emacs-latest</span><span class=w>
+</span><span class=w>      </span>- <span class=l>test-windows-emacs-latest</span><span class=w>
 </span></code></pre></div><p>This example is testing your Emacs Lisp package in the below environment;</p>
-<ul>
-<li>Emacs: <code>26.2</code> and <code>snapshot</code></li>
-<li>Eask: <code>snapshot</code> (latest)</li>
-</ul>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>OS</th>
+<th>Emacs</th>
+<th>Eask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linux (Ubuntu)</td>
+<td><code>26.x</code>, <code>27.x</code>, <code>28.x</code>, <code>snapshot</code></td>
+<td>latest</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><code>snapshot</code></td>
+<td>latest</td>
+</tr>
+<tr>
+<td>Windows</td>
+<td><code>snapshot</code></td>
+<td>latest</td>
+</tr>
+</tbody>
+</table> </div>
+<blockquote class="gdoc-hint info">
+💡 You can generate workflow file via <code>eask generate workflow circle-ci</code>, see
+<a class=gdoc-markdown__link href=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#-eask-generate-workflow-circle-ci>Commands and options</a>
+for more information!
+</blockquote>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
