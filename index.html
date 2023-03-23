@@ -423,11 +423,23 @@ influencing your personal configuration. Eask aims to be:</p>
 </a>
 </h2>
 </div>
-<p>Eask is heavily inspired by Cask, so they are somewhat related! This tool focuses
-on consistency! <a class=gdoc-markdown__link href=https://github.com/cask/cask>Cask</a> and <a class=gdoc-markdown__link href=https://github.com/alphapapa/makem.sh>makem.sh</a>
-both rely on bash which Windows doesn&rsquo;t run on by default. If you use WSL or other
-environment system file Cygwin/MSYS ; then this may not be the tool you are looking
-for! 👀</p>
+<p><code>Eask</code> has the same philosophy as Cask, see their site <a class=gdoc-markdown__link href=https://cask.readthedocs.io/en/latest/guide/introduction.html#introduction-why-cask>Why Cask?</a>
+to understand why you should use Eask (or Cask).</p>
+<p>Many tools like
+<a class=gdoc-markdown__link href=https://github.com/cask/cask>Cask</a>,
+<a class=gdoc-markdown__link href=https://github.com/alphapapa/makem.sh>makem.sh</a>,
+or <a class=gdoc-markdown__link href=https://doublep.github.io/eldev/>Eldev</a>
+don&rsquo;t <strong>&ldquo;really&rdquo;</strong> support Windows. <code>Cask</code> has dropped support for Legacy Windows,
+<code>makem.sh</code> runs on bash, <code>Eldev</code> does support Windows, but the author doesn&rsquo;t use
+it on Windows (not having full tests, see their
+<a class=gdoc-markdown__link href=https://github.com/doublep/eldev/actions/workflows/test.yml>CI workflows</a>).
+<code>Eask</code> aims to adapt all platforms, including <code>Linux</code>, <code>macOS</code>, and <code>Windows</code>.
+It focuses on the cross-platform capability and the consistency between each
+OS. If Eask works on your machine, then it will work on any platform.</p>
+<p>Here are our suggestions; if you plan to work on an OS-specific package (never
+going to other platforms), go for other tools. On the other hand, Eask aims to
+provide the best consistency between each OS. Alternatively, if you want to
+learn a tool that works everywhere, Eask is one of the best choices.</p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-comparisons>
 ⚖️ Comparisons
@@ -449,18 +461,18 @@ but the author is not an expert on these tools. Corrections are welcome.</p>
 </thead>
 <tbody>
 <tr>
+<td>Eask</td>
+<td>Node or Native Executables</td>
+<td>✔ Good, and it can be compiled to native executables</td>
+<td>26.1+</td>
+<td>3,000+ lines</td>
+</tr>
+<tr>
 <td>Cask</td>
 <td>Bash, Batch, and Python (Windows)</td>
 <td>❌ Good on Linux and macOS, but it&rsquo;s particularly bad on Windows</td>
 <td>24.5+</td>
 <td>3,000+ lines</td>
-</tr>
-<tr>
-<td>makem.sh</td>
-<td>Shellscript</td>
-<td>❌ Doesn&rsquo;t work on Windows by default</td>
-<td>26.1+</td>
-<td>1 file, 1200+ lines</td>
 </tr>
 <tr>
 <td>Eldev</td>
@@ -470,11 +482,11 @@ but the author is not an expert on these tools. Corrections are welcome.</p>
 <td>4,000+ lines</td>
 </tr>
 <tr>
-<td>Eask</td>
-<td>Node or Native Executables</td>
-<td>✔ Good, and it can be compiled to native executables</td>
+<td>makem.sh</td>
+<td>Shellscript</td>
+<td>❌ Doesn&rsquo;t work on Windows by default</td>
 <td>26.1+</td>
-<td>3,000+ lines</td>
+<td>1 file, 1200+ lines</td>
 </tr>
 </tbody>
 </table> </div>
@@ -489,6 +501,8 @@ but the author is not an expert on these tools. Corrections are welcome.</p>
 </h2>
 </div>
 <ul>
+<li><code>0.9.x</code> - Improve UX in general</li>
+<li><code>0.8.x</code> - Add <code>link</code> command</li>
 <li><code>0.7.x</code> - Fix <code>default-directory</code> isn&rsquo;t honored by <strong>-g</strong> option</li>
 <li><code>0.6.x</code> - You can now use <code>eask create</code> to create an Elisp project</li>
 <li><code>0.5.x</code> - Handle error for failed archive</li>
@@ -506,9 +520,9 @@ but the author is not an expert on these tools. Corrections are welcome.</p>
 </h2>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h3 id=development>
-Development
-<a data-clipboard-text=https://emacs-eask.github.io/#development class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Development" aria-label="Anchor to: Development" href=#development><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=-development>
+🔍 Development
+<a data-clipboard-text=https://emacs-eask.github.io/#-development class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Development" aria-label="Anchor to: 🔍 Development" href=#-development><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
@@ -519,9 +533,9 @@ Development
 <li><input disabled type=checkbox> [DEV] Publish package to <a class=gdoc-markdown__link href>MacPorts</a></li>
 </ul>
 <div class=gdoc-page__anchorwrap>
-<h3 id=core-commands>
-Core commands
-<a data-clipboard-text=https://emacs-eask.github.io/#core-commands class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Core commands" aria-label="Anchor to: Core commands" href=#core-commands><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=-core-commands>
+🔍 Core commands
+<a data-clipboard-text=https://emacs-eask.github.io/#-core-commands class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Core commands" aria-label="Anchor to: 🔍 Core commands" href=#-core-commands><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
@@ -529,9 +543,9 @@ Core commands
 <li><input disabled type=checkbox> [FEAT] Add <code>publish</code> command; to publish package to eask archive?</li>
 </ul>
 <div class=gdoc-page__anchorwrap>
-<h3 id=eask-file-commands>
-Eask-file commands
-<a data-clipboard-text=https://emacs-eask.github.io/#eask-file-commands class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Eask-file commands" aria-label="Anchor to: Eask-file commands" href=#eask-file-commands><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=-eask-file-commands>
+🔍 Eask-file commands
+<a data-clipboard-text=https://emacs-eask.github.io/#-eask-file-commands class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Eask-file commands" aria-label="Anchor to: 🔍 Eask-file commands" href=#-eask-file-commands><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
