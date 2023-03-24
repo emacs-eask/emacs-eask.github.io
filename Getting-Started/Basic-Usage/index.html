@@ -20,13 +20,13 @@ Once you have installed Eask, make sure it is in your PATH. You can test that Ea
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Getting-Started/Basic-Usage/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2023-03-23T00:58:41-07:00">
+<meta property="article:modified_time" content="2023-03-24T02:00:38-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🔨 Basic Usage">
 <meta name=twitter:description content="Eask’s CLI is fully featured but simple to use, even for those who have very limited experience working from the command line.
 The following is a description of the most common commands you will use while developing your Eask project. See the Commands and options for a comprehensive view of Eask’s CLI.
 Once you have installed Eask, make sure it is in your PATH. You can test that Eask has been installed correctly via the help command:">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔨 Basic Usage","url":"https://emacs-eask.github.io/Getting-Started/Basic-Usage/","headline":"🔨 Basic Usage","description":"Eask’s CLI is fully featured but simple to use, even for those who have very limited experience working from the command line.\nThe following is a description of the most common commands you will use while developing your Eask project. See the Commands and options for a comprehensive view of Eask’s CLI.\nOnce you have installed Eask, make sure it is in your PATH. You can test that Eask has been installed correctly via the help command:","wordCount":"521","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Basic-Usage/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-03-23T00:58:41.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔨 Basic Usage","url":"https://emacs-eask.github.io/Getting-Started/Basic-Usage/","headline":"🔨 Basic Usage","description":"Eask’s CLI is fully featured but simple to use, even for those who have very limited experience working from the command line.\nThe following is a description of the most common commands you will use while developing your Eask project. See the Commands and options for a comprehensive view of Eask’s CLI.\nOnce you have installed Eask, make sure it is in your PATH. You can test that Eask has been installed correctly via the help command:","wordCount":"962","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Basic-Usage/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-03-24T02:00:38.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -497,14 +497,118 @@ Options:
 
 For more information, find the manual at https://emacs-eask.github.io/
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=the-eask-command>
-The <code>eask</code> Command
-<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Basic-Usage/#the-eask-command class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: The eask Command" aria-label="Anchor to: The eask Command" href=#the-eask-command><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-the-eask-command>
+🗃️ The <code>eask</code> Command
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Basic-Usage/#-the-eask-command class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🗃️ The eask Command" aria-label="Anchor to: 🗃️ The eask Command" href=#-the-eask-command><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>The most common usage is probably to run eask with your current directory being
-the input directory.</p>
+the input directory. Then you run eask followed by a subcommand:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask info             <span class=c1># Print out Eask-file information</span>
+</code></pre></div><p>Notice the subcommand can be nested:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask clean workspace  <span class=c1># Deletes your `.eask` folder</span>
+</code></pre></div><p>Pass in option <code>--help</code> to look up more information regarding the command you
+are using:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask clean --help
+</code></pre></div><p>The output, and it shows there are 7 subcommands supported:</p>
+<pre tabindex=0><code>Delete various files produced during building
+
+Usage: eask clean &lt;type&gt; [options..]
+
+Commands:
+  clean all                  Do all cleaning tasks                                                                                                                                          [aliases: everything]
+  clean autoloads            Remove generated autoloads file
+  clean dist [destination]   Delete dist subdirectory                                                                                                                                     [aliases: distribution]
+  clean elc                  Remove byte compiled files generated by eask compile
+  clean log-file             Remove all generated log files
+  clean pkg-file             Remove generated pkg-file
+  clean workspace            Clean up .eask directory                                                                                                                                            [aliases: .eask]
+
+Positionals:
+  &lt;type&gt;  type of the cleaning task
+
+...
+</code></pre><p>Here is a list of known nested subcommands:</p>
+<ul>
+<li>eask create</li>
+<li>eask clean</li>
+<li>eask generate</li>
+<li>eask generate workflow</li>
+<li>eask link</li>
+<li>eask lint</li>
+<li>eask test</li>
+</ul>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-knowing-your-elpa-directory>
+📌 Knowing your <code>elpa</code> directory
+<a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Basic-Usage/#-knowing-your-elpa-directory class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 📌 Knowing your elpa directory" aria-label="Anchor to: 📌 Knowing your elpa directory" href=#-knowing-your-elpa-directory><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Eask creates an isolated environment, so it won&rsquo;t create any side effects after
+playing, testing, and running your elisp packages. But it&rsquo;s important to know
+what elpa directory (you can think this as your <code>.emacs.d</code>) the current Eask
+session is pointing to, so you can release the full potential of this tool!</p>
+<p>Here is how Eask works behind the scene in different scenarios:</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Options</th>
+<th>Path</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>global</td>
+<td>Use Eask as a general tool, it&rsquo;s unrelated to other scopes</td>
+<td><code>-g</code> or <code>--global</code></td>
+<td><code>~/.eask</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>config</td>
+<td>Use Eask as your package manager, it can be use as a test tool too</td>
+<td><code>-c</code> or <code>--config</code></td>
+<td><code>~/.emacs.d</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>local</td>
+<td>The default behavior, use Eask as package dev tool</td>
+<td>n/a</td>
+<td><code>./.eask</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table> </div>
+<p>You might think of why these rules are created.</p>
+<p>It&rsquo;s easy to understand <strong>config</strong> and <strong>local</strong> since many other build tools
+use <strong>local</strong> to create an isolated environment. <strong>config</strong> is an additional
+feature since many people prefer managing their packages with an external tool.</p>
+<p>So what is <strong>global</strong>? Why it&rsquo;s needed?</p>
+<p>Eask is more than a build tool now. Several commands don&rsquo;t require their
+dependencies as package dependencies. For example, the <code>cat</code> command:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask cat <span class=o>[</span>PATTERNS..<span class=o>]</span>
+</code></pre></div><p><code>cat</code> is a simple command that mimics Linux&rsquo;s default <code>cat</code> command, but it does
+the syntax highlighting for you! How it&rsquo;s implemented? The command relies on
+an external package <a class=gdoc-markdown__link href=https://github.com/Lindydancer/e2ansi>e2ansi</a>, and this is neither the <code>package</code> nor <code>config</code>
+dependency (it could be, but let&rsquo;s assume we don&rsquo;t want it).</p>
+<p>How do we use this command without side effects to your project or personal
+emacs configuration? The global scope is introduced for this problem. Now we
+can add any useful commands without worrying the isolated environment got messed
+up.</p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>

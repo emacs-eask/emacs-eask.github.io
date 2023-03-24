@@ -407,15 +407,26 @@ Edit page
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>Introduction</h1>
-<p>Eask is a command-line tool that helps you build, lint, and test Emacs Lisp
-packages. It creates a clean environment to sandbox your elisp code without
-influencing your personal configuration. Eask aims to be:</p>
+<p>Eask was built to use as a package development tool in your Elisp packages. But
+now, Eask supports various types of Emacs Lisp tasks. It can be used in three
+major ways:</p>
+<ol>
+<li>Dev tool for Elisp packages</li>
+<li>Dependency management for your configuration</li>
+<li>Run elisp programs for all other purposes</li>
+</ol>
+<p>So what are the major differences between Eask and other build tools like
+<a class=gdoc-markdown__link href=https://github.com/cask/cask>Cask</a>, <a class=gdoc-markdown__link href=https://github.com/alphapapa/makem.sh>makem.sh</a>, and <a class=gdoc-markdown__link href=https://github.com/doublep/eldev>Eldev</a>, other than the things above?</p>
+<p>Good question! Eask is more than a build tool now, it can be used for various
+purposes! But here are Eask aims to be:</p>
 <ul>
 <li><strong>Consistent</strong> enough to sandbox across all systems</li>
-<li><strong>General</strong> enough to have Emacsers often use commands (byte-compile, checkdoc, etc)</li>
-<li><strong>Robust</strong> enough to provide useful results even in the presence of user&rsquo;s errors</li>
+<li><strong>General</strong> enough to have Emacsers frequently used commands (<code>byte-compile</code>, <code>checkdoc</code>, etc)</li>
+<li><strong>Robust</strong> enough to provide useful results even in the presence of user errors</li>
 <li><strong>Dependency-free</strong> so that the tool can be run on any platform</li>
 </ul>
+<p><em>P.S. See <a class=gdoc-markdown__link href=https://emacs-eask.github.io/#-why-eask>Why Eask?</a> for more detailed
+information.</em></p>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-why-eask>
 ❓ Why Eask?
@@ -425,13 +436,10 @@ influencing your personal configuration. Eask aims to be:</p>
 </div>
 <p><code>Eask</code> has the same philosophy as Cask, see their site <a class=gdoc-markdown__link href=https://cask.readthedocs.io/en/latest/guide/introduction.html#introduction-why-cask>Why Cask?</a>
 to understand why you should use Eask (or Cask).</p>
-<p>Many tools like
-<a class=gdoc-markdown__link href=https://github.com/cask/cask>Cask</a>,
-<a class=gdoc-markdown__link href=https://github.com/alphapapa/makem.sh>makem.sh</a>,
-or <a class=gdoc-markdown__link href=https://doublep.github.io/eldev/>Eldev</a>
-don&rsquo;t <strong>&ldquo;really&rdquo;</strong> support Windows. <code>Cask</code> has dropped support for Legacy Windows,
-<code>makem.sh</code> runs on bash, <code>Eldev</code> does support Windows, but the author doesn&rsquo;t use
-it on Windows (not having full tests, see their
+<p>Many tools like <a class=gdoc-markdown__link href=https://github.com/cask/cask>Cask</a>, <a class=gdoc-markdown__link href=https://github.com/alphapapa/makem.sh>makem.sh</a>, or <a class=gdoc-markdown__link href=https://github.com/doublep/eldev>Eldev</a> don&rsquo;t <strong>&ldquo;really&rdquo;</strong> support
+Windows. <code>Cask</code> has dropped support for Legacy Windows, <code>makem.sh</code> runs on bash,
+<code>Eldev</code> does support Windows, but the author doesn&rsquo;t use it on Windows (not
+having full tests, see their
 <a class=gdoc-markdown__link href=https://github.com/doublep/eldev/actions/workflows/test.yml>CI workflows</a>).
 <code>Eask</code> aims to adapt all platforms, including <code>Linux</code>, <code>macOS</code>, and <code>Windows</code>.
 It focuses on the cross-platform capability and the consistency between each
@@ -447,51 +455,217 @@ learn a tool that works everywhere, Eask is one of the best choices.</p>
 </a>
 </h2>
 </div>
-<p>The table were compiled by reading these projects’ documentation and source code,
+<p>The table was compiled by reading these projects’ documentation and source code,
 but the author is not an expert on these tools. Corrections are welcome.</p>
+<div class=gdoc-page__anchorwrap>
+<h3 id=-project-wise>
+🔍 Project Wise
+<a data-clipboard-text=https://emacs-eask.github.io/#-project-wise class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Project Wise" aria-label="Anchor to: 🔍 Project Wise" href=#-project-wise><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div>
+<p>The table shows what technology has been chosen by their author and how the
+project is being constructed. Furthermore, what technical decisions have they
+made? Drop support? Project&rsquo;s layout? Etc.</p>
 <div class=table-wrap> <table>
 <thead>
 <tr>
 <th></th>
-<th>Behind technology</th>
-<th>Cross-Platform</th>
-<th>Emacs Version</th>
-<th>Size</th>
+<th>Eask</th>
+<th>Cask</th>
+<th>Eldev</th>
+<th>makem.sh</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Eask</td>
-<td>Node or Native Executables</td>
-<td>✔ Good, and it can be compiled to native executables</td>
-<td>26.1+</td>
-<td>3,000+ lines</td>
+<td>bin folder</td>
+<td>node, execuatble, bash, bat</td>
+<td>bash, bat</td>
+<td>bash, bat, ps1</td>
+<td>bash</td>
 </tr>
 <tr>
-<td>Cask</td>
-<td>Bash, Batch, and Python (Windows)</td>
-<td>❌ Good on Linux and macOS, but it&rsquo;s particularly bad on Windows</td>
+<td>Cross-Platform</td>
+<td>yes</td>
+<td>no, doesn&rsquo;t support Windows</td>
+<td>yes</td>
+<td>no, doesn&rsquo;t support Windows</td>
+</tr>
+<tr>
+<td>Emacs version</td>
+<td>26.1+</td>
 <td>24.5+</td>
-<td>3,000+ lines</td>
-</tr>
-<tr>
-<td>Eldev</td>
-<td>Bash, Batch, and Powershel, etc</td>
-<td>✔ Good, but qutie slow on Windows</td>
 <td>24.4+</td>
-<td>4,000+ lines</td>
+<td>26.1+</td>
 </tr>
 <tr>
-<td>makem.sh</td>
-<td>Shellscript</td>
-<td>❌ Doesn&rsquo;t work on Windows by default</td>
-<td>26.1+</td>
-<td>1 file, 1200+ lines</td>
+<td>Size</td>
+<td>7,000+ lines</td>
+<td>3,000+ lines</td>
+<td>8,000+ lines</td>
+<td>1,200+ lines</td>
+</tr>
+<tr>
+<td>Executable</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Pure Elisp</td>
+<td>no, JavaScript</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CLI Parser</td>
+<td>yargs</td>
+<td>commander</td>
+<td>built-in</td>
+<td>built-in</td>
 </tr>
 </tbody>
 </table> </div>
 <blockquote class="gdoc-hint info">
 💡 <strong>makem.sh</strong> has a good comparisons document as well, visit their <a class=gdoc-markdown__link href=https://github.com/alphapapa/makem.sh#comparisons>site</a>
+</blockquote>
+<div class=gdoc-page__anchorwrap>
+<h3 id=-feature-wise>
+🔍 Feature Wise
+<a data-clipboard-text=https://emacs-eask.github.io/#-feature-wise class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: 🔍 Feature Wise" aria-label="Anchor to: 🔍 Feature Wise" href=#-feature-wise><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3>
+</div>
+<p>This is the feature comparison between each tool. Every tool has its advantages;
+choose the right tool that works for you!</p>
+<p>If the features are not listed below, either it is forgotten or simply
+considered too essential, so every tool has it; hence we don&rsquo;t add them to the
+list.</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th></th>
+<th>Eask</th>
+<th>Cask</th>
+<th>Eldev</th>
+<th>makem.sh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Elisp configuration</td>
+<td>yes, DSL is optional</td>
+<td>no, DSL only</td>
+<td>yes, pure elisp</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Handel <code>archives</code> failure</td>
+<td>yes, see <a class=gdoc-markdown__link href=https://github.com/emacs-eask/archives>emacs-eask/archives</a></td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>create</code> project, etc</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>link</code> local dependencies</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>exec</code> program</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>eval</code> expressions</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>emacs</code> execution</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Built-in <code>linters</code></td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Built-in <code>tests</code></td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Run script</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Self-defined commands</td>
+<td>no, replaced with run script</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Subcommand</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>local</code> packages</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>global</code> packages</td>
+<td>yes, via <code>-g</code></td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td><code>config</code> packages</td>
+<td>yes, via <code>-c</code></td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table> </div>
+<blockquote class="gdoc-hint info">
+💡 For <strong>local</strong>, <strong>global</strong>, and <strong>config</strong> packages, see
+<a class=gdoc-markdown__link href=https://emacs-eask.github.io/Getting-Started/Basic-Usage/#knowing-your-elpa-directory>Knowing your elpa directory</a>
+for more information!
 </blockquote>
 <div class=gdoc-page__anchorwrap>
 <h2 id=-news>
@@ -561,10 +735,10 @@ but the author is not an expert on these tools. Corrections are welcome.</p>
 </div>
 <p>The design of Eask was greatly influenced by the following projects:</p>
 <ul>
-<li><a class=gdoc-markdown__link href=https://github.com/cask/cask>cask</a> - Project management tool for Emacs</li>
+<li><a class=gdoc-markdown__link href=https://github.com/cask/cask>Cask</a> - Project management tool for Emacs</li>
 <li><a class=gdoc-markdown__link href=https://github.com/alphapapa/makem.sh>makem.sh</a> - Makefile-like script for building and testing Emacs Lisp packages</li>
 <li><a class=gdoc-markdown__link href=https://github.com/xuchunyang/epm>epm</a> - Emacs Package Manager</li>
-<li><a class=gdoc-markdown__link href=https://github.com/doublep/eldev>eldev</a> - Elisp Development Tool</li>
+<li><a class=gdoc-markdown__link href=https://github.com/doublep/eldev>Eldev</a> - Elisp Development Tool</li>
 </ul>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
