@@ -18,12 +18,12 @@ The installation are cross-platform, using npm.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Getting-Started/Quick-Start/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2023-03-27T03:03:34-07:00">
+<meta property="article:modified_time" content="2023-03-27T15:16:33-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🔰 Quick Start">
 <meta name=twitter:description content="Step 1: Setup NodeJS runtime and npm Step 2: Install Eask Step 3: Navigate to an existing project or create a new project Step 4: Create Eask-file Step 5: Start the package development Step 6: Manage package archives Step 7: Add some dependencies Step 8: Install dependencies See Also      Using Eask as your Emacs package management tool.
 The installation are cross-platform, using npm.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔰 Quick Start","url":"https://emacs-eask.github.io/Getting-Started/Quick-Start/","headline":"🔰 Quick Start","description":"Step 1: Setup NodeJS runtime and npm Step 2: Install Eask Step 3: Navigate to an existing project or create a new project Step 4: Create Eask-file Step 5: Start the package development Step 6: Manage package archives Step 7: Add some dependencies Step 8: Install dependencies See Also      Using Eask as your Emacs package management tool.\nThe installation are cross-platform, using npm.","wordCount":"578","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Quick-Start/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-03-27T03:03:34.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔰 Quick Start","url":"https://emacs-eask.github.io/Getting-Started/Quick-Start/","headline":"🔰 Quick Start","description":"Step 1: Setup NodeJS runtime and npm Step 2: Install Eask Step 3: Navigate to an existing project or create a new project Step 4: Create Eask-file Step 5: Start the package development Step 6: Manage package archives Step 7: Add some dependencies Step 8: Install dependencies See Also      Using Eask as your Emacs package management tool.\nThe installation are cross-platform, using npm.","wordCount":"513","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Quick-Start/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-03-27T15:16:33.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -522,16 +522,7 @@ Step 5: Start the package development
 <p>To check your package information, run:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask info
 </code></pre></div><p>You should be able to see the following information:</p>
-<pre tabindex=0><code>Running Eask in the development (./) environment
-Press Ctrl+C to cancel.
-
-Executing script inside Emacs...
-
-✓ Checking Emacs version 29.0.50... done!
-✓ Checking system windows-nt... done!
-✓ Loading Eask file in /path/to/project/Eask... done!
-
-your-package (1.0.0) | deps: 0 | devDeps: 0
+<pre tabindex=0><code>your-package (1.0.0) | deps: 0 | devDeps: 0
 Your project description!
 https://example.com/project-url/
 
@@ -583,16 +574,7 @@ Step 8: Install dependencies
 <p>Now we can install the dependencies we have specified in the <strong>Eask</strong>-file:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=nv>$</span> <span class=nv>eask</span> <span class=nv>install-deps</span>
 </code></pre></div><p>You should see Eask executed correctly with the similar output below:</p>
-<pre tabindex=0><code>Running Eask in the development environment
-Press Ctrl+C to cancel.
-
-Executing script inside Emacs...
-
-✓ Checking Emacs version 29.0.50... done!
-✓ Checking system windows-nt... done!
-✓ Loading Eask file in /path/to/project/Eask... done!
-
-Loading package information... done
+<pre tabindex=0><code>Loading package information... done
 Installing 2 package dependencies...
   - Installing f (20220405.1534)... done
   - Installing ht (20210119.741)... done
