@@ -5,25 +5,28 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
-<meta name=description content="By default, Eask will use whatever the Emacs version exists in your environment path. Use emacs &ndash;version to check your Emacs version.
-There is currently no way to specify an Emacs version to execute.">
+<meta name=description content="By default, packages are installed for the default Emacs, i.e., the one behind the emacs command. To pick a different Emacs, set the environment variable EMACS to the command name or executable path of the Emacs to use:
+$ EMACS=&#34;emacs26.1&#34; eask command Note that installed dependencies are scoped on the version of Emacs. So when switching between versions you will have to install the dependencies for each:
+$ EMACS=&#34;emacs26.3&#34; eask install There are, unfortunately, circumstances under which Emacs itself resets the EMACS variable in a way which conflicts with eask, in which case you can use the environment variable EASK_EMACS instead.">
 <title>🔭 Finding Emacs | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta property="og:title" content="🔭 Finding Emacs">
 <meta property="og:site_name" content="Emacs Eask">
-<meta property="og:description" content="By default, Eask will use whatever the Emacs version exists in your environment path. Use emacs –version to check your Emacs version.
-There is currently no way to specify an Emacs version to execute.">
+<meta property="og:description" content="By default, packages are installed for the default Emacs, i.e., the one behind the emacs command. To pick a different Emacs, set the environment variable EMACS to the command name or executable path of the Emacs to use:
+$ EMACS=&#34;emacs26.1&#34; eask command Note that installed dependencies are scoped on the version of Emacs. So when switching between versions you will have to install the dependencies for each:
+$ EMACS=&#34;emacs26.3&#34; eask install There are, unfortunately, circumstances under which Emacs itself resets the EMACS variable in a way which conflicts with eask, in which case you can use the environment variable EASK_EMACS instead.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Getting-Started/Finding-Emacs/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2023-04-02T11:24:32-07:00">
+<meta property="article:modified_time" content="2023-04-04T10:38:04-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🔭 Finding Emacs">
-<meta name=twitter:description content="By default, Eask will use whatever the Emacs version exists in your environment path. Use emacs –version to check your Emacs version.
-There is currently no way to specify an Emacs version to execute.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔭 Finding Emacs","url":"https://emacs-eask.github.io/Getting-Started/Finding-Emacs/","headline":"🔭 Finding Emacs","description":"By default, Eask will use whatever the Emacs version exists in your environment path. Use emacs –version to check your Emacs version.\nThere is currently no way to specify an Emacs version to execute.","wordCount":"34","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Finding-Emacs/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-04-02T11:24:32.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<meta name=twitter:description content="By default, packages are installed for the default Emacs, i.e., the one behind the emacs command. To pick a different Emacs, set the environment variable EMACS to the command name or executable path of the Emacs to use:
+$ EMACS=&#34;emacs26.1&#34; eask command Note that installed dependencies are scoped on the version of Emacs. So when switching between versions you will have to install the dependencies for each:
+$ EMACS=&#34;emacs26.3&#34; eask install There are, unfortunately, circumstances under which Emacs itself resets the EMACS variable in a way which conflicts with eask, in which case you can use the environment variable EASK_EMACS instead.">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔭 Finding Emacs","url":"https://emacs-eask.github.io/Getting-Started/Finding-Emacs/","headline":"🔭 Finding Emacs","description":"By default, packages are installed for the default Emacs, i.e., the one behind the emacs command. To pick a different Emacs, set the environment variable EMACS to the command name or executable path of the Emacs to use:\n$ EMACS=\u0022emacs26.1\u0022 eask command Note that installed dependencies are scoped on the version of Emacs. So when switching between versions you will have to install the dependencies for each:\n$ EMACS=\u0022emacs26.3\u0022 eask install There are, unfortunately, circumstances under which Emacs itself resets the EMACS variable in a way which conflicts with eask, in which case you can use the environment variable EASK_EMACS instead.","wordCount":"122","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Getting-Started/Finding-Emacs/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-04-04T10:38:04.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -416,9 +419,18 @@ Edit page
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>🔭 Finding Emacs</h1>
-<p>By default, Eask will use whatever the Emacs version exists in your environment
-path. Use <strong>emacs &ndash;version</strong> to check your Emacs version.</p>
-<p>There is currently no way to specify an Emacs version to execute.</p>
+<p>By default, packages are installed for the default Emacs, i.e., the one behind
+the <code>emacs</code> command. To pick a different Emacs, set the environment variable
+<code>EMACS</code> to the command name or executable path of the Emacs to use:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ <span class=nv>EMACS</span><span class=o>=</span><span class=s2>&#34;emacs26.1&#34;</span> eask <span class=nb>command</span>
+</code></pre></div><p>Note that installed dependencies are scoped on the version of Emacs. So when
+switching between versions you will have to install the dependencies for each:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ <span class=nv>EMACS</span><span class=o>=</span><span class=s2>&#34;emacs26.3&#34;</span> eask install
+</code></pre></div><p>There are, unfortunately, circumstances under which Emacs itself resets the
+<code>EMACS</code> variable in a way which conflicts with <strong>eask</strong>, in which case you can
+use the environment variable <code>EASK_EMACS</code> instead. Specifically, this problem
+effects: Emacs-26, for <code>M-x compile</code>, <code>M-x shell</code> or <code>M-x term</code>, for Emacs-27
+and Emacs-28 only for <code>M-x term</code>.</p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
