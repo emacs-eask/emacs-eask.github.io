@@ -20,13 +20,13 @@ The Elisp scripts, is used to do the actual execution for each command that pass
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Contributing/Codebase-Overview/">
 <meta property="article:section" content="Contributing">
-<meta property="article:modified_time" content="2023-04-28T12:08:43+08:00">
+<meta property="article:modified_time" content="2023-04-30T16:00:12-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🔱 Codebase Overview">
 <meta name=twitter:description content="Eask consists of two components: a command-line tool (the Eask CLI), and Elisp scripts.
 The CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src/util.js.
 The Elisp scripts, is used to do the actual execution for each command that passes through the CLI.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Contributing","name":"🔱 Codebase Overview","url":"https://emacs-eask.github.io/Contributing/Codebase-Overview/","headline":"🔱 Codebase Overview","description":"Eask consists of two components: a command-line tool (the Eask CLI), and Elisp scripts.\nThe CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src\/util.js.\nThe Elisp scripts, is used to do the actual execution for each command that passes through the CLI.","wordCount":"502","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Contributing/Codebase-Overview/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-04-28T12:08:43.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Contributing","name":"🔱 Codebase Overview","url":"https://emacs-eask.github.io/Contributing/Codebase-Overview/","headline":"🔱 Codebase Overview","description":"Eask consists of two components: a command-line tool (the Eask CLI), and Elisp scripts.\nThe CLI, is used to find the corresponding lisp file and feed it into the Emacs executable. It would parse all options and convert them to Emacs understandable options on the lisp scripts end. It is written in plain JavaScript, the main file is located in src\/util.js.\nThe Elisp scripts, is used to do the actual execution for each command that passes through the CLI.","wordCount":"502","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Contributing/Codebase-Overview/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-04-30T16:00:12.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-88a42144.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -435,7 +435,7 @@ through the CLI. All commands are split into its file and are organized in the
 <li><a href=#-elisp-script>📜 Elisp Script</a></li>
 <li><a href=#-project-structure>📂 Project Structure</a>
 <ul>
-<li><a href=#-execution-order-for-eask>♻️ Execution Order for Eask</a></li>
+<li><a href=#-execution-order-inside-eask-file>♻️ Execution Order inside Eask-file</a></li>
 </ul>
 </li>
 </ul></nav>
@@ -525,14 +525,16 @@ more information!</p>
 <p><code>eask</code> is the node entry, and the main yargs definition! <code>cmds</code> and <code>lisp</code>
 folders are command files that correspond to each other.</p>
 <div class=gdoc-page__anchorwrap>
-<h3 id=-execution-order-for-eask>
-♻️ Execution Order for Eask
-<a data-clipboard-text=https://emacs-eask.github.io/Contributing/Codebase-Overview/#-execution-order-for-eask class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ♻️ Execution Order for Eask" aria-label="Anchor to: ♻️ Execution Order for Eask" href=#-execution-order-for-eask><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=-execution-order-inside-eask-file>
+♻️ Execution Order inside Eask-file
+<a data-clipboard-text=https://emacs-eask.github.io/Contributing/Codebase-Overview/#-execution-order-inside-eask-file class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: ♻️ Execution Order inside Eask-file" aria-label="Anchor to: ♻️ Execution Order inside Eask-file" href=#-execution-order-inside-eask-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
 <p>Eask is executed this way:</p>
-<p><img src=flowchart/execution_order.png alt></p>
+<p align=center>
+<img src=images/execution_order.png width=80%>
+</p>
 <ul>
 <li><strong>Eask environment</strong> builds sandbox and reads Eask file information</li>
 <li><strong>Emacs configuration</strong> is only being executed when <code>-g</code> option is enabled</li>
