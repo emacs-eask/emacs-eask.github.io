@@ -18,12 +18,12 @@ version:2.1orbs:win:circleci/windows@2.2.0# Default actions to perform on each E
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/Continuous-Integration/CircleCI/">
 <meta property="article:section" content="Continuous Integration">
-<meta property="article:modified_time" content="2023-05-31T17:01:02-07:00">
+<meta property="article:modified_time" content="2023-06-03T03:07:15-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="💠 CircleCI">
 <meta name=twitter:description content="Example to use Circle CI.
 version:2.1orbs:win:circleci/windows@2.2.0# Default actions to perform on each Emacs versioncommands:setup-linux:steps:- checkout- run:name:Install unzipcommand:apt-get update && apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | shsetup-macos:steps:- checkout- run:name:Install Emacs latestcommand:|echo &#34;HOMEBREW_NO_AUTO_UPDATE=1&#34; >> $BASH_ENV brew install homebrew/cask/emacs- run:name:Install unzipcommand:apt-get update && apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh | shsetup-windows:steps:- checkout- run:name:Install Easkcommand:url.exe -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.bat | cmd /Qtest:steps:- run:name:Run regression testscommand:eldev -dtT -p testlint:steps:- run:name:Run Elisp-lintcommand:eldev lint- run:name:Byte-compile `.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Continuous Integration","name":"💠 CircleCI","url":"https://emacs-eask.github.io/Continuous-Integration/CircleCI/","headline":"💠 CircleCI","description":"Example to use Circle CI.\nversion:2.1orbs:win:circleci\/windows@2.2.0# Default actions to perform on each Emacs versioncommands:setup-linux:steps:- checkout- run:name:Install unzipcommand:apt-get update \u0026\u0026 apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https:\/\/raw.githubusercontent.com\/emacs-eask\/cli\/master\/webinstall\/install.sh | shsetup-macos:steps:- checkout- run:name:Install Emacs latestcommand:|echo \u0022HOMEBREW_NO_AUTO_UPDATE=1\u0022 \u003e\u003e $BASH_ENV brew install homebrew\/cask\/emacs- run:name:Install unzipcommand:apt-get update \u0026\u0026 apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https:\/\/raw.githubusercontent.com\/emacs-eask\/cli\/master\/webinstall\/install.sh | shsetup-windows:steps:- checkout- run:name:Install Easkcommand:url.exe -fsSL https:\/\/raw.githubusercontent.com\/emacs-eask\/cli\/master\/webinstall\/install.bat | cmd \/Qtest:steps:- run:name:Run regression testscommand:eldev -dtT -p testlint:steps:- run:name:Run Elisp-lintcommand:eldev lint- run:name:Byte-compile `.","wordCount":"146","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Continuous-Integration/CircleCI/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-05-31T17:01:02.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Continuous Integration","name":"💠 CircleCI","url":"https://emacs-eask.github.io/Continuous-Integration/CircleCI/","headline":"💠 CircleCI","description":"Example to use Circle CI.\nversion:2.1orbs:win:circleci\/windows@2.2.0# Default actions to perform on each Emacs versioncommands:setup-linux:steps:- checkout- run:name:Install unzipcommand:apt-get update \u0026\u0026 apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https:\/\/raw.githubusercontent.com\/emacs-eask\/cli\/master\/webinstall\/install.sh | shsetup-macos:steps:- checkout- run:name:Install Emacs latestcommand:|echo \u0022HOMEBREW_NO_AUTO_UPDATE=1\u0022 \u003e\u003e $BASH_ENV brew install homebrew\/cask\/emacs- run:name:Install unzipcommand:apt-get update \u0026\u0026 apt-get install unzip- run:name:Install Easkcommand:curl -fsSL https:\/\/raw.githubusercontent.com\/emacs-eask\/cli\/master\/webinstall\/install.sh | shsetup-windows:steps:- checkout- run:name:Install Easkcommand:url.exe -fsSL https:\/\/raw.githubusercontent.com\/emacs-eask\/cli\/master\/webinstall\/install.bat | cmd \/Qtest:steps:- run:name:Run regression testscommand:eldev -dtT -p testlint:steps:- run:name:Run Elisp-lintcommand:eldev lint- run:name:Byte-compile `.","wordCount":"146","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/Continuous-Integration/CircleCI/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-06-03T03:07:15.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=/js/main-fbb9c8b0.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -66,6 +66,22 @@ version:2.1orbs:win:circleci/windows@2.2.0# Default actions to perform on each E
 <span class=gdoc-menu-header__home>
 <a href=https://emacs-eask.github.io/ class=gdoc-header__link><svg class="gdoc-icon gdoc_home"><title>Back to homepage</title><use xlink:href="#gdoc_home"/></svg>
 </a>
+</span>
+<span class=gdoc-language>
+<ul class=gdoc-language__selector role=button aria-pressed=false tabindex=0>
+<li>
+<span class="flex align-center"><svg class="gdoc-icon gdoc_language"><use xlink:href="#gdoc_language"/></svg>
+<span>EN</span>
+</span>
+<ul class=gdoc-language__list>
+<li>
+<a class="flex gdoc-language__entry" title=繁體中文 href=/zh-tw/Continuous-Integration/CircleCI/ hreflang=zh-tw lang=zh-tw>
+繁體中文
+</a>
+</li>
+</ul>
+</li>
+</ul>
 </span>
 <span class=gdoc-menu-header__control>
 <label for=menu-header-control><svg class="gdoc-icon gdoc_keyboard_arrow_right"><use xlink:href="#gdoc_keyboard_arrow_right"/><title>Close Menu Bar</title></svg>
@@ -591,6 +607,16 @@ for more information!</div>
 <section class="flex flex-wrap align-center">
 <span class="gdoc-footer__item gdoc-footer__item--row">
 Built with <a href=https://gohugo.io/ class=gdoc-footer__link>Hugo</a> and<svg class="gdoc-icon gdoc_heart"><use xlink:href="#gdoc_heart"/></svg>
+</span>
+<span class="gdoc-footer__item gdoc-footer__item--row">
+<a href=/tos class=gdoc-footer__link>
+Legal Notice
+</a>
+</span>
+<span class="gdoc-footer__item gdoc-footer__item--row">
+<a href=/tos class=gdoc-footer__link>
+Privacy Policy
+</a>
 </span>
 </section>
 </div>
