@@ -18,12 +18,12 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/FAQ/">
 <meta property="article:section" content="Faq">
-<meta property="article:modified_time" content="2023-06-16T17:15:33-07:00">
+<meta property="article:modified_time" content="2023-06-23T14:23:25-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="FAQ">
 <meta name=twitter:description content="Here is a list of general frequently asked questions.
  🔍 About Eask  ❓ Do you need Node.JS to use Eask? ❓ Who should use this tool? ❓ Where can I download the Eask snapshot?   🔍 Technology Choice  ❓ Why Node.JS? ❓ Why yargs?   🔍 Usage  ❓ Why am I getting the error package target tar/el not found while installing? ❓ Why am I getting the error package is not installable?">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Faq","name":"FAQ","url":"https://emacs-eask.github.io/FAQ/","headline":"FAQ","description":"Here is a list of general frequently asked questions.\n 🔍 About Eask  ❓ Do you need Node.JS to use Eask? ❓ Who should use this tool? ❓ Where can I download the Eask snapshot?   🔍 Technology Choice  ❓ Why Node.JS? ❓ Why yargs?   🔍 Usage  ❓ Why am I getting the error package target tar\/el not found while installing? ❓ Why am I getting the error package is not installable?","wordCount":"659","license":"CC BY-SA 4.0","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/FAQ/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-06-16T17:15:33.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Faq","name":"FAQ","url":"https://emacs-eask.github.io/FAQ/","headline":"FAQ","description":"Here is a list of general frequently asked questions.\n 🔍 About Eask  ❓ Do you need Node.JS to use Eask? ❓ Who should use this tool? ❓ Where can I download the Eask snapshot?   🔍 Technology Choice  ❓ Why Node.JS? ❓ Why yargs?   🔍 Usage  ❓ Why am I getting the error package target tar\/el not found while installing? ❓ Why am I getting the error package is not installable?","wordCount":"771","license":"CC BY-SA 4.0","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/FAQ/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-06-23T14:23:25.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=/js/main-fbb9c8b0.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -464,6 +464,7 @@ Edit page
 <li><a href=#-why-am-i-getting-the-error-package-target-tarel-not-found-while-installing>❓ Why am I getting the error package target <code>tar</code>/<code>el</code> not found while installing?</a></li>
 <li><a href=#-why-am-i-getting-the-error-package-is-not-installable>❓ Why am I getting the error package is not installable?</a></li>
 <li><a href=#-why-am-i-getting-git-errors-with-status-2>❓ Why am I getting git errors with status 2?</a></li>
+<li><a href=#-why-am-i-getting-tar-exited-with-status-2>❓ Why am I getting tar exited with status 2?</a></li>
 </ul></nav>
 <hr>
 </div>
@@ -593,7 +594,7 @@ like this:</p>
 </a>
 </h2>
 </div>
-<p>If you get this sample error message</p>
+<p>If you get this sample error message:</p>
 <pre tabindex=0><code>Loading package information... done ✓
   - Installing s (20210616.619)... Failed (status 2): git --no-pager remote get-url upstream .
 ...
@@ -601,6 +602,27 @@ like this:</p>
 should be disabled when running any of Eask’s commands.</p>
 <p>See <a class=gdoc-markdown__link href=https://github.com/emacs-eask/cli/issues/39#issuecomment-1150770740>this issue</a>
 for more information.</p>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-why-am-i-getting-tar-exited-with-status-2>
+❓ Why am I getting tar exited with status 2?
+<a data-clipboard-text=https://emacs-eask.github.io/FAQ/#-why-am-i-getting-tar-exited-with-status-2 class="gdoc-page__anchor clip flex align-center" title="Anchor to: ❓ Why am I getting tar exited with status 2?" aria-label="Anchor to: ❓ Why am I getting tar exited with status 2?" href=#-why-am-i-getting-tar-exited-with-status-2><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>If you get this sample error message:</p>
+<pre tabindex=0><code>Created your-package-0.1.0.tar containing:
+tar exited with status 2
+Error: Process completed with exit code 1.
+</code></pre><p>You might get this error while using the BSD tar. The workaround is to use
+GNU tar instead.</p>
+<pre tabindex=0><code>(setq package-build-tar-executable &quot;/path/to/gnu/tar&quot;)
+</code></pre><p>In Windows, BSD tar is used by default. If you have Git installed, you can use
+the tar executable from Git; it uses GNU tar.</p>
+<p>Add the following code snippet to your Eask-file:</p>
+<pre tabindex=0><code>;; Use GNU tar in Windows
+(when (memq system-type '(cygwin windows-nt ms-dos))
+  (setq package-build-tar-executable &quot;C:/Program Files/Git/usr/bin/tar.exe&quot;))
+</code></pre>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
