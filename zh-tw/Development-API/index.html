@@ -6,7 +6,7 @@
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
 <meta name=description content="本文檔提供了對公共 Eask API 的引用，您可以在您的項目和 Eask 的擴展。
- 🚩 入口點  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (&rest body)   🚩 核心  🔍 Variable: eask-lisp-root 🔍 Function: eask-command () 🔍 Function: eask-special-p () 🔍 Function: eask-checker-p () 🔍 Function: eask-script (script) 🔍 Function: eask-load (script) 🔍 Function: eask-call (script) 🔍 Macro: eask-defvc< (version &rest body) 🔍 Macro: eask&ndash;silent (&rest body) 🔍 Macro: eask&ndash;unsilent (&rest body) 🔍 Function: eask-dependencies () 🔍 Function: eask-pkg-init (&optional force) 🔍 Macro: eask-with-archives (archives &rest body) 🔍 Function: eask-package-desc (name &optional current) 🔍 Function: eask-argv (index) 🔍 Function: eask-args () 🔍 Variable: eask-file 🔍 Variable: eask-file-root 🔍 Function: eask&ndash;match-file (name) 🔍 Function: eask&ndash;all-files (&optional dir) 🔍 Function: eask&ndash;find-files (start-path) 🔍 Function: eask-file-try-load (start-path) 🔍 Function: eask-network-insecure-p ()   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-config-p () 🔍 Function: eask-local-p () 🔍 Function: eask-all-p () 🔍 Function: eask-quick-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-log-file-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Variable: eask-package 🔍 Variable: eask-package-file 🔍 Variable: eask-package-desc 🔍 Variable: eask-files 🔍 Variable: eask-scripts 🔍 Variable: eask-depends-on-emacs 🔍 Variable: eask-depends-on 🔍 Variable: eask-depends-on-dev 🔍 Function: eask-f-package (name version description) 🔍 Function: eask-f-website-url (url) 🔍 Function: eask-f-keywords (&rest keywords) 🔍 Function: eask-f-author (name &optional email) 🔍 Function: eask-f-license (name) 🔍 Function: eask-f-package-file (file) 🔍 Function: eask-f-files (pkg &rest args) 🔍 Function: eask-f-script (name command &rest args) 🔍 Function: eask-f-source (name &optional location) 🔍 Function: eask-f-source-priority (name &optional priority) 🔍 Function: eask-f-depends-on (pkg &rest args) 🔍 Function: eask-f-development (&rest dependencies) 🔍 Function: eask-f-exec-paths (&rest dirs) 🔍 Function: eask-f-load-paths (&rest dirs)   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-log-file 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol &rest body) 🔍 Function: eask-debug (msg &rest args) 🔍 Function: eask-log (msg &rest args) 🔍 Function: eask-info (msg &rest args) 🔍 Function: eask-warn (msg &rest args) 🔍 Function: eask-error (msg &rest args) 🔍 Function: eask-msg (msg &rest args) 🔍 Function: eask-write (msg &rest args) 🔍 Function: eask-report (&rest args)   🚩 File  🔍 Function: eask-guess-package-name () 🔍 Function: eask-package-files () 🔍 Function: eask-package-el-files () 🔍 Function: eask-package-elc-files () 🔍 Function: eask-package-multi-p () 🔍 Function: eask-package-single-p () 🔍 Function: eask-unpacked-size ()   🚩 Progress  🔍 Macro: eask-with-progress (msg-start body msg-end) 🔍 Function: eask-print-log-buffer (&optional buffer-or-name)   🚩 Help  🔍 Function: eask-help (command)      🚩 入口點     🔍 Snippet: _prepare.">
+ 🚩 入口點  🔍 代碼段: _prepare.el 🔍 巨集: eask-start (&rest body)   🚩 核心  🔍 變數: eask-lisp-root 🔍 函式: eask-command () 🔍 函式: eask-special-p () 🔍 函式: eask-checker-p () 🔍 函式: eask-script (script) 🔍 函式: eask-load (script) 🔍 函式: eask-call (script) 🔍 巨集: eask-defvc< (version &rest body) 🔍 巨集: eask&ndash;silent (&rest body) 🔍 巨集: eask&ndash;unsilent (&rest body) 🔍 函式: eask-dependencies () 🔍 函式: eask-pkg-init (&optional force) 🔍 巨集: eask-with-archives (archives &rest body) 🔍 函式: eask-package-desc (name &optional current) 🔍 函式: eask-argv (index) 🔍 函式: eask-args () 🔍 變數: eask-file 🔍 變數: eask-file-root 🔍 函式: eask&ndash;match-file (name) 🔍 函式: eask&ndash;all-files (&optional dir) 🔍 函式: eask&ndash;find-files (start-path) 🔍 函式: eask-file-try-load (start-path) 🔍 函式: eask-network-insecure-p ()   🚩 旗標  🔍 函式: eask-global-p () 🔍 函式: eask-config-p () 🔍 函式: eask-local-p () 🔍 函式: eask-all-p () 🔍 函式: eask-quick-p () 🔍 函式: eask-force-p () 🔍 函式: eask-dev-p () 🔍 函式: eask-debug-p () 🔍 函式: eask-strict-p () 🔍 函式: eask-timestamps-p () 🔍 函式: eask-log-level-p () 🔍 函式: eask-log-file-p () 🔍 函式: eask-no-color-p () 🔍 函式: eask-allow-error-p () 🔍 函式: eask-insecure-p () 🔍 函式: eask-proxy () 🔍 函式: eask-http-proxy () 🔍 函式: eask-https-proxy () 🔍 函式: eask-no-proxy () 🔍 函式: eask-destination () 🔍 函式: eask-depth () 🔍 函式: eask-verbose ()   🚩 Eask-file  🔍 變數: eask-package 🔍 變數: eask-package-file 🔍 變數: eask-package-desc 🔍 變數: eask-files 🔍 變數: eask-scripts 🔍 變數: eask-depends-on-emacs 🔍 變數: eask-depends-on 🔍 變數: eask-depends-on-dev 🔍 函式: eask-f-package (name version description) 🔍 函式: eask-f-website-url (url) 🔍 函式: eask-f-keywords (&rest keywords) 🔍 函式: eask-f-author (name &optional email) 🔍 函式: eask-f-license (name) 🔍 函式: eask-f-package-file (file) 🔍 函式: eask-f-files (pkg &rest args) 🔍 函式: eask-f-script (name command &rest args) 🔍 函式: eask-f-source (name &optional location) 🔍 函式: eask-f-source-priority (name &optional priority) 🔍 函式: eask-f-depends-on (pkg &rest args) 🔍 函式: eask-f-development (&rest dependencies) 🔍 函式: eask-f-exec-paths (&rest dirs) 🔍 函式: eask-f-load-paths (&rest dirs)   🚩 信息紀錄  🔍 變數: eask-verbosity 🔍 變數: eask-timestamps 🔍 變數: eask-log-level 🔍 變數: eask-log-file 🔍 變數: eask-level-color 🔍 巨集: eask-with-verbosity (symbol &rest body) 🔍 函式: eask-debug (msg &rest args) 🔍 函式: eask-log (msg &rest args) 🔍 函式: eask-info (msg &rest args) 🔍 函式: eask-warn (msg &rest args) 🔍 函式: eask-error (msg &rest args) 🔍 函式: eask-msg (msg &rest args) 🔍 函式: eask-write (msg &rest args) 🔍 函式: eask-report (&rest args)   🚩 錯誤處理  🔍 變數: eask&ndash;ignore-error-p 🔍 變數: eask-inhibit-error-message 🔍 巨集: eask-ignore-errors (&rest body) 🔍 巨集: eask&ndash;silent-error (&rest body) 🔍 巨集: eask-ignore-errors-silent (&rest body) 🔍 函式: eask&ndash;exit ()   🚩 文件  🔍 函式: eask-guess-package-name () 🔍 函式: eask-package-files () 🔍 函式: eask-package-el-files () 🔍 函式: eask-package-elc-files () 🔍 函式: eask-package-multi-p () 🔍 函式: eask-package-single-p () 🔍 函式: eask-unpacked-size ()   🚩 進度  🔍 巨集: eask-with-progress (msg-start body msg-end) 🔍 函式: eask-print-log-buffer (&optional buffer-or-name)   🚩 幫助  🔍 函式: eask-help (command)      🚩 入口點     🔍 代碼段: _prepare.">
 <title>開發 API | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
@@ -14,16 +14,16 @@
 <meta property="og:title" content="開發 API">
 <meta property="og:site_name" content="Emacs Eask">
 <meta property="og:description" content="本文檔提供了對公共 Eask API 的引用，您可以在您的項目和 Eask 的擴展。
- 🚩 入口點  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (&rest body)   🚩 核心  🔍 Variable: eask-lisp-root 🔍 Function: eask-command () 🔍 Function: eask-special-p () 🔍 Function: eask-checker-p () 🔍 Function: eask-script (script) 🔍 Function: eask-load (script) 🔍 Function: eask-call (script) 🔍 Macro: eask-defvc< (version &rest body) 🔍 Macro: eask–silent (&rest body) 🔍 Macro: eask–unsilent (&rest body) 🔍 Function: eask-dependencies () 🔍 Function: eask-pkg-init (&optional force) 🔍 Macro: eask-with-archives (archives &rest body) 🔍 Function: eask-package-desc (name &optional current) 🔍 Function: eask-argv (index) 🔍 Function: eask-args () 🔍 Variable: eask-file 🔍 Variable: eask-file-root 🔍 Function: eask–match-file (name) 🔍 Function: eask–all-files (&optional dir) 🔍 Function: eask–find-files (start-path) 🔍 Function: eask-file-try-load (start-path) 🔍 Function: eask-network-insecure-p ()   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-config-p () 🔍 Function: eask-local-p () 🔍 Function: eask-all-p () 🔍 Function: eask-quick-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-log-file-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Variable: eask-package 🔍 Variable: eask-package-file 🔍 Variable: eask-package-desc 🔍 Variable: eask-files 🔍 Variable: eask-scripts 🔍 Variable: eask-depends-on-emacs 🔍 Variable: eask-depends-on 🔍 Variable: eask-depends-on-dev 🔍 Function: eask-f-package (name version description) 🔍 Function: eask-f-website-url (url) 🔍 Function: eask-f-keywords (&rest keywords) 🔍 Function: eask-f-author (name &optional email) 🔍 Function: eask-f-license (name) 🔍 Function: eask-f-package-file (file) 🔍 Function: eask-f-files (pkg &rest args) 🔍 Function: eask-f-script (name command &rest args) 🔍 Function: eask-f-source (name &optional location) 🔍 Function: eask-f-source-priority (name &optional priority) 🔍 Function: eask-f-depends-on (pkg &rest args) 🔍 Function: eask-f-development (&rest dependencies) 🔍 Function: eask-f-exec-paths (&rest dirs) 🔍 Function: eask-f-load-paths (&rest dirs)   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-log-file 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol &rest body) 🔍 Function: eask-debug (msg &rest args) 🔍 Function: eask-log (msg &rest args) 🔍 Function: eask-info (msg &rest args) 🔍 Function: eask-warn (msg &rest args) 🔍 Function: eask-error (msg &rest args) 🔍 Function: eask-msg (msg &rest args) 🔍 Function: eask-write (msg &rest args) 🔍 Function: eask-report (&rest args)   🚩 File  🔍 Function: eask-guess-package-name () 🔍 Function: eask-package-files () 🔍 Function: eask-package-el-files () 🔍 Function: eask-package-elc-files () 🔍 Function: eask-package-multi-p () 🔍 Function: eask-package-single-p () 🔍 Function: eask-unpacked-size ()   🚩 Progress  🔍 Macro: eask-with-progress (msg-start body msg-end) 🔍 Function: eask-print-log-buffer (&optional buffer-or-name)   🚩 Help  🔍 Function: eask-help (command)      🚩 入口點     🔍 Snippet: _prepare.">
+ 🚩 入口點  🔍 代碼段: _prepare.el 🔍 巨集: eask-start (&rest body)   🚩 核心  🔍 變數: eask-lisp-root 🔍 函式: eask-command () 🔍 函式: eask-special-p () 🔍 函式: eask-checker-p () 🔍 函式: eask-script (script) 🔍 函式: eask-load (script) 🔍 函式: eask-call (script) 🔍 巨集: eask-defvc< (version &rest body) 🔍 巨集: eask–silent (&rest body) 🔍 巨集: eask–unsilent (&rest body) 🔍 函式: eask-dependencies () 🔍 函式: eask-pkg-init (&optional force) 🔍 巨集: eask-with-archives (archives &rest body) 🔍 函式: eask-package-desc (name &optional current) 🔍 函式: eask-argv (index) 🔍 函式: eask-args () 🔍 變數: eask-file 🔍 變數: eask-file-root 🔍 函式: eask–match-file (name) 🔍 函式: eask–all-files (&optional dir) 🔍 函式: eask–find-files (start-path) 🔍 函式: eask-file-try-load (start-path) 🔍 函式: eask-network-insecure-p ()   🚩 旗標  🔍 函式: eask-global-p () 🔍 函式: eask-config-p () 🔍 函式: eask-local-p () 🔍 函式: eask-all-p () 🔍 函式: eask-quick-p () 🔍 函式: eask-force-p () 🔍 函式: eask-dev-p () 🔍 函式: eask-debug-p () 🔍 函式: eask-strict-p () 🔍 函式: eask-timestamps-p () 🔍 函式: eask-log-level-p () 🔍 函式: eask-log-file-p () 🔍 函式: eask-no-color-p () 🔍 函式: eask-allow-error-p () 🔍 函式: eask-insecure-p () 🔍 函式: eask-proxy () 🔍 函式: eask-http-proxy () 🔍 函式: eask-https-proxy () 🔍 函式: eask-no-proxy () 🔍 函式: eask-destination () 🔍 函式: eask-depth () 🔍 函式: eask-verbose ()   🚩 Eask-file  🔍 變數: eask-package 🔍 變數: eask-package-file 🔍 變數: eask-package-desc 🔍 變數: eask-files 🔍 變數: eask-scripts 🔍 變數: eask-depends-on-emacs 🔍 變數: eask-depends-on 🔍 變數: eask-depends-on-dev 🔍 函式: eask-f-package (name version description) 🔍 函式: eask-f-website-url (url) 🔍 函式: eask-f-keywords (&rest keywords) 🔍 函式: eask-f-author (name &optional email) 🔍 函式: eask-f-license (name) 🔍 函式: eask-f-package-file (file) 🔍 函式: eask-f-files (pkg &rest args) 🔍 函式: eask-f-script (name command &rest args) 🔍 函式: eask-f-source (name &optional location) 🔍 函式: eask-f-source-priority (name &optional priority) 🔍 函式: eask-f-depends-on (pkg &rest args) 🔍 函式: eask-f-development (&rest dependencies) 🔍 函式: eask-f-exec-paths (&rest dirs) 🔍 函式: eask-f-load-paths (&rest dirs)   🚩 信息紀錄  🔍 變數: eask-verbosity 🔍 變數: eask-timestamps 🔍 變數: eask-log-level 🔍 變數: eask-log-file 🔍 變數: eask-level-color 🔍 巨集: eask-with-verbosity (symbol &rest body) 🔍 函式: eask-debug (msg &rest args) 🔍 函式: eask-log (msg &rest args) 🔍 函式: eask-info (msg &rest args) 🔍 函式: eask-warn (msg &rest args) 🔍 函式: eask-error (msg &rest args) 🔍 函式: eask-msg (msg &rest args) 🔍 函式: eask-write (msg &rest args) 🔍 函式: eask-report (&rest args)   🚩 錯誤處理  🔍 變數: eask–ignore-error-p 🔍 變數: eask-inhibit-error-message 🔍 巨集: eask-ignore-errors (&rest body) 🔍 巨集: eask–silent-error (&rest body) 🔍 巨集: eask-ignore-errors-silent (&rest body) 🔍 函式: eask–exit ()   🚩 文件  🔍 函式: eask-guess-package-name () 🔍 函式: eask-package-files () 🔍 函式: eask-package-el-files () 🔍 函式: eask-package-elc-files () 🔍 函式: eask-package-multi-p () 🔍 函式: eask-package-single-p () 🔍 函式: eask-unpacked-size ()   🚩 進度  🔍 巨集: eask-with-progress (msg-start body msg-end) 🔍 函式: eask-print-log-buffer (&optional buffer-or-name)   🚩 幫助  🔍 函式: eask-help (command)      🚩 入口點     🔍 代碼段: _prepare.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/zh-tw/Development-API/">
 <meta property="article:section" content="Development API">
-<meta property="article:modified_time" content="2023-08-23T00:10:37-07:00">
+<meta property="article:modified_time" content="2023-08-23T05:44:30-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="開發 API">
 <meta name=twitter:description content="本文檔提供了對公共 Eask API 的引用，您可以在您的項目和 Eask 的擴展。
- 🚩 入口點  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (&rest body)   🚩 核心  🔍 Variable: eask-lisp-root 🔍 Function: eask-command () 🔍 Function: eask-special-p () 🔍 Function: eask-checker-p () 🔍 Function: eask-script (script) 🔍 Function: eask-load (script) 🔍 Function: eask-call (script) 🔍 Macro: eask-defvc< (version &rest body) 🔍 Macro: eask–silent (&rest body) 🔍 Macro: eask–unsilent (&rest body) 🔍 Function: eask-dependencies () 🔍 Function: eask-pkg-init (&optional force) 🔍 Macro: eask-with-archives (archives &rest body) 🔍 Function: eask-package-desc (name &optional current) 🔍 Function: eask-argv (index) 🔍 Function: eask-args () 🔍 Variable: eask-file 🔍 Variable: eask-file-root 🔍 Function: eask–match-file (name) 🔍 Function: eask–all-files (&optional dir) 🔍 Function: eask–find-files (start-path) 🔍 Function: eask-file-try-load (start-path) 🔍 Function: eask-network-insecure-p ()   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-config-p () 🔍 Function: eask-local-p () 🔍 Function: eask-all-p () 🔍 Function: eask-quick-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-log-file-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Variable: eask-package 🔍 Variable: eask-package-file 🔍 Variable: eask-package-desc 🔍 Variable: eask-files 🔍 Variable: eask-scripts 🔍 Variable: eask-depends-on-emacs 🔍 Variable: eask-depends-on 🔍 Variable: eask-depends-on-dev 🔍 Function: eask-f-package (name version description) 🔍 Function: eask-f-website-url (url) 🔍 Function: eask-f-keywords (&rest keywords) 🔍 Function: eask-f-author (name &optional email) 🔍 Function: eask-f-license (name) 🔍 Function: eask-f-package-file (file) 🔍 Function: eask-f-files (pkg &rest args) 🔍 Function: eask-f-script (name command &rest args) 🔍 Function: eask-f-source (name &optional location) 🔍 Function: eask-f-source-priority (name &optional priority) 🔍 Function: eask-f-depends-on (pkg &rest args) 🔍 Function: eask-f-development (&rest dependencies) 🔍 Function: eask-f-exec-paths (&rest dirs) 🔍 Function: eask-f-load-paths (&rest dirs)   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-log-file 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol &rest body) 🔍 Function: eask-debug (msg &rest args) 🔍 Function: eask-log (msg &rest args) 🔍 Function: eask-info (msg &rest args) 🔍 Function: eask-warn (msg &rest args) 🔍 Function: eask-error (msg &rest args) 🔍 Function: eask-msg (msg &rest args) 🔍 Function: eask-write (msg &rest args) 🔍 Function: eask-report (&rest args)   🚩 File  🔍 Function: eask-guess-package-name () 🔍 Function: eask-package-files () 🔍 Function: eask-package-el-files () 🔍 Function: eask-package-elc-files () 🔍 Function: eask-package-multi-p () 🔍 Function: eask-package-single-p () 🔍 Function: eask-unpacked-size ()   🚩 Progress  🔍 Macro: eask-with-progress (msg-start body msg-end) 🔍 Function: eask-print-log-buffer (&optional buffer-or-name)   🚩 Help  🔍 Function: eask-help (command)      🚩 入口點     🔍 Snippet: _prepare.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Development API","name":"開發 API","url":"https://emacs-eask.github.io/zh-tw/Development-API/","headline":"開發 API","description":"本文檔提供了對公共 Eask API 的引用，您可以在您的項目和 Eask 的擴展。\n 🚩 入口點  🔍 Snippet: _prepare.el 🔍 Macro: eask-start (\u0026rest body)   🚩 核心  🔍 Variable: eask-lisp-root 🔍 Function: eask-command () 🔍 Function: eask-special-p () 🔍 Function: eask-checker-p () 🔍 Function: eask-script (script) 🔍 Function: eask-load (script) 🔍 Function: eask-call (script) 🔍 Macro: eask-defvc\u003c (version \u0026rest body) 🔍 Macro: eask–silent (\u0026rest body) 🔍 Macro: eask–unsilent (\u0026rest body) 🔍 Function: eask-dependencies () 🔍 Function: eask-pkg-init (\u0026optional force) 🔍 Macro: eask-with-archives (archives \u0026rest body) 🔍 Function: eask-package-desc (name \u0026optional current) 🔍 Function: eask-argv (index) 🔍 Function: eask-args () 🔍 Variable: eask-file 🔍 Variable: eask-file-root 🔍 Function: eask–match-file (name) 🔍 Function: eask–all-files (\u0026optional dir) 🔍 Function: eask–find-files (start-path) 🔍 Function: eask-file-try-load (start-path) 🔍 Function: eask-network-insecure-p ()   🚩 Flags  🔍 Function: eask-global-p () 🔍 Function: eask-config-p () 🔍 Function: eask-local-p () 🔍 Function: eask-all-p () 🔍 Function: eask-quick-p () 🔍 Function: eask-force-p () 🔍 Function: eask-dev-p () 🔍 Function: eask-debug-p () 🔍 Function: eask-strict-p () 🔍 Function: eask-timestamps-p () 🔍 Function: eask-log-level-p () 🔍 Function: eask-log-file-p () 🔍 Function: eask-no-color-p () 🔍 Function: eask-allow-error-p () 🔍 Function: eask-insecure-p () 🔍 Function: eask-proxy () 🔍 Function: eask-http-proxy () 🔍 Function: eask-https-proxy () 🔍 Function: eask-no-proxy () 🔍 Function: eask-destination () 🔍 Function: eask-depth () 🔍 Function: eask-verbose ()   🚩 Eask-file  🔍 Variable: eask-package 🔍 Variable: eask-package-file 🔍 Variable: eask-package-desc 🔍 Variable: eask-files 🔍 Variable: eask-scripts 🔍 Variable: eask-depends-on-emacs 🔍 Variable: eask-depends-on 🔍 Variable: eask-depends-on-dev 🔍 Function: eask-f-package (name version description) 🔍 Function: eask-f-website-url (url) 🔍 Function: eask-f-keywords (\u0026rest keywords) 🔍 Function: eask-f-author (name \u0026optional email) 🔍 Function: eask-f-license (name) 🔍 Function: eask-f-package-file (file) 🔍 Function: eask-f-files (pkg \u0026rest args) 🔍 Function: eask-f-script (name command \u0026rest args) 🔍 Function: eask-f-source (name \u0026optional location) 🔍 Function: eask-f-source-priority (name \u0026optional priority) 🔍 Function: eask-f-depends-on (pkg \u0026rest args) 🔍 Function: eask-f-development (\u0026rest dependencies) 🔍 Function: eask-f-exec-paths (\u0026rest dirs) 🔍 Function: eask-f-load-paths (\u0026rest dirs)   🚩 Logging  🔍 Variable: eask-verbosity 🔍 Variable: eask-timestamps 🔍 Variable: eask-log-level 🔍 Variable: eask-log-file 🔍 Variable: eask-level-color 🔍 Macro: eask-with-verbosity (symbol \u0026rest body) 🔍 Function: eask-debug (msg \u0026rest args) 🔍 Function: eask-log (msg \u0026rest args) 🔍 Function: eask-info (msg \u0026rest args) 🔍 Function: eask-warn (msg \u0026rest args) 🔍 Function: eask-error (msg \u0026rest args) 🔍 Function: eask-msg (msg \u0026rest args) 🔍 Function: eask-write (msg \u0026rest args) 🔍 Function: eask-report (\u0026rest args)   🚩 File  🔍 Function: eask-guess-package-name () 🔍 Function: eask-package-files () 🔍 Function: eask-package-el-files () 🔍 Function: eask-package-elc-files () 🔍 Function: eask-package-multi-p () 🔍 Function: eask-package-single-p () 🔍 Function: eask-unpacked-size ()   🚩 Progress  🔍 Macro: eask-with-progress (msg-start body msg-end) 🔍 Function: eask-print-log-buffer (\u0026optional buffer-or-name)   🚩 Help  🔍 Function: eask-help (command)      🚩 入口點     🔍 Snippet: _prepare.","wordCount":"1608","license":"CC BY-SA 4.0","inLanguage":"zh-tw","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/zh-tw/Development-API/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-08-23T00:10:37.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+ 🚩 入口點  🔍 代碼段: _prepare.el 🔍 巨集: eask-start (&rest body)   🚩 核心  🔍 變數: eask-lisp-root 🔍 函式: eask-command () 🔍 函式: eask-special-p () 🔍 函式: eask-checker-p () 🔍 函式: eask-script (script) 🔍 函式: eask-load (script) 🔍 函式: eask-call (script) 🔍 巨集: eask-defvc< (version &rest body) 🔍 巨集: eask–silent (&rest body) 🔍 巨集: eask–unsilent (&rest body) 🔍 函式: eask-dependencies () 🔍 函式: eask-pkg-init (&optional force) 🔍 巨集: eask-with-archives (archives &rest body) 🔍 函式: eask-package-desc (name &optional current) 🔍 函式: eask-argv (index) 🔍 函式: eask-args () 🔍 變數: eask-file 🔍 變數: eask-file-root 🔍 函式: eask–match-file (name) 🔍 函式: eask–all-files (&optional dir) 🔍 函式: eask–find-files (start-path) 🔍 函式: eask-file-try-load (start-path) 🔍 函式: eask-network-insecure-p ()   🚩 旗標  🔍 函式: eask-global-p () 🔍 函式: eask-config-p () 🔍 函式: eask-local-p () 🔍 函式: eask-all-p () 🔍 函式: eask-quick-p () 🔍 函式: eask-force-p () 🔍 函式: eask-dev-p () 🔍 函式: eask-debug-p () 🔍 函式: eask-strict-p () 🔍 函式: eask-timestamps-p () 🔍 函式: eask-log-level-p () 🔍 函式: eask-log-file-p () 🔍 函式: eask-no-color-p () 🔍 函式: eask-allow-error-p () 🔍 函式: eask-insecure-p () 🔍 函式: eask-proxy () 🔍 函式: eask-http-proxy () 🔍 函式: eask-https-proxy () 🔍 函式: eask-no-proxy () 🔍 函式: eask-destination () 🔍 函式: eask-depth () 🔍 函式: eask-verbose ()   🚩 Eask-file  🔍 變數: eask-package 🔍 變數: eask-package-file 🔍 變數: eask-package-desc 🔍 變數: eask-files 🔍 變數: eask-scripts 🔍 變數: eask-depends-on-emacs 🔍 變數: eask-depends-on 🔍 變數: eask-depends-on-dev 🔍 函式: eask-f-package (name version description) 🔍 函式: eask-f-website-url (url) 🔍 函式: eask-f-keywords (&rest keywords) 🔍 函式: eask-f-author (name &optional email) 🔍 函式: eask-f-license (name) 🔍 函式: eask-f-package-file (file) 🔍 函式: eask-f-files (pkg &rest args) 🔍 函式: eask-f-script (name command &rest args) 🔍 函式: eask-f-source (name &optional location) 🔍 函式: eask-f-source-priority (name &optional priority) 🔍 函式: eask-f-depends-on (pkg &rest args) 🔍 函式: eask-f-development (&rest dependencies) 🔍 函式: eask-f-exec-paths (&rest dirs) 🔍 函式: eask-f-load-paths (&rest dirs)   🚩 信息紀錄  🔍 變數: eask-verbosity 🔍 變數: eask-timestamps 🔍 變數: eask-log-level 🔍 變數: eask-log-file 🔍 變數: eask-level-color 🔍 巨集: eask-with-verbosity (symbol &rest body) 🔍 函式: eask-debug (msg &rest args) 🔍 函式: eask-log (msg &rest args) 🔍 函式: eask-info (msg &rest args) 🔍 函式: eask-warn (msg &rest args) 🔍 函式: eask-error (msg &rest args) 🔍 函式: eask-msg (msg &rest args) 🔍 函式: eask-write (msg &rest args) 🔍 函式: eask-report (&rest args)   🚩 錯誤處理  🔍 變數: eask–ignore-error-p 🔍 變數: eask-inhibit-error-message 🔍 巨集: eask-ignore-errors (&rest body) 🔍 巨集: eask–silent-error (&rest body) 🔍 巨集: eask-ignore-errors-silent (&rest body) 🔍 函式: eask–exit ()   🚩 文件  🔍 函式: eask-guess-package-name () 🔍 函式: eask-package-files () 🔍 函式: eask-package-el-files () 🔍 函式: eask-package-elc-files () 🔍 函式: eask-package-multi-p () 🔍 函式: eask-package-single-p () 🔍 函式: eask-unpacked-size ()   🚩 進度  🔍 巨集: eask-with-progress (msg-start body msg-end) 🔍 函式: eask-print-log-buffer (&optional buffer-or-name)   🚩 幫助  🔍 函式: eask-help (command)      🚩 入口點     🔍 代碼段: _prepare.">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Development API","name":"開發 API","url":"https://emacs-eask.github.io/zh-tw/Development-API/","headline":"開發 API","description":"本文檔提供了對公共 Eask API 的引用，您可以在您的項目和 Eask 的擴展。\n 🚩 入口點  🔍 代碼段: _prepare.el 🔍 巨集: eask-start (\u0026rest body)   🚩 核心  🔍 變數: eask-lisp-root 🔍 函式: eask-command () 🔍 函式: eask-special-p () 🔍 函式: eask-checker-p () 🔍 函式: eask-script (script) 🔍 函式: eask-load (script) 🔍 函式: eask-call (script) 🔍 巨集: eask-defvc\u003c (version \u0026rest body) 🔍 巨集: eask–silent (\u0026rest body) 🔍 巨集: eask–unsilent (\u0026rest body) 🔍 函式: eask-dependencies () 🔍 函式: eask-pkg-init (\u0026optional force) 🔍 巨集: eask-with-archives (archives \u0026rest body) 🔍 函式: eask-package-desc (name \u0026optional current) 🔍 函式: eask-argv (index) 🔍 函式: eask-args () 🔍 變數: eask-file 🔍 變數: eask-file-root 🔍 函式: eask–match-file (name) 🔍 函式: eask–all-files (\u0026optional dir) 🔍 函式: eask–find-files (start-path) 🔍 函式: eask-file-try-load (start-path) 🔍 函式: eask-network-insecure-p ()   🚩 旗標  🔍 函式: eask-global-p () 🔍 函式: eask-config-p () 🔍 函式: eask-local-p () 🔍 函式: eask-all-p () 🔍 函式: eask-quick-p () 🔍 函式: eask-force-p () 🔍 函式: eask-dev-p () 🔍 函式: eask-debug-p () 🔍 函式: eask-strict-p () 🔍 函式: eask-timestamps-p () 🔍 函式: eask-log-level-p () 🔍 函式: eask-log-file-p () 🔍 函式: eask-no-color-p () 🔍 函式: eask-allow-error-p () 🔍 函式: eask-insecure-p () 🔍 函式: eask-proxy () 🔍 函式: eask-http-proxy () 🔍 函式: eask-https-proxy () 🔍 函式: eask-no-proxy () 🔍 函式: eask-destination () 🔍 函式: eask-depth () 🔍 函式: eask-verbose ()   🚩 Eask-file  🔍 變數: eask-package 🔍 變數: eask-package-file 🔍 變數: eask-package-desc 🔍 變數: eask-files 🔍 變數: eask-scripts 🔍 變數: eask-depends-on-emacs 🔍 變數: eask-depends-on 🔍 變數: eask-depends-on-dev 🔍 函式: eask-f-package (name version description) 🔍 函式: eask-f-website-url (url) 🔍 函式: eask-f-keywords (\u0026rest keywords) 🔍 函式: eask-f-author (name \u0026optional email) 🔍 函式: eask-f-license (name) 🔍 函式: eask-f-package-file (file) 🔍 函式: eask-f-files (pkg \u0026rest args) 🔍 函式: eask-f-script (name command \u0026rest args) 🔍 函式: eask-f-source (name \u0026optional location) 🔍 函式: eask-f-source-priority (name \u0026optional priority) 🔍 函式: eask-f-depends-on (pkg \u0026rest args) 🔍 函式: eask-f-development (\u0026rest dependencies) 🔍 函式: eask-f-exec-paths (\u0026rest dirs) 🔍 函式: eask-f-load-paths (\u0026rest dirs)   🚩 信息紀錄  🔍 變數: eask-verbosity 🔍 變數: eask-timestamps 🔍 變數: eask-log-level 🔍 變數: eask-log-file 🔍 變數: eask-level-color 🔍 巨集: eask-with-verbosity (symbol \u0026rest body) 🔍 函式: eask-debug (msg \u0026rest args) 🔍 函式: eask-log (msg \u0026rest args) 🔍 函式: eask-info (msg \u0026rest args) 🔍 函式: eask-warn (msg \u0026rest args) 🔍 函式: eask-error (msg \u0026rest args) 🔍 函式: eask-msg (msg \u0026rest args) 🔍 函式: eask-write (msg \u0026rest args) 🔍 函式: eask-report (\u0026rest args)   🚩 錯誤處理  🔍 變數: eask–ignore-error-p 🔍 變數: eask-inhibit-error-message 🔍 巨集: eask-ignore-errors (\u0026rest body) 🔍 巨集: eask–silent-error (\u0026rest body) 🔍 巨集: eask-ignore-errors-silent (\u0026rest body) 🔍 函式: eask–exit ()   🚩 文件  🔍 函式: eask-guess-package-name () 🔍 函式: eask-package-files () 🔍 函式: eask-package-el-files () 🔍 函式: eask-package-elc-files () 🔍 函式: eask-package-multi-p () 🔍 函式: eask-package-single-p () 🔍 函式: eask-unpacked-size ()   🚩 進度  🔍 巨集: eask-with-progress (msg-start body msg-end) 🔍 函式: eask-print-log-buffer (\u0026optional buffer-or-name)   🚩 幫助  🔍 函式: eask-help (command)      🚩 入口點     🔍 代碼段: _prepare.","wordCount":"1719","license":"CC BY-SA 4.0","inLanguage":"zh-tw","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/zh-tw/Development-API/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-08-23T05:44:30.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=/js/main-fbb9c8b0.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -452,127 +452,137 @@ Edit page
 <ul>
 <li><a href=#-入口點>🚩 入口點</a>
 <ul>
-<li><a href=#-snippet-_prepareel>🔍 Snippet: _prepare.el</a></li>
-<li><a href=#-macro-eask-start-rest-body>🔍 Macro: eask-start (&rest <code>body</code>)</a></li>
+<li><a href=#-代碼段-_prepareel>🔍 代碼段: _prepare.el</a></li>
+<li><a href=#-巨集-eask-start-rest-body>🔍 巨集: eask-start (&rest <code>body</code>)</a></li>
 </ul>
 </li>
 <li><a href=#-核心>🚩 核心</a>
 <ul>
-<li><a href=#-variable-eask-lisp-root>🔍 Variable: eask-lisp-root</a></li>
-<li><a href=#-function-eask-command->🔍 Function: eask-command ()</a></li>
-<li><a href=#-function-eask-special-p->🔍 Function: eask-special-p ()</a></li>
-<li><a href=#-function-eask-checker-p->🔍 Function: eask-checker-p ()</a></li>
-<li><a href=#-function-eask-script-script>🔍 Function: eask-script (<code>script</code>)</a></li>
-<li><a href=#-function-eask-load-script>🔍 Function: eask-load (<code>script</code>)</a></li>
-<li><a href=#-function-eask-call-script>🔍 Function: eask-call (<code>script</code>)</a></li>
-<li><a href=#-macro-eask-defvc-version-rest-body>🔍 Macro: eask-defvc&lt; (<code>version</code> &rest <code>body</code>)</a></li>
-<li><a href=#-macro-eask--silent-rest-body>🔍 Macro: eask&ndash;silent (&rest <code>body</code>)</a></li>
-<li><a href=#-macro-eask--unsilent-rest-body>🔍 Macro: eask&ndash;unsilent (&rest <code>body</code>)</a></li>
-<li><a href=#-function-eask-dependencies->🔍 Function: eask-dependencies ()</a></li>
-<li><a href=#-function-eask-pkg-init-optional-force>🔍 Function: eask-pkg-init (&optional <code>force</code>)</a></li>
-<li><a href=#-macro-eask-with-archives-archives-rest-body>🔍 Macro: eask-with-archives (<code>archives</code> &rest <code>body</code>)</a></li>
-<li><a href=#-function-eask-package-desc-name-optional-current>🔍 Function: eask-package-desc (<code>name</code> &optional <code>current</code>)</a></li>
-<li><a href=#-function-eask-argv-index>🔍 Function: eask-argv (<code>index</code>)</a></li>
-<li><a href=#-function-eask-args->🔍 Function: eask-args ()</a></li>
-<li><a href=#-variable-eask-file>🔍 Variable: eask-file</a></li>
-<li><a href=#-variable-eask-file-root>🔍 Variable: eask-file-root</a></li>
-<li><a href=#-function-eask--match-file-name>🔍 Function: eask&ndash;match-file (<code>name</code>)</a></li>
-<li><a href=#-function-eask--all-files-optional-dir>🔍 Function: eask&ndash;all-files (&optional <code>dir</code>)</a></li>
-<li><a href=#-function-eask--find-files-start-path>🔍 Function: eask&ndash;find-files (<code>start-path</code>)</a></li>
-<li><a href=#-function-eask-file-try-load-start-path>🔍 Function: eask-file-try-load (<code>start-path</code>)</a></li>
-<li><a href=#-function-eask-network-insecure-p->🔍 Function: eask-network-insecure-p ()</a></li>
+<li><a href=#-變數-eask-lisp-root>🔍 變數: eask-lisp-root</a></li>
+<li><a href=#-函式-eask-command->🔍 函式: eask-command ()</a></li>
+<li><a href=#-函式-eask-special-p->🔍 函式: eask-special-p ()</a></li>
+<li><a href=#-函式-eask-checker-p->🔍 函式: eask-checker-p ()</a></li>
+<li><a href=#-函式-eask-script-script>🔍 函式: eask-script (<code>script</code>)</a></li>
+<li><a href=#-函式-eask-load-script>🔍 函式: eask-load (<code>script</code>)</a></li>
+<li><a href=#-函式-eask-call-script>🔍 函式: eask-call (<code>script</code>)</a></li>
+<li><a href=#-巨集-eask-defvc-version-rest-body>🔍 巨集: eask-defvc&lt; (<code>version</code> &rest <code>body</code>)</a></li>
+<li><a href=#-巨集-eask--silent-rest-body>🔍 巨集: eask&ndash;silent (&rest <code>body</code>)</a></li>
+<li><a href=#-巨集-eask--unsilent-rest-body>🔍 巨集: eask&ndash;unsilent (&rest <code>body</code>)</a></li>
+<li><a href=#-函式-eask-dependencies->🔍 函式: eask-dependencies ()</a></li>
+<li><a href=#-函式-eask-pkg-init-optional-force>🔍 函式: eask-pkg-init (&optional <code>force</code>)</a></li>
+<li><a href=#-巨集-eask-with-archives-archives-rest-body>🔍 巨集: eask-with-archives (<code>archives</code> &rest <code>body</code>)</a></li>
+<li><a href=#-函式-eask-package-desc-name-optional-current>🔍 函式: eask-package-desc (<code>name</code> &optional <code>current</code>)</a></li>
+<li><a href=#-函式-eask-argv-index>🔍 函式: eask-argv (<code>index</code>)</a></li>
+<li><a href=#-函式-eask-args->🔍 函式: eask-args ()</a></li>
+<li><a href=#-變數-eask-file>🔍 變數: eask-file</a></li>
+<li><a href=#-變數-eask-file-root>🔍 變數: eask-file-root</a></li>
+<li><a href=#-函式-eask--match-file-name>🔍 函式: eask&ndash;match-file (<code>name</code>)</a></li>
+<li><a href=#-函式-eask--all-files-optional-dir>🔍 函式: eask&ndash;all-files (&optional <code>dir</code>)</a></li>
+<li><a href=#-函式-eask--find-files-start-path>🔍 函式: eask&ndash;find-files (<code>start-path</code>)</a></li>
+<li><a href=#-函式-eask-file-try-load-start-path>🔍 函式: eask-file-try-load (<code>start-path</code>)</a></li>
+<li><a href=#-函式-eask-network-insecure-p->🔍 函式: eask-network-insecure-p ()</a></li>
 </ul>
 </li>
-<li><a href=#-flags>🚩 Flags</a>
+<li><a href=#-旗標>🚩 旗標</a>
 <ul>
-<li><a href=#-function-eask-global-p->🔍 Function: eask-global-p ()</a></li>
-<li><a href=#-function-eask-config-p->🔍 Function: eask-config-p ()</a></li>
-<li><a href=#-function-eask-local-p->🔍 Function: eask-local-p ()</a></li>
-<li><a href=#-function-eask-all-p->🔍 Function: eask-all-p ()</a></li>
-<li><a href=#-function-eask-quick-p->🔍 Function: eask-quick-p ()</a></li>
-<li><a href=#-function-eask-force-p->🔍 Function: eask-force-p ()</a></li>
-<li><a href=#-function-eask-dev-p->🔍 Function: eask-dev-p ()</a></li>
-<li><a href=#-function-eask-debug-p->🔍 Function: eask-debug-p ()</a></li>
-<li><a href=#-function-eask-strict-p->🔍 Function: eask-strict-p ()</a></li>
-<li><a href=#-function-eask-timestamps-p->🔍 Function: eask-timestamps-p ()</a></li>
-<li><a href=#-function-eask-log-level-p->🔍 Function: eask-log-level-p ()</a></li>
-<li><a href=#-function-eask-log-file-p->🔍 Function: eask-log-file-p ()</a></li>
-<li><a href=#-function-eask-no-color-p->🔍 Function: eask-no-color-p ()</a></li>
-<li><a href=#-function-eask-allow-error-p->🔍 Function: eask-allow-error-p ()</a></li>
-<li><a href=#-function-eask-insecure-p->🔍 Function: eask-insecure-p ()</a></li>
-<li><a href=#-function-eask-proxy->🔍 Function: eask-proxy ()</a></li>
-<li><a href=#-function-eask-http-proxy->🔍 Function: eask-http-proxy ()</a></li>
-<li><a href=#-function-eask-https-proxy->🔍 Function: eask-https-proxy ()</a></li>
-<li><a href=#-function-eask-no-proxy->🔍 Function: eask-no-proxy ()</a></li>
-<li><a href=#-function-eask-destination->🔍 Function: eask-destination ()</a></li>
-<li><a href=#-function-eask-depth->🔍 Function: eask-depth ()</a></li>
-<li><a href=#-function-eask-verbose->🔍 Function: eask-verbose ()</a></li>
+<li><a href=#-函式-eask-global-p->🔍 函式: eask-global-p ()</a></li>
+<li><a href=#-函式-eask-config-p->🔍 函式: eask-config-p ()</a></li>
+<li><a href=#-函式-eask-local-p->🔍 函式: eask-local-p ()</a></li>
+<li><a href=#-函式-eask-all-p->🔍 函式: eask-all-p ()</a></li>
+<li><a href=#-函式-eask-quick-p->🔍 函式: eask-quick-p ()</a></li>
+<li><a href=#-函式-eask-force-p->🔍 函式: eask-force-p ()</a></li>
+<li><a href=#-函式-eask-dev-p->🔍 函式: eask-dev-p ()</a></li>
+<li><a href=#-函式-eask-debug-p->🔍 函式: eask-debug-p ()</a></li>
+<li><a href=#-函式-eask-strict-p->🔍 函式: eask-strict-p ()</a></li>
+<li><a href=#-函式-eask-timestamps-p->🔍 函式: eask-timestamps-p ()</a></li>
+<li><a href=#-函式-eask-log-level-p->🔍 函式: eask-log-level-p ()</a></li>
+<li><a href=#-函式-eask-log-file-p->🔍 函式: eask-log-file-p ()</a></li>
+<li><a href=#-函式-eask-no-color-p->🔍 函式: eask-no-color-p ()</a></li>
+<li><a href=#-函式-eask-allow-error-p->🔍 函式: eask-allow-error-p ()</a></li>
+<li><a href=#-函式-eask-insecure-p->🔍 函式: eask-insecure-p ()</a></li>
+<li><a href=#-函式-eask-proxy->🔍 函式: eask-proxy ()</a></li>
+<li><a href=#-函式-eask-http-proxy->🔍 函式: eask-http-proxy ()</a></li>
+<li><a href=#-函式-eask-https-proxy->🔍 函式: eask-https-proxy ()</a></li>
+<li><a href=#-函式-eask-no-proxy->🔍 函式: eask-no-proxy ()</a></li>
+<li><a href=#-函式-eask-destination->🔍 函式: eask-destination ()</a></li>
+<li><a href=#-函式-eask-depth->🔍 函式: eask-depth ()</a></li>
+<li><a href=#-函式-eask-verbose->🔍 函式: eask-verbose ()</a></li>
 </ul>
 </li>
 <li><a href=#-eask-file>🚩 <code>Eask</code>-file</a>
 <ul>
-<li><a href=#-variable-eask-package>🔍 Variable: eask-package</a></li>
-<li><a href=#-variable-eask-package-file>🔍 Variable: eask-package-file</a></li>
-<li><a href=#-variable-eask-package-desc>🔍 Variable: eask-package-desc</a></li>
-<li><a href=#-variable-eask-files>🔍 Variable: eask-files</a></li>
-<li><a href=#-variable-eask-scripts>🔍 Variable: eask-scripts</a></li>
-<li><a href=#-variable-eask-depends-on-emacs>🔍 Variable: eask-depends-on-emacs</a></li>
-<li><a href=#-variable-eask-depends-on>🔍 Variable: eask-depends-on</a></li>
-<li><a href=#-variable-eask-depends-on-dev>🔍 Variable: eask-depends-on-dev</a></li>
-<li><a href=#-function-eask-f-package-name-version-description>🔍 Function: eask-f-package (<code>name</code> <code>version</code> <code>description</code>)</a></li>
-<li><a href=#-function-eask-f-website-url-url>🔍 Function: eask-f-website-url (<code>url</code>)</a></li>
-<li><a href=#-function-eask-f-keywords-rest-keywords>🔍 Function: eask-f-keywords (&rest <code>keywords</code>)</a></li>
-<li><a href=#-function-eask-f-author-name-optional-email>🔍 Function: eask-f-author (<code>name</code> &optional <code>email</code>)</a></li>
-<li><a href=#-function-eask-f-license-name>🔍 Function: eask-f-license (<code>name</code>)</a></li>
-<li><a href=#-function-eask-f-package-file-file>🔍 Function: eask-f-package-file (<code>file</code>)</a></li>
-<li><a href=#-function-eask-f-files-pkg-rest-args>🔍 Function: eask-f-files (<code>pkg</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-f-script-name-command-rest-args>🔍 Function: eask-f-script (<code>name</code> <code>command</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-f-source-name-optional-location>🔍 Function: eask-f-source (<code>name</code> &optional <code>location</code>)</a></li>
-<li><a href=#-function-eask-f-source-priority-name-optional-priority>🔍 Function: eask-f-source-priority (<code>name</code> &optional <code>priority</code>)</a></li>
-<li><a href=#-function-eask-f-depends-on-pkg-rest-args>🔍 Function: eask-f-depends-on (<code>pkg</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-f-development-rest-dependencies>🔍 Function: eask-f-development (&rest <code>dependencies</code>)</a></li>
-<li><a href=#-function-eask-f-exec-paths-rest-dirs>🔍 Function: eask-f-exec-paths (&rest <code>dirs</code>)</a></li>
-<li><a href=#-function-eask-f-load-paths-rest-dirs>🔍 Function: eask-f-load-paths (&rest <code>dirs</code>)</a></li>
+<li><a href=#-變數-eask-package>🔍 變數: eask-package</a></li>
+<li><a href=#-變數-eask-package-file>🔍 變數: eask-package-file</a></li>
+<li><a href=#-變數-eask-package-desc>🔍 變數: eask-package-desc</a></li>
+<li><a href=#-變數-eask-files>🔍 變數: eask-files</a></li>
+<li><a href=#-變數-eask-scripts>🔍 變數: eask-scripts</a></li>
+<li><a href=#-變數-eask-depends-on-emacs>🔍 變數: eask-depends-on-emacs</a></li>
+<li><a href=#-變數-eask-depends-on>🔍 變數: eask-depends-on</a></li>
+<li><a href=#-變數-eask-depends-on-dev>🔍 變數: eask-depends-on-dev</a></li>
+<li><a href=#-函式-eask-f-package-name-version-description>🔍 函式: eask-f-package (<code>name</code> <code>version</code> <code>description</code>)</a></li>
+<li><a href=#-函式-eask-f-website-url-url>🔍 函式: eask-f-website-url (<code>url</code>)</a></li>
+<li><a href=#-函式-eask-f-keywords-rest-keywords>🔍 函式: eask-f-keywords (&rest <code>keywords</code>)</a></li>
+<li><a href=#-函式-eask-f-author-name-optional-email>🔍 函式: eask-f-author (<code>name</code> &optional <code>email</code>)</a></li>
+<li><a href=#-函式-eask-f-license-name>🔍 函式: eask-f-license (<code>name</code>)</a></li>
+<li><a href=#-函式-eask-f-package-file-file>🔍 函式: eask-f-package-file (<code>file</code>)</a></li>
+<li><a href=#-函式-eask-f-files-pkg-rest-args>🔍 函式: eask-f-files (<code>pkg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-f-script-name-command-rest-args>🔍 函式: eask-f-script (<code>name</code> <code>command</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-f-source-name-optional-location>🔍 函式: eask-f-source (<code>name</code> &optional <code>location</code>)</a></li>
+<li><a href=#-函式-eask-f-source-priority-name-optional-priority>🔍 函式: eask-f-source-priority (<code>name</code> &optional <code>priority</code>)</a></li>
+<li><a href=#-函式-eask-f-depends-on-pkg-rest-args>🔍 函式: eask-f-depends-on (<code>pkg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-f-development-rest-dependencies>🔍 函式: eask-f-development (&rest <code>dependencies</code>)</a></li>
+<li><a href=#-函式-eask-f-exec-paths-rest-dirs>🔍 函式: eask-f-exec-paths (&rest <code>dirs</code>)</a></li>
+<li><a href=#-函式-eask-f-load-paths-rest-dirs>🔍 函式: eask-f-load-paths (&rest <code>dirs</code>)</a></li>
 </ul>
 </li>
-<li><a href=#-logging>🚩 Logging</a>
+<li><a href=#-信息紀錄>🚩 信息紀錄</a>
 <ul>
-<li><a href=#-variable-eask-verbosity>🔍 Variable: eask-verbosity</a></li>
-<li><a href=#-variable-eask-timestamps>🔍 Variable: eask-timestamps</a></li>
-<li><a href=#-variable-eask-log-level>🔍 Variable: eask-log-level</a></li>
-<li><a href=#-variable-eask-log-file>🔍 Variable: eask-log-file</a></li>
-<li><a href=#-variable-eask-level-color>🔍 Variable: eask-level-color</a></li>
-<li><a href=#-macro-eask-with-verbosity-symbol-rest-body>🔍 Macro: eask-with-verbosity (<code>symbol</code> &rest <code>body</code>)</a></li>
-<li><a href=#-function-eask-debug-msg-rest-args>🔍 Function: eask-debug (<code>msg</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-log-msg-rest-args>🔍 Function: eask-log (<code>msg</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-info-msg-rest-args>🔍 Function: eask-info (<code>msg</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-warn-msg-rest-args>🔍 Function: eask-warn (<code>msg</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-error-msg-rest-args>🔍 Function: eask-error (<code>msg</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-msg-msg-rest-args>🔍 Function: eask-msg (<code>msg</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-write-msg-rest-args>🔍 Function: eask-write (<code>msg</code> &rest <code>args</code>)</a></li>
-<li><a href=#-function-eask-report-rest-args>🔍 Function: eask-report (&rest <code>args</code>)</a></li>
+<li><a href=#-變數-eask-verbosity>🔍 變數: eask-verbosity</a></li>
+<li><a href=#-變數-eask-timestamps>🔍 變數: eask-timestamps</a></li>
+<li><a href=#-變數-eask-log-level>🔍 變數: eask-log-level</a></li>
+<li><a href=#-變數-eask-log-file>🔍 變數: eask-log-file</a></li>
+<li><a href=#-變數-eask-level-color>🔍 變數: eask-level-color</a></li>
+<li><a href=#-巨集-eask-with-verbosity-symbol-rest-body>🔍 巨集: eask-with-verbosity (<code>symbol</code> &rest <code>body</code>)</a></li>
+<li><a href=#-函式-eask-debug-msg-rest-args>🔍 函式: eask-debug (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-log-msg-rest-args>🔍 函式: eask-log (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-info-msg-rest-args>🔍 函式: eask-info (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-warn-msg-rest-args>🔍 函式: eask-warn (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-error-msg-rest-args>🔍 函式: eask-error (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-msg-msg-rest-args>🔍 函式: eask-msg (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-write-msg-rest-args>🔍 函式: eask-write (<code>msg</code> &rest <code>args</code>)</a></li>
+<li><a href=#-函式-eask-report-rest-args>🔍 函式: eask-report (&rest <code>args</code>)</a></li>
 </ul>
 </li>
-<li><a href=#-file>🚩 File</a>
+<li><a href=#-錯誤處理>🚩 錯誤處理</a>
 <ul>
-<li><a href=#-function-eask-guess-package-name->🔍 Function: eask-guess-package-name ()</a></li>
-<li><a href=#-function-eask-package-files->🔍 Function: eask-package-files ()</a></li>
-<li><a href=#-function-eask-package-el-files->🔍 Function: eask-package-el-files ()</a></li>
-<li><a href=#-function-eask-package-elc-files->🔍 Function: eask-package-elc-files ()</a></li>
-<li><a href=#-function-eask-package-multi-p->🔍 Function: eask-package-multi-p ()</a></li>
-<li><a href=#-function-eask-package-single-p->🔍 Function: eask-package-single-p ()</a></li>
-<li><a href=#-function-eask-unpacked-size->🔍 Function: eask-unpacked-size ()</a></li>
+<li><a href=#-變數-eask--ignore-error-p>🔍 變數: eask&ndash;ignore-error-p</a></li>
+<li><a href=#-變數-eask-inhibit-error-message>🔍 變數: eask-inhibit-error-message</a></li>
+<li><a href=#-巨集-eask-ignore-errors-rest-body>🔍 巨集: eask-ignore-errors (&rest <code>body</code>)</a></li>
+<li><a href=#-巨集-eask--silent-error-rest-body>🔍 巨集: eask&ndash;silent-error (&rest <code>body</code>)</a></li>
+<li><a href=#-巨集-eask-ignore-errors-silent-rest-body>🔍 巨集: eask-ignore-errors-silent (&rest <code>body</code>)</a></li>
+<li><a href=#-函式-eask--exit->🔍 函式: eask&ndash;exit ()</a></li>
 </ul>
 </li>
-<li><a href=#-progress>🚩 Progress</a>
+<li><a href=#-文件>🚩 文件</a>
 <ul>
-<li><a href=#-macro-eask-with-progress-msg-start-body-msg-end>🔍 Macro: eask-with-progress (<code>msg-start</code> <code>body</code> <code>msg-end</code>)</a></li>
-<li><a href=#-function-eask-print-log-buffer-optional-buffer-or-name>🔍 Function: eask-print-log-buffer (&optional <code>buffer-or-name</code>)</a></li>
+<li><a href=#-函式-eask-guess-package-name->🔍 函式: eask-guess-package-name ()</a></li>
+<li><a href=#-函式-eask-package-files->🔍 函式: eask-package-files ()</a></li>
+<li><a href=#-函式-eask-package-el-files->🔍 函式: eask-package-el-files ()</a></li>
+<li><a href=#-函式-eask-package-elc-files->🔍 函式: eask-package-elc-files ()</a></li>
+<li><a href=#-函式-eask-package-multi-p->🔍 函式: eask-package-multi-p ()</a></li>
+<li><a href=#-函式-eask-package-single-p->🔍 函式: eask-package-single-p ()</a></li>
+<li><a href=#-函式-eask-unpacked-size->🔍 函式: eask-unpacked-size ()</a></li>
 </ul>
 </li>
-<li><a href=#-help>🚩 Help</a>
+<li><a href=#-進度>🚩 進度</a>
 <ul>
-<li><a href=#-function-eask-help-command>🔍 Function: eask-help (<code>command</code>)</a></li>
+<li><a href=#-巨集-eask-with-progress-msg-start-body-msg-end>🔍 巨集: eask-with-progress (<code>msg-start</code> <code>body</code> <code>msg-end</code>)</a></li>
+<li><a href=#-函式-eask-print-log-buffer-optional-buffer-or-name>🔍 函式: eask-print-log-buffer (&optional <code>buffer-or-name</code>)</a></li>
+</ul>
+</li>
+<li><a href=#-幫助>🚩 幫助</a>
+<ul>
+<li><a href=#-函式-eask-help-command>🔍 函式: eask-help (<code>command</code>)</a></li>
 </ul></nav>
 <hr>
 </div>
@@ -584,9 +594,9 @@ Edit page
 </h1>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-snippet-_prepareel>
-🔍 Snippet: _prepare.el
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-snippet-_prepareel class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Snippet: _prepare.el" aria-label="Anchor to: 🔍 Snippet: _prepare.el" href=#-snippet-_prepareel><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-代碼段-_prepareel>
+🔍 代碼段: _prepare.el
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-代碼段-_prepareel class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 代碼段: _prepare.el" aria-label="Anchor to: 🔍 代碼段: _prepare.el" href=#-%e4%bb%a3%e7%a2%bc%e6%ae%b5-_prepareel><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -597,9 +607,9 @@ Edit page
         <span class=no>nil</span> <span class=no>t</span><span class=p>))</span>
 </code></pre></div><p>每個 Elisp 腳本都應該在文件的最頂部有這個片段。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-macro-eask-start-rest-body>
-🔍 Macro: eask-start (&rest <code>body</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-macro-eask-start-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Macro: eask-start (&rest body)" aria-label="Anchor to: 🔍 Macro: eask-start (&rest body)" href=#-macro-eask-start-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-巨集-eask-start-rest-body>
+🔍 巨集: eask-start (&rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask-start-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask-start (&rest body)" aria-label="Anchor to: 🔍 巨集: eask-start (&rest body)" href=#-%e5%b7%a8%e9%9b%86-eask-start-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -615,18 +625,18 @@ Edit page
 </h1>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-lisp-root>
-🔍 Variable: eask-lisp-root
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-lisp-root class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-lisp-root" aria-label="Anchor to: 🔍 Variable: eask-lisp-root" href=#-variable-eask-lisp-root><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-lisp-root>
+🔍 變數: eask-lisp-root
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-lisp-root class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-lisp-root" aria-label="Anchor to: 🔍 變數: eask-lisp-root" href=#-%e8%ae%8a%e6%95%b8-eask-lisp-root><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>從項目根目錄指向 <code>lisp</code> 目錄。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nf>message</span> <span class=s>&#34;%s&#34;</span> <span class=nv>eask-lisp-root</span><span class=p>)</span>  <span class=c1>; path/to/eask/cli/lisp/</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-command->
-🔍 Function: eask-command ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-command- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-command ()" aria-label="Anchor to: 🔍 Function: eask-command ()" href=#-function-eask-command-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-command->
+🔍 函式: eask-command ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-command- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-command ()" aria-label="Anchor to: 🔍 函式: eask-command ()" href=#-%e5%87%bd%e5%bc%8f-eask-command-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -636,9 +646,9 @@ Edit page
 </code></pre></div><p>然後，</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nf>message</span> <span class=s>&#34;%s&#34;</span> <span class=p>(</span><span class=nv>eask-command</span><span class=p>))</span>  <span class=c1>; init</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-special-p->
-🔍 Function: eask-special-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-special-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-special-p ()" aria-label="Anchor to: 🔍 Function: eask-special-p ()" href=#-function-eask-special-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-special-p->
+🔍 函式: eask-special-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-special-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-special-p ()" aria-label="Anchor to: 🔍 函式: eask-special-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-special-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -646,36 +656,36 @@ Edit page
 <p>這允許一些命令仍然可以在不定義用戶的情況下執行目錄。 當您想在沒有的情況下進行正常操作時，這會很方便
 觸摸用戶目錄。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-checker-p->
-🔍 Function: eask-checker-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-checker-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-checker-p ()" aria-label="Anchor to: 🔍 Function: eask-checker-p ()" href=#-function-eask-checker-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-checker-p->
+🔍 函式: eask-checker-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-checker-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-checker-p ()" aria-label="Anchor to: 🔍 函式: eask-checker-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-checker-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>如果運行 Eask 作為檢查器，則返回 <code>t</code>。</p>
 <p>如果沒有這個標誌，一旦發生錯誤，進程就會終止。此標誌允許您在不報告錯誤的情況下運行所有操作。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-script-script>
-🔍 Function: eask-script (<code>script</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-script-script class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-script (script)" aria-label="Anchor to: 🔍 Function: eask-script (script)" href=#-function-eask-script-script><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-script-script>
+🔍 函式: eask-script (<code>script</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-script-script class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-script (script)" aria-label="Anchor to: 🔍 函式: eask-script (script)" href=#-%e5%87%bd%e5%bc%8f-eask-script-script><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>返回完整的腳本文件名。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-script</span> <span class=s>&#34;extern/pacakge&#34;</span><span class=p>)</span>  <span class=c1>; {project-root}/lisp/extern/package.el</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-load-script>
-🔍 Function: eask-load (<code>script</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-load-script class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-load (script)" aria-label="Anchor to: 🔍 Function: eask-load (script)" href=#-function-eask-load-script><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-load-script>
+🔍 函式: eask-load (<code>script</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-load-script class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-load (script)" aria-label="Anchor to: 🔍 函式: eask-load (script)" href=#-%e5%87%bd%e5%bc%8f-eask-load-script><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>加載另一個 eask 腳本。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-load</span> <span class=s>&#34;extern/ansi&#34;</span><span class=p>)</span>  <span class=c1>; load {project-root}/lisp/extern/ansi.el file</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-call-script>
-🔍 Function: eask-call (<code>script</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-call-script class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-call (script)" aria-label="Anchor to: 🔍 Function: eask-call (script)" href=#-function-eask-call-script><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-call-script>
+🔍 函式: eask-call (<code>script</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-call-script class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-call (script)" aria-label="Anchor to: 🔍 函式: eask-call (script)" href=#-%e5%87%bd%e5%bc%8f-eask-call-script><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -687,9 +697,9 @@ Edit page
 <div class=gdoc-hint__text>💡 這個很少用！</div>
 </blockquote>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-macro-eask-defvc-version-rest-body>
-🔍 Macro: eask-defvc&lt; (<code>version</code> &rest <code>body</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-macro-eask-defvc-version-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Macro: eask-defvc< (version &rest body)" aria-label="Anchor to: 🔍 Macro: eask-defvc< (version &rest body)" href=#-macro-eask-defvc-version-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-巨集-eask-defvc-version-rest-body>
+🔍 巨集: eask-defvc&lt; (<code>version</code> &rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask-defvc-version-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask-defvc< (version &rest body)" aria-label="Anchor to: 🔍 巨集: eask-defvc< (version &rest body)" href=#-%e5%b7%a8%e9%9b%86-eask-defvc-version-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -704,36 +714,36 @@ Edit page
 <div class=gdoc-hint__text>💡 這用於 Emacs 兼容性！</div>
 </blockquote>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-macro-eask--silent-rest-body>
-🔍 Macro: eask&ndash;silent (&rest <code>body</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-macro-eask--silent-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Macro: eask&ndash;silent (&rest body)" aria-label="Anchor to: 🔍 Macro: eask&ndash;silent (&rest body)" href=#-macro-eask--silent-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-巨集-eask--silent-rest-body>
+🔍 巨集: eask&ndash;silent (&rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask--silent-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask&ndash;silent (&rest body)" aria-label="Anchor to: 🔍 巨集: eask&ndash;silent (&rest body)" href=#-%e5%b7%a8%e9%9b%86-eask--silent-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>將來自範圍內標準輸出的所有消息靜音。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask--unsilent</span> <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;你聽不到我! :(&#34;</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-macro-eask--unsilent-rest-body>
-🔍 Macro: eask&ndash;unsilent (&rest <code>body</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-macro-eask--unsilent-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Macro: eask&ndash;unsilent (&rest body)" aria-label="Anchor to: 🔍 Macro: eask&ndash;unsilent (&rest body)" href=#-macro-eask--unsilent-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-巨集-eask--unsilent-rest-body>
+🔍 巨集: eask&ndash;unsilent (&rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask--unsilent-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask&ndash;unsilent (&rest body)" aria-label="Anchor to: 🔍 巨集: eask&ndash;unsilent (&rest body)" href=#-%e5%b7%a8%e9%9b%86-eask--unsilent-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>取消靜音來自範圍內標準輸出的所有消息。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask--unsilent</span> <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;你聽的到我! :)&#34;</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-dependencies->
-🔍 Function: eask-dependencies ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-dependencies- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-dependencies ()" aria-label="Anchor to: 🔍 Function: eask-dependencies ()" href=#-function-eask-dependencies-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-dependencies->
+🔍 函式: eask-dependencies ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-dependencies- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-dependencies ()" aria-label="Anchor to: 🔍 函式: eask-dependencies ()" href=#-%e5%87%bd%e5%bc%8f-eask-dependencies-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>返回依賴項列表。</p>
 <p>元素應該是 <code>(NAME . VERSION)</code> 或 <code>(NAME . RECIPE-FORMAT)</code>。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-pkg-init-optional-force>
-🔍 Function: eask-pkg-init (&optional <code>force</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-pkg-init-optional-force class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-pkg-init (&optional force)" aria-label="Anchor to: 🔍 Function: eask-pkg-init (&optional force)" href=#-function-eask-pkg-init-optional-force><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-pkg-init-optional-force>
+🔍 函式: eask-pkg-init (&optional <code>force</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-pkg-init-optional-force class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-pkg-init (&optional force)" aria-label="Anchor to: 🔍 函式: eask-pkg-init (&optional force)" href=#-%e5%87%bd%e5%bc%8f-eask-pkg-init-optional-force><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -748,9 +758,9 @@ Edit page
 <div class=gdoc-hint__text>💡 這通常在 <strong>eask-start</strong> 之後調用！</div>
 </blockquote>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-macro-eask-with-archives-archives-rest-body>
-🔍 Macro: eask-with-archives (<code>archives</code> &rest <code>body</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-macro-eask-with-archives-archives-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Macro: eask-with-archives (archives &rest body)" aria-label="Anchor to: 🔍 Macro: eask-with-archives (archives &rest body)" href=#-macro-eask-with-archives-archives-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-巨集-eask-with-archives-archives-rest-body>
+🔍 巨集: eask-with-archives (<code>archives</code> &rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask-with-archives-archives-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask-with-archives (archives &rest body)" aria-label="Anchor to: 🔍 巨集: eask-with-archives (archives &rest body)" href=#-%e5%b7%a8%e9%9b%86-eask-with-archives-archives-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -764,26 +774,26 @@ Edit page
 <div class=gdoc-hint__text>💡 當您需要某些檔案中的某些包時，這很方便。</div>
 </blockquote>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-package-desc-name-optional-current>
-🔍 Function: eask-package-desc (<code>name</code> &optional <code>current</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-package-desc-name-optional-current class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-package-desc (name &optional current)" aria-label="Anchor to: 🔍 Function: eask-package-desc (name &optional current)" href=#-function-eask-package-desc-name-optional-current><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-package-desc-name-optional-current>
+🔍 函式: eask-package-desc (<code>name</code> &optional <code>current</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-package-desc-name-optional-current class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-package-desc (name &optional current)" aria-label="Anchor to: 🔍 函式: eask-package-desc (name &optional current)" href=#-%e5%87%bd%e5%bc%8f-eask-package-desc-name-optional-current><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>為包構建包描述符。</p>
 <p><code>CURRENT</code> 表示已安裝的包； 否則它將返回任何可用的來自選定包檔案的包。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-argv-index>
-🔍 Function: eask-argv (<code>index</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-argv-index class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-argv (index)" aria-label="Anchor to: 🔍 Function: eask-argv (index)" href=#-function-eask-argv-index><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-argv-index>
+🔍 函式: eask-argv (<code>index</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-argv-index class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-argv (index)" aria-label="Anchor to: 🔍 函式: eask-argv (index)" href=#-%e5%87%bd%e5%bc%8f-eask-argv-index><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>通过索引返回一个命令行参数。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-args->
-🔍 Function: eask-args ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-args- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-args ()" aria-label="Anchor to: 🔍 Function: eask-args ()" href=#-function-eask-args-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-args->
+🔍 函式: eask-args ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-args- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-args ()" aria-label="Anchor to: 🔍 函式: eask-args ()" href=#-%e5%87%bd%e5%bc%8f-eask-args-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -791,25 +801,25 @@ Edit page
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask info --verbose <span class=m>4</span> foo bar
 </code></pre></div><p>它會忽略 <code>--verbose</code> 和 <code>4</code>，只返回 <code>foo</code> 和 <code>bar</code>。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-file>
-🔍 Variable: eask-file
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-file class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-file" aria-label="Anchor to: 🔍 Variable: eask-file" href=#-variable-eask-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-file>
+🔍 變數: eask-file
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-file class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-file" aria-label="Anchor to: 🔍 變數: eask-file" href=#-%e8%ae%8a%e6%95%b8-eask-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>當前加載的 Eask 文件的路徑。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-file-root>
-🔍 Variable: eask-file-root
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-file-root class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-file-root" aria-label="Anchor to: 🔍 Variable: eask-file-root" href=#-variable-eask-file-root><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-file-root>
+🔍 變數: eask-file-root
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-file-root class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-file-root" aria-label="Anchor to: 🔍 變數: eask-file-root" href=#-%e8%ae%8a%e6%95%b8-eask-file-root><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>當前加載的 Eask 文件的目錄。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask--match-file-name>
-🔍 Function: eask&ndash;match-file (<code>name</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask--match-file-name class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask&ndash;match-file (name)" aria-label="Anchor to: 🔍 Function: eask&ndash;match-file (name)" href=#-function-eask--match-file-name><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask--match-file-name>
+🔍 函式: eask&ndash;match-file (<code>name</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask--match-file-name class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask&ndash;match-file (name)" aria-label="Anchor to: 🔍 函式: eask&ndash;match-file (name)" href=#-%e5%87%bd%e5%bc%8f-eask--match-file-name><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -824,9 +834,9 @@ Edit page
 <span class=p>(</span><span class=nv>eask--match-file</span> <span class=s>&#34;Easkfile.28&#34;</span><span class=p>)</span>  <span class=c1>; t</span>
 <span class=p>(</span><span class=nv>eask--match-file</span> <span class=s>&#34;Easkfile.29&#34;</span><span class=p>)</span>  <span class=c1>; nil</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask--all-files-optional-dir>
-🔍 Function: eask&ndash;all-files (&optional <code>dir</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask--all-files-optional-dir class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask&ndash;all-files (&optional dir)" aria-label="Anchor to: 🔍 Function: eask&ndash;all-files (&optional dir)" href=#-function-eask--all-files-optional-dir><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask--all-files-optional-dir>
+🔍 函式: eask&ndash;all-files (&optional <code>dir</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask--all-files-optional-dir class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask&ndash;all-files (&optional dir)" aria-label="Anchor to: 🔍 函式: eask&ndash;all-files (&optional dir)" href=#-%e5%87%bd%e5%bc%8f-eask--all-files-optional-dir><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -839,9 +849,9 @@ Edit page
 </code></pre><p>以下輸出來自 Emacs 28.1：</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask--all-files</span> <span class=s>&#34;/root/&#34;</span><span class=p>)</span>  <span class=c1>; &#39;(Eask Eask.28)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask--find-files-start-path>
-🔍 Function: eask&ndash;find-files (<code>start-path</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask--find-files-start-path class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask&ndash;find-files (start-path)" aria-label="Anchor to: 🔍 Function: eask&ndash;find-files (start-path)" href=#-function-eask--find-files-start-path><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask--find-files-start-path>
+🔍 函式: eask&ndash;find-files (<code>start-path</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask--find-files-start-path class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask&ndash;find-files (start-path)" aria-label="Anchor to: 🔍 函式: eask&ndash;find-files (start-path)" href=#-%e5%87%bd%e5%bc%8f-eask--find-files-start-path><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -856,33 +866,33 @@ Edit page
 </code></pre><p>以下輸出來自 Emacs 28.1：</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask--find-files</span> <span class=s>&#34;/project/src/config.el&#34;</span><span class=p>)</span>  <span class=c1>; &#39;(/project/Eask /project/Eask.28)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-file-try-load-start-path>
-🔍 Function: eask-file-try-load (<code>start-path</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-file-try-load-start-path class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-file-try-load (start-path)" aria-label="Anchor to: 🔍 Function: eask-file-try-load (start-path)" href=#-function-eask-file-try-load-start-path><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-file-try-load-start-path>
+🔍 函式: eask-file-try-load (<code>start-path</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-file-try-load-start-path class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-file-try-load (start-path)" aria-label="Anchor to: 🔍 函式: eask-file-try-load (start-path)" href=#-%e5%87%bd%e5%bc%8f-eask-file-try-load-start-path><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>嘗試在 START-PATH 中加載 Eask 文件。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask--find-files</span> <span class=s>&#34;/project/src/&#34;</span><span class=p>)</span>  <span class=c1>; t</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-network-insecure-p->
-🔍 Function: eask-network-insecure-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-network-insecure-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-network-insecure-p ()" aria-label="Anchor to: 🔍 Function: eask-network-insecure-p ()" href=#-function-eask-network-insecure-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-network-insecure-p->
+🔍 函式: eask-network-insecure-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-network-insecure-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-network-insecure-p ()" aria-label="Anchor to: 🔍 函式: eask-network-insecure-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-network-insecure-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>如果當前 Emacs 會話允許不安全的網絡連接，則返回 <code>t</code>。</p>
 <div class=gdoc-page__anchorwrap>
-<h1 id=-flags>
-🚩 Flags
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-flags class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 Flags" aria-label="Anchor to: 🚩 Flags" href=#-flags><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=-旗標>
+🚩 旗標
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-旗標 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 旗標" aria-label="Anchor to: 🚩 旗標" href=#-%e6%97%97%e6%a8%99><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-global-p->
-🔍 Function: eask-global-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-global-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-global-p ()" aria-label="Anchor to: 🔍 Function: eask-global-p ()" href=#-function-eask-global-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-global-p->
+🔍 函式: eask-global-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-global-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-global-p ()" aria-label="Anchor to: 🔍 函式: eask-global-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-global-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -890,9 +900,9 @@ Edit page
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>when</span> <span class=p>(</span><span class=nv>eask-global-p</span><span class=p>)</span>
   <span class=nv>user-emacs-directory</span><span class=p>)</span>   <span class=c1>; ~/.eask/</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-config-p->
-🔍 Function: eask-config-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-config-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-config-p ()" aria-label="Anchor to: 🔍 Function: eask-config-p ()" href=#-function-eask-config-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-config-p->
+🔍 函式: eask-config-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-config-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-config-p ()" aria-label="Anchor to: 🔍 函式: eask-config-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-config-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -905,9 +915,9 @@ Edit page
 <div class=gdoc-hint__text>💡 如果選項 <code>--config</code> 和 <code>--global</code> 都打開，則選擇全局空間。</div>
 </blockquote>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-local-p->
-🔍 Function: eask-local-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-local-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-local-p ()" aria-label="Anchor to: 🔍 Function: eask-local-p ()" href=#-function-eask-local-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-local-p->
+🔍 函式: eask-local-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-local-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-local-p ()" aria-label="Anchor to: 🔍 函式: eask-local-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-local-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -920,9 +930,9 @@ Edit page
 <div class=gdoc-hint__text>💡 此函數僅在 <code>(eask-global-p)</code> 和 <code>(eask-config-p)</code> 是 false 時返回 <code>t</code>！</div>
 </blockquote>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-all-p->
-🔍 Function: eask-all-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-all-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-all-p ()" aria-label="Anchor to: 🔍 Function: eask-all-p ()" href=#-function-eask-all-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-all-p->
+🔍 函式: eask-all-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-all-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-all-p ()" aria-label="Anchor to: 🔍 函式: eask-all-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-all-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -931,9 +941,9 @@ Edit page
   <span class=c1>;; 運行所有測試</span>
   <span class=o>...</span><span class=p>)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-quick-p->
-🔍 Function: eask-quick-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-quick-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-quick-p ()" aria-label="Anchor to: 🔍 Function: eask-quick-p ()" href=#-function-eask-quick-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-quick-p->
+🔍 函式: eask-quick-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-quick-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-quick-p ()" aria-label="Anchor to: 🔍 函式: eask-quick-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-quick-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -942,18 +952,18 @@ Edit page
   <span class=p>(</span><span class=nf>load</span> <span class=nv>user-init-file</span><span class=p>)</span>
   <span class=o>...</span><span class=p>)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-force-p->
-🔍 Function: eask-force-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-force-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-force-p ()" aria-label="Anchor to: 🔍 Function: eask-force-p ()" href=#-function-eask-force-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-force-p->
+🔍 函式: eask-force-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-force-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-force-p ()" aria-label="Anchor to: 🔍 函式: eask-force-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-force-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>如果啟用了 <code>force</code> 選項，則返回 <code>t</code>。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>package-delete</span> <span class=o>..</span> <span class=p>(</span><span class=nv>eask-force-p</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-dev-p->
-🔍 Function: eask-dev-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-dev-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-dev-p ()" aria-label="Anchor to: 🔍 Function: eask-dev-p ()" href=#-function-eask-dev-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-dev-p->
+🔍 函式: eask-dev-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-dev-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-dev-p ()" aria-label="Anchor to: 🔍 函式: eask-dev-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-dev-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -961,9 +971,9 @@ Edit page
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>when</span> <span class=p>(</span><span class=nv>eask-dev-p</span><span class=p>)</span>
   <span class=p>(</span><span class=nv>package-install</span> <span class=ss>&#39;ert-runner</span><span class=p>))</span>  <span class=c1>; 安裝開發依賴</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-debug-p->
-🔍 Function: eask-debug-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-debug-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-debug-p ()" aria-label="Anchor to: 🔍 Function: eask-debug-p ()" href=#-function-eask-debug-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-debug-p->
+🔍 函式: eask-debug-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-debug-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-debug-p ()" aria-label="Anchor to: 🔍 函式: eask-debug-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-debug-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -971,18 +981,18 @@ Edit page
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>when</span> <span class=p>(</span><span class=nv>eask-debug-p</span><span class=p>)</span>
   <span class=p>(</span><span class=ne>error</span> <span class=s>&#34;在調試模式下執行...&#34;</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-strict-p->
-🔍 Function: eask-strict-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-strict-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-strict-p ()" aria-label="Anchor to: 🔍 Function: eask-strict-p ()" href=#-function-eask-strict-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-strict-p->
+🔍 函式: eask-strict-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-strict-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-strict-p ()" aria-label="Anchor to: 🔍 函式: eask-strict-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-strict-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>如果啟用了 <code>strict</code> 選項，則返回 <code>t</code>。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>byte-compile-error-on-warn</span> <span class=p>(</span><span class=nv>eask-strict-p</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-timestamps-p->
-🔍 Function: eask-timestamps-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-timestamps-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-timestamps-p ()" aria-label="Anchor to: 🔍 Function: eask-timestamps-p ()" href=#-function-eask-timestamps-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-timestamps-p->
+🔍 函式: eask-timestamps-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-timestamps-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-timestamps-p ()" aria-label="Anchor to: 🔍 函式: eask-timestamps-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-timestamps-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -991,9 +1001,9 @@ Edit page
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>when</span> <span class=p>(</span><span class=nv>eask-timestamps-p</span><span class=p>)</span>
   <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;打印帶有時間戳的日誌！&#34;</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-log-level-p->
-🔍 Function: eask-log-level-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-log-level-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-log-level-p ()" aria-label="Anchor to: 🔍 Function: eask-log-level-p ()" href=#-function-eask-log-level-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-log-level-p->
+🔍 函式: eask-log-level-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-log-level-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-log-level-p ()" aria-label="Anchor to: 🔍 函式: eask-log-level-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-log-level-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1002,9 +1012,9 @@ Edit page
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>when</span> <span class=p>(</span><span class=nv>eask-log-level-p</span><span class=p>)</span>
   <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;打印帶有級別前綴的日誌！&#34;</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-log-file-p->
-🔍 Function: eask-log-file-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-log-file-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-log-file-p ()" aria-label="Anchor to: 🔍 Function: eask-log-file-p ()" href=#-function-eask-log-file-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-log-file-p->
+🔍 函式: eask-log-file-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-log-file-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-log-file-p ()" aria-label="Anchor to: 🔍 函式: eask-log-file-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-log-file-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1013,9 +1023,9 @@ Edit page
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>when</span> <span class=p>(</span><span class=nv>eask-log-file-p</span><span class=p>)</span>
   <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;讓我們創建一個日誌文件！&#34;</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-no-color-p->
-🔍 Function: eask-no-color-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-no-color-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-no-color-p ()" aria-label="Anchor to: 🔍 Function: eask-no-color-p ()" href=#-function-eask-no-color-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-no-color-p->
+🔍 函式: eask-no-color-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-no-color-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-no-color-p ()" aria-label="Anchor to: 🔍 函式: eask-no-color-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-no-color-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1023,9 +1033,9 @@ Edit page
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>unless</span> <span class=p>(</span><span class=nv>eask-no-color-p</span><span class=p>)</span>
   <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;此字符串沒有 ANSI 代碼！&#34;</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-allow-error-p->
-🔍 Function: eask-allow-error-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-allow-error-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-allow-error-p ()" aria-label="Anchor to: 🔍 Function: eask-allow-error-p ()" href=#-function-eask-allow-error-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-allow-error-p->
+🔍 函式: eask-allow-error-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-allow-error-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-allow-error-p ()" aria-label="Anchor to: 🔍 函式: eask-allow-error-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-allow-error-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1033,9 +1043,9 @@ Edit page
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>unless</span> <span class=p>(</span><span class=nv>eask-allow-error-p</span><span class=p>)</span>
   <span class=p>(</span><span class=ne>error</span> <span class=s>&#34;停在這裡。&#34;</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-insecure-p->
-🔍 Function: eask-insecure-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-insecure-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-insecure-p ()" aria-label="Anchor to: 🔍 Function: eask-insecure-p ()" href=#-function-eask-insecure-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-insecure-p->
+🔍 函式: eask-insecure-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-insecure-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-insecure-p ()" aria-label="Anchor to: 🔍 函式: eask-insecure-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-insecure-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1044,30 +1054,30 @@ Edit page
   <span class=c1>;; 做一些危險的工作？</span>
   <span class=p>)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-proxy->
-🔍 Function: eask-proxy ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-proxy- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-proxy ()" aria-label="Anchor to: 🔍 Function: eask-proxy ()" href=#-function-eask-proxy-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-proxy->
+🔍 函式: eask-proxy ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-proxy- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-proxy ()" aria-label="Anchor to: 🔍 函式: eask-proxy ()" href=#-%e5%87%bd%e5%bc%8f-eask-proxy-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-http-proxy->
-🔍 Function: eask-http-proxy ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-http-proxy- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-http-proxy ()" aria-label="Anchor to: 🔍 Function: eask-http-proxy ()" href=#-function-eask-http-proxy-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-http-proxy->
+🔍 函式: eask-http-proxy ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-http-proxy- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-http-proxy ()" aria-label="Anchor to: 🔍 函式: eask-http-proxy ()" href=#-%e5%87%bd%e5%bc%8f-eask-http-proxy-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-https-proxy->
-🔍 Function: eask-https-proxy ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-https-proxy- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-https-proxy ()" aria-label="Anchor to: 🔍 Function: eask-https-proxy ()" href=#-function-eask-https-proxy-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-https-proxy->
+🔍 函式: eask-https-proxy ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-https-proxy- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-https-proxy ()" aria-label="Anchor to: 🔍 函式: eask-https-proxy ()" href=#-%e5%87%bd%e5%bc%8f-eask-https-proxy-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-no-proxy->
-🔍 Function: eask-no-proxy ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-no-proxy- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-no-proxy ()" aria-label="Anchor to: 🔍 Function: eask-no-proxy ()" href=#-function-eask-no-proxy-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-no-proxy->
+🔍 函式: eask-no-proxy ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-no-proxy- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-no-proxy ()" aria-label="Anchor to: 🔍 函式: eask-no-proxy ()" href=#-%e5%87%bd%e5%bc%8f-eask-no-proxy-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1077,27 +1087,27 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --http-proxy <span cl
 $ eask <span class=o>[</span>command<span class=o>]</span> --https-proxy <span class=s2>&#34;localhost:3000&#34;</span>
 $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span class=s2>&#34;localhost:4000&#34;</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-destination->
-🔍 Function: eask-destination ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-destination- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-destination ()" aria-label="Anchor to: 🔍 Function: eask-destination ()" href=#-function-eask-destination-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-destination->
+🔍 函式: eask-destination ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-destination- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-destination ()" aria-label="Anchor to: 🔍 函式: eask-destination ()" href=#-%e5%87%bd%e5%bc%8f-eask-destination-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>返回一個 <strong>string</strong> 表示目的地（輸出路徑）。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>write-file</span> <span class=p>(</span><span class=nb>or</span> <span class=p>(</span><span class=nv>eask-destination</span><span class=p>)</span> <span class=s>&#34;./dist&#34;</span><span class=p>))</span>  <span class=c1>; 將文件寫入目標</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-depth->
-🔍 Function: eask-depth ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-depth- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-depth ()" aria-label="Anchor to: 🔍 Function: eask-depth ()" href=#-function-eask-depth-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-depth->
+🔍 函式: eask-depth ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-depth- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-depth ()" aria-label="Anchor to: 🔍 函式: eask-depth ()" href=#-%e5%87%bd%e5%bc%8f-eask-depth-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>返回一個<strong>整數</strong>表示當前打印層級的深度。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>print-level</span> <span class=p>(</span><span class=nv>eask-depth</span><span class=p>))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-verbose->
-🔍 Function: eask-verbose ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-verbose- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-verbose ()" aria-label="Anchor to: 🔍 Function: eask-verbose ()" href=#-function-eask-verbose-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-verbose->
+🔍 函式: eask-verbose ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-verbose- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-verbose ()" aria-label="Anchor to: 🔍 函式: eask-verbose ()" href=#-%e5%87%bd%e5%bc%8f-eask-verbose-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1114,9 +1124,9 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 <p>這些函數是 <code>Eask</code>-file DSL 的實際實現； 和將單詞 <code>eask-</code> 作為函數前綴。</p>
 <p>有關詳細信息，請參閱 <a class=gdoc-markdown__link href=https://emacs-eask.github.io/DSL/>DSL</a> 部分。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-package>
-🔍 Variable: eask-package
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-package class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-package" aria-label="Anchor to: 🔍 Variable: eask-package" href=#-variable-eask-package><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-package>
+🔍 變數: eask-package
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-package class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-package" aria-label="Anchor to: 🔍 變數: eask-package" href=#-%e8%ae%8a%e6%95%b8-eask-package><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1129,17 +1139,17 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 <li><code>(eask-package-description)</code></li>
 </ul>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-package-file>
-🔍 Variable: eask-package-file
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-package-file class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-package-file" aria-label="Anchor to: 🔍 Variable: eask-package-file" href=#-variable-eask-package-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-package-file>
+🔍 變數: eask-package-file
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-package-file class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-package-file" aria-label="Anchor to: 🔍 變數: eask-package-file" href=#-%e8%ae%8a%e6%95%b8-eask-package-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>指向打包主文件。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-package-desc>
-🔍 Variable: eask-package-desc
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-package-desc class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-package-desc" aria-label="Anchor to: 🔍 Variable: eask-package-desc" href=#-variable-eask-package-desc><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-package-desc>
+🔍 變數: eask-package-desc
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-package-desc class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-package-desc" aria-label="Anchor to: 🔍 變數: eask-package-desc" href=#-%e8%ae%8a%e6%95%b8-eask-package-desc><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1151,25 +1161,25 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 <div class=gdoc-hint__text>⚠ 如果不能正確構造包描述符，這可以是 <strong>nil</strong>！</div>
 </blockquote>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-files>
-🔍 Variable: eask-files
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-files class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-files" aria-label="Anchor to: 🔍 Variable: eask-files" href=#-variable-eask-files><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-files>
+🔍 變數: eask-files
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-files class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-files" aria-label="Anchor to: 🔍 變數: eask-files" href=#-%e8%ae%8a%e6%95%b8-eask-files><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>持有通配符規範中的文件模式列表。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-scripts>
-🔍 Variable: eask-scripts
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-scripts class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-scripts" aria-label="Anchor to: 🔍 Variable: eask-scripts" href=#-variable-eask-scripts><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-scripts>
+🔍 變數: eask-scripts
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-scripts class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-scripts" aria-label="Anchor to: 🔍 變數: eask-scripts" href=#-%e8%ae%8a%e6%95%b8-eask-scripts><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>包含可用腳本的列表，用戶可以使用 <code>eask run-script</code> 命令。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-depends-on-emacs>
-🔍 Variable: eask-depends-on-emacs
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-depends-on-emacs class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-depends-on-emacs" aria-label="Anchor to: 🔍 Variable: eask-depends-on-emacs" href=#-variable-eask-depends-on-emacs><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-depends-on-emacs>
+🔍 變數: eask-depends-on-emacs
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-depends-on-emacs class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-depends-on-emacs" aria-label="Anchor to: 🔍 變數: eask-depends-on-emacs" href=#-%e8%ae%8a%e6%95%b8-eask-depends-on-emacs><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1180,137 +1190,137 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 <li><code>(eask-depends-emacs-version)</code> - 返回 <code>"26.1"</code></li>
 </ul>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-depends-on>
-🔍 Variable: eask-depends-on
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-depends-on class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-depends-on" aria-label="Anchor to: 🔍 Variable: eask-depends-on" href=#-variable-eask-depends-on><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-depends-on>
+🔍 變數: eask-depends-on
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-depends-on class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-depends-on" aria-label="Anchor to: 🔍 變數: eask-depends-on" href=#-%e8%ae%8a%e6%95%b8-eask-depends-on><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>持有依賴項列表。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-depends-on-dev>
-🔍 Variable: eask-depends-on-dev
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-depends-on-dev class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-depends-on-dev" aria-label="Anchor to: 🔍 Variable: eask-depends-on-dev" href=#-variable-eask-depends-on-dev><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-depends-on-dev>
+🔍 變數: eask-depends-on-dev
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-depends-on-dev class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-depends-on-dev" aria-label="Anchor to: 🔍 變數: eask-depends-on-dev" href=#-%e8%ae%8a%e6%95%b8-eask-depends-on-dev><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>持有開發使用的依賴項列表。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-package-name-version-description>
-🔍 Function: eask-f-package (<code>name</code> <code>version</code> <code>description</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-package-name-version-description class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-package (name version description)" aria-label="Anchor to: 🔍 Function: eask-f-package (name version description)" href=#-function-eask-f-package-name-version-description><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-package-name-version-description>
+🔍 函式: eask-f-package (<code>name</code> <code>version</code> <code>description</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-package-name-version-description class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-package (name version description)" aria-label="Anchor to: 🔍 函式: eask-f-package (name version description)" href=#-%e5%87%bd%e5%bc%8f-eask-f-package-name-version-description><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>package</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-website-url-url>
-🔍 Function: eask-f-website-url (<code>url</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-website-url-url class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-website-url (url)" aria-label="Anchor to: 🔍 Function: eask-f-website-url (url)" href=#-function-eask-f-website-url-url><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-website-url-url>
+🔍 函式: eask-f-website-url (<code>url</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-website-url-url class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-website-url (url)" aria-label="Anchor to: 🔍 函式: eask-f-website-url (url)" href=#-%e5%87%bd%e5%bc%8f-eask-f-website-url-url><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>website-url</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-keywords-rest-keywords>
-🔍 Function: eask-f-keywords (&rest <code>keywords</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-keywords-rest-keywords class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-keywords (&rest keywords)" aria-label="Anchor to: 🔍 Function: eask-f-keywords (&rest keywords)" href=#-function-eask-f-keywords-rest-keywords><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-keywords-rest-keywords>
+🔍 函式: eask-f-keywords (&rest <code>keywords</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-keywords-rest-keywords class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-keywords (&rest keywords)" aria-label="Anchor to: 🔍 函式: eask-f-keywords (&rest keywords)" href=#-%e5%87%bd%e5%bc%8f-eask-f-keywords-rest-keywords><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>keywords</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-author-name-optional-email>
-🔍 Function: eask-f-author (<code>name</code> &optional <code>email</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-author-name-optional-email class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-author (name &optional email)" aria-label="Anchor to: 🔍 Function: eask-f-author (name &optional email)" href=#-function-eask-f-author-name-optional-email><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-author-name-optional-email>
+🔍 函式: eask-f-author (<code>name</code> &optional <code>email</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-author-name-optional-email class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-author (name &optional email)" aria-label="Anchor to: 🔍 函式: eask-f-author (name &optional email)" href=#-%e5%87%bd%e5%bc%8f-eask-f-author-name-optional-email><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>author</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-license-name>
-🔍 Function: eask-f-license (<code>name</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-license-name class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-license (name)" aria-label="Anchor to: 🔍 Function: eask-f-license (name)" href=#-function-eask-f-license-name><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-license-name>
+🔍 函式: eask-f-license (<code>name</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-license-name class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-license (name)" aria-label="Anchor to: 🔍 函式: eask-f-license (name)" href=#-%e5%87%bd%e5%bc%8f-eask-f-license-name><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>license</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-package-file-file>
-🔍 Function: eask-f-package-file (<code>file</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-package-file-file class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-package-file (file)" aria-label="Anchor to: 🔍 Function: eask-f-package-file (file)" href=#-function-eask-f-package-file-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-package-file-file>
+🔍 函式: eask-f-package-file (<code>file</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-package-file-file class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-package-file (file)" aria-label="Anchor to: 🔍 函式: eask-f-package-file (file)" href=#-%e5%87%bd%e5%bc%8f-eask-f-package-file-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>package-file</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-files-pkg-rest-args>
-🔍 Function: eask-f-files (<code>pkg</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-files-pkg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-files (pkg &rest args)" aria-label="Anchor to: 🔍 Function: eask-f-files (pkg &rest args)" href=#-function-eask-f-files-pkg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-files-pkg-rest-args>
+🔍 函式: eask-f-files (<code>pkg</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-files-pkg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-files (pkg &rest args)" aria-label="Anchor to: 🔍 函式: eask-f-files (pkg &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-f-files-pkg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>files</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-script-name-command-rest-args>
-🔍 Function: eask-f-script (<code>name</code> <code>command</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-script-name-command-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-script (name command &rest args)" aria-label="Anchor to: 🔍 Function: eask-f-script (name command &rest args)" href=#-function-eask-f-script-name-command-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-script-name-command-rest-args>
+🔍 函式: eask-f-script (<code>name</code> <code>command</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-script-name-command-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-script (name command &rest args)" aria-label="Anchor to: 🔍 函式: eask-f-script (name command &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-f-script-name-command-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>script</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-source-name-optional-location>
-🔍 Function: eask-f-source (<code>name</code> &optional <code>location</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-source-name-optional-location class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-source (name &optional location)" aria-label="Anchor to: 🔍 Function: eask-f-source (name &optional location)" href=#-function-eask-f-source-name-optional-location><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-source-name-optional-location>
+🔍 函式: eask-f-source (<code>name</code> &optional <code>location</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-source-name-optional-location class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-source (name &optional location)" aria-label="Anchor to: 🔍 函式: eask-f-source (name &optional location)" href=#-%e5%87%bd%e5%bc%8f-eask-f-source-name-optional-location><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>source</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-source-priority-name-optional-priority>
-🔍 Function: eask-f-source-priority (<code>name</code> &optional <code>priority</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-source-priority-name-optional-priority class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-source-priority (name &optional priority)" aria-label="Anchor to: 🔍 Function: eask-f-source-priority (name &optional priority)" href=#-function-eask-f-source-priority-name-optional-priority><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-source-priority-name-optional-priority>
+🔍 函式: eask-f-source-priority (<code>name</code> &optional <code>priority</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-source-priority-name-optional-priority class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-source-priority (name &optional priority)" aria-label="Anchor to: 🔍 函式: eask-f-source-priority (name &optional priority)" href=#-%e5%87%bd%e5%bc%8f-eask-f-source-priority-name-optional-priority><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>source-priority</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-depends-on-pkg-rest-args>
-🔍 Function: eask-f-depends-on (<code>pkg</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-depends-on-pkg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-depends-on (pkg &rest args)" aria-label="Anchor to: 🔍 Function: eask-f-depends-on (pkg &rest args)" href=#-function-eask-f-depends-on-pkg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-depends-on-pkg-rest-args>
+🔍 函式: eask-f-depends-on (<code>pkg</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-depends-on-pkg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-depends-on (pkg &rest args)" aria-label="Anchor to: 🔍 函式: eask-f-depends-on (pkg &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-f-depends-on-pkg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>depends-on</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-development-rest-dependencies>
-🔍 Function: eask-f-development (&rest <code>dependencies</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-development-rest-dependencies class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-development (&rest dependencies)" aria-label="Anchor to: 🔍 Function: eask-f-development (&rest dependencies)" href=#-function-eask-f-development-rest-dependencies><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-development-rest-dependencies>
+🔍 函式: eask-f-development (&rest <code>dependencies</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-development-rest-dependencies class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-development (&rest dependencies)" aria-label="Anchor to: 🔍 函式: eask-f-development (&rest dependencies)" href=#-%e5%87%bd%e5%bc%8f-eask-f-development-rest-dependencies><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>development</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-exec-paths-rest-dirs>
-🔍 Function: eask-f-exec-paths (&rest <code>dirs</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-exec-paths-rest-dirs class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-exec-paths (&rest dirs)" aria-label="Anchor to: 🔍 Function: eask-f-exec-paths (&rest dirs)" href=#-function-eask-f-exec-paths-rest-dirs><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-exec-paths-rest-dirs>
+🔍 函式: eask-f-exec-paths (&rest <code>dirs</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-exec-paths-rest-dirs class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-exec-paths (&rest dirs)" aria-label="Anchor to: 🔍 函式: eask-f-exec-paths (&rest dirs)" href=#-%e5%87%bd%e5%bc%8f-eask-f-exec-paths-rest-dirs><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>exec-paths</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-f-load-paths-rest-dirs>
-🔍 Function: eask-f-load-paths (&rest <code>dirs</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-f-load-paths-rest-dirs class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-f-load-paths (&rest dirs)" aria-label="Anchor to: 🔍 Function: eask-f-load-paths (&rest dirs)" href=#-function-eask-f-load-paths-rest-dirs><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-f-load-paths-rest-dirs>
+🔍 函式: eask-f-load-paths (&rest <code>dirs</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-f-load-paths-rest-dirs class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-f-load-paths (&rest dirs)" aria-label="Anchor to: 🔍 函式: eask-f-load-paths (&rest dirs)" href=#-%e5%87%bd%e5%bc%8f-eask-f-load-paths-rest-dirs><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>別名 <code>load-paths</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h1 id=-logging>
-🚩 Logging
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-logging class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 Logging" aria-label="Anchor to: 🚩 Logging" href=#-logging><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=-信息紀錄>
+🚩 信息紀錄
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-信息紀錄 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 信息紀錄" aria-label="Anchor to: 🚩 信息紀錄" href=#-%e4%bf%a1%e6%81%af%e7%b4%80%e9%8c%84><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div>
@@ -1354,18 +1364,18 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 </table> </div>
 <p>The default level is <code>log</code>.</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-verbosity>
-🔍 Variable: eask-verbosity
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-verbosity class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-verbosity" aria-label="Anchor to: 🔍 Variable: eask-verbosity" href=#-variable-eask-verbosity><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-verbosity>
+🔍 變數: eask-verbosity
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-verbosity class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-verbosity" aria-label="Anchor to: 🔍 變數: eask-verbosity" href=#-%e8%ae%8a%e6%95%b8-eask-verbosity><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>詳細級別表示為整數。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>eask-verbosity</span> <span class=mi>4</span><span class=p>)</span>  <span class=c1>; 你可以設置從 0 到 4</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-timestamps>
-🔍 Variable: eask-timestamps
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-timestamps class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-timestamps" aria-label="Anchor to: 🔍 Variable: eask-timestamps" href=#-variable-eask-timestamps><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-timestamps>
+🔍 變數: eask-timestamps
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-timestamps class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-timestamps" aria-label="Anchor to: 🔍 變數: eask-timestamps" href=#-%e8%ae%8a%e6%95%b8-eask-timestamps><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1374,9 +1384,9 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 </code></pre></div><p>Output:</p>
 <pre tabindex=0><code>2022-04-14 13:44:46 這是一條帶有時間戳的消息
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-log-level>
-🔍 Variable: eask-log-level
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-log-level class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-log-level" aria-label="Anchor to: 🔍 Variable: eask-log-level" href=#-variable-eask-log-level><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-log-level>
+🔍 變數: eask-log-level
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-log-level class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-log-level" aria-label="Anchor to: 🔍 變數: eask-log-level" href=#-%e8%ae%8a%e6%95%b8-eask-log-level><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1385,9 +1395,9 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 </code></pre></div><p>輸出：</p>
 <pre tabindex=0><code>[DEBUG] 這是一條具有日誌級別的 DEBUG 消息
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-log-file>
-🔍 Variable: eask-log-file
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-log-file class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-log-file" aria-label="Anchor to: 🔍 Variable: eask-log-file" href=#-variable-eask-log-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-log-file>
+🔍 變數: eask-log-file
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-log-file class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-log-file" aria-label="Anchor to: 🔍 變數: eask-log-file" href=#-%e8%ae%8a%e6%95%b8-eask-log-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1396,9 +1406,9 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 </code></pre></div><p>使用命令 <code>cat</code> 查看日誌，</p>
 <pre tabindex=0><code>$ cat /.log/messages.log
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=-variable-eask-level-color>
-🔍 Variable: eask-level-color
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-variable-eask-level-color class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Variable: eask-level-color" aria-label="Anchor to: 🔍 Variable: eask-level-color" href=#-variable-eask-level-color><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask-level-color>
+🔍 變數: eask-level-color
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-level-color class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-level-color" aria-label="Anchor to: 🔍 變數: eask-level-color" href=#-%e8%ae%8a%e6%95%b8-eask-level-color><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1410,9 +1420,9 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
         <span class=p>(</span><span class=ne>warn</span>  <span class=o>.</span> <span class=nv>ansi-yellow</span><span class=p>)</span>
         <span class=p>(</span><span class=ne>error</span> <span class=o>.</span> <span class=nv>ansi-red</span><span class=p>)))</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-macro-eask-with-verbosity-symbol-rest-body>
-🔍 Macro: eask-with-verbosity (<code>symbol</code> &rest <code>body</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-macro-eask-with-verbosity-symbol-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Macro: eask-with-verbosity (symbol &rest body)" aria-label="Anchor to: 🔍 Macro: eask-with-verbosity (symbol &rest body)" href=#-macro-eask-with-verbosity-symbol-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-巨集-eask-with-verbosity-symbol-rest-body>
+🔍 巨集: eask-with-verbosity (<code>symbol</code> &rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask-with-verbosity-symbol-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask-with-verbosity (symbol &rest body)" aria-label="Anchor to: 🔍 巨集: eask-with-verbosity (symbol &rest body)" href=#-%e5%b7%a8%e9%9b%86-eask-with-verbosity-symbol-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1423,72 +1433,72 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 </code></pre></div><p>除非冗長，否則此宏範圍內的所有內容都將被靜音。 僅當您指定 <code>--verbose 4</code> 時才會打印
 全局選項。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-debug-msg-rest-args>
-🔍 Function: eask-debug (<code>msg</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-debug-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-debug (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-debug (msg &rest args)" href=#-function-eask-debug-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-debug-msg-rest-args>
+🔍 函式: eask-debug (<code>msg</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-debug-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-debug (msg &rest args)" aria-label="Anchor to: 🔍 函式: eask-debug (msg &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-debug-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-debug</span> <span class=s>&#34;這是調試信息&#34;</span><span class=p>)</span>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [DEBUG] 這是調試信息
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-log-msg-rest-args>
-🔍 Function: eask-log (<code>msg</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-log-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-log (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-log (msg &rest args)" href=#-function-eask-log-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-log-msg-rest-args>
+🔍 函式: eask-log (<code>msg</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-log-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-log (msg &rest args)" aria-label="Anchor to: 🔍 函式: eask-log (msg &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-log-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-log</span> <span class=s>&#34;這是日誌消息&#34;</span><span class=p>)</span>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [LOG] 這是日誌消息
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-info-msg-rest-args>
-🔍 Function: eask-info (<code>msg</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-info-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-info (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-info (msg &rest args)" href=#-function-eask-info-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-info-msg-rest-args>
+🔍 函式: eask-info (<code>msg</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-info-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-info (msg &rest args)" aria-label="Anchor to: 🔍 函式: eask-info (msg &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-info-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-info</span> <span class=s>&#34;這是信息消息&#34;</span><span class=p>)</span>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [INFO] 這是信息消息
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-warn-msg-rest-args>
-🔍 Function: eask-warn (<code>msg</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-warn-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-warn (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-warn (msg &rest args)" href=#-function-eask-warn-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-warn-msg-rest-args>
+🔍 函式: eask-warn (<code>msg</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-warn-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-warn (msg &rest args)" aria-label="Anchor to: 🔍 函式: eask-warn (msg &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-warn-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-warn</span> <span class=s>&#34;這是警告消息&#34;</span><span class=p>)</span>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [WARNING] 這是警告消息
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-error-msg-rest-args>
-🔍 Function: eask-error (<code>msg</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-error-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-error (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-error (msg &rest args)" href=#-function-eask-error-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-error-msg-rest-args>
+🔍 函式: eask-error (<code>msg</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-error-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-error (msg &rest args)" aria-label="Anchor to: 🔍 函式: eask-error (msg &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-error-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-error</span> <span class=s>&#34;這是錯誤信息&#34;</span><span class=p>)</span>
 </code></pre></div><pre tabindex=0><code>2022-04-14 17:31:54 [ERROR] 這是錯誤信息
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-msg-msg-rest-args>
-🔍 Function: eask-msg (<code>msg</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-msg-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-msg (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-msg (msg &rest args)" href=#-function-eask-msg-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-msg-msg-rest-args>
+🔍 函式: eask-msg (<code>msg</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-msg-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-msg (msg &rest args)" aria-label="Anchor to: 🔍 函式: eask-msg (msg &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-msg-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>類似於 <code>message</code> 函數，但會用顏色替換 unicode。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-msg</span> <span class=s>&#34;用換行符打印此消息！&#34;</span><span class=p>)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-write-msg-rest-args>
-🔍 Function: eask-write (<code>msg</code> &rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-write-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-write (msg &rest args)" aria-label="Anchor to: 🔍 Function: eask-write (msg &rest args)" href=#-function-eask-write-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-write-msg-rest-args>
+🔍 函式: eask-write (<code>msg</code> &rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-write-msg-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-write (msg &rest args)" aria-label="Anchor to: 🔍 函式: eask-write (msg &rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-write-msg-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>類似於 eask-msg 函數，但末尾沒有換行符。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-write</span> <span class=s>&#34;不帶換行符打印此消息...&#34;</span><span class=p>)</span>
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-report-rest-args>
-🔍 Function: eask-report (&rest <code>args</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-report-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-report (&rest args)" aria-label="Anchor to: 🔍 Function: eask-report (&rest args)" href=#-function-eask-report-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-report-rest-args>
+🔍 函式: eask-report (&rest <code>args</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-report-rest-args class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-report (&rest args)" aria-label="Anchor to: 🔍 函式: eask-report (&rest args)" href=#-%e5%87%bd%e5%bc%8f-eask-report-rest-args><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1496,64 +1506,130 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-report</span> <span class=s>&#34;This can be warning or error&#34;</span><span class=p>)</span>
 </code></pre></div><p>見選項 <a class=gdoc-markdown__link href=https://emacs-eask.github.io/Getting-Started/Commands-and-options/#---strict>&ndash;strict</a>.</p>
 <div class=gdoc-page__anchorwrap>
-<h1 id=-file>
-🚩 File
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-file class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 File" aria-label="Anchor to: 🚩 File" href=#-file><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=-錯誤處理>
+🚩 錯誤處理
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-錯誤處理 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 錯誤處理" aria-label="Anchor to: 🚩 錯誤處理" href=#-%e9%8c%af%e8%aa%a4%e8%99%95%e7%90%86><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-guess-package-name->
-🔍 Function: eask-guess-package-name ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-guess-package-name- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-guess-package-name ()" aria-label="Anchor to: 🔍 Function: eask-guess-package-name ()" href=#-function-eask-guess-package-name-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-變數-eask--ignore-error-p>
+🔍 變數: eask&ndash;ignore-error-p
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask--ignore-error-p class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask&ndash;ignore-error-p" aria-label="Anchor to: 🔍 變數: eask&ndash;ignore-error-p" href=#-%e8%ae%8a%e6%95%b8-eask--ignore-error-p><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>非 <code>nil</code> 是為了防止 Emacs 被殺死。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>let</span> <span class=p>((</span><span class=nv>eask--ignore-error-p</span> <span class=no>t</span><span class=p>))</span>
+  <span class=p>(</span><span class=ne>error</span> <span class=s>&#34;Emacs can&#39;t die! :P&#34;</span><span class=p>))</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-變數-eask-inhibit-error-message>
+🔍 變數: eask-inhibit-error-message
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-變數-eask-inhibit-error-message class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 變數: eask-inhibit-error-message" aria-label="Anchor to: 🔍 變數: eask-inhibit-error-message" href=#-%e8%ae%8a%e6%95%b8-eask-inhibit-error-message><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>非 <code>nil</code> 停止錯誤/警告消息。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nb>let</span> <span class=p>((</span><span class=nv>eask-inhibit-error-message</span> <span class=no>t</span><span class=p>))</span>
+  <span class=p>(</span><span class=ne>error</span> <span class=s>&#34;This won&#39;t display at all!&#34;</span><span class=p>))</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-巨集-eask-ignore-errors-rest-body>
+🔍 巨集: eask-ignore-errors (&rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask-ignore-errors-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask-ignore-errors (&rest body)" aria-label="Anchor to: 🔍 巨集: eask-ignore-errors (&rest body)" href=#-%e5%b7%a8%e9%9b%86-eask-ignore-errors-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>防止 Emacs 被殺死。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-ignore-errors</span>
+  <span class=p>(</span><span class=ne>error</span> <span class=s>&#34;Emacs can&#39;t die! :P&#34;</span><span class=p>))</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-巨集-eask--silent-error-rest-body>
+🔍 巨集: eask&ndash;silent-error (&rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask--silent-error-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask&ndash;silent-error (&rest body)" aria-label="Anchor to: 🔍 巨集: eask&ndash;silent-error (&rest body)" href=#-%e5%b7%a8%e9%9b%86-eask--silent-error-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>禁止顯示錯誤/警告消息。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask--silent-error</span>
+  <span class=p>(</span><span class=ne>error</span> <span class=s>&#34;This won&#39;t display at all!&#34;</span><span class=p>))</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-巨集-eask-ignore-errors-silent-rest-body>
+🔍 巨集: eask-ignore-errors-silent (&rest <code>body</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask-ignore-errors-silent-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask-ignore-errors-silent (&rest body)" aria-label="Anchor to: 🔍 巨集: eask-ignore-errors-silent (&rest body)" href=#-%e5%b7%a8%e9%9b%86-eask-ignore-errors-silent-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>防止 Emacs 被殺死並禁止顯示錯誤/警告消息。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-ignore-errors-silent</span>
+  <span class=p>(</span><span class=ne>error</span> <span class=s>&#34;Nothing happens!&#34;</span><span class=p>))</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h2 id=-函式-eask--exit->
+🔍 函式: eask&ndash;exit ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask--exit- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask&ndash;exit ()" aria-label="Anchor to: 🔍 函式: eask&ndash;exit ()" href=#-%e5%87%bd%e5%bc%8f-eask--exit-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<p>Send exit code.</p>
+<p>This will kill Emacs process.</p>
+<div class=gdoc-page__anchorwrap>
+<h1 id=-文件>
+🚩 文件
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-文件 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 文件" aria-label="Anchor to: 🚩 文件" href=#-%e6%96%87%e4%bb%b6><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h2 id=-函式-eask-guess-package-name->
+🔍 函式: eask-guess-package-name ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-guess-package-name- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-guess-package-name ()" aria-label="Anchor to: 🔍 函式: eask-guess-package-name ()" href=#-%e5%87%bd%e5%bc%8f-eask-guess-package-name-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>返回可能的包名稱。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-package-files->
-🔍 Function: eask-package-files ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-package-files- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-package-files ()" aria-label="Anchor to: 🔍 Function: eask-package-files ()" href=#-function-eask-package-files-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-package-files->
+🔍 函式: eask-package-files ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-package-files- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-package-files ()" aria-label="Anchor to: 🔍 函式: eask-package-files ()" href=#-%e5%87%bd%e5%bc%8f-eask-package-files-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>返回包文件列表。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-package-el-files->
-🔍 Function: eask-package-el-files ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-package-el-files- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-package-el-files ()" aria-label="Anchor to: 🔍 Function: eask-package-el-files ()" href=#-function-eask-package-el-files-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-package-el-files->
+🔍 函式: eask-package-el-files ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-package-el-files- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-package-el-files ()" aria-label="Anchor to: 🔍 函式: eask-package-el-files ()" href=#-%e5%87%bd%e5%bc%8f-eask-package-el-files-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>返回擴展名為 <code>.el</code> 的包文件列表。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-package-elc-files->
-🔍 Function: eask-package-elc-files ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-package-elc-files- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-package-elc-files ()" aria-label="Anchor to: 🔍 Function: eask-package-elc-files ()" href=#-function-eask-package-elc-files-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-package-elc-files->
+🔍 函式: eask-package-elc-files ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-package-elc-files- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-package-elc-files ()" aria-label="Anchor to: 🔍 函式: eask-package-elc-files ()" href=#-%e5%87%bd%e5%bc%8f-eask-package-elc-files-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>返回擴展名為 <code>.elc</code> 的包文件列表。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-package-multi-p->
-🔍 Function: eask-package-multi-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-package-multi-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-package-multi-p ()" aria-label="Anchor to: 🔍 Function: eask-package-multi-p ()" href=#-function-eask-package-multi-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-package-multi-p->
+🔍 函式: eask-package-multi-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-package-multi-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-package-multi-p ()" aria-label="Anchor to: 🔍 函式: eask-package-multi-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-package-multi-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>如果是單個文件包，則返回 <code>nil</code>。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-package-single-p->
-🔍 Function: eask-package-single-p ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-package-single-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-package-single-p ()" aria-label="Anchor to: 🔍 Function: eask-package-single-p ()" href=#-function-eask-package-single-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-package-single-p->
+🔍 函式: eask-package-single-p ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-package-single-p- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-package-single-p ()" aria-label="Anchor to: 🔍 函式: eask-package-single-p ()" href=#-%e5%87%bd%e5%bc%8f-eask-package-single-p-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <p>如果是單個文件包，則返回 <code>t</code>。</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-unpacked-size->
-🔍 Function: eask-unpacked-size ()
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-unpacked-size- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-unpacked-size ()" aria-label="Anchor to: 🔍 Function: eask-unpacked-size ()" href=#-function-eask-unpacked-size-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-unpacked-size->
+🔍 函式: eask-unpacked-size ()
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-unpacked-size- class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-unpacked-size ()" aria-label="Anchor to: 🔍 函式: eask-unpacked-size ()" href=#-%e5%87%bd%e5%bc%8f-eask-unpacked-size-><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1563,16 +1639,16 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 <div class=gdoc-hint__text>⚠️ 這將返回一個字符串而不是字節。</div>
 </blockquote>
 <div class=gdoc-page__anchorwrap>
-<h1 id=-progress>
-🚩 Progress
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-progress class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 Progress" aria-label="Anchor to: 🚩 Progress" href=#-progress><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=-進度>
+🚩 進度
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-進度 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 進度" aria-label="Anchor to: 🚩 進度" href=#-%e9%80%b2%e5%ba%a6><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-macro-eask-with-progress-msg-start-body-msg-end>
-🔍 Macro: eask-with-progress (<code>msg-start</code> <code>body</code> <code>msg-end</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-macro-eask-with-progress-msg-start-body-msg-end class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Macro: eask-with-progress (msg-start body msg-end)" aria-label="Anchor to: 🔍 Macro: eask-with-progress (msg-start body msg-end)" href=#-macro-eask-with-progress-msg-start-body-msg-end><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-巨集-eask-with-progress-msg-start-body-msg-end>
+🔍 巨集: eask-with-progress (<code>msg-start</code> <code>body</code> <code>msg-end</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-巨集-eask-with-progress-msg-start-body-msg-end class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 巨集: eask-with-progress (msg-start body msg-end)" aria-label="Anchor to: 🔍 巨集: eask-with-progress (msg-start body msg-end)" href=#-%e5%b7%a8%e9%9b%86-eask-with-progress-msg-start-body-msg-end><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1586,9 +1662,9 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 </code></pre></div><p>期望輸出：</p>
 <pre tabindex=0><code>檔案下載中... 完成 ✓
 </code></pre><div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-print-log-buffer-optional-buffer-or-name>
-🔍 Function: eask-print-log-buffer (&optional <code>buffer-or-name</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-print-log-buffer-optional-buffer-or-name class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-print-log-buffer (&optional buffer-or-name)" aria-label="Anchor to: 🔍 Function: eask-print-log-buffer (&optional buffer-or-name)" href=#-function-eask-print-log-buffer-optional-buffer-or-name><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-print-log-buffer-optional-buffer-or-name>
+🔍 函式: eask-print-log-buffer (&optional <code>buffer-or-name</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-print-log-buffer-optional-buffer-or-name class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-print-log-buffer (&optional buffer-or-name)" aria-label="Anchor to: 🔍 函式: eask-print-log-buffer (&optional buffer-or-name)" href=#-%e5%87%bd%e5%bc%8f-eask-print-log-buffer-optional-buffer-or-name><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
@@ -1600,16 +1676,16 @@ $ eask <span class=o>[</span>command<span class=o>]</span> --no-proxy <span clas
 <div class=gdoc-hint__text>💡 這對於創建 buffer 來顯示 <strong>errors</strong> 和 <strong>warnings</strong> 的 linters 會很方便。</div>
 </blockquote>
 <div class=gdoc-page__anchorwrap>
-<h1 id=-help>
-🚩 Help
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-help class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 Help" aria-label="Anchor to: 🚩 Help" href=#-help><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h1 id=-幫助>
+🚩 幫助
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-幫助 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 幫助" aria-label="Anchor to: 🚩 幫助" href=#-%e5%b9%ab%e5%8a%a9><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h1>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-function-eask-help-command>
-🔍 Function: eask-help (<code>command</code>)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-function-eask-help-command class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 Function: eask-help (command)" aria-label="Anchor to: 🔍 Function: eask-help (command)" href=#-function-eask-help-command><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-函式-eask-help-command>
+🔍 函式: eask-help (<code>command</code>)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Development-API/#-函式-eask-help-command class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 函式: eask-help (command)" aria-label="Anchor to: 🔍 函式: eask-help (command)" href=#-%e5%87%bd%e5%bc%8f-eask-help-command><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
