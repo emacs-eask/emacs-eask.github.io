@@ -6,8 +6,9 @@
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
 <meta name=description content="本文檔將指導您完成 Eask 的安裝。
-   💾 快速安裝  🧪 二進制（跨平台） 🧪 使用 Shell （macOS 和 Linux） 🧪 使用 Shell (Windows) 🧪 npm 🧪 Homebrew (macOS or Linux) 🧪 MacPorts (macOS) 🧪 Chocolatey (Windows) 🧪 Scoop (Windows) 🧪 Winget (Windows)   💾 Source  🚩 Prerequisite Tools 🏡 設置        💾 快速安裝     安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 Node.js。
-🧪 二進制（跨平台）     從 Eask Releases 下載適合您平台的版本。 下載後，二進製文件可以從任何地方運行。 您無需將其安裝在全球位置。 這適用於您沒有特權帳戶的共享主機和其他系統。">
+安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 Node.js。
+   💾 預建置檔案 💾 使用終端 💾 包管理器  📦 npm (跨平台) 📦 Homebrew (macOS 或 Linux) 📦 MacPorts (macOS) 📦 Chocolatey (Windows) 📦 Scoop (Windows) 📦 Winget (Windows)   💾 從原始碼構建  🚩 前置工具 🏡 設置        💾 預建置檔案     從 Eask Releases 下載適合您平台的版本。 下載後，二進製文件可以從任何地方運行。 您無需將其安裝在全球位置。 這適用於您沒有特權帳戶的共享主機和其他系統。
+理想情況下，您應該將它安裝在 PATH 中的某個位置以便於使用。 /usr/local/bin 是最有可能的位置。">
 <title>💾 安裝 Eask | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
@@ -15,18 +16,20 @@
 <meta property="og:title" content="💾 安裝 Eask">
 <meta property="og:site_name" content="Emacs Eask">
 <meta property="og:description" content="本文檔將指導您完成 Eask 的安裝。
-   💾 快速安裝  🧪 二進制（跨平台） 🧪 使用 Shell （macOS 和 Linux） 🧪 使用 Shell (Windows) 🧪 npm 🧪 Homebrew (macOS or Linux) 🧪 MacPorts (macOS) 🧪 Chocolatey (Windows) 🧪 Scoop (Windows) 🧪 Winget (Windows)   💾 Source  🚩 Prerequisite Tools 🏡 設置        💾 快速安裝     安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 Node.js。
-🧪 二進制（跨平台）     從 Eask Releases 下載適合您平台的版本。 下載後，二進製文件可以從任何地方運行。 您無需將其安裝在全球位置。 這適用於您沒有特權帳戶的共享主機和其他系統。">
+安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 Node.js。
+   💾 預建置檔案 💾 使用終端 💾 包管理器  📦 npm (跨平台) 📦 Homebrew (macOS 或 Linux) 📦 MacPorts (macOS) 📦 Chocolatey (Windows) 📦 Scoop (Windows) 📦 Winget (Windows)   💾 從原始碼構建  🚩 前置工具 🏡 設置        💾 預建置檔案     從 Eask Releases 下載適合您平台的版本。 下載後，二進製文件可以從任何地方運行。 您無需將其安裝在全球位置。 這適用於您沒有特權帳戶的共享主機和其他系統。
+理想情況下，您應該將它安裝在 PATH 中的某個位置以便於使用。 /usr/local/bin 是最有可能的位置。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2023-10-11T18:45:30-07:00">
+<meta property="article:modified_time" content="2023-10-11T19:34:55-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="💾 安裝 Eask">
 <meta name=twitter:description content="本文檔將指導您完成 Eask 的安裝。
-   💾 快速安裝  🧪 二進制（跨平台） 🧪 使用 Shell （macOS 和 Linux） 🧪 使用 Shell (Windows) 🧪 npm 🧪 Homebrew (macOS or Linux) 🧪 MacPorts (macOS) 🧪 Chocolatey (Windows) 🧪 Scoop (Windows) 🧪 Winget (Windows)   💾 Source  🚩 Prerequisite Tools 🏡 設置        💾 快速安裝     安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 Node.js。
-🧪 二進制（跨平台）     從 Eask Releases 下載適合您平台的版本。 下載後，二進製文件可以從任何地方運行。 您無需將其安裝在全球位置。 這適用於您沒有特權帳戶的共享主機和其他系統。">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"💾 安裝 Eask","url":"https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/","headline":"💾 安裝 Eask","description":"本文檔將指導您完成 Eask 的安裝。\n   💾 快速安裝  🧪 二進制（跨平台） 🧪 使用 Shell （macOS 和 Linux） 🧪 使用 Shell (Windows) 🧪 npm 🧪 Homebrew (macOS or Linux) 🧪 MacPorts (macOS) 🧪 Chocolatey (Windows) 🧪 Scoop (Windows) 🧪 Winget (Windows)   💾 Source  🚩 Prerequisite Tools 🏡 設置        💾 快速安裝     安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 Node.js。\n🧪 二進制（跨平台）     從 Eask Releases 下載適合您平台的版本。 下載後，二進製文件可以從任何地方運行。 您無需將其安裝在全球位置。 這適用於您沒有特權帳戶的共享主機和其他系統。","wordCount":"216","license":"CC BY-SA 4.0","inLanguage":"zh-tw","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-10-11T18:45:30.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 Node.js。
+   💾 預建置檔案 💾 使用終端 💾 包管理器  📦 npm (跨平台) 📦 Homebrew (macOS 或 Linux) 📦 MacPorts (macOS) 📦 Chocolatey (Windows) 📦 Scoop (Windows) 📦 Winget (Windows)   💾 從原始碼構建  🚩 前置工具 🏡 設置        💾 預建置檔案     從 Eask Releases 下載適合您平台的版本。 下載後，二進製文件可以從任何地方運行。 您無需將其安裝在全球位置。 這適用於您沒有特權帳戶的共享主機和其他系統。
+理想情況下，您應該將它安裝在 PATH 中的某個位置以便於使用。 /usr/local/bin 是最有可能的位置。">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"💾 安裝 Eask","url":"https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/","headline":"💾 安裝 Eask","description":"本文檔將指導您完成 Eask 的安裝。\n安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 Node.js。\n   💾 預建置檔案 💾 使用終端 💾 包管理器  📦 npm (跨平台) 📦 Homebrew (macOS 或 Linux) 📦 MacPorts (macOS) 📦 Chocolatey (Windows) 📦 Scoop (Windows) 📦 Winget (Windows)   💾 從原始碼構建  🚩 前置工具 🏡 設置        💾 預建置檔案     從 Eask Releases 下載適合您平台的版本。 下載後，二進製文件可以從任何地方運行。 您無需將其安裝在全球位置。 這適用於您沒有特權帳戶的共享主機和其他系統。\n理想情況下，您應該將它安裝在 PATH 中的某個位置以便於使用。 \/usr\/local\/bin 是最有可能的位置。","wordCount":"207","license":"CC BY-SA 4.0","inLanguage":"zh-tw","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-10-11T19:34:55.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=/js/main-fbb9c8b0.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -450,24 +453,24 @@ Edit page
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>💾 安裝 Eask</h1>
 <p>本文檔將指導您完成 Eask 的安裝。</p>
+<p>安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 <a class=gdoc-markdown__link href=https://nodejs.org/en/>Node.js</a>。</p>
 <div class="gdoc-toc gdoc-toc__level--3">
 <nav id=TableOfContents><ul>
-<li><a href=#-快速安裝>💾 快速安裝</a>
+<li><a href=#-預建置檔案>💾 預建置檔案</a></li>
+<li><a href=#-使用終端>💾 使用終端</a></li>
+<li><a href=#-包管理器>💾 包管理器</a>
 <ul>
-<li><a href=#-二進制跨平台>🧪 二進制（跨平台）</a></li>
-<li><a href=#-使用-shell-macos-和-linux>🧪 使用 Shell （macOS 和 Linux）</a></li>
-<li><a href=#-使用-shell-windows>🧪 使用 Shell (Windows)</a></li>
-<li><a href=#-npm>🧪 npm</a></li>
-<li><a href=#-homebrew-macos-or-linux>🧪 Homebrew (macOS or Linux)</a></li>
-<li><a href=#-macports-macos>🧪 MacPorts (macOS)</a></li>
-<li><a href=#-chocolatey-windows>🧪 Chocolatey (Windows)</a></li>
-<li><a href=#-scoop-windows>🧪 Scoop (Windows)</a></li>
-<li><a href=#-winget-windows>🧪 Winget (Windows)</a></li>
+<li><a href=#-npm-跨平台>📦 npm (跨平台)</a></li>
+<li><a href=#-homebrew-macos-或-linux>📦 Homebrew (macOS 或 Linux)</a></li>
+<li><a href=#-macports-macos>📦 MacPorts (macOS)</a></li>
+<li><a href=#-chocolatey-windows>📦 Chocolatey (Windows)</a></li>
+<li><a href=#-scoop-windows>📦 Scoop (Windows)</a></li>
+<li><a href=#-winget-windows>📦 Winget (Windows)</a></li>
 </ul>
 </li>
-<li><a href=#-source>💾 Source</a>
+<li><a href=#-從原始碼構建>💾 從原始碼構建</a>
 <ul>
-<li><a href=#-prerequisite-tools>🚩 Prerequisite Tools</a></li>
+<li><a href=#-前置工具>🚩 前置工具</a></li>
 <li><a href=#-設置>🏡 設置</a></li>
 </ul>
 </li>
@@ -475,52 +478,46 @@ Edit page
 <hr>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-快速安裝>
-💾 快速安裝
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-快速安裝 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 💾 快速安裝" aria-label="Anchor to: 💾 快速安裝" href=#-%e5%bf%ab%e9%80%9f%e5%ae%89%e8%a3%9d><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-預建置檔案>
+💾 預建置檔案
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-預建置檔案 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 💾 預建置檔案" aria-label="Anchor to: 💾 預建置檔案" href=#-%e9%a0%90%e5%bb%ba%e7%bd%ae%e6%aa%94%e6%a1%88><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
-</div>
-<p>安裝 Eask在 macOS、Linux、Windows、BSD 以及任何可以執行 <a class=gdoc-markdown__link href=https://nodejs.org/en/>Node.js</a>。</p>
-<div class=gdoc-page__anchorwrap>
-<h3 id=-二進制跨平台>
-🧪 二進制（跨平台）
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-二進制跨平台 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🧪 二進制（跨平台）" aria-label="Anchor to: 🧪 二進制（跨平台）" href=#-%e4%ba%8c%e9%80%b2%e5%88%b6%e8%b7%a8%e5%b9%b3%e5%8f%b0><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
 </div>
 <p>從 <a class=gdoc-markdown__link href=https://github.com/emacs-eask/cli/releases>Eask Releases</a> 下載適合您平台的版本。
 下載後，二進製文件可以從任何地方運行。 您無需將其安裝在全球位置。 這適用於您沒有特權帳戶的共享主機和其他系統。</p>
 <p>理想情況下，您應該將它安裝在 <code>PATH</code> 中的某個位置以便於使用。 <code>/usr/local/bin</code> 是最有可能的位置。</p>
 <div class=gdoc-page__anchorwrap>
-<h3 id=-使用-shell-macos-和-linux>
-🧪 使用 Shell （macOS 和 Linux）
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-使用-shell-macos-和-linux class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🧪 使用 Shell （macOS 和 Linux）" aria-label="Anchor to: 🧪 使用 Shell （macOS 和 Linux）" href=#-%e4%bd%bf%e7%94%a8-shell-macos-%e5%92%8c-linux><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-使用終端>
+💾 使用終端
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-使用終端 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 💾 使用終端" aria-label="Anchor to: 💾 使用終端" href=#-%e4%bd%bf%e7%94%a8%e7%b5%82%e7%ab%af><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h3>
+</h2>
 </div>
+<p>在 macOS 或 Linux:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ curl -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.sh <span class=p>|</span> sh
-</code></pre></div><div class=gdoc-page__anchorwrap>
-<h3 id=-使用-shell-windows>
-🧪 使用 Shell (Windows)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-使用-shell-windows class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🧪 使用 Shell (Windows)" aria-label="Anchor to: 🧪 使用 Shell (Windows)" href=#-%e4%bd%bf%e7%94%a8-shell-windows><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3>
-</div>
+</code></pre></div><p>在 Windows:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ curl.exe -fsSL https://raw.githubusercontent.com/emacs-eask/cli/master/webinstall/install.bat <span class=p>|</span> cmd /Q
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h3 id=-npm>
-🧪 npm
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-npm class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🧪 npm" aria-label="Anchor to: 🧪 npm" href=#-npm><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-包管理器>
+💾 包管理器
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-包管理器 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 💾 包管理器" aria-label="Anchor to: 💾 包管理器" href=#-%e5%8c%85%e7%ae%a1%e7%90%86%e5%99%a8><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h2>
+</div>
+<div class=gdoc-page__anchorwrap>
+<h3 id=-npm-跨平台>
+📦 npm (跨平台)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-npm-跨平台 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 📦 npm (跨平台)" aria-label="Anchor to: 📦 npm (跨平台)" href=#-npm-%e8%b7%a8%e5%b9%b3%e5%8f%b0><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
 <p>如果您的機器上安裝了 <a class=gdoc-markdown__link href=https://www.npmjs.com/>npm</a>，您可以使用以下一行代碼安裝 Eask：</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ npm install -g @emacs-eask/cli
 </code></pre></div><div class=gdoc-page__anchorwrap>
-<h3 id=-homebrew-macos-or-linux>
-🧪 Homebrew (macOS or Linux)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-homebrew-macos-or-linux class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🧪 Homebrew (macOS or Linux)" aria-label="Anchor to: 🧪 Homebrew (macOS or Linux)" href=#-homebrew-macos-or-linux><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=-homebrew-macos-或-linux>
+📦 Homebrew (macOS 或 Linux)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-homebrew-macos-或-linux class="gdoc-page__anchor clip flex align-center" title="Anchor to: 📦 Homebrew (macOS 或 Linux)" aria-label="Anchor to: 📦 Homebrew (macOS 或 Linux)" href=#-homebrew-macos-%e6%88%96-linux><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
@@ -530,8 +527,8 @@ Edit page
 $ brew install eask-cli
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h3 id=-macports-macos>
-🧪 MacPorts (macOS)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-macports-macos class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🧪 MacPorts (macOS)" aria-label="Anchor to: 🧪 MacPorts (macOS)" href=#-macports-macos><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+📦 MacPorts (macOS)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-macports-macos class="gdoc-page__anchor clip flex align-center" title="Anchor to: 📦 MacPorts (macOS)" aria-label="Anchor to: 📦 MacPorts (macOS)" href=#-macports-macos><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
@@ -540,8 +537,8 @@ $ brew install eask-cli
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ sudo port install eask-cli
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h3 id=-chocolatey-windows>
-🧪 Chocolatey (Windows)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-chocolatey-windows class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🧪 Chocolatey (Windows)" aria-label="Anchor to: 🧪 Chocolatey (Windows)" href=#-chocolatey-windows><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+📦 Chocolatey (Windows)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-chocolatey-windows class="gdoc-page__anchor clip flex align-center" title="Anchor to: 📦 Chocolatey (Windows)" aria-label="Anchor to: 📦 Chocolatey (Windows)" href=#-chocolatey-windows><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
@@ -549,8 +546,8 @@ $ brew install eask-cli
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ choco install eask-cli
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h3 id=-scoop-windows>
-🧪 Scoop (Windows)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-scoop-windows class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🧪 Scoop (Windows)" aria-label="Anchor to: 🧪 Scoop (Windows)" href=#-scoop-windows><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+📦 Scoop (Windows)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-scoop-windows class="gdoc-page__anchor clip flex align-center" title="Anchor to: 📦 Scoop (Windows)" aria-label="Anchor to: 📦 Scoop (Windows)" href=#-scoop-windows><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
@@ -560,23 +557,23 @@ $ brew install eask-cli
 $ scoop install eask-cli
 </code></pre></div><div class=gdoc-page__anchorwrap>
 <h3 id=-winget-windows>
-🧪 Winget (Windows)
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-winget-windows class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🧪 Winget (Windows)" aria-label="Anchor to: 🧪 Winget (Windows)" href=#-winget-windows><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+📦 Winget (Windows)
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-winget-windows class="gdoc-page__anchor clip flex align-center" title="Anchor to: 📦 Winget (Windows)" aria-label="Anchor to: 📦 Winget (Windows)" href=#-winget-windows><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
 <p>WIP</p>
 <div class=gdoc-page__anchorwrap>
-<h2 id=-source>
-💾 Source
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-source class="gdoc-page__anchor clip flex align-center" title="Anchor to: 💾 Source" aria-label="Anchor to: 💾 Source" href=#-source><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h2 id=-從原始碼構建>
+💾 從原始碼構建
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-從原始碼構建 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 💾 從原始碼構建" aria-label="Anchor to: 💾 從原始碼構建" href=#-%e5%be%9e%e5%8e%9f%e5%a7%8b%e7%a2%bc%e6%a7%8b%e5%bb%ba><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h2>
 </div>
 <div class=gdoc-page__anchorwrap>
-<h3 id=-prerequisite-tools>
-🚩 Prerequisite Tools
-<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-prerequisite-tools class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 Prerequisite Tools" aria-label="Anchor to: 🚩 Prerequisite Tools" href=#-prerequisite-tools><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+<h3 id=-前置工具>
+🚩 前置工具
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Install-Eask/#-前置工具 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🚩 前置工具" aria-label="Anchor to: 🚩 前置工具" href=#-%e5%89%8d%e7%bd%ae%e5%b7%a5%e5%85%b7><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3>
 </div>
@@ -587,10 +584,10 @@ $ scoop install eask-cli
 </ul>
 <p>或者，您可以直接從這個代碼庫克隆它:</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=c1># 克隆這個代碼庫</span>
-$ git clone https://github.com/emacs-eask/cli eask
+$ git clone https://github.com/emacs-eask/cli eask-cli
 
-<span class=c1># 將工作目錄更改為eask</span>
-$ <span class=nb>cd</span> eask
+<span class=c1># 將工作目錄更改為 eask-cli</span>
+$ <span class=nb>cd</span> eask-cli
 
 <span class=c1># 安裝所有依賴</span>
 $ npm install
