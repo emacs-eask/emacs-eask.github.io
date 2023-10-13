@@ -5,40 +5,37 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.91.2">
-<meta name=description content="Eask 只是一個普通的 Emacs Lisp 文件，應該從 Emacs 本身讀取！ 你可以做：
-; 常規 Eask 文件內容... (setq byte-compile-error-on-warn t) ; 出現警告時信號錯誤 eask 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：
+<meta name=description content="🪝 Hooks 📇 加入你自己的指令    Eask 只是一個普通的 Emacs Lisp 文件，應該從 Emacs 本身讀取！ 你可以做：
+; 常規 Eask 文件內容... (setq byte-compile-error-on-warn t) ; 出現警告時信號錯誤 🪝 Hooks     eask 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：
  eask-before-COMMAND-hook eask-after-COMMAND-hook  例如，在使用命令 eask compile 進行字節編譯時將警告視為錯誤：
 (add-hook 'eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) 這也等同於選項 --strict：
 $ eask compile [FILES..] --strict 或者在每個命令上運行的 hooks：
- eask-before-command-hook eask-after-command-hook  (add-hook 'eask-before-command-hook (lambda () (message &#34;%s&#34; (eask-command)))) ; print the current command 對於包含空格的子命令，將與/連接：
-$ eask lint checkdoc # lint/checkdoc $ eask generate license # generate/license 所以，">
+ eask-before-command-hook eask-after-command-hook  (add-hook 'eask-before-command-hook (lambda () (message &#34;%s&#34; (eask-command)))) ; print the current command 對於包含空格的子命令，將與/連接：">
 <title>🔧 進階用法 | Emacs Eask</title>
 <link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta property="og:title" content="🔧 進階用法">
 <meta property="og:site_name" content="Emacs Eask">
-<meta property="og:description" content="Eask 只是一個普通的 Emacs Lisp 文件，應該從 Emacs 本身讀取！ 你可以做：
-; 常規 Eask 文件內容... (setq byte-compile-error-on-warn t) ; 出現警告時信號錯誤 eask 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：
+<meta property="og:description" content="🪝 Hooks 📇 加入你自己的指令    Eask 只是一個普通的 Emacs Lisp 文件，應該從 Emacs 本身讀取！ 你可以做：
+; 常規 Eask 文件內容... (setq byte-compile-error-on-warn t) ; 出現警告時信號錯誤 🪝 Hooks     eask 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：
  eask-before-COMMAND-hook eask-after-COMMAND-hook  例如，在使用命令 eask compile 進行字節編譯時將警告視為錯誤：
 (add-hook 'eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) 這也等同於選項 --strict：
 $ eask compile [FILES..] --strict 或者在每個命令上運行的 hooks：
- eask-before-command-hook eask-after-command-hook  (add-hook 'eask-before-command-hook (lambda () (message &#34;%s&#34; (eask-command)))) ; print the current command 對於包含空格的子命令，將與/連接：
-$ eask lint checkdoc # lint/checkdoc $ eask generate license # generate/license 所以，">
+ eask-before-command-hook eask-after-command-hook  (add-hook 'eask-before-command-hook (lambda () (message &#34;%s&#34; (eask-command)))) ; print the current command 對於包含空格的子命令，將與/連接：">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://emacs-eask.github.io/zh-tw/Getting-Started/Advanced-Usage/">
 <meta property="article:section" content="Getting Started">
-<meta property="article:modified_time" content="2023-10-13T06:38:31-07:00">
+<meta property="article:modified_time" content="2023-10-13T13:19:26-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="🔧 進階用法">
-<meta name=twitter:description content="Eask 只是一個普通的 Emacs Lisp 文件，應該從 Emacs 本身讀取！ 你可以做：
-; 常規 Eask 文件內容... (setq byte-compile-error-on-warn t) ; 出現警告時信號錯誤 eask 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：
+<meta name=twitter:description content="🪝 Hooks 📇 加入你自己的指令    Eask 只是一個普通的 Emacs Lisp 文件，應該從 Emacs 本身讀取！ 你可以做：
+; 常規 Eask 文件內容... (setq byte-compile-error-on-warn t) ; 出現警告時信號錯誤 🪝 Hooks     eask 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：
  eask-before-COMMAND-hook eask-after-COMMAND-hook  例如，在使用命令 eask compile 進行字節編譯時將警告視為錯誤：
 (add-hook 'eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) 這也等同於選項 --strict：
 $ eask compile [FILES..] --strict 或者在每個命令上運行的 hooks：
- eask-before-command-hook eask-after-command-hook  (add-hook 'eask-before-command-hook (lambda () (message &#34;%s&#34; (eask-command)))) ; print the current command 對於包含空格的子命令，將與/連接：
-$ eask lint checkdoc # lint/checkdoc $ eask generate license # generate/license 所以，">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔧 進階用法","url":"https://emacs-eask.github.io/zh-tw/Getting-Started/Advanced-Usage/","headline":"🔧 進階用法","description":"Eask 只是一個普通的 Emacs Lisp 文件，應該從 Emacs 本身讀取！ 你可以做：\n; 常規 Eask 文件內容... (setq byte-compile-error-on-warn t) ; 出現警告時信號錯誤 eask 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：\n eask-before-COMMAND-hook eask-after-COMMAND-hook  例如，在使用命令 eask compile 進行字節編譯時將警告視為錯誤：\n(add-hook \u0027eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) 這也等同於選項 --strict：\n$ eask compile [FILES..] --strict 或者在每個命令上運行的 hooks：\n eask-before-command-hook eask-after-command-hook  (add-hook \u0027eask-before-command-hook (lambda () (message \u0022%s\u0022 (eask-command)))) ; print the current command 對於包含空格的子命令，將與\/連接：\n$ eask lint checkdoc # lint\/checkdoc $ eask generate license # generate\/license 所以，","wordCount":"82","license":"CC BY-SA 4.0","inLanguage":"zh-tw","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/zh-tw/Getting-Started/Advanced-Usage/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-10-13T06:38:31.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
+ eask-before-command-hook eask-after-command-hook  (add-hook 'eask-before-command-hook (lambda () (message &#34;%s&#34; (eask-command)))) ; print the current command 對於包含空格的子命令，將與/連接：">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Getting Started","name":"🔧 進階用法","url":"https://emacs-eask.github.io/zh-tw/Getting-Started/Advanced-Usage/","headline":"🔧 進階用法","description":"🪝 Hooks 📇 加入你自己的指令    Eask 只是一個普通的 Emacs Lisp 文件，應該從 Emacs 本身讀取！ 你可以做：\n; 常規 Eask 文件內容... (setq byte-compile-error-on-warn t) ; 出現警告時信號錯誤 🪝 Hooks     eask 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：\n eask-before-COMMAND-hook eask-after-COMMAND-hook  例如，在使用命令 eask compile 進行字節編譯時將警告視為錯誤：\n(add-hook \u0027eask-before-compile-hook (lambda () (setq byte-compile-error-on-warn t))) 這也等同於選項 --strict：\n$ eask compile [FILES..] --strict 或者在每個命令上運行的 hooks：\n eask-before-command-hook eask-after-command-hook  (add-hook \u0027eask-before-command-hook (lambda () (message \u0022%s\u0022 (eask-command)))) ; print the current command 對於包含空格的子命令，將與\/連接：","wordCount":"98","license":"CC BY-SA 4.0","inLanguage":"zh-tw","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://emacs-eask.github.io/zh-tw/Getting-Started/Advanced-Usage/"},"copyrightHolder":"Emacs Eask","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"2023-10-13T13:19:26.00Z","publisher":{"@type":"Organization","name":"Emacs Eask","url":"https://emacs-eask.github.io/","logo":{"@type":"ImageObject","url":"https://emacs-eask.github.io/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/colortheme-d3e4d351.bundle.min.js></script>
 <script src=/js/main-fbb9c8b0.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
@@ -461,11 +458,27 @@ Edit page
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>🔧 進階用法</h1>
+<div class="gdoc-toc gdoc-toc__level--3">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#-hooks>🪝 Hooks</a></li>
+<li><a href=#-加入你自己的指令>📇 加入你自己的指令</a></li>
+</ul>
+</nav>
+<hr>
+</div>
 <p><code>Eask</code> 只是一個普通的 Emacs Lisp 文件，應該從 Emacs 本身讀取！ 你可以做：</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=c1>; 常規 Eask 文件內容...</span>
 
 <span class=p>(</span><span class=nb>setq</span> <span class=nv>byte-compile-error-on-warn</span> <span class=no>t</span><span class=p>)</span>  <span class=c1>; 出現警告時信號錯誤</span>
-</code></pre></div><p><code>eask</code> 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：</p>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h1 id=-hooks>
+🪝 Hooks
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Advanced-Usage/#-hooks class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🪝 Hooks" aria-label="Anchor to: 🪝 Hooks" href=#-hooks><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div>
+<p><code>eask</code> 提供了一些 hooks，使您能夠在每個命令之前和之後執行代碼。 hook 看起來像這樣：</p>
 <ul>
 <li><code>eask-before-COMMAND-hook</code></li>
 <li><code>eask-after-COMMAND-hook</code></li>
@@ -491,6 +504,17 @@ $ eask generate license  <span class=c1># generate/license</span>
            <span class=p>(</span><span class=nb>lambda</span> <span class=p>()</span>
              <span class=c1>;; 在 checkdoc linting 之前做一些事情...</span>
              <span class=p>))</span>
+</code></pre></div><div class=gdoc-page__anchorwrap>
+<h1 id=-加入你自己的指令>
+📇 加入你自己的指令
+<a data-clipboard-text=https://emacs-eask.github.io/zh-tw/Getting-Started/Advanced-Usage/#-加入你自己的指令 class="gdoc-page__anchor clip flex align-center" title="Anchor to: 📇 加入你自己的指令" aria-label="Anchor to: 📇 加入你自己的指令" href=#-%e5%8a%a0%e5%85%a5%e4%bd%a0%e8%87%aa%e5%b7%b1%e7%9a%84%e6%8c%87%e4%bb%a4><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h1>
+</div>
+<p>您可以透過我們的 command 介面添加自己的命令：</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=p>(</span><span class=nv>eask-defcommand</span> <span class=nv>my-test-command</span>
+  <span class=s>&#34;測試指令印出無用的訊息。&#34;</span>
+  <span class=p>(</span><span class=nf>message</span> <span class=s>&#34;這是一個測試指令!&#34;</span><span class=p>))</span>
 </code></pre></div>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
