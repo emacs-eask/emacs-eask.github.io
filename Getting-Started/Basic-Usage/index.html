@@ -57,79 +57,79 @@ for a comprehensive view of Eask’s CLI.</p><p>Once you have installed <a class
 that Eask has been installed correctly via the help command:</p><pre tabindex=0><code>eask --help
 </code></pre><blockquote class="gdoc-hint note"><div class="gdoc-hint__title flex gap-8 align-center"><i class="fa note"></i>
 <span>Note</span></div><div class=gdoc-hint__text>💡 Optionally, you can use <code>--show-hidden</code> to show all available commands and
-options!</div></blockquote><p>The output you see in your console should be similar to the following:</p><pre tabindex=0><code>eask is the main command, used to manage your Emacs dependencies
-
-Eask is a command-line tool that helps you build, lint, and test Emacs Lisp packages.
-
-Usage: eask &lt;command&gt; [options..]
-
-Commands:
-  analyze [files..]          Run Eask checker
-  archives                   List out all package archives                                                                                                                                     [aliases: sources]
-  clean &lt;type&gt;               Delete various files produced during building
-  compile [names..]          Byte-compile `.el&#39; files
-  create &lt;type&gt;              Create a new elisp project
-  docker &lt;version&gt; [args..]  Launch specified Emacs version in a Docker container
-  docs [names..]             Build documentation                                                                                                                                                   [aliases: doc]
-  emacs [args..]             Execute emacs with the appropriate environment
-  eval [form]                Evaluate lisp form with a proper PATH
-  path [patterns..]          Print the PATH (exec-path) from workspace                                                                                                                       [aliases: exec-path]
-  exec [args..]              Execute command with correct environment PATH set up
-  files [patterns..]         Print all package files
-  format &lt;type&gt;              Run formatters                                                                                                                                                        [aliases: fmt]
-  generate &lt;type&gt;            Generate files that are used for the development
-  info                       Display information about the current package
-  init [files..]             Initialize project to use Eask
-  install-deps               Automatically install package dependencies                                                                                                  [aliases: install-dependencies, prepare]
-  install-file [files..]     Install packages from files, .tar files, or directories
-  install-vc [specs..]       Install packages directly from the version control
-  install [names..]          Install packages
-  keywords                   List available keywords that can be used in the header section
-  link &lt;action&gt;              Manage links
-  lint &lt;type&gt;                Run linters
-  list                       List packages
-  load-path [patterns..]     Print the load-path from workspace
-  load [files..]             Load elisp files
-  outdated                   Show all outdated dependencies
-  package-directory          Print path to package directory
-  package [destination]      Build a package artifact, and put it into the given destination                                                                                                      [aliases: pack]
-  recipe                     Suggest a recipe format
-  recompile [names..]        Byte-recompile `.el&#39; files
-  refresh                    Download package archives
-  reinstall [names..]        Reinstall packages
-  run &lt;type&gt;                 Run custom tasks
-  search [queries..]         Search packages
-  status                     Display the state of the workspace
-  test &lt;type&gt;                Run regression/unit tests
-  uninstall [names..]        Uninstall packages                                                                                                                                                 [aliases: delete]
-  upgrade [names..]          Upgrade packages
-  locate                     Print out Eask installed location
-  upgrade-eask               Upgrade Eask itself                                                                                                                                          [aliases: upgrade-self]
-
-Proxy Options:
-      --proxy        update proxy for HTTP and HTTPS to host                                                                                                                                             [string]
-      --http-proxy   update proxy for HTTP to host                                                                                                                                                       [string]
-      --https-proxy  update proxy for HTTPS to host                                                                                                                                                      [string]
-      --no-proxy     set no-proxy to host                                                                                                                                                                [string]
-
-Options:
-      --version      output version information and exit                                                                                                                                                [boolean]
-      --help         show usage instructions                                                                                                                                                            [boolean]
-      --show-hidden  Show hidden commands and options                                                                                                                                                   [boolean]
-  -g, --global       change default workspace to ~/.eask/                                                                                                                                               [boolean]
-  -c, --config       change default workspace to ~/.emacs.d/                                                                                                                                            [boolean]
-  -a, --all          enable all flag                                                                                                                                                                    [boolean]
-  -q, --quick        start cleanly without loading the configuration files                                                                                                                              [boolean]
-  -f, --force        enable force flag                                                                                                                                                                  [boolean]
-      --debug        turn on debug mode                                                                                                                                                                 [boolean]
-      --strict       report error instead of warnings                                                                                                                                                   [boolean]
-      --allow-error  attempt to continue execution on error                                                                                                                                             [boolean]
-      --insecure     allow insecure connection                                                                                                                                                          [boolean]
-      --no-color     enable/disable color output                                                                                                                                                        [boolean]
-  -v, --verbose      set verbosity from 0 to 5                                                                                                                                                           [number]
-
-For more information, find the manual at https://emacs-eask.github.io/
-</code></pre><div class="flex align-center gdoc-page__anchorwrap"><h2 id=-the-eask-command>🗃️ The <code>eask</code> Command</h2><a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Basic-Usage/#-the-eask-command class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🗃️ The eask Command" aria-label="Anchor to: 🗃️ The eask Command" href=#-the-eask-command><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></div><p>The most common usage is probably to run eask with your current directory being
+options!</div></blockquote><p>The output you see in your console should be similar to the following:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>eask is the main command, used to manage your Emacs dependencies
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Eask is a command-line tool that helps you build, lint, and test Emacs Lisp packages.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Usage: eask &lt;command&gt; [options..]
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Commands:
+</span></span><span class=line><span class=cl>  analyze [files..]          Run Eask checker
+</span></span><span class=line><span class=cl>  archives                   List out all package archives                                                                                                                                     [aliases: sources]
+</span></span><span class=line><span class=cl>  clean &lt;type&gt;               Delete various files produced during building
+</span></span><span class=line><span class=cl>  compile [names..]          Byte-compile `.el&#39; files
+</span></span><span class=line><span class=cl>  create &lt;type&gt;              Create a new elisp project
+</span></span><span class=line><span class=cl>  docker &lt;version&gt; [args..]  Launch specified Emacs version in a Docker container
+</span></span><span class=line><span class=cl>  docs [names..]             Build documentation                                                                                                                                                   [aliases: doc]
+</span></span><span class=line><span class=cl>  emacs [args..]             Execute emacs with the appropriate environment
+</span></span><span class=line><span class=cl>  eval [form]                Evaluate lisp form with a proper PATH
+</span></span><span class=line><span class=cl>  path [patterns..]          Print the PATH (exec-path) from workspace                                                                                                                       [aliases: exec-path]
+</span></span><span class=line><span class=cl>  exec [args..]              Execute command with correct environment PATH set up
+</span></span><span class=line><span class=cl>  files [patterns..]         Print all package files
+</span></span><span class=line><span class=cl>  format &lt;type&gt;              Run formatters                                                                                                                                                        [aliases: fmt]
+</span></span><span class=line><span class=cl>  generate &lt;type&gt;            Generate files that are used for the development
+</span></span><span class=line><span class=cl>  info                       Display information about the current package
+</span></span><span class=line><span class=cl>  init [files..]             Initialize project to use Eask
+</span></span><span class=line><span class=cl>  install-deps               Automatically install package dependencies                                                                                                  [aliases: install-dependencies, prepare]
+</span></span><span class=line><span class=cl>  install-file [files..]     Install packages from files, .tar files, or directories
+</span></span><span class=line><span class=cl>  install-vc [specs..]       Install packages directly from the version control
+</span></span><span class=line><span class=cl>  install [names..]          Install packages
+</span></span><span class=line><span class=cl>  keywords                   List available keywords that can be used in the header section
+</span></span><span class=line><span class=cl>  link &lt;action&gt;              Manage links
+</span></span><span class=line><span class=cl>  lint &lt;type&gt;                Run linters
+</span></span><span class=line><span class=cl>  list                       List packages
+</span></span><span class=line><span class=cl>  load-path [patterns..]     Print the load-path from workspace
+</span></span><span class=line><span class=cl>  load [files..]             Load elisp files
+</span></span><span class=line><span class=cl>  outdated                   Show all outdated dependencies
+</span></span><span class=line><span class=cl>  package-directory          Print path to package directory
+</span></span><span class=line><span class=cl>  package [destination]      Build a package artifact, and put it into the given destination                                                                                                      [aliases: pack]
+</span></span><span class=line><span class=cl>  recipe                     Suggest a recipe format
+</span></span><span class=line><span class=cl>  recompile [names..]        Byte-recompile `.el&#39; files
+</span></span><span class=line><span class=cl>  refresh                    Download package archives
+</span></span><span class=line><span class=cl>  reinstall [names..]        Reinstall packages
+</span></span><span class=line><span class=cl>  run &lt;type&gt;                 Run custom tasks
+</span></span><span class=line><span class=cl>  search [queries..]         Search packages
+</span></span><span class=line><span class=cl>  status                     Display the state of the workspace
+</span></span><span class=line><span class=cl>  test &lt;type&gt;                Run regression/unit tests
+</span></span><span class=line><span class=cl>  uninstall [names..]        Uninstall packages                                                                                                                                                 [aliases: delete]
+</span></span><span class=line><span class=cl>  upgrade [names..]          Upgrade packages
+</span></span><span class=line><span class=cl>  locate                     Print out Eask installed location
+</span></span><span class=line><span class=cl>  upgrade-eask               Upgrade Eask itself                                                                                                                                          [aliases: upgrade-self]
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Proxy Options:
+</span></span><span class=line><span class=cl>      --proxy        update proxy for HTTP and HTTPS to host                                                                                                                                             [string]
+</span></span><span class=line><span class=cl>      --http-proxy   update proxy for HTTP to host                                                                                                                                                       [string]
+</span></span><span class=line><span class=cl>      --https-proxy  update proxy for HTTPS to host                                                                                                                                                      [string]
+</span></span><span class=line><span class=cl>      --no-proxy     set no-proxy to host                                                                                                                                                                [string]
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Options:
+</span></span><span class=line><span class=cl>      --version      output version information and exit                                                                                                                                                [boolean]
+</span></span><span class=line><span class=cl>      --help         show usage instructions                                                                                                                                                            [boolean]
+</span></span><span class=line><span class=cl>      --show-hidden  Show hidden commands and options                                                                                                                                                   [boolean]
+</span></span><span class=line><span class=cl>  -g, --global       change default workspace to ~/.eask/                                                                                                                                               [boolean]
+</span></span><span class=line><span class=cl>  -c, --config       change default workspace to ~/.emacs.d/                                                                                                                                            [boolean]
+</span></span><span class=line><span class=cl>  -a, --all          enable all flag                                                                                                                                                                    [boolean]
+</span></span><span class=line><span class=cl>  -q, --quick        start cleanly without loading the configuration files                                                                                                                              [boolean]
+</span></span><span class=line><span class=cl>  -f, --force        enable force flag                                                                                                                                                                  [boolean]
+</span></span><span class=line><span class=cl>      --debug        turn on debug mode                                                                                                                                                                 [boolean]
+</span></span><span class=line><span class=cl>      --strict       report error instead of warnings                                                                                                                                                   [boolean]
+</span></span><span class=line><span class=cl>      --allow-error  attempt to continue execution on error                                                                                                                                             [boolean]
+</span></span><span class=line><span class=cl>      --insecure     allow insecure connection                                                                                                                                                          [boolean]
+</span></span><span class=line><span class=cl>      --no-color     enable/disable color output                                                                                                                                                        [boolean]
+</span></span><span class=line><span class=cl>  -v, --verbose      set verbosity from 0 to 5                                                                                                                                                           [number]
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>For more information, find the manual at https://emacs-eask.github.io/
+</span></span></code></pre></div><div class="flex align-center gdoc-page__anchorwrap"><h2 id=-the-eask-command>🗃️ The <code>eask</code> Command</h2><a data-clipboard-text=https://emacs-eask.github.io/Getting-Started/Basic-Usage/#-the-eask-command class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🗃️ The eask Command" aria-label="Anchor to: 🗃️ The eask Command" href=#-the-eask-command><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></div><p>The most common usage is probably to run eask with your current directory being
 the input directory. Then you run eask followed by a subcommand:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>eask info             <span class=c1># Print out Eask-file information</span>
 </span></span></code></pre></div><p>Notice the subcommand can be nested:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>eask clean workspace  <span class=c1># Deletes your `.eask` folder</span>
 </span></span></code></pre></div><p>Pass in option <code>--help</code> to look up more information regarding the command you
