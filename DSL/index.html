@@ -78,12 +78,12 @@ scripts.</p><div class=highlight><pre tabindex=0 class=chroma><code class=langua
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nv>depends-on</span> <span class=s>&#34;lsp-ui&#34;</span> <span class=nb>:try</span><span class=p>)</span>  <span class=c1>; Try it, don&#39;t install it.</span>
 </span></span></code></pre></div><p>Specify dependencies in <strong>recipe</strong> format:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=line><span class=cl><span class=p>(</span><span class=nv>depends-on</span> <span class=s>&#34;auto-rename-tag&#34;</span>
-</span></span><span class=line><span class=cl>            <span class=nb>:repo</span> <span class=s>&#34;jcs-elpa/auto-rename-tag&#34;</span>
-</span></span><span class=line><span class=cl>            <span class=nb>:fetcher</span> <span class=ss>&#39;github</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=nb>:fetcher</span> <span class=ss>&#39;github</span>
+</span></span><span class=line><span class=cl>            <span class=nb>:repo</span> <span class=s>&#34;jcs-elpa/auto-rename-tag&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nv>depends-on</span> <span class=s>&#34;lsp-ui&#34;</span>
-</span></span><span class=line><span class=cl>            <span class=nb>:repo</span> <span class=s>&#34;emacs-lsp/lsp-ui&#34;</span>
 </span></span><span class=line><span class=cl>            <span class=nb>:fetcher</span> <span class=ss>&#39;github</span>
+</span></span><span class=line><span class=cl>            <span class=nb>:repo</span> <span class=s>&#34;emacs-lsp/lsp-ui&#34;</span>
 </span></span><span class=line><span class=cl>            <span class=nb>:files</span> <span class=o>&#39;</span><span class=p>(</span><span class=nb>:defaults</span> <span class=s>&#34;lsp-ui-doc.html&#34;</span> <span class=s>&#34;resources&#34;</span><span class=p>))</span>
 </span></span></code></pre></div><blockquote class="gdoc-hint note"><div class="gdoc-hint__title flex gap-8 align-center"><i class="fa note"></i>
 <span>Note</span></div><div class=gdoc-hint__text>💡 Install dependencies with command <strong>eask install-deps</strong>!</div></blockquote><div class="flex align-center gdoc-page__anchorwrap"><h2 id=-development-rest-body>🔍 <strong>development</strong> (<code>&amp;rest body</code>)</h2><a data-clipboard-text=https://emacs-eask.github.io/DSL/#-development-rest-body class="gdoc-page__anchor clip flex align-center" title="Anchor to: 🔍 development (&amp;rest body)" aria-label="Anchor to: 🔍 development (&amp;rest body)" href=#-development-rest-body><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></div><p>Scope all <code>depends-on</code> expressions in body to development.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-elisp data-lang=elisp><span class=line><span class=cl><span class=p>(</span><span class=nv>development</span>
